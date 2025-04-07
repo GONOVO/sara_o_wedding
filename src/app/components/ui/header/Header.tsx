@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Borderbottom from "../borderbottomshape/Borderbottom";
 
 function Header() {
   return (
@@ -17,8 +18,11 @@ function Header() {
           </div>
           <p className="h-fit text-xs">2025</p>
         </div>
-        <div className="relative w-40 h-20">
-          <Image src="/svgs/sara_o.svg" alt="sara_o" fill />
+        <div>
+          <div className="relative w-40 h-20 m-auto">
+            <Image src="/svgs/sara_o.svg" alt="sara_o" fill />
+          </div>
+          <Borderbottom />
         </div>
         <div className="absolute right-4 hidden lg:block">
           <p>MENU</p>

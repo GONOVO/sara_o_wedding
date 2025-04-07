@@ -10,13 +10,13 @@ function Header() {
           <Image src="/svgs/bars.svg" alt="bars icon" fill />
         </div>
       </div>
-      <div className="pt-8 pb-4 px-4 flex items-center flex-col gap-2 text-[var(--semiGray-color)]">
+      <div className="py-8 px-4 flex items-center flex-col gap-2 text-[var(--semiGray-color)]">
         <div className="flex items-end">
           <p className="h-fit text-xs">ESTD</p>
           <div className="relative w-14 h-14 mx-2">
             <Image src="/svgs/s_logo.svg" alt="S logo" fill />
           </div>
-          <p className="h-fit text-xs">2025</p>
+          <p className="h-fit text-xs">2010</p>
         </div>
         <div>
           <div className="relative w-40 h-20 m-auto">
@@ -24,7 +24,7 @@ function Header() {
           </div>
           <Borderbottom />
         </div>
-        <div className="absolute right-4 hidden lg:block">
+        <div className="absolute right-4 hidden lg:flex flex-col items-center">
           <p>MENU</p>
           <div className="relative w-14 h-7 rotate-180">
             <Image src="/svgs/bars.svg" alt="bars icon" fill />

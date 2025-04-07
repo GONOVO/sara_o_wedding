@@ -11,14 +11,14 @@ function Header() {
       </div>
       <div className="pt-8 pb-4 px-4 flex items-center flex-col gap-2 text-[var(--semiGray-color)]">
         <div className="flex items-end">
-          <p className="h-fit">ESTD</p>
-          <div className="relative w-14 h-14 mx-3">
-            <Image src="/images/s_logo.png" alt="S logo" fill />
+          <p className="h-fit text-xs">ESTD</p>
+          <div className="relative w-14 h-14 mx-2">
+            <Image src="/svgs/s_logo.svg" alt="S logo" fill />
           </div>
-          <p className="h-fit">2025</p>
+          <p className="h-fit text-xs">2025</p>
         </div>
         <div className="relative w-40 h-20">
-          <Image src="/images/sara_o.png" alt="sara_o" fill />
+          <Image src="/svgs/sara_o.svg" alt="sara_o" fill />
         </div>
         <div className="absolute right-4 hidden lg:block">
           <p>MENU</p>

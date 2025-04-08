@@ -3,9 +3,12 @@ import React from "react";
 
 function Productowner() {
   return (
-    <section className="mt-44 bg-[var(--lightGray-color)]">
-      <div className="max-w-[1280px] pt-24 px-4 grid grid-cols-2 mx-auto -top-44 relative">
-        <div className="w-full h-[820px] relative">
+    <section className="mt-24 lg:mt-44 bg-[var(--lightGray-color)]">
+      <div className="max-w-[1280px] pt-24 sm:pt-48 pb-12 md:pt-24 md:px-4 grid grid-cols-1 md:grid-cols-2 mx-auto top-0 md:-top-44 relative">
+        <div className="w-full h-[620px] sm:h-[820px] md:h-[620px]  lg:h-[820px] relative">
+          <h1 className="text-[15vw] absolute z-1 -top-[11%] w-full block md:hidden  font-extralight leading-[18vw]">
+            WORLD CLASS EVENTS
+          </h1>
           <Image
             src="/images/Picture1.jpg"
             alt="Yewande Rwang-Dung"
@@ -14,16 +17,16 @@ function Productowner() {
             unoptimized={true}
           />
         </div>
-        <div>
-          <h1 className="text-[72px] mt-5 leading-24 font-extralight italic -left-16 relative">
+        <div className="px-4 md:px-0">
+          <h1 className="md:text-[6.5vw] xl:text-[72px] mt-5 md:leading-20 lg:leading-24 font-extralight italic md:-left-16 relative left-16 md:block hidden">
             WORLD <br />
             <span className="-left-2 relative">CLASS EVENTS</span>
           </h1>
-          <div className="ms-16 mt-24 flex flex-col gap-12">
-            <h3 className="nunito_font tracking-[4px] text-lg font-thin">
+          <div className="lg:ms-16 mt-8 lg:mt-24 flex flex-col gap-6 lg:gap-12 ">
+            <h3 className="nunito_font tracking-[4px] text-xs lg:text-lg font-thin">
               PLANNING EXCEPTIONAL UK AND DESTINATION WEDDINGS AND EVENTS
             </h3>
-            <p>
+            <p className="text-sm lg:text-base">
               {/* Led by renowned designer Alice Wilkes, Alice Wilkes Design is a
               London-based luxury wedding and events agency. We create, plan and
               manage worldwide weddings and events that push the visual and
@@ -34,7 +37,7 @@ function Productowner() {
               she has built an impeccable reputation for curating breathtaking
               experiences that transcend expectations.
             </p>
-            <p>
+            <p className="text-sm lg:text-base">
               {/* We’re the atelier that stylish couples contact when they want
               showstopping weddings, and we’re the agency that brands ask to
               design exclusive events that effortlessly convey their values and
@@ -46,7 +49,7 @@ function Productowner() {
               corporate events, and bespoke interior décor, making her a
               sought-after name in the event design industry.
             </p>
-            <p>
+            <p className="text-sm lg:text-base">
               Beyond her work as a designer, Yewande is a passionate mentor and
               industry leader, championing empowerment and professional
               development for the next generation of event designers and

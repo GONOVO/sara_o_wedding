@@ -15,6 +15,7 @@ function Productowner() {
             fill
             quality={100}
             unoptimized={true}
+            loading="lazy"
           />
         </div>
         <div className="px-4 md:px-0">

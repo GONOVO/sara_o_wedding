@@ -7,7 +7,7 @@ function Productowner() {
       <div className="max-w-[1280px] pt-24 px-4 grid grid-cols-2 mx-auto -top-44 relative">
         <div className="w-full h-[820px] relative">
           <Image
-            src="/images/picture1.jpg"
+            src="/images/Picture1.jpg"
             alt="Yewande Rwang-Dung"
             fill
             quality={100}

@@ -1,0 +1,25 @@
+@media (max-width: 1152px) {
+  .smImage {
+    height: 32vh;
+  }
+  .lgImage {
+    height: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .lgImage {
+    height: 100vh;
+    order: 0;
+  }
+  .smImage {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .lgImage {
+    height: 60vh;
+  }
+  .main_Title {
+    max-width: 300px;
+  }
+}

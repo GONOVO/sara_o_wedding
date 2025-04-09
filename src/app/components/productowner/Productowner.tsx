@@ -4,7 +4,7 @@ import React from "react";
 function Productowner() {
   return (
     <section className="mt-24 lg:mt-44 bg-[rgba(244,240,235,1)]">
-      <div className="max-w-[1280px] pt-24 sm:pt-48 pb-12 md:pt-24 md:px-4 grid grid-cols-1 md:grid-cols-2 mx-auto top-0 md:-top-44 relative">
+      <div className="max-w-[1280px] mt-32 sm:mt-48 pb-12 md:pt-24 md:px-4 grid grid-cols-1 md:grid-cols-2 mx-auto top-0 md:-top-44 relative">
         <div className="w-full h-[620px] sm:h-[820px] md:h-[620px]  lg:h-[820px] relative">
           <h1 className="text-[15vw] absolute z-1 -top-[11%] w-full block md:hidden  font-extralight leading-[18vw]">
             WORLD CLASS EVENTS
@@ -23,7 +23,7 @@ function Productowner() {
             WORLD <br />
             <span className="-left-2 relative">CLASS EVENTS</span>
           </h1>
-          <div className="lg:ms-16 mt-8 lg:mt-24 flex flex-col gap-6 lg:gap-12 ">
+          <div className="lg:ms-16 md:ms-8 mt-8 lg:mt-24 flex flex-col gap-6 lg:gap-12 ">
             <h3 className="nunito_font tracking-[4px] text-xs lg:text-lg font-thin">
               PLANNING EXCEPTIONAL UK AND DESTINATION WEDDINGS AND EVENTS
             </h3>

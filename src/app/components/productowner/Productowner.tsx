@@ -3,7 +3,7 @@ import React from "react";
 
 function Productowner() {
   return (
-    <section className="mt-24 lg:mt-44 bg-[var(--lightGray-color)]">
+    <section className="mt-24 lg:mt-44 bg-[rgba(244,240,235,1)]">
       <div className="max-w-[1280px] pt-24 sm:pt-48 pb-12 md:pt-24 md:px-4 grid grid-cols-1 md:grid-cols-2 mx-auto top-0 md:-top-44 relative">
         <div className="w-full h-[620px] sm:h-[820px] md:h-[620px]  lg:h-[820px] relative">
           <h1 className="text-[15vw] absolute z-1 -top-[11%] w-full block md:hidden  font-extralight leading-[18vw]">

@@ -30,7 +30,7 @@ function Featured() {
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
           >
             <Image
-              src="/images/featured1.jpg"
+              src="/images/featured1.JPG"
               alt="featured image 1"
               width={400}
               height={490}
@@ -45,7 +45,7 @@ function Featured() {
               style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
             >
               <Image
-                src="/images/featured1.jpg"
+                src="/images/featured1.JPG"
                 alt="featured image 1"
                 width={327}
                 height={490}

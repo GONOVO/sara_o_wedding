@@ -69,8 +69,8 @@ function Featured() {
           </div>
         </div>
       </div>
-      <div className="max-w-[92] mx-4 block lg:hidden text-[#262A2D]">
-        <h2 className="text-4xl font-medium italic my-[2rem] text-center ">
+      <div className="w-[92%] mx-4 block lg:hidden text-[#262A2D]">
+        <h2 className="text-4xl font-medium italic my-[2rem] text-center">
           The essential guide to high-end wedding planning for a luxurious
           experience
         </h2>

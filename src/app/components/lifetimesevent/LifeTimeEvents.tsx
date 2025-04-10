@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "./lifetime.module.css";
+import LazyAutoPlayVideo from "../ui/videoplayer/VideoPlayer";
 function LifeTimeEvents() {
   return (
     <section className="max-w-[1280px] mx-auto my-24 grid lg:grid-cols-[1.1fr_0.9fr] grid-cols-1 gap-5">
@@ -41,13 +42,14 @@ function LifeTimeEvents() {
       <div
         className={`xl:w-full w-[92%] mx-auto lg:mx-0 lg:w-[97%] lg:mr-auto h-[100vh] relative ${styles.lgImage}`}
       >
-        <Image
+        {/* <Image
           src="/images/reallife2.JPG"
           alt="real life"
           fill
           className="object-cover"
           loading="lazy"
-        />
+        /> */}
+        <LazyAutoPlayVideo />
       </div>
     </section>
   );

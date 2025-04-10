@@ -30,6 +30,8 @@ export default function LazyAutoPlayVideo() {
   useEffect(() => {
     if (isVisible && videoRef.current) {
       videoRef.current.play().catch(() => {});
+    } else {
+      videoRef.current?.pause();
     }
   }, [isVisible]);
 
@@ -41,6 +43,7 @@ export default function LazyAutoPlayVideo() {
           src="/videos/lifeevents.mp4"
           muted
           playsInline
+          loop
           className="object-cover w-full h-full"
         />
       )}

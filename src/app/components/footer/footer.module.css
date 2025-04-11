@@ -119,19 +119,13 @@
   .title {
     padding-left: 15px;
   }
-  .mobile_Logo {
-    display: inline;
-    width: 125px !important;
-    height: 50px !important;
-  }
+
   .middle img {
-    display: none;
+    /* display: none; */
   }
   .gallery {
     display: grid;
-    grid-template-columns: 125px calc(100% - 125px);
-    align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid black;
   }

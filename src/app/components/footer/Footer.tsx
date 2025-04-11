@@ -17,15 +17,6 @@ function Footer() {
             <h1 data-aos="fade-up">Instagram</h1>
           </div>
           <div className={styles.gallery}>
-            <Image
-              className={styles.mobile_Logo}
-              src="/logo.webp"
-              alt="logo"
-              loading="lazy"
-              width={125}
-              sizes="125px"
-              height={50}
-            />
             <div className={styles.images_container}>
               {images.map((item, index) => (
                 <Link

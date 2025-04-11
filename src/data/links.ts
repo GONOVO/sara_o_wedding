@@ -1,26 +1,26 @@
 const links = [
   {
+    name: "HOME",
+    path: "/",
+  },
+  {
+    name: "ABOUT",
+    path: "/",
+  },
+  {
     name: "PORTFOLIO",
     path: "/",
   },
   {
-    name: "APPROACH",
+    name: "PACKAGES",
     path: "/",
   },
   {
-    name: "PROCESS",
+    name: "OUR WORK",
     path: "/",
   },
   {
-    name: "STORY",
-    path: "/",
-  },
-  {
-    name: "PRESS",
-    path: "/",
-  },
-  {
-    name: "inguise",
+    name: "OUR TEAM",
     path: "/",
   },
 ];

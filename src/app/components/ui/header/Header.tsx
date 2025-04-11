@@ -25,12 +25,12 @@ function Header() {
         </div>
       </div>
       <div className="flex items-center max-w-[1280px] mx-auto lg:justify-center px-4 justify-center py-8">
-        <ul className="hidden lg:flex gap-6 nunito_font w-[267px] text-[var(--semiGray-color)]">
+        <ul className="hidden lg:flex gap-6 nunito_font w-max text-[var(--semiGray-color)] ">
           {links.slice(0, 3).map((link, index) => (
             <li key={index}>
               <Link
                 href={link.path}
-                className="text-sm font-medium hover:text-[var(--gold-color)]"
+                className="text-base font-medium hover:text-[var(--gold-color)]"
               >
                 {link.name}
               </Link>
@@ -38,9 +38,9 @@ function Header() {
           ))}
         </ul>
 
-        <div className="mx-[12%] flex items-center flex-col gap-2 text-[var(--semiGray-color)] w-fit">
+        <div className="mx-[10%] flex items-center flex-col gap-2 text-[var(--semiGray-color)] w-fit">
           <div className="flex items-end">
-            <p className="h-fit text-xs">ESTD</p>
+            <p className="h-fit text-xs">EST.D</p>
             <div className="relative w-14 h-14 mx-2">
               <Image src="/svgs/s_logo.svg" alt="S logo" fill />
             </div>
@@ -52,24 +52,13 @@ function Header() {
             </div>
             <Borderbottom />
           </div>
-          {/* <div className="absolute right-4 hidden lg:flex flex-col items-center">
-          <p>MENU</p>
-          <div className="relative w-14 h-7 rotate-180">
-            <Image src="/svgs/bars.svg" alt="bars icon" fill />
-          </div>
-        </div> */}
         </div>
-
-        <ul className="hidden lg:flex gap-6 nunito_font w-[267px] text-[var(--semiGray-color)]">
+        <ul className="hidden lg:flex gap-6 nunito_font w-max text-[var(--semiGray-color)]">
           {links.slice(3, 6).map((link, index) => (
             <li key={index}>
               <Link
                 href={link.path}
-                className={`text-sm font-medium hover:text-[var(--gold-color)] ${
-                  index === 2
-                    ? "normal_font text-[var(--gold-color)] italic"
-                    : "nunito_font"
-                }`}
+                className={`text-base font-medium hover:text-[var(--gold-color)] `}
               >
                 {link.name}
               </Link>

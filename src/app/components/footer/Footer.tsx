@@ -20,7 +20,7 @@ function Footer() {
             <div className={styles.images_container}>
               {images.map((item, index) => (
                 <Link
-                  href="https://www.instagram.com/bling.weddings/"
+                  href="https://www.instagram.com/saraoevents/?igsh=MW8zMnFtd2ZxMGozeg%3D%3D#"
                   key={index}
                 >
                   <Image
@@ -41,7 +41,7 @@ function Footer() {
         <div className={styles.middle}>
           <div className="mx-[12%] flex items-center flex-col gap-2 text-[var(--semiGray-color)] w-fit">
             <div className="flex items-end">
-              <p className="h-fit text-xs">ESTD</p>
+              <p className="h-fit text-xs">EST.D</p>
               <div className="relative w-14 h-14 mx-2">
                 <Image src="/svgs/s_logo.svg" alt="S logo" fill />
               </div>
@@ -89,13 +89,13 @@ function Footer() {
               <Link href="/aboutus">About</Link>
             </li>
             <li>
-              <Link href="/#latestworks">Latest works</Link>
+              <Link href="/#latestworks">Portfolio</Link>
             </li>
             <li>
-              <Link href="/coupons">Copouns</Link>
+              <Link href="/coupons">Packages</Link>
             </li>
             <li>
-              <Link href="https://www.instagram.com/bling.weddings/">
+              <Link href="https://www.instagram.com/saraoevents/?igsh=MW8zMnFtd2ZxMGozeg%3D%3D#">
                 Our Work
               </Link>
             </li>

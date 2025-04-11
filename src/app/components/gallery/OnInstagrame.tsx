@@ -12,7 +12,7 @@ function Gallery() {
   return (
     <section className="lg:mt-4 mt-8">
       <HugeTitle text="GALLERY" />
-      <div className={`${styles.main_grid} -top-10 lg:-top-32 relative`}>
+      <div className={`${styles.main_grid} -top-10 lg:-top-16 relative`}>
         <div className={styles.row_1_2}>
           <div
             // style={{ backgroundImage: "url(/images/gallery5.webp)" }}

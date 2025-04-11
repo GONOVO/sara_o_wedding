@@ -6,7 +6,7 @@ import styles from "./lifetime.module.css";
 function LifeTimeEvents() {
   return (
     <section className="max-w-[1280px] mx-auto mt-24 mb-12 grid lg:grid-cols-[1.1fr_0.9fr] grid-cols-1 gap-1">
-      <div className="xl:ps-0 lg:ps-4 px-4 order-1 lg:order-0">
+      <div className="xl:ps-2 ps-4 px-4 order-1 lg:order-0">
         <h1
           className={`lg:text-[86px]  text-[42px] leading-[42px] text-[#222222] font-normal lg:text-end  lg:leading-[100px] mb-8 ${styles.main_Title}`}
         >
@@ -14,12 +14,14 @@ function LifeTimeEvents() {
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:max-w-full max-w-[430px]">
           <div>
-            <p className="text-xs leading-6">
-              Based in Aspen, Colorado and New York City, our team has set The
-              Gold Standard for weddings and events worldwide. The Gold Leaf
-              team is known for having a fresh and innovative approach to event
-              coordination, while carefully selecting creative partners to
-              produce custom designs resulting in memorable events.
+            <p className="text-sm leading-6">
+              SARA O Events sets the platinum standard for weddings and events
+              across the globe. Renowned for our visionary approach and
+              impeccable execution, we curate extraordinary celebrations by
+              collaborating with the world’s most talented artisans,
+              transforming dreams into breathtaking realities. With an artist’s
+              eye and a perfectionist’s touch, we craft moments that don’t just
+              happen, but live on forever.
             </p>
             <Link
               href="/"

@@ -20,7 +20,7 @@ export default function LazyAutoPlayVideo({
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.5 }
+      { threshold: 0.01 }
     );
 
     if (containerRef.current) {

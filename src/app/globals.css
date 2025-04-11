@@ -19,9 +19,9 @@ body {
 .normal_font {
   font-family: var(--font-fraunces), serif !important;
 }
-.nunito_font {
+/* .nunito_font {
   font-family: var(--font-nunito), sans-serif;
-}
+} */
 .kristy_font {
   font-family: var(--font-kristy), cursive;
 }

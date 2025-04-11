@@ -8,14 +8,10 @@ function Featured() {
     <section className="max-w-[1280px] mx-auto overflow-hidden">
       <HugeTitle text="FEATURED" />
 
-      <div className={`grid grid-cols-2 ${styles.res_grid}`}>
+      <div className={`grid grid-cols-2 mt-[4rem] ${styles.res_grid}`}>
         <div className="grid lg:grid-cols-1 grid-cols-2 items-end">
           <div className="relative w-full h-[200px] sm:h-[250px] md:h-[390px]">
-            <div className="absolute z-2 rotate-45  md:-right-[100px] -right-[40px] lg:bottom-0 sm:-bottom-10 -bottom-5">
-              <div className="relative lg:w-[350px] lg:h-[350px] h-[200px] w-[200px] sm:h-[250px] sm:w-[250px]">
-                <Image src="/svgs/shape.svg" alt="shape" fill />
-              </div>
-            </div>
+            <div className="absolute z-2 rotate-45  md:-right-[100px] -right-[40px] lg:bottom-0 sm:-bottom-10 -bottom-5"></div>
             <Image
               src="/images/featured2.jpg"
               alt="featured image 2"

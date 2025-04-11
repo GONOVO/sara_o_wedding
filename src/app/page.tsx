@@ -18,7 +18,7 @@ function page() {
       <Productowner />
       <ImageView />
       <Gallery />
-       <Contactus />
+      <Contactus />
     </>
   );
 }

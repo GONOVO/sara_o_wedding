@@ -25,7 +25,7 @@ function Productowner() {
           </h1>
           <div className="lg:ms-16 md:ms-8 mt-8 lg:mt-[45px] flex flex-col gap-6 lg:gap-12 ">
             <h3 className="nunito_font tracking-[4px] text-xs lg:text-lg font-thin">
-              PLANNING EXCEPTIONAL UK AND DESTINATION WEDDINGS AND EVENTS
+              PLANNING EXCEPTIONAL NIGERIAN AND DESTINATION WEDDINGS AND EVENTS
             </h3>
             <p className="text-sm lg:text-base">
               {/* Led by renowned designer Alice Wilkes, Alice Wilkes Design is a

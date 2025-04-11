@@ -1,11 +1,14 @@
 .hero_section {
   width: 100%;
   margin: auto;
-  height: 90vh;
+  height: 75vh;
   position: relative;
   background-image: url("/images/view1.jpg");
   background-size: cover;
+  background-position-y: 36%;
   background-attachment: fixed; /* Default for non-iOS devices */
+  display: block;
+  margin-bottom: 4rem;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
@@ -51,6 +54,7 @@
 @media (max-width: 975px) {
   .hero_section {
     background-position-x: 45%;
+    background-position-y: 50%;
   }
   .texts h1 {
     font-size: 7.8vw;

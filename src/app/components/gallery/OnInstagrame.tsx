@@ -19,7 +19,10 @@ function Gallery() {
             className={styles.gallery_item}
             data-aos="fade-right"
           >
-            <LazyAutoPlayVideo videoPath="/videos/gallery_vid_1.mp4" />
+            <LazyAutoPlayVideo
+              videoPath="/videos/gallery_vid_1.mp4"
+              placeholderImage="/images/cover_g_v_1.png"
+            />
             {/* <p>{weLoveText}</p> */}
           </div>
           <div className={styles.col_1_1}>
@@ -114,7 +117,10 @@ function Gallery() {
             </div>
           </div>
           <div data-aos="fade-left" className={styles.gallery_item}>
-            <LazyAutoPlayVideo videoPath="/videos/gallery_vid_2.mp4" />
+            <LazyAutoPlayVideo
+              videoPath="/videos/gallery_vid_2.mp4"
+              placeholderImage="/images/cover_g_v_2.png"
+            />
           </div>
         </div>
       </div>

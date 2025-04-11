@@ -1,9 +1,4 @@
 @media (max-width: 1180px) {
-  .main_Title {
-    font-size: 150px;
-
-    font-weight: 400;
-  }
   .res_grid {
     grid-template-columns: 0.8fr 1.2fr;
   }
@@ -14,10 +9,5 @@
 @media (max-width: 1024px) {
   .res_grid {
     grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 825px) {
-  .main_Title {
-    font-size: 17vw;
   }
 }

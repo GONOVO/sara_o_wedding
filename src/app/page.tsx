@@ -5,6 +5,7 @@ import Productowner from "./components/productowner/Productowner";
 import Featured from "./components/featured/Featured";
 import LifeTimeEvents from "./components/lifetimesevent/LifeTimeEvents";
 import ImageView from "./components/imageview/HeroSection";
+import Gallery from "./components/gallery/OnInstagrame";
 
 function page() {
   return (
@@ -15,6 +16,7 @@ function page() {
       <Featured />
       <Productowner />
       <ImageView />
+      <Gallery />
     </>
   );
 }

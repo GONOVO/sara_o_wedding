@@ -1,7 +1,11 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-export default function LazyAutoPlayVideo() {
+export default function LazyAutoPlayVideo({
+  videoPath,
+}: {
+  videoPath: string;
+}) {
   const containerRef = useRef(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
@@ -40,7 +44,7 @@ export default function LazyAutoPlayVideo() {
       {isVisible && (
         <video
           ref={videoRef}
-          src="/videos/lifeevents.mp4"
+          src={videoPath}
           muted
           playsInline
           loop

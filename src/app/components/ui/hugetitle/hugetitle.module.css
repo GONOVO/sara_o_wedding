@@ -1,0 +1,11 @@
+@media (max-width: 1180px) {
+  .main_Title {
+    font-size: 150px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 825px) {
+  .main_Title {
+    font-size: 17vw;
+  }
+}

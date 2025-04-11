@@ -1,14 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./feature.module.css";
+import HugeTitle from "../ui/hugetitle/HugeTitle";
+
 function Featured() {
   return (
     <section className="max-w-[1280px] mx-auto overflow-hidden">
-      <h1
-        className={`text-[#EEEDEB] text-[208px] text-center z-4 relative ${styles.main_Title}`}
-      >
-        FEATURED
-      </h1>
+      <HugeTitle text="FEATURED" />
+
       <div className={`grid grid-cols-2 ${styles.res_grid}`}>
         <div className="grid lg:grid-cols-1 grid-cols-2 items-end">
           <div className="relative w-full h-[200px] sm:h-[250px] md:h-[390px]">

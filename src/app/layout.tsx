@@ -4,6 +4,7 @@ import Head from "next/head";
 import "./globals.css";
 import Header from "./components/ui/header/Header";
 import { Nunito, Fraunces, Kristi } from "next/font/google";
+import Footer from "./components/footer/Footer";
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700", "800", "900"],
@@ -37,7 +38,6 @@ export default function RootLayout({
       className={`${nunito.variable} ${fraunces.variable} ${kristi.variable}`}
     >
       <Head>
-        
         <link
           rel="preload"
           as="video"
@@ -48,6 +48,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -9,12 +9,15 @@
   width: 100%;
   overflow: hidden; /* Prevent scrollbars */
   position: relative;
-  padding: 10rem 0 4rem 0;
+  padding: 4rem 0 4rem 0;
+  top: -40px;
 }
 
 .scroll-track-left {
-  animation: scroll-infinite-left 30s linear infinite;
+  animation: scroll-infinite-left 45s linear infinite;
   animation-direction: alternate-reverse;
+  display: flex;
+  align-items: center;
 }
 
 .scroll-item {
@@ -25,7 +28,7 @@
   overflow: hidden;
   background: #fff;
   padding: 16px;
-  z-index: 9;
+  z-index: 3;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .image_wrapper {
@@ -39,17 +42,20 @@
 .animation_stop {
   animation-play-state: paused !important;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   .scroll-wrapper {
-    padding: 8rem 0 4rem 0;
+    top: -60px;
   }
 }
 @media (max-width: 520px) {
   .scroll-track-left {
-    animation: scroll-infinite-left 70s linear infinite;
+    animation: scroll-infinite-left 90s linear infinite;
   }
   .scroll-item {
     padding: 10px;
+  }
+  .scroll-wrapper {
+    top: -40px;
   }
 }
 /* Keyframes for continuous horizontal scrolling */

@@ -59,7 +59,7 @@ function InfinityScroll({ elements }: { elements: string[] }) {
           let scaleClass = "scale-80 duration-5000"; // Default size
 
           if (index === activeIndex) {
-            scaleClass = "scale-110"; // Center card
+            scaleClass = "scale-130"; // Center card
           } else if (index === activeIndex! - 1 || index === activeIndex! + 1) {
             scaleClass = "scale-95 duration-5000"; // Adjacent cards
           }
@@ -70,16 +70,14 @@ function InfinityScroll({ elements }: { elements: string[] }) {
               className={`scroll-card transition-all duration-5000 ease-in-out relative ${scaleClass}`}
             >
               <div className={styles["scroll-item"]}>
-                <div className={styles.image_wrapper}>
-                  <Image
-                    src={item}
-                    alt="portfolio image"
-                    fill
-                    loading="eager"
-                    unoptimized={true}
-                    className="object-cover"
-                  />
-                </div>
+                <Image
+                  src={item}
+                  alt="portfolio image"
+                  fill
+                  loading="eager"
+                  unoptimized={true}
+                  className="object-cover"
+                />
               </div>
             </div>
           );

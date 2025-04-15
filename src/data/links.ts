@@ -16,13 +16,13 @@ const links = [
     path: "/",
   },
   {
-    name: "OUR WORK",
+    name: "CONTACTUS",
     path: "/",
   },
-  {
-    name: "OUR TEAM",
-    path: "/",
-  },
+  // {
+  //   name: "OUR TEAM",
+  //   path: "/",
+  // },
 ];
 
 export default links;

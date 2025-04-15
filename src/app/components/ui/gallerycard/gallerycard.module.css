@@ -1,0 +1,17 @@
+.card_container {
+  width: 382px;
+  height: 391px;
+  position: relative;
+}
+.effect_div {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  transition: opacity 400ms;
+}
+.card_container:hover .effect_div {
+  opacity: 1;
+  cursor: pointer;
+  z-index: 2;
+}

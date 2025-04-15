@@ -40,7 +40,7 @@ const galleryPortfolio = [
     femaleName: "KRISTEEN",
   },
   {
-    image: "/images/galleryport7.jpg",
+    image: "/images/galleryport7.JPG",
     maleName: "DAVIDO",
     femaleName: "CHIOMA",
   },

@@ -32,6 +32,7 @@ type HugeTitleProps = {
   color?: string;
   textShadow?: string;
   fontPercentage?: number;
+  mt?: string;
 };
 
 const HugeTitle = ({
@@ -39,16 +40,20 @@ const HugeTitle = ({
   color = "var(--gold-color)",
   textShadow,
   fontPercentage = 1,
+  mt,
 }: HugeTitleProps) => {
   const fontSize = `${218 * fontPercentage}px`;
 
   return (
     <h1
-      className={`text-center z-4 relative mt-[2rem] ${styles.main_Title} lg:leading-[180px]`}
+      className={`text-center z-4 relative  ${mt ? "mt-0" : "mt-[2rem]"} ${
+        styles.main_Title
+      } lg:leading-[180px]`}
       style={{
         color,
         textShadow,
         fontSize,
+
         ["--font-size-multiplier" as string]: fontPercentage,
       }}
     >

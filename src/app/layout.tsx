@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 import Head from "next/head";
 import "./globals.css";
-import Header from "./components/ui/header/Header";
+import Header from "../components/ui/header/Header";
 import { Nunito, Fraunces, Kristi } from "next/font/google";
-import Footer from "./components/footer/Footer";
+import Footer from "../components/footer/Footer";
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700", "800", "900"],

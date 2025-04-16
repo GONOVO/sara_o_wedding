@@ -1,0 +1,107 @@
+.mainCard {
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.mainCard:hover .movePart {
+  transform: translateY(-80px);
+}
+.mainCard:hover a {
+  /* position: relative; */
+  visibility: visible;
+  padding: 0.5rem 0;
+  transition: visibility ease 0.3s;
+  transition-delay: 0.15s;
+}
+.movePart {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all ease 0.7s;
+}
+.movePart img {
+  height: 388px;
+  transform: translateX(5px);
+}
+.mainCard h2 {
+  margin-inline-start: 2.8rem;
+  margin-inline-end: 1.5rem;
+  font-weight: 200;
+  max-width: 130px;
+  font-size: 38px;
+}
+
+.movePart ul {
+  flex-direction: column;
+  list-style: disc;
+  list-style-position: inside;
+  z-index: 9;
+  margin-inline-start: 2.8rem;
+  margin-inline-end: 1rem;
+  line-height: 1.8;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+}
+.mainCard a {
+  visibility: hidden;
+  color: black;
+  display: block;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 155px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 999;
+  text-align: center;
+}
+.mainCard a span {
+  text-decoration: underline;
+  font-family: "Nunito Sans", sans-serif;
+}
+.mainCard a:hover {
+  font-weight: 700;
+}
+.mainCard button {
+  width: 80%;
+  margin: 2rem 10% 1rem;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  background-color: var(--bg-overlay-color);
+  font-size: 38px;
+  position: relative;
+}
+.mainCard button span {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 440px) {
+  .mainCard {
+    width: 92%;
+    margin: auto;
+  }
+  .movePart img {
+    transform: translateX(0);
+  }
+  .mainCard button {
+    display: flex;
+    position: relative;
+    padding: 0.5rem 4rem 0.5rem 2rem;
+    font-size: 25px;
+    width: fit-content;
+  }
+  .mainCard button span {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    margin-inline-end: 10px;
+  }
+}

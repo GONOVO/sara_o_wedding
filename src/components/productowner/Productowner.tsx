@@ -28,15 +28,6 @@ function Productowner() {
               PLANNING EXCEPTIONAL NIGERIAN AND DESTINATION WEDDINGS AND EVENTS
             </h3>
             <p className="text-sm lg:text-base">
-              {/* Led by renowned designer Alice Wilkes, Alice Wilkes Design is a
-              London-based luxury wedding and events agency. We create, plan and
-              manage worldwide weddings and events that push the visual and
-              sensory boundaries of design. */}
-              {/* Yewande Rwang-Dung is a distinguished event design and interior
-              décor expert with over 15 years of industry excellence. Renowned
-              for her visionary creativity and meticulous attention to detail,
-              she has built an impeccable reputation for curating breathtaking
-              experiences that transcend expectations. */}
               Yewande Rwang-Dung is a celebrated event design and interior décor
               expert with over 15 years of industry leadership. Known for her
               visionary creativity and flawless execution, she specializes in
@@ -48,16 +39,6 @@ function Productowner() {
               projects.
             </p>
             <p className="text-sm lg:text-base">
-              {/* We’re the atelier that stylish couples contact when they want
-              showstopping weddings, and we’re the agency that brands ask to
-              design exclusive events that effortlessly convey their values and
-              aesthetic. */}
-              {/* As the Founder and Creative Director of SARA O Events, Yewande has
-              transformed event spaces into unforgettable masterpieces, crafting
-              immersive designs that reflect elegance, sophistication, and
-              innovation. Her expertise spans luxury weddings, high-profile
-              corporate events, and bespoke interior décor, making her a
-              sought-after name in the event design industry. */}
               Beyond her design expertise, Yewande is a dedicated mentor and
               advocate for professional growth in the event industry. Through
               mentorship programs and industry initiatives, she empowers
@@ -66,14 +47,6 @@ function Productowner() {
               excellence continue to inspire both clients and aspiring designers
               alike.
             </p>
-            {/* <p className="text-sm lg:text-base">
-              Beyond her work as a designer, Yewande is a passionate mentor and
-              industry leader, championing empowerment and professional
-              development for the next generation of event designers and
-              decorators. She has spearheaded multiple mentorship initiatives,
-              equipping emerging talents with the skills and insights to thrive
-              in the competitive world of luxury event styling.
-            </p> */}
             <div>
               <h2 className="text-xl font-medium">Yewande Rwang-Dung</h2>
               <p className="kristy_font font-light text-3xl mt-5">

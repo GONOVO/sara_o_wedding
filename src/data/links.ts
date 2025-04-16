@@ -13,7 +13,7 @@ const links = [
   },
   {
     name: "PACKAGES",
-    path: "/",
+    path: "/packages",
   },
   {
     name: "CONTACTUS",

@@ -1,15 +1,13 @@
-import React from "react";
-import InfinityScroll from "../components/infinityscroll/InfinityScroll";
+import InfinityScroll from "@/components/infinityscroll/InfinityScroll";
+import GalleryPortfolio from "@/components/portfoliogallery/GalleryPortfolio";
+import HugeTitle from "@/components/ui/hugetitle/HugeTitle";
 import portfolio from "@/data/portfolio";
-import HugeTitle from "../components/ui/hugetitle/HugeTitle";
-import GalleryPortfolio from "../components/portfoliogallery/GalleryPortfolio";
 
 function page() {
   return (
     <>
-      <section className="scroll-container relative bg-[var(--gold-color)]   block py-4">
+      <section className="scroll-container relative bg-[rgba(244,240,235,1)]   block py-4">
         <HugeTitle text="PORTFOLIO" color="#FFF" fontPercentage={0.9} />
-
         <InfinityScroll elements={portfolio} />
       </section>
       <GalleryPortfolio />

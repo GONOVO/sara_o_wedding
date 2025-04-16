@@ -61,7 +61,7 @@ function InfinityScroll({ elements }: { elements: string[] }) {
           if (index === activeIndex) {
             scaleClass = "scale-130"; // Center card
           } else if (index === activeIndex! - 1 || index === activeIndex! + 1) {
-            scaleClass = "scale-95 duration-5000"; // Adjacent cards
+            scaleClass = "scale-100 duration-5000"; // Adjacent cards
           }
 
           return (

@@ -8,7 +8,7 @@ import Link from "next/link";
 function Packages() {
   return (
     <section className="bg-[rgba(244,240,235,1)] pt-10 h-fit">
-      <HugeTitle text="PACKAGES" color="#fff" mt="0px" />
+      <HugeTitle text="PACKAGES" mt="0px" />
       <div className={styles.main_package}>
         {/* <MainTitle title="Packages" /> */}
         <div className={styles.package_grid}>

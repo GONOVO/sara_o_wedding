@@ -1,34 +1,25 @@
 const packages = [
   {
-    coverImg: "/images/love1.jpg",
-    title: "Lights, Camera, Action",
+    coverImg: "/images/package1.JPG",
+    title: "Personalized, Consultation",
     list: [
-      "Pre-wedding vision consultation ",
-      "6 hours coverage ",
-      "2 tiktoks/reels",
-      "Entire camera roll of raw content delivered that night",
+      "We work closely with you to understand your dream event and create a plan that fits your requirements.",
     ],
     btnText: "$1320",
   },
   {
-    coverImg: "/images/love2.jpg",
-    title: "Designated She Paparazzi",
+    coverImg: "/images/package2.jpg",
+    title: "Bespoke Packages",
     list: [
-      "Pre-wedding vision consultation",
-      "8 hours coverage ",
-      "4 tiktoks/reels ",
-      "Entire camera roll of raw content delivered that night ",
+      "Whether it’s an intimate gathering or a grand celebration, our services are fully customized to meet your expectations.",
     ],
     btnText: "$1870",
   },
   {
-    coverImg: "/images/love3.jpeg",
-    title: "She Love Story",
+    coverImg: "/images/package33.jpg",
+    title: "Flexible& Transparent Pricing",
     list: [
-      "Pre-wedding vision consultation",
-      "10 hours coverage ",
-      "6 tiktoks/reels ",
-      "Entire camera roll of raw content delivered that night",
+      "Pricing is determined based on the scope of work, event size, and level of customization",
     ],
     btnText: "$2310",
   },

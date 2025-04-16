@@ -7,7 +7,7 @@ function page() {
   return (
     <>
       <section className="scroll-container relative bg-[rgba(244,240,235,1)]   block py-4">
-        <HugeTitle text="PORTFOLIO" color="#FFF" fontPercentage={0.9} />
+        <HugeTitle text="PORTFOLIO" fontPercentage={0.9} />
         <InfinityScroll elements={portfolio} />
       </section>
       <GalleryPortfolio />

@@ -50,6 +50,7 @@
 @media (max-width: 520px) {
   .scroll-track-left {
     animation: scroll-infinite-left 90s linear infinite;
+    animation-direction: alternate-reverse;
   }
   .scroll-item {
     padding: 10px;

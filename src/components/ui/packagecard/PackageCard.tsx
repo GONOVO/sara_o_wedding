@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { IPackage } from "@/utils/interfaces";
 import Image from "next/image";
 
-function PackageCard({ img, list, title}: IPackage) {
+function PackageCard({ img, list, title }: IPackage) {
   const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
@@ -34,7 +34,9 @@ function PackageCard({ img, list, title}: IPackage) {
 
         <ul>
           {list.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className="normal_font">
+              {item}
+            </li>
           ))}
         </ul>
       </div>

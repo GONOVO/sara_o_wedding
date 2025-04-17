@@ -3,7 +3,6 @@
   margin: auto;
   height: 75vh;
   position: relative;
-  background-image: url("/images/view1.jpg");
   background-size: cover;
   background-position-y: 36%;
   background-attachment: fixed; /* Default for non-iOS devices */

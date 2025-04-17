@@ -17,7 +17,7 @@ function Textwithborder() {
           </p>
         </div>
 
-        <div className="w-full sm:w-[90%] lg:ps-6 py-16">
+        <div className="w-full sm:w-[90%] lg:ps-6 py-4 sm:py-16">
           <p className="text-xl sm:text-4xl italic leading-relaxed text-[#c1ada3] lg:text-start text-center">
             Estera Events offers modern and personalized full-service event
             planning and design for private clients around the world. As a duo,

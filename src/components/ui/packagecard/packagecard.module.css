@@ -3,6 +3,7 @@
   overflow: hidden;
   position: relative;
   padding-bottom: 1.5rem;
+  max-width: 330px;
 }
 .mainCard:hover .movePart {
   transform: translateY(-80px);
@@ -88,6 +89,7 @@
   .mainCard {
     width: 92%;
     margin: auto;
+    max-width: 330px;
   }
   .movePart img {
     transform: translateX(0);

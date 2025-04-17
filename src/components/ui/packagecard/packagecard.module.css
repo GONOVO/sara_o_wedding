@@ -2,6 +2,7 @@
   background-color: #fff;
   overflow: hidden;
   position: relative;
+  padding-bottom: 1.5rem;
 }
 .mainCard:hover .movePart {
   transform: translateY(-80px);

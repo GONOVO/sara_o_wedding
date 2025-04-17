@@ -8,5 +8,5 @@ export interface IPackage {
   img: string;
   list: string[];
   title: string;
-  btnText: string;
+  // btnText: string;
 }

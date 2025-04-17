@@ -17,7 +17,7 @@ function Packages() {
               img={item.coverImg}
               title={item.title}
               list={item.list}
-              btnText={item.btnText}
+              // btnText={item.btnText}
               key={index}
             />
           ))}

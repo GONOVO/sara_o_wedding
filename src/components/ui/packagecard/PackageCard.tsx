@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
+// import Link from "next/link";
 import styles from "./packagecard.module.css";
 import { useEffect, useState } from "react";
 import { IPackage } from "@/utils/interfaces";
 import Image from "next/image";
 
-function PackageCard({ img, list, title, btnText }: IPackage) {
+function PackageCard({ img, list, title}: IPackage) {
   const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
@@ -39,14 +39,14 @@ function PackageCard({ img, list, title, btnText }: IPackage) {
         </ul>
       </div>
 
-      <Link href="/">
+      {/* <Link href="/">
         <span>View More</span>
-      </Link>
+      </Link> */}
 
-      <button>
+      {/* <button>
         <span>Investment</span>
         {btnText}
-      </button>
+      </button> */}
     </div>
   );
 }

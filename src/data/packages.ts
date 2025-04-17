@@ -5,7 +5,7 @@ const packages = [
     list: [
       "We work closely with you to understand your dream event and create a plan that fits your requirements.",
     ],
-    btnText: "$1320",
+    // btnText: "$1320",
   },
   {
     coverImg: "/images/package2.jpg",
@@ -13,7 +13,7 @@ const packages = [
     list: [
       "Whether it’s an intimate gathering or a grand celebration, our services are fully customized to meet your expectations.",
     ],
-    btnText: "$1870",
+    // btnText: "$1870",
   },
   {
     coverImg: "/images/package33.jpg",
@@ -21,7 +21,7 @@ const packages = [
     list: [
       "Pricing is determined based on the scope of work, event size, and level of customization",
     ],
-    btnText: "$2310",
+    // btnText: "$2310",
   },
 ];
 export default packages;

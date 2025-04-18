@@ -12,12 +12,13 @@ function ImageView({
   return (
     <section
       className={styles.hero_section}
-      style={{ backgroundImage: `url(${imageSrc})`, height, marginBottom: mb }}
+      style={{
+        backgroundImage: `url(${imageSrc})`,
+        height,
+        marginBottom: mb,
+      }}
     >
       <div className="absolute inset-0 bg-[var(--filter-color)]"></div>
-      {/* <div className={styles.texts}>
-        <h1 data-aos="zoom-out">NEVER MISS A THING</h1>
-      </div> */}
     </section>
   );
 }

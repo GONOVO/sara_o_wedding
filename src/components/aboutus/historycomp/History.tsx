@@ -40,7 +40,7 @@ function History() {
             </div>
             <div className="w-[85%] lg:w-full h-[268px] md:h-[368px] relative">
               <Image
-                src="/images/aboutushero.jpg"
+                src="/images/his4.jpg"
                 alt="history Image 1"
                 fill
                 className="object-cover"

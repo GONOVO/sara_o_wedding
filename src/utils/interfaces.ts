@@ -10,3 +10,11 @@ export interface IPackage {
   title: string;
   // btnText: string;
 }
+
+export interface IPerson {
+  image: string;
+  name: string;
+  desc: string[];
+  bio: string;
+  caption: string;
+}

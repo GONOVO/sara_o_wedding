@@ -1,3 +1,4 @@
+import History from "@/components/aboutus/historycomp/History";
 import Persons from "@/components/aboutus/persons/Persons";
 import Textwithborder from "@/components/aboutus/textwithborder/Textwithborder";
 import ImageView from "@/components/imageview/HeroSection";
@@ -7,10 +8,11 @@ import React from "react";
 function Aboutus() {
   return (
     <div>
-      <ImageView imageSrc="/images/aboutushero.jpg" height="100vh" mb="0px" />
+      <ImageView imageSrc="/images/aboutushero.jpg" height="90vh" mb="0px" />
       <Textwithborder />
       <Persons data={persons[0]} />
       <Persons data={persons[1]} rev={true} />
+      <History />
     </div>
   );
 }

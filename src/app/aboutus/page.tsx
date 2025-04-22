@@ -1,5 +1,6 @@
 import Accolades from "@/components/aboutus/accolades/Accolades";
 import History from "@/components/aboutus/historycomp/History";
+import Norules from "@/components/aboutus/norules/Norules";
 import Persons from "@/components/aboutus/persons/Persons";
 import Textwithborder from "@/components/aboutus/textwithborder/Textwithborder";
 import ImageView from "@/components/imageview/HeroSection";
@@ -21,6 +22,7 @@ function Aboutus() {
       <Persons data={persons[1]} rev={true} />
       <History />
       <Accolades />
+      <Norules />
     </div>
   );
 }

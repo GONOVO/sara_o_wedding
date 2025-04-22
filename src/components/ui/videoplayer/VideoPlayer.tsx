@@ -5,9 +5,11 @@ import Image from "next/image";
 export default function LazyAutoPlayVideo({
   videoPath,
   placeholderImage, // e.g. "/images/fallback.jpg"
+  objectPosition,
 }: {
   videoPath: string;
   placeholderImage: string;
+  objectPosition?: string;
 }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -64,7 +66,7 @@ export default function LazyAutoPlayVideo({
           loop
           className={`object-cover w-full h-full ${
             isLoaded ? "opacity-100" : "opacity-0"
-          }`}
+          } ${objectPosition ? "object-top" : "object-center"}`}
           onLoadedData={() => setIsLoaded(true)}
         />
       )}

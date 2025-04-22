@@ -23,6 +23,13 @@ function Aboutus() {
       <History />
       <Accolades />
       <Norules />
+      <ImageView
+        imageSrc="/images/aboutview.jpg"
+        height="90vh"
+        mb="0px"
+        title="YOUR GUESTS SHOULD FEEL SPECIAL AND COMFORTABLE ENOUGH TO DANCE ON THE FURNITURE"
+        // positionY="20%"
+      />
     </div>
   );
 }

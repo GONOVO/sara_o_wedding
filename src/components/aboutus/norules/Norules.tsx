@@ -41,7 +41,7 @@ function Norules() {
           </p>
           <Link
             href="/"
-            className="mt-16 text-sm inline-block py-1 px-4 border-b-1 tracking-[4px] lg:mx-0 text-center"
+            className="mt-16 text-sm inline-block py-1 px-4 border-b-1 tracking-[4px] lg:mx-0 lg:my-16 text-center"
             style={{ wordSpacing: "4px" }}
           >
             LET&apos;S BREAK THE RULES

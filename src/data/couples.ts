@@ -1,6 +1,6 @@
 const couples = [
   {
-    coupleImage: "/images/featured1.jpg",
+    coupleImage: "/images/featured1.JPG",
     maleName: "MOHAMED",
     femaleName: "HANAN",
     subTitle: "Erica and Bianca are an incredible joy to work with",

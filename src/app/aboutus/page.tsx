@@ -1,4 +1,5 @@
 import Accolades from "@/components/aboutus/accolades/Accolades";
+import Couple from "@/components/aboutus/couple/Couple";
 import History from "@/components/aboutus/historycomp/History";
 import Norules from "@/components/aboutus/norules/Norules";
 import Persons from "@/components/aboutus/persons/Persons";
@@ -25,11 +26,11 @@ function Aboutus() {
       <Norules />
       <ImageView
         imageSrc="/images/aboutview.jpg"
-        height="90vh"
+        height="100vh"
         mb="0px"
         title="YOUR GUESTS SHOULD FEEL SPECIAL AND COMFORTABLE ENOUGH TO DANCE ON THE FURNITURE"
-        // positionY="20%"
       />
+      <Couple />
     </div>
   );
 }

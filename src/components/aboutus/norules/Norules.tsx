@@ -23,10 +23,7 @@ function Norules() {
               THERE ARE NO RULES
             </h1>
           </div>
-          <p
-            className="lg:max-w-[464px] leading-8 lg:text-base text-lg"
-            style={{ wordSpacing: "2px" }}
-          >
+          <p className="lg:max-w-[464px] leading-8 lg:text-base text-lg text-justify">
             Of course, there are proper etiquette formalities to follow and we
             are well versed in those. However, Estera Events operates under one
             principle rule: for weddings, there are no rules. As a team, they

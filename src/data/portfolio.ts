@@ -5,7 +5,6 @@ const portfolio = [
   "/images/portfolio5.jpg",
   "/images/portfolio6.jpg",
   "/images/portfolio7.JPG",
-  "/images/portfolio1.JPG",
   "/images/portfolio4.JPG",
 ];
 

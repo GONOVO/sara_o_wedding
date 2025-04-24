@@ -5,7 +5,6 @@ import Norules from "@/components/aboutus/norules/Norules";
 import Persons from "@/components/aboutus/persons/Persons";
 import Textwithborder from "@/components/aboutus/textwithborder/Textwithborder";
 import ImageView from "@/components/imageview/HeroSection";
-
 import persons from "@/data/persons";
 import React from "react";
 

@@ -9,6 +9,7 @@
   --lightGray-color: #f6f6f6;
   --gold-color: #e0cfb9;
   --filter-color: rgba(0, 0, 0, 0.2);
+  --dark-filter-color: rgba(0, 0, 0, 0.85);
 }
 
 body {

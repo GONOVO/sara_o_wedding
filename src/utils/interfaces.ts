@@ -18,3 +18,8 @@ export interface IPerson {
   bio: string;
   caption: string;
 }
+
+export interface IModal {
+  clickedImage: string;
+  choosedCoupleImages: string[];
+}

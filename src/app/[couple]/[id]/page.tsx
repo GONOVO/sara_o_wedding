@@ -115,7 +115,7 @@ export default function CouplePage({ params }: CouplePageProps) {
         {maleName} & {femaleName}
       </h1>
 
-      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+      <div className="columns-1 sm:columns-2  lg:columns-3 gap-4 space-y-4 max-w-7xl mx-auto">
         {coupleImages.map((img, index) => (
           <div
             key={`${img}-${index}`}

@@ -72,12 +72,13 @@
 // }
 "use client";
 
+import { type PageProps } from "next"; // <== Add this!!
 import Modalandslider from "@/components/aboutus/modal_slider/Modalandslider";
 import couples from "@/data/couples";
 import Image from "next/image";
 import { useState, useCallback } from "react";
 
-export default function CouplePage({ params }: { params: { id: string } }) {
+export default function CouplePage({ params }: PageProps<{ id: string }>) {
   const coupleNum = parseInt(params.id, 10);
   const choosedCouple = couples[coupleNum - 1];
 

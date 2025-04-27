@@ -1,13 +1,17 @@
 import React from "react";
 import GalleryCard from "../ui/gallerycard/GalleryCard";
 import galleryPortfolio from "@/data/gallerrypotfolio";
+import Link from "next/link";
+// import couples from "@/data/couples";
 
 function GalleryPortfolio() {
   return (
     <section className="max-w-7xl px-4 mx-auto py-16">
       <div className="flex gap-5 flex-wrap justify-center">
         {galleryPortfolio.map((item, index) => (
-          <GalleryCard item={item} key={index} />
+          <Link key={index} href={`/couple/${item.id}`}>
+            <GalleryCard item={item} />
+          </Link>
         ))}
       </div>
     </section>

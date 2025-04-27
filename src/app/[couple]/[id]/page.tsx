@@ -1,79 +1,8 @@
-// "use client";
-// import Modalandslider from "@/components/aboutus/modal_slider/Modalandslider";
-// import couples from "@/data/couples";
-// import Image from "next/image";
-// import { useState, useCallback } from "react";
-// import { use } from "react";
-
-// interface CouplePageProps {
-//   params: Promise<{ id: string }>;
-// }
-
-// export default function CouplePage({ params }: CouplePageProps) {
-//   const { id } = use(params);
-//   const coupleNum = parseInt(id);
-//   const choosedCouple = couples[coupleNum - 1];
-
-//   const { femaleName, maleName, coupleImages } = choosedCouple;
-//   const [isModalOpen, setIsModalOpen] = useState(false);
-
-//   const [indexImage, setIndexImage] = useState(0);
-
-//   const toggleModal = useCallback(() => {
-//     setIsModalOpen((prev) => !prev);
-//   }, []);
-
-//   const handleImageClick = useCallback(
-//     (index: number) => {
-//       setIndexImage(index);
-//       toggleModal();
-//     },
-//     [toggleModal]
-//   );
-
-//   if (!choosedCouple) {
-//     return <div className="p-6 text-center">Couple not found</div>;
-//   }
-
-//   return (
-//     <div className="p-6">
-//       <h1 className="text-5xl text-center italic font-extralight mb-8">
-//         {maleName} & {femaleName}
-//       </h1>
-
-//       <div className="grid grid-cols-[repeat(auto-fill,minmax(330px,1fr))] gap-4  auto-rows-[400px] auto-flow-dense">
-//         {coupleImages.map((img, index) => (
-//           <div
-//             key={`${img}-${index}`}
-//             className="relative w-full h-full cursor-zoom-in"
-//           >
-//             <Image
-//               src={img}
-//               alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
-//               fill
-//               className="object-cover"
-//               loading="lazy"
-//               onClick={() => handleImageClick(index)}
-//               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-//             />
-//           </div>
-//         ))}
-//       </div>
-
-//       {isModalOpen && (
-//         <Modalandslider
-//           images={coupleImages}
-//           indexImage={indexImage}
-//           onClose={toggleModal}
-//         />
-//       )}
-//     </div>
-//   );
-// }
 "use client";
 
 import Modalandslider from "@/components/aboutus/modal_slider/Modalandslider";
-import couples from "@/data/couples";
+import ImageView from "@/components/imageview/HeroSection";
+import couples from "@/data/gallerrypotfolio";
 import Image from "next/image";
 import { useState, useCallback } from "react";
 import { use } from "react"; // Import the 'use' hook
@@ -107,19 +36,27 @@ export default function CouplePage({ params }: CouplePageProps) {
     return <div className="p-6 text-center">Couple not found</div>;
   }
 
-  const { femaleName, maleName, coupleImages } = choosedCouple;
+  const { femaleName, maleName, allImages, coverImage } = choosedCouple;
 
   return (
-    <div className="p-6">
-      <h1 className="text-5xl text-center italic font-extralight mb-8">
+    <div>
+      <ImageView
+        imageSrc={`${coverImage}`}
+        height="70dvh"
+        title={`${maleName} & ${femaleName}`}
+        positionY={`${
+          choosedCouple.positionY ? choosedCouple.positionY : "20%"
+        }`}
+      />
+      {/* <h1 className="text-5xl text-center italic font-extralight mb-8">
         {maleName} & {femaleName}
-      </h1>
+      </h1> */}
 
-      <div className="columns-1 sm:columns-2  lg:columns-3 gap-4 space-y-4 max-w-7xl mx-auto">
-        {coupleImages.map((img, index) => (
+      <div className="columns-1 sm:columns-2  lg:columns-3 gap-3 space-y-4 max-w-7xl mx-auto p-4">
+        {allImages.map((img, index) => (
           <div
             key={`${img}-${index}`}
-            className="w-full overflow-hidden rounded-md relative mb-4 break-inside-avoid cursor-zoom-in"
+            className="w-full overflow-hidden relative mb-3 break-inside-avoid cursor-zoom-in"
             onClick={() => handleImageClick(index)}
           >
             <Image
@@ -136,7 +73,7 @@ export default function CouplePage({ params }: CouplePageProps) {
 
       {isModalOpen && (
         <Modalandslider
-          images={coupleImages}
+          images={allImages}
           indexImage={indexImage}
           onClose={toggleModal}
         />

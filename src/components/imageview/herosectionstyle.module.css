@@ -8,6 +8,7 @@
   background-attachment: fixed; /* Default for non-iOS devices */
   display: block;
   margin-bottom: 4rem;
+  background-repeat: no-repeat;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {

@@ -6,7 +6,7 @@ const couples = [
       "/images/reallife1.JPG",
       "/images/2_1.jpg",
       "/images/2_2.jpg",
-      "/images/2_4.jpg",
+      "/images/2_4.JPG",
     ],
     maleName: "MOHAMED",
     femaleName: "HANAN",

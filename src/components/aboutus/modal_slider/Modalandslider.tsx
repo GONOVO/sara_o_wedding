@@ -23,16 +23,26 @@ function Modalandslider({
       >
         <button
           onClick={onClose}
-          className="self-end mb-4 text-2xl bg-white/30 hover:bg-white/50 rounded-full w-10 h-10 flex items-center justify-center z-10"
+          className="self-end mb-4  bg-white/30 hover:bg-white/50 rounded-full w-10 h-10 flex items-center justify-center z-10 p-2 hover:cursor-pointer"
         >
-          ×
+          <Image
+            src="/svgs/exitIcon.svg"
+            alt="exit icon"
+            width={36}
+            height={36}
+          />
         </button>
         <div className="relative flex-1 flex items-center">
           <button
             onClick={goPrev}
-            className="absolute left-4 bg-white/30 hover:bg-white/50 rounded-full w-10 h-10 z-10"
+            className="absolute left-4 bg-white/30 hover:bg-white/50 rounded-full w-10 h-10 z-10 p-2 flex justify-center hover:cursor-pointer"
           >
-            ‹
+            <Image
+              src="/svgs/leftAngle.svg"
+              alt="left Angle icon"
+              width={16}
+              height={16}
+            />
           </button>
           <div className="relative w-full h-full">
             <Image
@@ -46,9 +56,14 @@ function Modalandslider({
           </div>
           <button
             onClick={goNext}
-            className="absolute right-4 bg-white/30 hover:bg-white/50 rounded-full w-10 h-10 z-10"
+            className="absolute right-4 bg-white/30 hover:bg-white/50 rounded-full w-10 h-10 z-10 p-2 flex justify-center cursor-pointer"
           >
-            ›
+            <Image
+              src="/svgs/rightAngle.svg"
+              alt="right Angle icon"
+              width={16}
+              height={16}
+            />
           </button>
         </div>
       </div>

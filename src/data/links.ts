@@ -4,7 +4,7 @@ const links = [
     path: "/",
   },
   {
-    name: "ABOUT",
+    name: "ABOUT US",
     path: "/aboutus",
   },
   {
@@ -16,7 +16,7 @@ const links = [
     path: "/packages",
   },
   {
-    name: "CONTACTUS",
+    name: "CONTACT US",
     path: "/#contactus",
   },
   // {

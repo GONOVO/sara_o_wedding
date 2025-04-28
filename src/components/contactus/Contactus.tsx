@@ -56,7 +56,10 @@ function Contactus() {
     });
   };
   return (
-    <section className={`${styles.main_grid_contactus} nunito_font`}>
+    <section
+      className={`${styles.main_grid_contactus} nunito_font`}
+      id="contactus"
+    >
       <div data-aos="fade-right">
         <h3>CONTACT US</h3>
         <h1>We’d love to hear from you</h1>

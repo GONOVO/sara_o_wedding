@@ -17,7 +17,7 @@ const links = [
   },
   {
     name: "CONTACTUS",
-    path: "/c",
+    path: "/#contactus",
   },
   // {
   //   name: "OUR TEAM",

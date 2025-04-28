@@ -1,25 +1,26 @@
 const persons = [
   {
     image: "/images/about1.jpg",
-    name: "BIANCA HALL",
+    name: "SARA O EVENTS",
     desc: [
-      "A texture loving maximalist with a penchant for travel and beautiful hotels.",
-      "Can always find the silver lining.",
-      "Never met an excel spreadsheet she didn't love.",
+      "Where dreams and details dance together to create magical celebrations.",
+      "With a passion for transforming visions into breathtaking reality.",
+      "Masters of the unexpected touches that leave guests spellbound.",
+      "",
     ],
-    bio: "Out of the hundreds of decisions we made while planning our wedding, hiring Bianca from Estera Events was the best decision",
-    caption: "REBECCA, ESTERA EVENTS BRIDE",
+    bio: "Sara O Events didn't just plan our wedding—they crafted an enchanted experience that felt uniquely ours. Every moment was infused with magic we'll cherish forever.",
+    caption: "KRISTEEN, SARA O EVENTS BRIDE",
   },
   {
     image: "/images/about2.jpg",
-    name: "ERICA VANCO",
+    name: "YEWANDE RWANG",
     desc: [
       "A neutral loving minimalist with an obsession for organization.",
       "Brings levity to any situation.",
       "Passionate about creating an incredible client experience from start to finish.",
     ],
-    bio: `The definition of "perfection" when it comes to Erica and Estera Events is an understatement`,
-    caption: "MOLLY, ESTERA EVENTS BRID",
+    bio: `The definition of 'perfection' when it comes to Yewande and Sara O Events is an understatement`,
+    caption: "YINKA, SARA O EVENTS BRIDE",
   },
 ];
 

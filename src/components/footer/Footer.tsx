@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./footer.module.css";
 import Image from "next/image";
+import links from "@/data/links";
 
 function Footer() {
   const images = [
@@ -36,6 +37,9 @@ function Footer() {
                 </Link>
               ))}
             </div>
+            {/* <div className="relative w-[32px] h-[32px]">
+              <Image src="/svgs/insta.svg" alt="instagrame" fill />
+            </div> */}
           </div>
         </div>
         <div className={styles.middle}>
@@ -82,23 +86,11 @@ function Footer() {
             <h1 data-aos="fade-up">Menu</h1>
           </div>
           <ul data-aos="fade-up">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/aboutus">About</Link>
-            </li>
-            <li>
-              <Link href="/#latestworks">Portfolio</Link>
-            </li>
-            <li>
-              <Link href="/coupons">Packages</Link>
-            </li>
-            <li>
-              <Link href="https://www.instagram.com/saraoevents/?igsh=MW8zMnFtd2ZxMGozeg%3D%3D#">
-                Our Work
-              </Link>
-            </li>
+            {links.map((link, index) => (
+              <li key={index}>
+                <Link href={link.path}>{link.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

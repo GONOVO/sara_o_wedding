@@ -26,7 +26,7 @@ function Persons({ data, rev }: { data: IPerson; rev?: boolean }) {
           }`}
         >
           <h1
-            className={`lg:mt-24 lg:text-9xl text-5xl lg:max-w-[500px] max-w-[300px] lg:leading-[150px] font-extralight lg:-ms-[40px] lg:relative absolute -top-2 ${
+            className={`lg:mt-24 lg:text-9xl text-5xl lg:max-w-[570px] max-w-[300px] lg:leading-[150px] font-extralight lg:-ms-[40px] lg:relative absolute -top-2 ${
               rev && "lg:text-end lg:-me-10 -mt-10 lg:mt-0"
             }`}
           >
@@ -52,14 +52,18 @@ function Persons({ data, rev }: { data: IPerson; rev?: boolean }) {
           >
             <h2
               className={`text-xl sm:text-4xl italic  text-[#c1ada3]  text-center ${
-                rev ? "lg:text-end" : "lg:text-start"
+                rev ? "lg:text-end " : "lg:text-start"
               }`}
               style={{ wordSpacing: "0.6rem" }}
             >
               &quot;{data.bio}
               &quot;
             </h2>
-            <p className={`mt-4 tracking-[5px] text-sm ${rev && "text-end"}`}>
+            <p
+              className={`mt-4 tracking-[5px] text-sm ${
+                rev && "text-end me-[25%]"
+              }`}
+            >
               {data.caption}
             </p>
           </div>

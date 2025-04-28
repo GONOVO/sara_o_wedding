@@ -51,27 +51,26 @@ function History() {
         </div>
         <div className="flex flex-col gap-12 justify-end lg:max-w-[500px] px-3 sm:px-0">
           <h1 className="text-2xl">
-            ESTERA EVENTS WAS FOUNDED IN EARLY 2010. BIANCA AND ERICA JOINED THE
-            TEAM SHORTLY AFTER IT&apos;S CONCEPTION.
+            SARA O EVENTS WAS FOUNDED IN EARLY 2010 BY YEWANDE RWANG-DUNG.
           </h1>
           <p className="leading-[30px]">
-            Starting first as the interns for Estera Events back in 2010, Bianca
-            and Erica worked tirelessly to establish a name for themselves in
-            the wedding industry. Their ability to quickly learn the ropes and
-            create systems that work well for the Estera Events clients
-            catapulted them into quickly becoming thought leaders and
-            trendsetters in the industry in just a few short years.
+            Starting first as a passionate vision for creating extraordinary
+            celebrations, Yewande worked tirelessly to establish a name for
+            herself in the wedding industry. Her ability to quickly create
+            innovative systems that work exceptionally well for Sara O Events
+            clients catapulted her into quickly becoming a thought leader and
+            trendsetter in the industry in just a few short years.
           </p>
           <p className="leading-[30px]">
-            The two acquired Estera Events in 2019 and now proudly share the
-            roles of design and planning for every celebration, offering clients
-            the highest level of attention and prioritization - and the promise
-            that nothing will be cookie-cutter. Architecting spaces from square
-            one, they seamlessly blend time-tested processes with
-            boundary-pushing design flair to create multi-day luxury event
-            experiences. Beyond business partners, they are also devoted wives,
-            mothers, and friends, sharing a journey where family and work
-            intertwine harmoniously.
+            Yewande has grown Sara O Events into a premier luxury wedding
+            planning company and now proudly oversees the design and planning
+            for every celebration, offering clients the highest level of
+            attention and prioritization - and the promise that nothing will be
+            cookie-cutter. Architecting spaces from square one, she seamlessly
+            blends time-tested processes with boundary-pushing design flair to
+            create multi-day luxury event experiences. Beyond being a visionary
+            entrepreneur, she is also a devoted wife, mother, and friend, living
+            a journey where family and work intertwine harmoniously.
           </p>
         </div>
       </div>

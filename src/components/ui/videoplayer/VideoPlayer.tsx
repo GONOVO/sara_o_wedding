@@ -17,24 +17,7 @@ export default function LazyAutoPlayVideo({
   const [isVisible, setIsVisible] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       setIsVisible(entry.isIntersecting);
-  //     },
-  //     { threshold: 0.01 }
-  //   );
 
-  //   if (containerRef.current) {
-  //     observer.observe(containerRef.current);
-  //   }
-
-  //   return () => {
-  //     if (containerRef.current) {
-  //       observer.unobserve(containerRef.current);
-  //     }
-  //   };
-  // }, []);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {

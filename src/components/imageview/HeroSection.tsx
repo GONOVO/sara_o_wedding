@@ -1,18 +1,7 @@
 import React from "react";
 import styles from "./herosectionstyle.module.css";
-function ImageView({
-  imageSrc,
-  height,
-  mb,
-  positionY,
-  title,
-}: {
-  imageSrc: string;
-  height?: string;
-  mb?: string;
-  positionY?: string;
-  title?: string;
-}) {
+import { IViewimage } from "@/utils/interfaces";
+function ImageView({ imageSrc, height, mb, positionY, title }: IViewimage) {
   return (
     <section
       className={`${styles.hero_section}`}

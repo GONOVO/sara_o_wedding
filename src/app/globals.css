@@ -20,14 +20,25 @@ body {
 .normal_font {
   font-family: var(--font-fraunces), serif !important;
 }
-/* .nunito_font {
-  font-family: var(--font-nunito), sans-serif;
-} */
 .kristy_font {
   font-family: var(--font-kristy), cursive;
 }
 @media (max-width: 1024px) {
   .nunito_font_res {
     font-family: var(--font-nunito), sans-serif;
+  }
+}
+.aside_move {
+  animation-name: aside_animation;
+  animation-duration: 300ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes aside_animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

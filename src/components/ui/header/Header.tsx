@@ -1,9 +1,20 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Borderbottom from "../borderbottomshape/Borderbottom";
 import Link from "next/link";
 import links from "@/data/links";
+import Aside from "../aside/Aside";
 function Header() {
+  const [open, setOpen] = useState(false);
+  const toggleOpen = () => {
+    setOpen((prev) => !prev);
+    if (!open) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+  };
   return (
     <header>
       <div className="h-6 w-full bg-[var(--gray-color)] flex items-center px-4">
@@ -21,7 +32,13 @@ function Header() {
           Available
         </p>
         <div className="relative w-14 h-7 -top-2 ml-auto block lg:hidden">
-          <Image src="/svgs/bars.svg" alt="bars icon" fill />
+          <Image
+            src="/svgs/bars.svg"
+            alt="bars icon"
+            fill
+            className="cursor-pointer"
+            onClick={toggleOpen}
+          />
         </div>
       </div>
       <div className="flex items-center max-w-[1280px] mx-auto lg:justify-center px-4 justify-center py-8">
@@ -66,6 +83,7 @@ function Header() {
           ))}
         </ul>
       </div>
+      {open && <Aside toggleOpen={toggleOpen} />}
     </header>
   );
 }

@@ -23,3 +23,11 @@ export interface IModal {
   clickedImage: string;
   choosedCoupleImages: string[];
 }
+
+export interface IViewimage {
+  imageSrc: string;
+  height?: string;
+  mb?: string;
+  positionY?: string;
+  title?: string;
+}

@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./footer.module.css";
 import Image from "next/image";
 import links from "@/data/links";
+import socialMedia from "@/data/socilamedia";
 
 function Footer() {
   const images = [
@@ -37,9 +38,17 @@ function Footer() {
                 </Link>
               ))}
             </div>
-            {/* <div className="relative w-[32px] h-[32px]">
-              <Image src="/svgs/insta.svg" alt="instagrame" fill />
-            </div> */}
+            <div className="flex gap-8 my-8 justify-center   w-[96%] mx-auto flex-wrap">
+              {socialMedia.map((item, index) => (
+                <Link
+                  key={index}
+                  href={item.link}
+                  className="inline-block relative w-[32px] h-[32px]"
+                >
+                  <Image src={item.svg} alt="instagrame" fill />
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
         <div className={styles.middle}>

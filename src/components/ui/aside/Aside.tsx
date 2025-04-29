@@ -8,7 +8,7 @@ import React from "react";
 function Aside({ toggleOpen }: { toggleOpen: () => void }) {
   const pathname = usePathname();
   return (
-    <aside className="p-4 bg-[var(--lightGray-color)] w-full h-[100dvh] fixed inset-0 z-50 aside_move">
+    <aside className="p-4 bg-[var(--lightGray-color)] w-full min-h-[100dvh]  overflow-auto fixed inset-0 z-50 aside_move">
       <Image
         src="/svgs/exitIcon.svg"
         alt="close icon"
@@ -34,7 +34,7 @@ function Aside({ toggleOpen }: { toggleOpen: () => void }) {
               <Link
                 href={link.path}
                 onClick={toggleOpen}
-                className={`block text-5xl py-2 my-4 ${
+                className={`block text-[12vw] sm:text-5xl py-2 my-4 ${
                   isActive
                     ? "text-[var(--gold-color)] border-b-1"
                     : "hover:text-[var(--gold-color)]"

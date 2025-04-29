@@ -8,6 +8,10 @@ const links = [
     path: "/aboutus",
   },
   {
+    name: "OUR SERVICES",
+    path: "/ourservices",
+  },
+  {
     name: "PORTFOLIO",
     path: "/portfolio",
   },
@@ -19,10 +23,6 @@ const links = [
     name: "CONTACT US",
     path: "/#contactus",
   },
-  // {
-  //   name: "OUR TEAM",
-  //   path: "/",
-  // },
 ];
 
 export default links;

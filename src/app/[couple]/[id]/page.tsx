@@ -48,9 +48,6 @@ export default function CouplePage({ params }: CouplePageProps) {
           choosedCouple.positionY ? choosedCouple.positionY : "20%"
         }`}
       />
-      {/* <h1 className="text-5xl text-center italic font-extralight mb-8">
-        {maleName} & {femaleName}
-      </h1> */}
 
       <div className="columns-1 sm:columns-2  lg:columns-3 gap-3 space-y-4 max-w-7xl mx-auto p-4">
         {allImages.map((img, index) => (

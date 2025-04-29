@@ -24,7 +24,7 @@ function LifeTimeEvents() {
               happen, but live on forever.
             </p>
             <Link
-              href="/"
+              href="/ourservices"
               className="inline-block my-6  border-2 py-2 px-8 tracking-[3px]text-xs nunito_font hover:bg-black hover:text-white"
             >
               OUR SERVICES

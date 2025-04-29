@@ -55,7 +55,7 @@ function Header() {
           ))}
         </ul>
 
-        <div className="mx-[10%] flex items-center flex-col gap-2 text-[var(--semiGray-color)] w-fit">
+        <div className="lg:mx-[5%] xl:mx-[10%] flex items-center flex-col gap-2 text-[var(--semiGray-color)] w-fit">
           <div className="flex items-end">
             <p className="h-fit text-xs">EST.D</p>
             <div className="relative w-14 h-14 mx-2">

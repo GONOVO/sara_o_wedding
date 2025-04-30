@@ -56,6 +56,7 @@ const HugeTitle = ({
 
         ["--font-size-multiplier" as string]: fontPercentage,
       }}
+      data-aos="zoom-in-out"
     >
       {text}
     </h1>

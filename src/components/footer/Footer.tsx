@@ -32,6 +32,7 @@ function Footer() {
                     fill
                     quality={80}
                     loading="lazy"
+                    data-aos="zoom-in-out"
                   />
                 </Link>
               ))}
@@ -42,6 +43,9 @@ function Footer() {
                   key={index}
                   href={item.link}
                   className="relative w-[36px] h-[36px]  border-2 border-[#e0cfb9] rounded-full flex items-center justify-center p-2"
+                  data-aos="flip-left"
+                  data-aos-delay={index * 100}
+                  data-aos-offset="0"
                 >
                   <Image
                     src={item.svg}
@@ -56,18 +60,28 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className={styles.middle}>
+        <div className={styles.middle} data-aos="zoom-in-out">
           <div className="mx-[12%] flex items-center flex-col gap-2 text-[var(--semiGray-color)] w-fit">
             <div className="flex items-end">
               <p className="h-fit text-xs">EST.D</p>
               <div className="relative w-14 h-14 mx-2">
-                <Image src="/svgs/s_logo.svg" alt="S logo" fill />
+                <Image
+                  src="/svgs/s_logo.svg"
+                  alt="S logo"
+                  fill
+                  loading="lazy"
+                />
               </div>
               <p className="h-fit text-xs">2010</p>
             </div>
             <div>
               <div className="relative w-40 h-20 m-auto">
-                <Image src="/svgs/sara_o.svg" alt="sara_o" fill />
+                <Image
+                  src="/svgs/sara_o.svg"
+                  alt="sara_o"
+                  fill
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>

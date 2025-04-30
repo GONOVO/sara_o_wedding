@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 
+import dynamic from "next/dynamic";
 import Head from "next/head";
+import "aos/dist/aos.css";
 import "./globals.css";
 import Header from "../components/ui/header/Header";
 import { Nunito, Fraunces, Kristi } from "next/font/google";
-import Footer from "../components/footer/Footer";
+const Footer = dynamic(() => import("../components/footer/Footer"));
+import WithAOS from "@/components/ui/Withaos";
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700", "800", "900"],
@@ -46,9 +49,11 @@ export default function RootLayout({
         />
       </Head>
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <WithAOS>
+          <Header />
+          {children}
+          <Footer />
+        </WithAOS>
       </body>
     </html>
   );

@@ -10,7 +10,10 @@ function Featured() {
 
       <div className={`grid grid-cols-2 mt-[4rem] ${styles.res_grid}`}>
         <div className="grid lg:grid-cols-1 grid-cols-2 items-end">
-          <div className="relative w-full h-[200px] sm:h-[250px] md:h-[390px]">
+          <div
+            className="relative w-full h-[200px] sm:h-[250px] md:h-[390px]"
+            data-aos="fade-right"
+          >
             <div className="absolute z-2 rotate-45  md:-right-[100px] -right-[40px] lg:bottom-0 sm:-bottom-10 -bottom-5"></div>
             <Image
               src="/images/featured2.webp"
@@ -23,6 +26,7 @@ function Featured() {
           <div
             className={`bg-white p-[20px] relative  -left-[50%] w-[150%]  md:-top-[13%] -top-[17%] z-3 lg:hidden `}
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
+            data-aos="zoom-in-out"
           >
             <Image
               src="/images/featured1.webp"
@@ -38,6 +42,7 @@ function Featured() {
             <div
               className={`bg-white p-[10px] relative w-[347px] -top-34 z-3 ${styles.top_image}`}
               style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
+              data-aos="zoom-in-out"
             >
               <Image
                 src="/images/featured1.webp"
@@ -48,13 +53,17 @@ function Featured() {
             </div>
           </div>
           <div className="max-w-[61%] mx-4 text-[#262A2D]">
-            <h2 className="text-2xl font-medium italic -mt-6 mb-6">
+            <h2
+              className="text-2xl font-medium italic -mt-6 mb-6"
+              data-aos="fade-left"
+            >
               The essential guide to high-end wedding planning for a luxurious
               experience
             </h2>
             <p
               className="nunito_font"
               style={{ wordSpacing: "6px", lineHeight: "28px" }}
+              data-aos="fade-left"
             >
               Your wedding day will be one of the most important days of your
               life, together as a couple. Whether you are planning an intimate
@@ -65,13 +74,17 @@ function Featured() {
         </div>
       </div>
       <div className="w-[92%] mx-4 block lg:hidden text-[#262A2D]">
-        <h2 className="text-4xl font-medium italic my-[2rem] text-center">
+        <h2
+          className="text-4xl font-medium italic my-[2rem] text-center"
+          data-aos="fade-right"
+        >
           The essential guide to high-end wedding planning for a luxurious
           experience
         </h2>
         <p
           className="nunito_font"
           style={{ wordSpacing: "6px", lineHeight: "28px" }}
+          data-aos="fade-right"
         >
           Your wedding day will be one of the most important days of your life,
           together as a couple. Whether you are planning an intimate affair or a

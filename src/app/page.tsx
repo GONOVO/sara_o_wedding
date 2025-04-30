@@ -1,12 +1,16 @@
-import React from "react";
+import dynamic from "next/dynamic";
 import Hero from "../components/hero/Hero";
-import Planners from "../components/planners/Planners";
-import Productowner from "../components/productowner/Productowner";
-import Featured from "../components/featured/Featured";
-import LifeTimeEvents from "../components/lifetimesevent/LifeTimeEvents";
-import ImageView from "../components/imageview/HeroSection";
-import Gallery from "../components/gallery/OnInstagrame";
-import Contactus from "../components/contactus/Contactus";
+const Planners = dynamic(() => import("../components/planners/Planners"));
+const Productowner = dynamic(
+  () => import("../components/productowner/Productowner")
+);
+const Featured = dynamic(() => import("../components/featured/Featured"));
+const LifeTimeEvents = dynamic(
+  () => import("../components/lifetimesevent/LifeTimeEvents")
+);
+const ImageView = dynamic(() => import("../components/imageview/HeroSection"));
+const Gallery = dynamic(() => import("../components/gallery/OnInstagrame"));
+const Contactus = dynamic(() => import("../components/contactus/Contactus"));
 
 function page() {
   return (

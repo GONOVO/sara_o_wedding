@@ -11,7 +11,10 @@ function Hero() {
         muted={true}
         playsInline
       />
-      <div className="bg-white w-full lg:w-[650px] lg:h-[240px] lg:p-2 lg:absolute lg:-bottom-[70px] lg:left-1/2 lg:translate-x-[-50%]">
+      <div
+        className="bg-white w-full lg:w-[650px] lg:h-[240px] lg:p-2 lg:absolute lg:-bottom-[70px] lg:left-1/2 lg:translate-x-[-50%]"
+        data-aos="zoom-in-out"
+      >
         <div className="lg:border-1 border-[var(--mutedBlack-color)] w-full h-full py-12 px-6 lg:p-10 flex flex-col justify-center items-center  gap-3 lg:gap-2 text-[var(--mutedBlack-color)]">
           <h2 className="text-[7vw] lg:text-2xl font-medium text-center">
             WEDDING PLANNER BASED IN NIGERIA

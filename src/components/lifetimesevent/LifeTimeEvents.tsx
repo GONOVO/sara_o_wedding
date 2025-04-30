@@ -9,12 +9,13 @@ function LifeTimeEvents() {
       <div className="xl:ps-2 ps-4 px-4 order-1 lg:order-0">
         <h1
           className={`lg:text-[86px]  text-[42px] leading-[42px] text-[#222222] font-normal lg:text-end  lg:leading-[100px] mb-8 ${styles.main_Title}`}
+          data-aos="fade-right"
         >
           Once in a lifetime events
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:max-w-full max-w-[430px]">
           <div>
-            <p className="text-sm leading-6">
+            <p className="text-sm leading-6" data-aos="fade-right">
               SARA O Events sets the platinum standard for weddings and events
               across the globe. Renowned for our visionary approach and
               impeccable execution, we curate extraordinary celebrations by
@@ -26,11 +27,15 @@ function LifeTimeEvents() {
             <Link
               href="/ourservices"
               className="inline-block my-6  border-2 py-2 px-8 tracking-[3px]text-xs nunito_font hover:bg-black hover:text-white"
+              data-aos="fade-right"
             >
               OUR SERVICES
             </Link>
           </div>
-          <div className={`w-full h-[45vh] relative ${styles.smImage}`}>
+          <div
+            className={`w-full h-[45vh] relative ${styles.smImage}`}
+            data-aos="fade-left"
+          >
             <Image
               src="/images/reallife1.webp"
               alt="reallife"
@@ -44,6 +49,7 @@ function LifeTimeEvents() {
       </div>
       <div
         className={`xl:w-full w-[92%] mx-auto lg:mx-0 lg:w-[97%] lg:mr-auto h-[100vh] relative ${styles.lgImage}`}
+        data-aos="fade-left"
       >
         <Image
           src="/images/reallife3.webp"

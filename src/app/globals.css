@@ -8,7 +8,7 @@
   --semiGray-color: #53565e;
   --lightGray-color: #f6f6f6;
   --gold-color: #e0cfb9;
-  --filter-color: rgba(0, 0, 0, 0.2);
+  --filter-color: rgba(0, 0, 0, 0.1);
   --dark-filter-color: rgba(0, 0, 0, 0.85);
 }
 html {

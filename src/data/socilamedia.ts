@@ -24,7 +24,7 @@ const socialMedia = [
     link: "https://www.youtube.com/@Sara.OEvents",
   },
   {
-    svg: "/svgs/location.svg",
+    svg: "/svgs/locationGold.svg",
     link: "/",
   },
   {

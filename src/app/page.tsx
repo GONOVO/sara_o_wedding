@@ -16,7 +16,7 @@ function page() {
       <LifeTimeEvents />
       <Featured />
       <Productowner />
-      <ImageView imageSrc="/images/view1.jpg" />
+      <ImageView imageSrc="/images/view1.webp" />
       <Gallery />
       <Contactus />
     </>

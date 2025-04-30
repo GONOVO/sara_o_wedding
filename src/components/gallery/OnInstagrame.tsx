@@ -21,7 +21,7 @@ function Gallery() {
           >
             <LazyAutoPlayVideo
               videoPath="/videos/gallery_vid_1.mp4"
-              placeholderImage="/images/cover_g_v_1.png"
+              placeholderImage="/images/cover_g_v_1.webp"
             />
             {/* <p>{weLoveText}</p> */}
           </div>
@@ -45,7 +45,7 @@ function Gallery() {
               // style={{ backgroundImage: "url(/images/gallery7.webp)" }}
             >
               <Image
-                src="/images/gallery2.JPG"
+                src="/images/gallery2.webp"
                 alt="gallery image"
                 fill
                 loading="lazy"
@@ -62,7 +62,7 @@ function Gallery() {
             // style={{ backgroundImage: "url(/images/gallery4.webp)" }}
           >
             <Image
-              src="/images/gallery3.JPG"
+              src="/images/gallery3.webp"
               alt="gallery image"
               fill
               loading="lazy"
@@ -76,7 +76,7 @@ function Gallery() {
             // style={{ backgroundImage: "url(/images/gallery3.webp)" }}
           >
             <Image
-              src="/images/gallery4.JPG"
+              src="/images/gallery4.webp"
               alt="gallery image"
               fill
               loading="lazy"
@@ -93,7 +93,7 @@ function Gallery() {
               // style={{ backgroundImage: "url(/images/gallery6.webp)" }}
             >
               <Image
-                src="/images/gallery5.JPG"
+                src="/images/gallery5.webp"
                 alt="gallery image"
                 fill
                 loading="lazy"
@@ -107,7 +107,7 @@ function Gallery() {
               // style={{ backgroundImage: "url(/images/gallery1.webp)" }}
             >
               <Image
-                src="/images/gallery6.JPG"
+                src="/images/gallery6.webp"
                 alt="gallery image"
                 fill
                 loading="lazy"
@@ -119,7 +119,7 @@ function Gallery() {
           <div data-aos="fade-left" className={styles.gallery_item}>
             <LazyAutoPlayVideo
               videoPath="/videos/gallery_vid_2.mp4"
-              placeholderImage="/images/cover_g_v_2.png"
+              placeholderImage="/images/cover_g_v_2.webp"
             />
           </div>
         </div>

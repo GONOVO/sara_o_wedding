@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function LazyAutoPlayVideo({
   videoPath,
-  placeholderImage, // e.g. "/images/fallback.jpg"
+  placeholderImage, // e.g. "/images/fallback.webp"
   objectPosition,
 }: {
   videoPath: string;
@@ -16,7 +16,6 @@ export default function LazyAutoPlayVideo({
 
   const [isVisible, setIsVisible] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
-
 
   useEffect(() => {
     const observer = new IntersectionObserver(

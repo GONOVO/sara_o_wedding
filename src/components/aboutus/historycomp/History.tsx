@@ -11,7 +11,7 @@ function History() {
           <div className="flex flex-col gap-y-8 items-center lg:-mt-20">
             <div className="w-[90%] lg:w-full h-[288px] md:h-[388px] relative">
               <Image
-                src="/images/his1.jpg"
+                src="/images/his1.webp"
                 alt="history Image 1"
                 fill
                 className="object-cover"
@@ -20,7 +20,7 @@ function History() {
             </div>
             <div className="w-full lg:w-[90%] h-[268px] md:h-[368px] relative">
               <Image
-                src="/images/his2.JPG"
+                src="/images/his2.webp"
                 alt="history Image 1"
                 fill
                 className="object-cover"
@@ -31,7 +31,7 @@ function History() {
           <div className="flex flex-col gap-y-8  items-center lg:mt-20 mt-10">
             <div className="w-full lg:w-[86%] h-[209px] md:h-[309px] relative">
               <Image
-                src="/images/his3.JPG"
+                src="/images/his3.webp"
                 alt="history Image 1"
                 fill
                 className="object-cover"
@@ -40,7 +40,7 @@ function History() {
             </div>
             <div className="w-[85%] lg:w-full h-[268px] md:h-[368px] relative">
               <Image
-                src="/images/his4.jpg"
+                src="/images/his4.webp"
                 alt="history Image 1"
                 fill
                 className="object-cover"

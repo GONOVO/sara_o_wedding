@@ -32,7 +32,7 @@ function LifeTimeEvents() {
           </div>
           <div className={`w-full h-[45vh] relative ${styles.smImage}`}>
             <Image
-              src="/images/reallife1.JPG"
+              src="/images/reallife1.webp"
               alt="reallife"
               fill
               className="object-cover"
@@ -46,7 +46,7 @@ function LifeTimeEvents() {
         className={`xl:w-full w-[92%] mx-auto lg:mx-0 lg:w-[97%] lg:mr-auto h-[100vh] relative ${styles.lgImage}`}
       >
         <Image
-          src="/images/reallife3.JPG"
+          src="/images/reallife3.webp"
           alt="real life"
           fill
           className="object-cover"

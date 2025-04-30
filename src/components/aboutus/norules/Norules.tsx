@@ -8,7 +8,7 @@ function Norules() {
       <div className="max-w-7xl grid lg:grid-cols-2 grid-cols-1 gap-10 lg:mx-auto mx-4 lg:px-4  relative">
         <div className="relative w-full lg:h-auto h-[65vh]">
           <Image
-            src="/images/norules.jpg"
+            src="/images/norules.webp"
             alt="no rules"
             fill
             className="object-cover"

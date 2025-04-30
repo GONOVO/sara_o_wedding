@@ -22,6 +22,7 @@ function Servicesection() {
               alt="logo Image"
               fill
               className="object-cover"
+              loading="lazy"
             />
           </div>
           <div className={index % 2 === 0 ? "order-2" : "order-1"}>

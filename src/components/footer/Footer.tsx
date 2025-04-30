@@ -6,9 +6,9 @@ import socialMedia from "@/data/socilamedia";
 
 function Footer() {
   const images = [
-    "/images/foot2.JPG",
-    "/images/foot1.JPG",
-    "/images/foot3.JPG",
+    "/images/foot2.webp",
+    "/images/foot1.webp",
+    "/images/foot3.webp",
   ];
   return (
     <footer className={styles.footer}>

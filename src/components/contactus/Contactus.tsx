@@ -173,12 +173,12 @@ function Contactus() {
           <div className={styles.first_mob}>
             <MobileFrame
               video="/videos/contactusmob1.mp4"
-              fallback="/images/contactusfall1.png"
+              fallback="/images/contactusfall1.webp"
             />
           </div>
           <MobileFrame
             video="/videos/contactusmob2.mp4"
-            fallback="/images/contactusfall2.png"
+            fallback="/images/contactusfall2.webp"
           />
         </div>
       </div>

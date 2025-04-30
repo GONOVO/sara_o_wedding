@@ -5,7 +5,7 @@ function page() {
   return (
     <main>
       <ImageView
-        imageSrc="/images/ourservices_cover.JPG"
+        imageSrc="/images/ourservices_cover.webp"
         title="OUR SERVICES"
       />
       <div>

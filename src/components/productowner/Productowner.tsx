@@ -10,7 +10,7 @@ function Productowner() {
             WORLD CLASS EVENTS
           </h1>
           <Image
-            src="/images/Picture1.jpg"
+            src="/images/Picture1.webp"
             alt="Yewande Rwang-Dung"
             fill
             quality={100}

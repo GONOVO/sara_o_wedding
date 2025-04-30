@@ -13,7 +13,7 @@ function Featured() {
           <div className="relative w-full h-[200px] sm:h-[250px] md:h-[390px]">
             <div className="absolute z-2 rotate-45  md:-right-[100px] -right-[40px] lg:bottom-0 sm:-bottom-10 -bottom-5"></div>
             <Image
-              src="/images/featured2.jpg"
+              src="/images/featured2.webp"
               alt="featured image 2"
               fill
               className="object-bottom"
@@ -25,7 +25,7 @@ function Featured() {
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
           >
             <Image
-              src="/images/featured1.JPG"
+              src="/images/featured1.webp"
               alt="featured image 1"
               width={400}
               height={490}
@@ -40,7 +40,7 @@ function Featured() {
               style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
             >
               <Image
-                src="/images/featured1.JPG"
+                src="/images/featured1.webp"
                 alt="featured image 1"
                 width={327}
                 height={490}

@@ -1,6 +1,6 @@
 const services = [
   {
-    image: "/images/serv1.JPG",
+    image: "/images/serv1.webp",
     title: "Private Events",
     services: [
       "Milestone Birthdays.",
@@ -13,7 +13,7 @@ const services = [
     ],
   },
   {
-    image: "/images/serv2.JPG",
+    image: "/images/serv2.webp",
     title: "Corporate Events",
     services: [
       "Corporate Dinners & Gala Nights.",

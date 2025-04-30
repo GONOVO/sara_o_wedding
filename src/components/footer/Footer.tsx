@@ -27,9 +27,7 @@ function Footer() {
                 >
                   <Image
                     src={item}
-                    className="object-cover"
-                    // width={80}
-                    // height={100}
+                    className={`object-cover ${styles.gImage}`}
                     alt="insta Image"
                     fill
                     quality={80}
@@ -38,14 +36,21 @@ function Footer() {
                 </Link>
               ))}
             </div>
-            <div className="flex gap-8 my-8 justify-center   w-[96%] mx-auto flex-wrap">
+            <div className="flex gap-4 my-8 justify-center  w-[96%] mx-auto flex-wrap">
               {socialMedia.map((item, index) => (
                 <Link
                   key={index}
                   href={item.link}
-                  className="inline-block relative w-[32px] h-[32px]"
+                  className="relative w-[36px] h-[36px]  border-2 border-[#e0cfb9] rounded-full flex items-center justify-center p-2"
                 >
-                  <Image src={item.svg} alt="instagrame" fill />
+                  <Image
+                    src={item.svg}
+                    alt="instagrame"
+                    width={24}
+                    height={24}
+                    loading="lazy"
+                    className="w-5 h-5"
+                  />
                 </Link>
               ))}
             </div>

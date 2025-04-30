@@ -7,7 +7,7 @@ import Link from "next/link";
 // import Button from "../../ui/button/Button";
 function Packages() {
   return (
-    <section className="bg-[rgba(244,240,235,1)] pt-10 h-fit">
+    <section className="bg-[rgba(244,240,235,1)] pt-10 h-fit mt-[260px]">
       <HugeTitle text="PACKAGES" mt="0px" />
       <div className={styles.main_package}>
         {/* <MainTitle title="Packages" /> */}

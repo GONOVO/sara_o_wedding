@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="w-full relative">
+    <div className="w-full relative mt-[260px]">
       <video
         className="w-full object-cover h-[494px] lg:h-[694px]"
         src="/videos/hero2.mp4"

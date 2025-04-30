@@ -3,7 +3,7 @@ import Servicesection from "@/components/ui/servicesection/Servicesection";
 
 function page() {
   return (
-    <main>
+    <main className="mt-[260px]">
       <ImageView
         imageSrc="/images/ourservices_cover.webp"
         title="OUR SERVICES"

@@ -15,3 +15,8 @@
   cursor: pointer;
   z-index: 2;
 }
+@media (max-width: 400px) {
+  .card_container {
+    max-width: 340px;
+  }
+}

@@ -6,7 +6,7 @@ import portfolio from "@/data/portfolio";
 function page() {
   return (
     <>
-      <section className="scroll-container relative bg-[rgba(244,240,235,1)]   block py-4">
+      <section className="scroll-container relative bg-[rgba(244,240,235,1)]   block py-4 mt-[260px]">
         <HugeTitle text="PORTFOLIO" fontPercentage={0.9} />
         <InfinityScroll elements={portfolio} />
       </section>

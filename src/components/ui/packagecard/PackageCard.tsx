@@ -24,7 +24,7 @@ function PackageCard({ img, list, title }: IPackage) {
   }, []);
 
   return (
-    <div className={styles.mainCard}>
+    <div className={styles.mainCard} data-aos="zoom-in-out">
       <div className={styles.movePart}>
         <div className="relative h-[388px]">
           <Image src={img} alt={title} fill />

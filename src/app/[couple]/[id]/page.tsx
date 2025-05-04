@@ -55,6 +55,7 @@ export default function CouplePage({ params }: CouplePageProps) {
             key={`${img}-${index}`}
             className="w-full overflow-hidden relative mb-3 break-inside-avoid cursor-zoom-in"
             onClick={() => handleImageClick(index)}
+            data-aos="zoom-in-out"
           >
             <Image
               src={img}

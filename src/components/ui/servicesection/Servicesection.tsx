@@ -16,6 +16,7 @@ function Servicesection() {
             className={`relative w-full h-[60dvh] sm:h-[100dvh] mx-auto  ${
               index % 2 === 0 ? "order-1" : "order-2"
             }`}
+            data-aos="zoom-in-out"
           >
             <Image
               src={service.image}
@@ -26,17 +27,25 @@ function Servicesection() {
             />
           </div>
           <div className={index % 2 === 0 ? "order-2" : "order-1"}>
-            <h1 className="text-5xl lg:mt-28 lg:mb-10 my-10">
+            <h1 className="text-5xl lg:mt-28 lg:mb-10 my-10" data-aos="fade-up">
               {service.title}
             </h1>
             <ul className="list-disc ms-8">
               {service.services.map((item, index) => (
-                <li key={index}>{item}</li>
+                <li
+                  key={index}
+                  data-aos="fade-up"
+                  data-aos-delay={(index + 1) * 150}
+                >
+                  {item}
+                </li>
               ))}
             </ul>
             <Link
               href="/portfolio/#gallery"
               className="inline-block my-10   border-2 py-2 px-8 tracking-[4px] text-sm nunito_font hover:bg-black hover:text-white"
+              data-aos="fade-up"
+              data-aos-delay={950}
             >
               VIEW GALLERY
             </Link>

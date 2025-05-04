@@ -4,7 +4,10 @@ function Textwithborder() {
   return (
     <section className="max-w-7xl mx-auto px-4">
       <div className="flex justify-center items-center ">
-        <div className="w-fit  justify-center items-center border-r-2  relative lg:flex hidden">
+        <div
+          className="w-fit  justify-center items-center border-r-2  relative lg:flex hidden"
+          data-aos="fade-right"
+        >
           <p
             className="text-sm tracking-[4px] uppercase text-center py-2 px-36 absolute border-l-1 -ml-10"
             style={{
@@ -17,8 +20,11 @@ function Textwithborder() {
           </p>
         </div>
 
-        <div className="w-full sm:w-[90%] lg:ps-6 py-4 sm:py-16">
-          <p className="text-xl sm:text-4xl italic leading-relaxed text-[#c1ada3] lg:text-start text-center">
+        <div className="w-full sm:w-[90%] lg:ps-6 py-4 sm:py-16 overflow-x-hidden">
+          <p
+            className="text-xl sm:text-4xl italic leading-relaxed text-[#c1ada3] lg:text-start text-center"
+            data-aos="fade-left"
+          >
             Sara O Events offers modern and personalized full-service event
             planning and design for private clients around the world. As the
             founder and CEO, Yewande Rwang-Dung manages every step of the

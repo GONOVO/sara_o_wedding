@@ -16,6 +16,7 @@ function History() {
                 fill
                 className="object-cover"
                 loading="lazy"
+                data-aos="zoom-in-out"
               />
             </div>
             <div className="w-full lg:w-[90%] h-[268px] md:h-[368px] relative">
@@ -25,6 +26,7 @@ function History() {
                 fill
                 className="object-cover"
                 loading="lazy"
+                data-aos="zoom-in-out"
               />
             </div>
           </div>
@@ -36,6 +38,7 @@ function History() {
                 fill
                 className="object-cover"
                 loading="lazy"
+                data-aos="zoom-in-out"
               />
             </div>
             <div className="w-[85%] lg:w-full h-[268px] md:h-[368px] relative">
@@ -45,15 +48,16 @@ function History() {
                 fill
                 className="object-cover"
                 loading="lazy"
+                data-aos="zoom-in-out"
               />
             </div>
           </div>
         </div>
         <div className="flex flex-col gap-12 justify-end lg:max-w-[500px] px-3 sm:px-0">
-          <h1 className="text-2xl">
+          <h1 className="text-2xl" data-aos="fade-up">
             SARA O EVENTS WAS FOUNDED IN EARLY 2010 BY YEWANDE RWANG-DUNG.
           </h1>
-          <p className="leading-[30px]">
+          <p className="leading-[30px]" data-aos="fade-up">
             Starting first as a passionate vision for creating extraordinary
             celebrations, Yewande worked tirelessly to establish a name for
             herself in the wedding industry. Her ability to quickly create
@@ -61,7 +65,7 @@ function History() {
             clients catapulted her into quickly becoming a thought leader and
             trendsetter in the industry in just a few short years.
           </p>
-          <p className="leading-[30px]">
+          <p className="leading-[30px]" data-aos="fade-up">
             Yewande has grown Sara O Events into a premier luxury wedding
             planning company and now proudly oversees the design and planning
             for every celebration, offering clients the highest level of

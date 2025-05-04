@@ -25,7 +25,7 @@ function Packages() {
         <div className={styles.bottom_cont} data-aos="fade-up">
           <h1>Need something Bespoke? Get in touch</h1>
           <Link
-            href="/"
+            href="/#contactus"
             className="text-white py-2 px-6 bg-black inline-block mx-auto"
           >
             INQUIRE

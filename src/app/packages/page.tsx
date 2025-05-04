@@ -1,10 +1,9 @@
-// import MainTitle from "../../ui/mainTitle/MainTitle";
 import PackageCard from "../../components/ui/packagecard/PackageCard";
 import styles from "./packages.module.css";
 import Packges from "../../data/packages";
 import HugeTitle from "@/components/ui/hugetitle/HugeTitle";
 import Link from "next/link";
-// import Button from "../../ui/button/Button";
+
 function Packages() {
   return (
     <section className="bg-[rgba(244,240,235,1)] pt-10 h-fit mt-[260px]">
@@ -17,7 +16,6 @@ function Packages() {
               img={item.coverImg}
               title={item.title}
               list={item.list}
-              // btnText={item.btnText}
               key={index}
             />
           ))}

@@ -1,7 +1,10 @@
 import InfinityScroll from "@/components/infinityscroll/InfinityScroll";
-import GalleryPortfolio from "@/components/portfoliogallery/GalleryPortfolio";
+const GalleryPortfolio = dynamic(
+  () => import("@/components/portfoliogallery/GalleryPortfolio")
+);
 import HugeTitle from "@/components/ui/hugetitle/HugeTitle";
 import portfolio from "@/data/portfolio";
+import dynamic from "next/dynamic";
 
 function page() {
   return (

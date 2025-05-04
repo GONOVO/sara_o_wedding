@@ -1,11 +1,14 @@
 "use client";
+import dynamic from "next/dynamic";
+import { useState, useCallback } from "react";
+import { use } from "react"; // Import the 'use' hook
 
-import Modalandslider from "@/components/aboutus/modal_slider/Modalandslider";
+const Modalandslider = dynamic(
+  () => import("@/components/aboutus/modal_slider/Modalandslider")
+);
 import ImageView from "@/components/imageview/HeroSection";
 import couples from "@/data/gallerrypotfolio";
 import Image from "next/image";
-import { useState, useCallback } from "react";
-import { use } from "react"; // Import the 'use' hook
 
 interface CouplePageProps {
   params: Promise<{ id: string }>; // params is a Promise now

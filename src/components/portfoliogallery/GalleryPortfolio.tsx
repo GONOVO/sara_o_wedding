@@ -9,7 +9,12 @@ function GalleryPortfolio() {
     <section id="gallery" className="max-w-7xl px-4 mx-auto py-16">
       <div className="flex gap-5 flex-wrap justify-center">
         {galleryPortfolio.map((item, index) => (
-          <Link key={index} href={`/couple/${item.id}`} data-aos="zoom-in-out">
+          <Link
+            key={index}
+            href={`/couple/${item.id}`}
+            data-aos="zoom-in-out"
+            data-aos-offset="0"
+          >
             <GalleryCard item={item} />
           </Link>
         ))}

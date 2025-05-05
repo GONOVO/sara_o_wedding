@@ -8,7 +8,7 @@ const Modalandslider = dynamic(
 );
 import ImageView from "@/components/imageview/HeroSection";
 import couples from "@/data/gallerrypotfolio";
-import Image from "next/image";
+//  import Image from "next/image";
 
 interface CouplePageProps {
   params: Promise<{ id: string }>; // params is a Promise now
@@ -60,11 +60,11 @@ export default function CouplePage({ params }: CouplePageProps) {
             onClick={() => handleImageClick(index)}
             data-aos="zoom-in-out"
           >
-            <Image
+            <img
               src={img}
               alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
-              width={600}
-              height={800}
+              // width={600}
+              // height={800}
               className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300"
               loading="lazy"
             />

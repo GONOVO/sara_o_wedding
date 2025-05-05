@@ -30,7 +30,7 @@ function PackageCard({ img, list, title }: IPackage) {
           <Image src={img} alt={title} fill />
         </div>
 
-        <h2 data-aos={screenWidth <= 440 ? "fade-up" : ""}>{title}</h2>
+        <h2 data-aos={screenWidth <= 440 ? "fade-down" : ""}>{title}</h2>
 
         <ul>
           {list.map((item, index) => (

@@ -42,8 +42,6 @@ function Hero() {
           playsInline
           onMouseEnter={() => handleMouseEnter(videoRefEvents, videoRefWedding)}
           onMouseLeave={() => handleMouseLeave(videoRefEvents)}
-          onTouchStart={() => handleMouseEnter(videoRefEvents, videoRefWedding)}
-          onTouchEnd={() => handleMouseLeave(videoRefEvents)}
         />
         <div className="absolute inset-0 bg-[var(--gold-color)] opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
       </div>
@@ -59,8 +57,6 @@ function Hero() {
           playsInline
           onMouseEnter={() => handleMouseEnter(videoRefWedding, videoRefEvents)}
           onMouseLeave={() => handleMouseLeave(videoRefWedding)}
-          onTouchStart={() => handleMouseEnter(videoRefEvents, videoRefWedding)}
-          onTouchEnd={() => handleMouseLeave(videoRefEvents)}
         />
         <div className="absolute inset-0 bg-black opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
       </div>

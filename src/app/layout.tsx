@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import dynamic from "next/dynamic";
-import Head from "next/head";
+
 import "aos/dist/aos.css";
 import "./globals.css";
 import Header from "../components/ui/header/Header";
@@ -41,14 +41,6 @@ export default function RootLayout({
       lang="en"
       className={`${nunito.variable} ${fraunces.variable} ${kristi.variable}`}
     >
-      <Head>
-        <link
-          rel="preload"
-          as="video"
-          href="/videos/hero.mp4"
-          type="video/mp4"
-        />
-      </Head>
       <body>
         <WithAOS>
           <Header />

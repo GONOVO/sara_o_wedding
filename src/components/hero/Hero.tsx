@@ -35,6 +35,7 @@ function Hero() {
             EVENTS
           </h1>
           <video
+            aria-hidden="true"
             className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
             src="/videos/events.mp4"
             ref={videoRefEvents}
@@ -62,6 +63,7 @@ function Hero() {
             WEDDINGS
           </h1>
           <video
+            aria-hidden="true"
             className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
             src="/videos/hero2.mp4"
             ref={videoRefWedding}

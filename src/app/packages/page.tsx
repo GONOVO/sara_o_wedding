@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Packages() {
   return (
-    <section className="bg-[rgba(244,240,235,1)] pt-10 h-fit mt-[260px]">
+    <section className="bg-[rgba(244,240,235,1)] pt-10 h-fit">
       <HugeTitle text="PACKAGES" mt="0px" />
       <div className={styles.main_package}>
         {/* <MainTitle title="Packages" /> */}

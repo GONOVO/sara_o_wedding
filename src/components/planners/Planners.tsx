@@ -3,14 +3,14 @@ import React from "react";
 function Planners() {
   return (
     <section className="bg-[var(--lightGray-color)] py-20 lg:py-28 text-center text-[var(--mutedBlack-color)]">
-      <div className="max-w-[480px] lg:max-w-[580px] mx-auto">
-        <h2
+      <div className="max-w-[480px] lg:max-w-[580px] mx-auto lg:mt-24">
+        {/* <h2
           className="text-2xl mb-8 nunito_font_res text-[var(--semiGray-color)] lg:text-[var(--mutedBlack-color)] tracking-widest lg:tracking-wider lg:px-0 px-4"
           data-aos="fade-up"
         >
           DESTINATION WEDDING PLANNERS & EVENT DESIGNERS BASED IN NIGERIA
           OPERATING GLOBALLY
-        </h2>
+        </h2> */}
         <p className="text-xl" data-aos="fade-up">
           Named Top Planner BY :
         </p>

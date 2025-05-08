@@ -10,7 +10,7 @@ import React from "react";
 
 function Aboutus() {
   return (
-    <div className="mt-[263px]">
+    <div>
       <ImageView
         imageSrc="/images/galleryport6.webp"
         height="90vh"

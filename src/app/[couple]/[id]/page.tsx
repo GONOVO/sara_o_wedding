@@ -42,7 +42,7 @@ export default function CouplePage({ params }: CouplePageProps) {
   const { femaleName, maleName, allImages, coverImage } = choosedCouple;
 
   return (
-    <div className="mt-[263px]">
+    <div>
       <ImageView
         imageSrc={`${coverImage}`}
         height="70dvh"

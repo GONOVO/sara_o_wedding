@@ -24,7 +24,7 @@ function Hero() {
       {/* Video 1 */}
       <div className="relative group">
         <h1
-          className="md:text-[148px] text-[72px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-32 "
+          className="md:text-[134px] text-[72px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 "
           style={{
             writingMode: "vertical-rl",
             transform: "rotate(180deg)",
@@ -34,8 +34,8 @@ function Hero() {
           EVENTS
         </h1>
         <video
-          className="w-full object-cover h-[494px] lg:h-[694px] transition-opacity duration-500"
-          src="/videos/hero2.mp4"
+          className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
+          src="/videos/events.mp4"
           ref={videoRefEvents}
           loop
           muted
@@ -48,8 +48,18 @@ function Hero() {
 
       {/* Video 2 */}
       <div className="relative group">
+        <h1
+          className="md:text-[134px] text-[72px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 right-0"
+          style={{
+            writingMode: "vertical-rl",
+            transform: "rotate(180deg)",
+            whiteSpace: "nowrap",
+          }}
+        >
+          WEDDINGS
+        </h1>
         <video
-          className="w-full object-cover h-[494px] lg:h-[694px] transition-opacity duration-500"
+          className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
           src="/videos/hero2.mp4"
           ref={videoRefWedding}
           loop

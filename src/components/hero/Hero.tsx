@@ -1,31 +1,68 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 
 function Hero() {
+  const videoRefEvents = useRef<HTMLVideoElement>(null);
+  const videoRefWedding = useRef<HTMLVideoElement>(null);
+
+  const handleMouseEnter = (
+    videoRef: React.RefObject<HTMLVideoElement | null>,
+    otherRef: React.RefObject<HTMLVideoElement | null>
+  ) => {
+    videoRef.current?.play();
+    otherRef.current?.pause();
+  };
+
+  const handleMouseLeave = (
+    videoRef: React.RefObject<HTMLVideoElement | null>
+  ) => {
+    videoRef.current?.pause();
+  };
+
   return (
-    <div className="w-full relative mt-[260px]">
-      <video
-        className="w-full object-cover h-[494px] lg:h-[694px]"
-        src="/videos/hero2.mp4"
-        autoPlay
-        loop
-        muted={true}
-        playsInline
-      />
-      <div
-        className="bg-white w-full lg:w-[650px] lg:h-[240px] lg:p-2 lg:absolute lg:-bottom-[70px] lg:left-1/2 lg:translate-x-[-50%]"
-        data-aos="zoom-in-out"
-      >
-        <div className="lg:border-1 border-[var(--mutedBlack-color)] w-full h-full py-12 px-6 lg:p-10 flex flex-col justify-center items-center  gap-3 lg:gap-2 text-[var(--mutedBlack-color)]">
-          <h2 className="text-[7vw] lg:text-2xl font-medium text-center">
-            WEDDING PLANNER BASED IN NIGERIA
-          </h2>
-          <p className="text-[5vw] lg:text-xl text-center">
-            NAMED TOP PLANNER IN THE WORLD BY
-          </p>
-          <h1 className="text-[12vw] lg:text-[64px] text-center font-medium lg:leading-16">
-            BAZZAR
-          </h1>
-        </div>
+    <div className="w-full relative mt-[260px] grid grid-cols-1 md:grid-cols-2">
+      {/* Video 1 */}
+      <div className="relative group">
+        <h1
+          className="md:text-[148px] text-[72px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-32 "
+          style={{
+            writingMode: "vertical-rl",
+            transform: "rotate(180deg)",
+            whiteSpace: "nowrap",
+          }}
+        >
+          EVENTS
+        </h1>
+        <video
+          className="w-full object-cover h-[494px] lg:h-[694px] transition-opacity duration-500"
+          src="/videos/hero2.mp4"
+          ref={videoRefEvents}
+          loop
+          muted
+          playsInline
+          onMouseEnter={() => handleMouseEnter(videoRefEvents, videoRefWedding)}
+          onMouseLeave={() => handleMouseLeave(videoRefEvents)}
+          onTouchStart={() => handleMouseEnter(videoRefEvents, videoRefWedding)}
+          onTouchEnd={() => handleMouseLeave(videoRefEvents)}
+        />
+        <div className="absolute inset-0 bg-[var(--gold-color)] opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
+      </div>
+
+      {/* Video 2 */}
+      <div className="relative group">
+        <video
+          className="w-full object-cover h-[494px] lg:h-[694px] transition-opacity duration-500"
+          src="/videos/hero2.mp4"
+          ref={videoRefWedding}
+          loop
+          muted
+          playsInline
+          onMouseEnter={() => handleMouseEnter(videoRefWedding, videoRefEvents)}
+          onMouseLeave={() => handleMouseLeave(videoRefWedding)}
+          onTouchStart={() => handleMouseEnter(videoRefEvents, videoRefWedding)}
+          onTouchEnd={() => handleMouseLeave(videoRefEvents)}
+        />
+        <div className="absolute inset-0 bg-black opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
       </div>
     </div>
   );

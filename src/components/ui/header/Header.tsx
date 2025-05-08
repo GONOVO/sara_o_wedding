@@ -7,6 +7,7 @@ import links from "@/data/links";
 import Aside from "../aside/Aside";
 function Header() {
   const [open, setOpen] = useState(false);
+
   const toggleOpen = () => {
     setOpen((prev) => !prev);
     if (!open) {

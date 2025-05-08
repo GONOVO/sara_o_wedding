@@ -8,6 +8,7 @@ import Header from "../components/ui/header/Header";
 import { Nunito, Fraunces, Kristi } from "next/font/google";
 const Footer = dynamic(() => import("../components/footer/Footer"));
 import WithAOS from "@/components/ui/Withaos";
+import Arrowtoup from "@/components/ui/arrowsrollup/Arrowtoup";
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700", "800", "900"],
@@ -52,6 +53,7 @@ export default function RootLayout({
         <WithAOS>
           <Header />
           {children}
+          <Arrowtoup />
           <Footer />
         </WithAOS>
       </body>

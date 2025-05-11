@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useRef } from "react";
 
 function Hero() {
@@ -23,60 +24,63 @@ function Hero() {
     <section className="relative">
       <div className="w-full  grid grid-cols-1 lg:grid-cols-2">
         {/* Video 1 */}
-        <div className="relative group">
-          <h1
-            className="lg:text-[124px] text-[74px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 "
-            style={{
-              writingMode: "vertical-rl",
-              transform: "rotate(180deg)",
-              whiteSpace: "nowrap",
-            }}
-          >
-            EVENTS
-          </h1>
-          <video
-            aria-hidden="true"
-            className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
-            src="/videos/events.mp4"
-            ref={videoRefEvents}
-            loop
-            muted
-            playsInline
-            onMouseEnter={() =>
-              handleMouseEnter(videoRefEvents, videoRefWedding)
-            }
-            onMouseLeave={() => handleMouseLeave(videoRefEvents)}
-          />
-          <div className="absolute inset-0 bg-[var(--gold-color)] opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
-        </div>
-
+        <Link href="/events">
+          <div className="relative group">
+            <h1
+              className="lg:text-[124px] text-[74px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 "
+              style={{
+                writingMode: "vertical-rl",
+                transform: "rotate(180deg)",
+                whiteSpace: "nowrap",
+              }}
+            >
+              EVENTS
+            </h1>
+            <video
+              aria-hidden="true"
+              className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
+              src="/videos/events.mp4"
+              ref={videoRefEvents}
+              loop
+              muted
+              playsInline
+              onMouseEnter={() =>
+                handleMouseEnter(videoRefEvents, videoRefWedding)
+              }
+              onMouseLeave={() => handleMouseLeave(videoRefEvents)}
+            />
+            <div className="absolute inset-0 bg-[var(--gold-color)] opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
+          </div>
+        </Link>
         {/* Video 2 */}
-        <div className="relative group">
-          <h1
-            className="lg:text-[124px] text-[74px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 right-0 bottom-0"
-            style={{
-              writingMode: "vertical-rl",
-              transform: "rotate(180deg)",
-              whiteSpace: "nowrap",
-            }}
-          >
-            WEDDINGS
-          </h1>
-          <video
-            aria-hidden="true"
-            className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
-            src="/videos/hero2.mp4"
-            ref={videoRefWedding}
-            loop
-            muted
-            playsInline
-            onMouseEnter={() =>
-              handleMouseEnter(videoRefWedding, videoRefEvents)
-            }
-            onMouseLeave={() => handleMouseLeave(videoRefWedding)}
-          />
-          <div className="absolute inset-0 bg-black opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
-        </div>
+        <Link href="/portfolio">
+          <div className="relative group">
+            <h1
+              className="lg:text-[124px] text-[74px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 right-0 bottom-0"
+              style={{
+                writingMode: "vertical-rl",
+                transform: "rotate(180deg)",
+                whiteSpace: "nowrap",
+              }}
+            >
+              WEDDINGS
+            </h1>
+            <video
+              aria-hidden="true"
+              className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
+              src="/videos/hero2.mp4"
+              ref={videoRefWedding}
+              loop
+              muted
+              playsInline
+              onMouseEnter={() =>
+                handleMouseEnter(videoRefWedding, videoRefEvents)
+              }
+              onMouseLeave={() => handleMouseLeave(videoRefWedding)}
+            />
+            <div className="absolute inset-0 bg-black opacity-100 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
+          </div>
+        </Link>
       </div>
       <div
         className="bg-white w-full lg:w-[650px] lg:h-[240px] lg:p-2 lg:absolute lg:-bottom-[170px] lg:left-1/2 lg:translate-x-[-50%]"

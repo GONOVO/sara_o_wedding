@@ -9,6 +9,7 @@ import { Nunito, Fraunces, Kristi } from "next/font/google";
 const Footer = dynamic(() => import("../components/footer/Footer"));
 import WithAOS from "@/components/ui/Withaos";
 import Arrowtoup from "@/components/ui/arrowsrollup/Arrowtoup";
+import Head from "next/head";
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700", "800", "900"],
@@ -41,6 +42,15 @@ export default function RootLayout({
       lang="en"
       className={`${nunito.variable} ${fraunces.variable} ${kristi.variable}`}
     >
+      <Head>
+        <link
+          rel="preload"
+          as="video"
+          href="/videos/events.mp4"
+          type="video/mp4"
+        />
+      </Head>
+
       <body>
         <WithAOS>
           <Header />

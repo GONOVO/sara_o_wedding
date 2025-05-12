@@ -5,7 +5,7 @@ function Textwithborder() {
     <section className="max-w-7xl mx-auto px-4">
       <div className="flex justify-center items-center ">
         <div
-          className="w-fit  justify-center items-center border-r-2  relative lg:flex hidden"
+          className="w-fit  justify-center items-center border-r-2  relative lg:flex hidden z-2"
           data-aos="fade-right"
         >
           <p

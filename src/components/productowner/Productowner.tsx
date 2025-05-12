@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
 function Productowner() {
   return (
@@ -65,7 +65,6 @@ function Productowner() {
                 className="kristy_font font-light text-3xl mt-5"
                 data-aos="fade-left"
               >
-                {/* Event designer and interior décor expert */}
                 Founder & Ceo
               </p>
             </div>

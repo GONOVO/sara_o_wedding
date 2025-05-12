@@ -20,6 +20,7 @@ function page() {
           loop
           muted
           playsInline
+          poster="/images/poster_vid_ev.webp"
         />
       </div>
       <DynamicGallery images={eventsImages} />

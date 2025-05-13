@@ -43,7 +43,7 @@ function EventsPortfolio() {
   }, [visibleIndexes]);
   return (
     <section>
-      <HugeTitle text="PORTFOLIO" mt="-3rem" />
+      <HugeTitle text="PORTFOLIO" mt="-3rem" fontPercentage={0.9} />
       <div className={`${styles.main_Steps} mt-16`}>
         {eventsPortfolio?.map((item, index) => (
           <React.Fragment key={index}>

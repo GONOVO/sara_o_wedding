@@ -1,6 +1,7 @@
 import Caption from "@/components/ui/events/caption/Caption";
 import DynamicGallery from "@/components/ui/events/dynamicgallry/DynamicGallery";
 import Ourvission from "@/components/ui/events/ourvission/Ourvission";
+import EventsPortfolio from "@/components/ui/events/portfolio/EventsPortfolio";
 import VideoView from "@/components/ui/events/video_view/VideoView";
 
 import eventsImages from "@/data/eventsgallery";
@@ -29,6 +30,7 @@ function page() {
       <Ourvission />
       <Caption />
       <VideoView />
+      <EventsPortfolio />
     </>
   );
 }

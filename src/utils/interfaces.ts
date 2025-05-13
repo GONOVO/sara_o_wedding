@@ -31,3 +31,10 @@ export interface IViewimage {
   positionY?: string;
   title?: string;
 }
+
+export interface IBundle {
+  title: string;
+  image: string;
+  subTitle: string;
+  paragraphs: string[];
+}

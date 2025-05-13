@@ -1,5 +1,5 @@
 .main_Steps {
-  background-color: var(--gold-color);
+  /* background-color: var(--gold-color); */
 }
 .steps_grid {
   display: grid;
@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   height: 650px;
-  color: white;
+  /* color: var(--gold-color); */
 }
 .step_content h1 {
   font-size: 32px;

@@ -53,7 +53,8 @@ function Hero() {
           </div>
         </Link>
         {/* Video 2 */}
-        <Link href="/portfolio">
+         
+        <Link href="/wedding">
           <div className="relative group">
             <h1
               className="lg:text-[124px] text-[74px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 right-0 bottom-0"

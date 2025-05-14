@@ -28,8 +28,17 @@ function page() {
           poster="/images/poster_vid_ev.webp"
         />
       </div>
-      <DynamicGallery images={eventsImages} />
-      <Ourvission />
+      <DynamicGallery
+        images={eventsImages}
+        title="Exclusive brands exceptional execution"
+      />
+      <Ourvission
+        image="/images/events_vission.webp"
+        caption="ABOUT ARW AND ALICE WILKES"
+        paragraph=" Founded by designer Alice Wilkes, ARW is a London-based    event design and production studio. We create events that combine
+              exquisite visual details with flawless planning and execution,
+              beautifully capturing the essence of your brand."
+      />
       <Caption />
       <VideoView />
       <EventsPortfolio />

@@ -38,3 +38,9 @@ export interface IBundle {
   subTitle: string;
   paragraphs: string[];
 }
+
+export interface IVission {
+  image: string;
+  caption: string;
+  paragraph: string;
+}

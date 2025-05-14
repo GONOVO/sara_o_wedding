@@ -1,11 +1,12 @@
+import { IVission } from "@/utils/interfaces";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-function Ourvission() {
+function Ourvission({ image, caption, paragraph }: IVission) {
   return (
-    <section className="mt-48 lg:mt-44 bg-[var(--gold-color)] ">
-      <div className="max-w-[1280px] mt-32 sm:mt-12 pb-12 md:pt-0 md:pb-0 md:px-4 grid grid-cols-1 md:grid-cols-2 mx-auto top-0 md:-top-20 relative">
+    <section className="mt-0 sm:mt-48 lg:mt-44 bg-[var(--gold-color)]">
+      <div className="max-w-[1280px] mt-16 sm:mt-12 pb-12 md:pt-0 md:pb-0 md:px-4 grid grid-cols-1 md:grid-cols-2 mx-auto top-0 md:-top-20 relative">
         <div className="w-full h-[620px] sm:h-[820px] md:h-[620px]  lg:h-[820px] relative -mt-8">
           <h1
             className="text-[13vw] absolute z-1 -top-[11%] w-full block md:hidden  font-extralight leading-[18vw]"
@@ -16,13 +17,14 @@ function Ourvission() {
             <span className="text-white">TO REALITY</span>
           </h1>
           <Image
-            src="/images/events_vission.webp"
+            src={image}
             alt="Yewande Rwang-Dung"
             fill
             quality={100}
             unoptimized={true}
             loading="lazy"
             data-aos="fade-right"
+            className="object-cover"
           />
         </div>
         <div className="px-4 md:px-0 md:mt-34">
@@ -38,13 +40,10 @@ function Ourvission() {
               className="nunito_font tracking-[4px] text-xs lg:text-lg font-thin text-white"
               data-aos="fade-left"
             >
-              ABOUT ARW AND ALICE WILKES
+              {caption}
             </h3>
             <p className="text-sm lg:text-base text-white" data-aos="fade-left">
-              Founded by designer Alice Wilkes, ARW is a London-based event
-              design and production studio. We create events that combine
-              exquisite visual details with flawless planning and execution,
-              beautifully capturing the essence of your brand.
+              {paragraph}
             </p>
             <Link
               href="/#contactus"
@@ -54,7 +53,7 @@ function Ourvission() {
             >
               READ MORE ABOUT US
             </Link>
-            <div></div>
+            {/* <div></div> */}
           </div>
         </div>
       </div>

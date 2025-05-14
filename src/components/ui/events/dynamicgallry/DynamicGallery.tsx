@@ -8,7 +8,7 @@ function DynamicGallery({
   title: string;
 }) {
   return (
-    <section className="py-16 max-w-7xl mx-auto">
+    <section className="py-8 max-w-7xl mx-auto">
       <h1 className="text-black text-3xl sm:text-5xl max-w-[540px] text-center mx-auto  mb-8 px-4">
         {title}
       </h1>

@@ -3,6 +3,7 @@ import DynamicGallery from "@/components/ui/events/dynamicgallry/DynamicGallery"
 import Ourvission from "@/components/ui/events/ourvission/Ourvission";
 import Bundlers from "@/components/ui/events/popular_bundles/Bundlers";
 import EventsPortfolio from "@/components/ui/events/portfolio/EventsPortfolio";
+import Tellusmore from "@/components/ui/events/tellusmore/Tellusmore";
 import VideoView from "@/components/ui/events/video_view/VideoView";
 
 import eventsImages from "@/data/eventsgallery";
@@ -33,6 +34,7 @@ function page() {
       <VideoView />
       <EventsPortfolio />
       <Bundlers />
+      <Tellusmore />
     </>
   );
 }

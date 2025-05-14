@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import HugeTitle from "../../hugetitle/HugeTitle";
 import styles from "./portfolio.module.css";
 import eventsPortfolio from "@/data/eventsportfolio";
+import LazyAutoPlayVideo from "../../videoplayer/VideoPlayer";
 function EventsPortfolio() {
   const [visibleIndexes, setVisibleIndexes] = useState<Set<number>>(new Set());
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -22,7 +23,7 @@ function EventsPortfolio() {
       {
         threshold: 0,
         root: null,
-        rootMargin: "100px",
+        rootMargin: "300px",
       }
     );
 
@@ -56,15 +57,7 @@ function EventsPortfolio() {
                 className={styles.steps_grid}
               >
                 {item.vid ? (
-                  <video
-                    className={styles.video_container}
-                    src={visibleIndexes.has(index) ? item.vid : undefined} // Lazy load video
-                    // controls
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                  />
+                  <LazyAutoPlayVideo videoPath={item.vid} placeholderImage="/images/events_poster.webp" />
                 ) : (
                   <div
                     className={styles.img_container}
@@ -108,13 +101,9 @@ function EventsPortfolio() {
                 </div>
                 {item.vid ? (
                   <div className={styles.video_background}>
-                    <video
-                      className={styles.video_container}
-                      src={visibleIndexes.has(index) ? item.vid : undefined} // Lazy load video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
+                    <LazyAutoPlayVideo
+                      videoPath={item.vid}
+                      placeholderImage="/images/events_poster.webp"
                     />
                   </div>
                 ) : (

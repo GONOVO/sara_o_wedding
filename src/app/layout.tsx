@@ -9,7 +9,7 @@ import { Nunito, Fraunces, Kristi } from "next/font/google";
 const Footer = dynamic(() => import("../components/footer/Footer"));
 import WithAOS from "@/components/ui/Withaos";
 import Arrowtoup from "@/components/ui/arrowsrollup/Arrowtoup";
-import Head from "next/head";
+// import Head from "next/head";
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700", "800", "900"],

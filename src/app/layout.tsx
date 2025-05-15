@@ -42,14 +42,14 @@ export default function RootLayout({
       lang="en"
       className={`${nunito.variable} ${fraunces.variable} ${kristi.variable}`}
     >
-      <Head>
+      {/* <Head>
         <link
           rel="preload"
           as="video"
           href="/videos/events.mp4"
           type="video/mp4"
         />
-      </Head>
+      </Head> */}
 
       <body>
         <WithAOS>

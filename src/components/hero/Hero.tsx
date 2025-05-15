@@ -44,6 +44,7 @@ function Hero() {
               loop
               muted
               playsInline
+              poster="/images/events_poster.webp"
               onMouseEnter={() =>
                 handleMouseEnter(videoRefEvents, videoRefWedding)
               }
@@ -53,7 +54,7 @@ function Hero() {
           </div>
         </Link>
         {/* Video 2 */}
-         
+
         <Link href="/wedding">
           <div className="relative group">
             <h1
@@ -74,6 +75,7 @@ function Hero() {
               loop
               muted
               playsInline
+              poster="/images/hero_poster.webp"
               onMouseEnter={() =>
                 handleMouseEnter(videoRefWedding, videoRefEvents)
               }

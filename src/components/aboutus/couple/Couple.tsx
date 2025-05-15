@@ -13,7 +13,7 @@ function Couple() {
     }
   };
   return (
-    <section className="py-28">
+    <section className="pt-28 pb-12">
       <div className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div className="max-w-[450px] w-full lg:ml-auto mx-auto">
           <div
@@ -72,7 +72,10 @@ function Couple() {
           </button>
         </div>
       </div>
-      <div className="lg:block w-fit hidden mx-auto my-28 border-b-2">
+      <div
+        className="lg:block w-fit hidden mx-auto my-28 border-b-2"
+        data-aos="fade-up"
+      >
         <ul className="flex">
           {couples.map((coupleItem, index) => (
             <button
@@ -81,8 +84,6 @@ function Couple() {
               className={`text-lg py-2 px-6 cursor-pointer ${
                 couple === index && "border-1"
               }`}
-              data-aos="zoom-in-out"
-              data-aos-delay={index * 150}
             >
               {coupleItem.maleName} & {coupleItem.femaleName}
             </button>

@@ -1,3 +1,4 @@
+import Couple from "@/components/aboutus/couple/Couple";
 import Caption from "@/components/ui/events/caption/Caption";
 import DynamicGallery from "@/components/ui/events/dynamicgallry/DynamicGallery";
 import Ourvission from "@/components/ui/events/ourvission/Ourvission";
@@ -45,6 +46,9 @@ WEDDINGS & EVENTS"
         videoPoster="/images/wedding_poster.webp"
       />
       <EventsPortfolio portfolioData={weddingsPortfolio} />
+      <div className="mt-24">
+        <Couple />
+      </div>
     </>
   );
 }

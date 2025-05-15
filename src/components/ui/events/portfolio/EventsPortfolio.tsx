@@ -73,7 +73,7 @@ function EventsPortfolio({ portfolioData }: { portfolioData: IPortfolio[] }) {
                   ></div>
                 )}
                 <div className={styles.step_content}>
-                  <h1>{item.title}</h1>
+                  <h1 data-aos="fade-left">{item.title}</h1>
                   <div className={styles.mobile_Title}>
                     <h2 data-aos="fade-left">{item.subTitle}</h2>
                   </div>
@@ -93,7 +93,7 @@ function EventsPortfolio({ portfolioData }: { portfolioData: IPortfolio[] }) {
                 className={styles.steps_grid}
               >
                 <div className={styles.step_content}>
-                  <h1>{item.title}</h1>
+                  <h1 data-aos="fade-right">{item.title}</h1>
                   <div className={styles.mobile_Title}>
                     <h2 data-aos="fade-right">{item.subTitle}</h2>
                   </div>

@@ -1,8 +1,11 @@
-import PackageCard from "../../components/ui/packagecard/PackageCard";
+import Link from "next/link";
 import styles from "./packages.module.css";
 import Packges from "../../data/packages";
-import HugeTitle from "@/components/ui/hugetitle/HugeTitle";
-import Link from "next/link";
+import dynamic from "next/dynamic";
+const HugeTitle = dynamic(() => import("@/components/ui/hugetitle/HugeTitle"));
+const PackageCard = dynamic(
+  () => import("../../components/ui/packagecard/PackageCard")
+);
 
 function Packages() {
   return (

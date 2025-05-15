@@ -91,17 +91,9 @@ function Hero() {
       >
         <div className="lg:border-1 border-[var(--mutedBlack-color)] w-full h-full py-12 px-6 lg:p-10 flex flex-col justify-center items-center  gap-3 lg:gap-2 text-[var(--mutedBlack-color)]">
           <h2 className="text-[7vw] lg:text-2xl font-medium text-center text-uppercase">
-            {/* WEDDING PLANNER BASED IN NIGERIA */}
             DESTINATION WEDDING PLANNERS & EVENT DESIGNERS CREATING
             UNFORGETTABLE EXPERIENCES WORLDWIDE
           </h2>
-          {/* <p className="text-[5vw] lg:text-xl text-center">
-            {/* NAMED TOP PLANNER IN THE WORLD BY */}
-
-          {/* </p> */}
-          {/* <h1 className="text-[12vw] lg:text-[64px] text-center font-medium lg:leading-16">
-            BAZZAR
-          </h1> */}
         </div>
       </div>
     </section>

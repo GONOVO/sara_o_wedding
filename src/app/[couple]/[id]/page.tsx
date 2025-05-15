@@ -6,7 +6,7 @@ import { use } from "react"; // Import the 'use' hook
 const Modalandslider = dynamic(
   () => import("@/components/aboutus/modal_slider/Modalandslider")
 );
-import ImageView from "@/components/imageview/HeroSection";
+const ImageView = dynamic(() => import("@/components/imageview/HeroSection"));
 import couples from "@/data/gallerrypotfolio";
 //  import Image from "next/image";
 

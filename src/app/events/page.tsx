@@ -1,21 +1,37 @@
-import Caption from "@/components/ui/events/caption/Caption";
-import DynamicGallery from "@/components/ui/events/dynamicgallry/DynamicGallery";
-import Ourvission from "@/components/ui/events/ourvission/Ourvission";
-import Bundlers from "@/components/ui/events/popular_bundles/Bundlers";
-import EventsPortfolio from "@/components/ui/events/portfolio/EventsPortfolio";
-import Tellusmore from "@/components/ui/events/tellusmore/Tellusmore";
-import VideoView from "@/components/ui/events/video_view/VideoView";
+import React from "react";
 
+import dynamic from "next/dynamic";
+
+const Caption = dynamic(() => import("@/components/ui/events/caption/Caption"));
+const DynamicGallery = dynamic(
+  () => import("@/components/ui/events/dynamicgallry/DynamicGallery")
+);
+const Ourvission = dynamic(
+  () => import("@/components/ui/events/ourvission/Ourvission")
+);
+const Bundlers = dynamic(
+  () => import("@/components/ui/events/popular_bundles/Bundlers")
+);
+const EventsPortfolio = dynamic(
+  () => import("@/components/ui/events/portfolio/EventsPortfolio")
+);
+const Tellusmore = dynamic(
+  () => import("@/components/ui/events/tellusmore/Tellusmore")
+);
+const VideoView = dynamic(
+  () => import("@/components/ui/events/video_view/VideoView")
+);
 import eventsImages from "@/data/eventsgallery";
 import eventsPortfolio from "@/data/eventsportfolio";
-
-import React from "react";
 
 function page() {
   return (
     <>
       <div className="relative">
-        <h1 className="text-3xl sm:text-5xl text-white absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[450px] text-center sm:leading-[60px]">
+        <h1
+          className="text-3xl sm:text-5xl text-white absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[450px] text-center sm:leading-[60px]"
+          data-aos="zoom-in-out"
+        >
           exclusive events with elevated design
         </h1>
         <video

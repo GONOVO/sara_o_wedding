@@ -1,5 +1,8 @@
-import ImageView from "@/components/imageview/HeroSection";
-import Servicesection from "@/components/ui/servicesection/Servicesection";
+import dynamic from "next/dynamic";
+const ImageView = dynamic(() => import("@/components/imageview/HeroSection"));
+const Servicesection = dynamic(
+  () => import("@/components/ui/servicesection/Servicesection")
+);
 
 function page() {
   return (

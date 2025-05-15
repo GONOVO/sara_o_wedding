@@ -18,6 +18,8 @@ function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
       style={{
         marginTop: isLargeScreen ? `${index * 56}px` : "24px",
       }}
+      data-aos="zoom-in-out"
+      data-aos-delay={index * 150}
     >
       <div className="flex items-center gap-4 my-4">
         <span className="text-sm">The</span>

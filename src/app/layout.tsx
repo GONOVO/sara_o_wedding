@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-
 import dynamic from "next/dynamic";
-
 import "aos/dist/aos.css";
 import "./globals.css";
 import Header from "../components/ui/header/Header";

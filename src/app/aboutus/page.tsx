@@ -1,12 +1,22 @@
-import Accolades from "@/components/aboutus/accolades/Accolades";
-import Couple from "@/components/aboutus/couple/Couple";
-import History from "@/components/aboutus/historycomp/History";
-import Norules from "@/components/aboutus/norules/Norules";
-import Persons from "@/components/aboutus/persons/Persons";
-import Textwithborder from "@/components/aboutus/textwithborder/Textwithborder";
-import ImageView from "@/components/imageview/HeroSection";
-import persons from "@/data/persons";
 import React from "react";
+
+import dynamic from "next/dynamic";
+
+const Accolades = dynamic(
+  () => import("@/components/aboutus/accolades/Accolades")
+);
+const Couple = dynamic(() => import("@/components/aboutus/couple/Couple"));
+const History = dynamic(
+  () => import("@/components/aboutus/historycomp/History")
+);
+const Norules = dynamic(() => import("@/components/aboutus/norules/Norules"));
+const Persons = dynamic(() => import("@/components/aboutus/persons/Persons"));
+const Textwithborder = dynamic(
+  () => import("@/components/aboutus/textwithborder/Textwithborder")
+);
+const ImageView = dynamic(() => import("@/components/imageview/HeroSection"));
+
+import persons from "@/data/persons";
 
 function Aboutus() {
   return (

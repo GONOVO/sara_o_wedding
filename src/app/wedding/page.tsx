@@ -1,13 +1,22 @@
-import Couple from "@/components/aboutus/couple/Couple";
-import Caption from "@/components/ui/events/caption/Caption";
-import DynamicGallery from "@/components/ui/events/dynamicgallry/DynamicGallery";
-import Ourvission from "@/components/ui/events/ourvission/Ourvission";
-import EventsPortfolio from "@/components/ui/events/portfolio/EventsPortfolio";
-import VideoView from "@/components/ui/events/video_view/VideoView";
+import React from "react";
+import dynamic from "next/dynamic";
+
+const Couple = dynamic(() => import("@/components/aboutus/couple/Couple"));
+const Caption = dynamic(() => import("@/components/ui/events/caption/Caption"));
+const DynamicGallery = dynamic(
+  () => import("@/components/ui/events/dynamicgallry/DynamicGallery")
+);
+const Ourvission = dynamic(
+  () => import("@/components/ui/events/ourvission/Ourvission")
+);
+const EventsPortfolio = dynamic(
+  () => import("@/components/ui/events/portfolio/EventsPortfolio")
+);
+const VideoView = dynamic(
+  () => import("@/components/ui/events/video_view/VideoView")
+);
 import galleryPortfolio from "@/data/gallerrypotfolio";
 import weddingsPortfolio from "@/data/weddingPortfoliosec";
-
-import React from "react";
 
 function Wedding() {
   return (

@@ -44,3 +44,11 @@ export interface IVission {
   caption: string;
   paragraph: string;
 }
+
+export interface IPortfolio {
+  title: string;
+  subTitle?: string;
+  paragraphs?: string[];
+  img?: string;
+  vid?: string;
+}

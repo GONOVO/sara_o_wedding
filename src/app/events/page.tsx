@@ -7,6 +7,7 @@ import Tellusmore from "@/components/ui/events/tellusmore/Tellusmore";
 import VideoView from "@/components/ui/events/video_view/VideoView";
 
 import eventsImages from "@/data/eventsgallery";
+import eventsPortfolio from "@/data/eventsportfolio";
 
 import React from "react";
 
@@ -39,9 +40,17 @@ function page() {
               exquisite visual details with flawless planning and execution,
               beautifully capturing the essence of your brand."
       />
-      <Caption />
-      <VideoView />
-      <EventsPortfolio />
+      <Caption
+        text="We have worked with Alice for both events and creative mailers and
+        have been really impressed by all of her work and would highly
+        recommend."
+        brand="L'Oreal"
+      />
+      <VideoView
+        videoPath="/videos/events.mp4"
+        videoPoster="/images/events_poster.webp"
+      />
+      <EventsPortfolio portfolioData={eventsPortfolio} />
       <Bundlers />
       <Tellusmore />
     </>

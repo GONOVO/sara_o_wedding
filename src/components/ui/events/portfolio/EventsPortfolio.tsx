@@ -2,9 +2,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import HugeTitle from "../../hugetitle/HugeTitle";
 import styles from "./portfolio.module.css";
-import eventsPortfolio from "@/data/eventsportfolio";
+// import eventsPortfolio from "@/data/eventsportfolio";
 import LazyAutoPlayVideo from "../../videoplayer/VideoPlayer";
-function EventsPortfolio() {
+import { IPortfolio } from "@/utils/interfaces";
+function EventsPortfolio({ portfolioData }: { portfolioData: IPortfolio[] }) {
   const [visibleIndexes, setVisibleIndexes] = useState<Set<number>>(new Set());
   const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -46,7 +47,7 @@ function EventsPortfolio() {
     <section>
       <HugeTitle text="PORTFOLIO" mt="-3rem" fontPercentage={0.9} />
       <div className={`${styles.main_Steps} mt-16`}>
-        {eventsPortfolio?.map((item, index) => (
+        {portfolioData?.map((item, index) => (
           <React.Fragment key={index}>
             {index % 2 === 0 ? (
               <div
@@ -57,7 +58,10 @@ function EventsPortfolio() {
                 className={styles.steps_grid}
               >
                 {item.vid ? (
-                  <LazyAutoPlayVideo videoPath={item.vid} placeholderImage="/images/events_poster.webp" />
+                  <LazyAutoPlayVideo
+                    videoPath={item.vid}
+                    placeholderImage="/images/events_poster.webp"
+                  />
                 ) : (
                   <div
                     className={styles.img_container}
@@ -73,7 +77,7 @@ function EventsPortfolio() {
                   <div className={styles.mobile_Title}>
                     <h2 data-aos="fade-left">{item.subTitle}</h2>
                   </div>
-                  {item.paragraphs.map((paragraph, i) => (
+                  {item.paragraphs?.map((paragraph, i) => (
                     <p data-aos="fade-left" key={i}>
                       {paragraph}
                     </p>
@@ -93,7 +97,7 @@ function EventsPortfolio() {
                   <div className={styles.mobile_Title}>
                     <h2 data-aos="fade-right">{item.subTitle}</h2>
                   </div>
-                  {item.paragraphs.map((paragraph, i) => (
+                  {item.paragraphs?.map((paragraph, i) => (
                     <p data-aos="fade-right" key={i}>
                       {paragraph}
                     </p>

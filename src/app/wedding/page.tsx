@@ -1,6 +1,10 @@
+import Caption from "@/components/ui/events/caption/Caption";
 import DynamicGallery from "@/components/ui/events/dynamicgallry/DynamicGallery";
 import Ourvission from "@/components/ui/events/ourvission/Ourvission";
+import EventsPortfolio from "@/components/ui/events/portfolio/EventsPortfolio";
+import VideoView from "@/components/ui/events/video_view/VideoView";
 import galleryPortfolio from "@/data/gallerrypotfolio";
+import weddingsPortfolio from "@/data/weddingPortfoliosec";
 
 import React from "react";
 
@@ -32,6 +36,15 @@ WEDDINGS & EVENTS"
         caption="A full wedding planning service for creative, design-led couples"
         paragraph="Alice Wilkes Design offers full-service luxury wedding planning and design, working with couples who want to push the boundaries of what’s possible with weddings. Based in London, we plan, design and manage exclusive celebrations in the UK, Europe and across the world. Alice Wilkes Design’s signature style is a wedding that fuses exceptional design with impeccable detail."
       />
+      <Caption
+        text="It felt like an absolute fairytale from start to finish."
+        brand="P&O"
+      />
+      <VideoView
+        videoPath="/videos/wedding_vid.mp4"
+        videoPoster="/images/wedding_poster.webp"
+      />
+      <EventsPortfolio portfolioData={weddingsPortfolio} />
     </>
   );
 }

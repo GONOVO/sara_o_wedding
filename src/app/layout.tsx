@@ -41,6 +41,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${nunito.variable} ${fraunces.variable} ${kristi.variable}`}
+      style={{ overflowX: "hidden" }}
     >
       {/* <Head>
         <link

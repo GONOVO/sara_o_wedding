@@ -9,7 +9,7 @@ function VideoView({
   videoPoster: string;
 }) {
   return (
-    <section className="w-full md:h-[90vh] h-[50vh] relative">
+    <section className="w-full md:h-[80vh] h-[50vh] relative">
       <div className="absolute inset-0">
         <LazyAutoPlayVideo
           videoPath={videoPath}

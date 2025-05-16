@@ -52,14 +52,14 @@ const eventsPortfolio = [
       "Social Media Marketing",
       "Social Media Management",
     ],
-    img: "/images/ev6.jpg",
+    img: "/images/portfolio4.webp",
   },
   {
     title: "PACKAGING ",
     subTitle:
       "All your print & graphics needs. We help you keep consistent with your branding touchpoint through graphic design services such as print deign, website banner design, edm design, & more​",
     paragraphs: ["Packaging Design", "Packaging Design"],
-    img: "/images/ev7.jpg",
+    img: "/images/ev_12.webp",
   },
   {
     title: "VENUE & REALESTATE RENDERING",

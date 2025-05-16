@@ -1,8 +1,8 @@
 import React from "react";
 import BundlerCard from "./bundler_card/BundlerCard";
-import Bundles from "@/data/bundles";
+import { IBundle } from "@/utils/interfaces";
 
-function Bundlers() {
+function Bundlers({ bundles }: { bundles: IBundle[] }) {
   return (
     <section className="mt-36">
       <div className="w-full flex flex-col justify-center items-center">
@@ -28,7 +28,7 @@ function Bundlers() {
         </p>
       </div>
       <div className="lg:w-5xl xl:w-[1080px] mx-auto grid grid-cols-1 lg:grid-cols-3 justify-items-center ">
-        {Bundles.map((bundle, index) => (
+        {bundles.map((bundle, index) => (
           <BundlerCard bundle={bundle} key={index} index={index} />
         ))}
       </div>

@@ -2,15 +2,18 @@ import React from "react";
 import LazyAutoPlayVideo from "../../videoplayer/VideoPlayer";
 import Link from "next/link";
 
-function Tellusmore() {
+function Tellusmore({
+  video,
+  posterVideo,
+}: {
+  video: string;
+  posterVideo: string;
+}) {
   return (
     <>
       <section className="grid lg:grid-cols-2 grid-cols-1  lg:mt-0 mt-6">
         <div>
-          <LazyAutoPlayVideo
-            videoPath="/videos/ev_vid2.mp4"
-            placeholderImage="/images/events_poster.webp"
-          />
+          <LazyAutoPlayVideo videoPath={video} placeholderImage={posterVideo} />
         </div>
         <div className="flex flex-col justify-center items-center bg-[var(--gold-color)] lg:pt-0 pt-8">
           <p className="text-xl sm:text-2xl" data-aos="zoom-in-out">

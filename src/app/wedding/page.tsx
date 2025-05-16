@@ -1,7 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
 
-const Couple = dynamic(() => import("@/components/aboutus/couple/Couple"));
 const Caption = dynamic(() => import("@/components/ui/events/caption/Caption"));
 // const DynamicGallery = dynamic(
 //   () => import("@/components/ui/events/dynamicgallry/DynamicGallery")
@@ -17,6 +16,9 @@ const VideoView = dynamic(
 );
 // import galleryPortfolio from "@/data/gallerrypotfolio";
 import weddingsPortfolio from "@/data/weddingPortfoliosec";
+import Bundlers from "@/components/ui/events/popular_bundles/Bundlers";
+import Tellusmore from "@/components/ui/events/tellusmore/Tellusmore";
+import weddingBundles from "@/data/weddingBundles";
 
 function Wedding() {
   return (
@@ -57,9 +59,11 @@ function Wedding() {
         videoPoster="/images/wedding_poster.webp"
       />
       <EventsPortfolio portfolioData={weddingsPortfolio} />
-      <div className="mt-24">
-        <Couple />
-      </div>
+      <Bundlers bundles={weddingBundles} />
+      <Tellusmore
+        video="/videos/wedding_tell_video.mp4"
+        posterVideo="/images/wedding_tell_poster.webp"
+      />
     </>
   );
 }

@@ -23,6 +23,7 @@ const VideoView = dynamic(
 );
 // import eventsImages from "@/data/eventsgallery";
 import eventsPortfolio from "@/data/eventsportfolio";
+import bundlesEvents from "@/data/eventBundles";
 
 function page() {
   return (
@@ -67,8 +68,11 @@ function page() {
         videoPoster="/images/events_poster.webp"
       />
       <EventsPortfolio portfolioData={eventsPortfolio} />
-      <Bundlers />
-      <Tellusmore />
+      <Bundlers bundles={bundlesEvents} />
+      <Tellusmore
+        video="/videos/ev_vid2.mp4"
+        posterVideo="/images/events_poster.webp"
+      />
     </>
   );
 }

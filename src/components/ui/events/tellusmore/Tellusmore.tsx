@@ -5,7 +5,7 @@ import Link from "next/link";
 function Tellusmore() {
   return (
     <>
-      <section className="grid lg:grid-cols-2 grid-cols-1 gap-[2px] lg:mt-0 mt-6">
+      <section className="grid lg:grid-cols-2 grid-cols-1  lg:mt-0 mt-6">
         <div>
           <LazyAutoPlayVideo
             videoPath="/videos/ev_vid2.mp4"

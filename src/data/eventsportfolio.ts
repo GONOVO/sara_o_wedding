@@ -39,7 +39,7 @@ const eventsPortfolio = [
       "Catalogue & Campaign Shoots",
       "Video Campaigns",
     ],
-    img: "/images/ev6.jpg",
+    img: "/images/ev_11.webp",
   },
   {
     title: "SOCIAL MEDIA & MARKETING",

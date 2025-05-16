@@ -3,9 +3,9 @@ import dynamic from "next/dynamic";
 
 const Couple = dynamic(() => import("@/components/aboutus/couple/Couple"));
 const Caption = dynamic(() => import("@/components/ui/events/caption/Caption"));
-const DynamicGallery = dynamic(
-  () => import("@/components/ui/events/dynamicgallry/DynamicGallery")
-);
+// const DynamicGallery = dynamic(
+//   () => import("@/components/ui/events/dynamicgallry/DynamicGallery")
+// );
 const Ourvission = dynamic(
   () => import("@/components/ui/events/ourvission/Ourvission")
 );
@@ -15,7 +15,7 @@ const EventsPortfolio = dynamic(
 const VideoView = dynamic(
   () => import("@/components/ui/events/video_view/VideoView")
 );
-import galleryPortfolio from "@/data/gallerrypotfolio";
+// import galleryPortfolio from "@/data/gallerrypotfolio";
 import weddingsPortfolio from "@/data/weddingPortfoliosec";
 
 function Wedding() {
@@ -39,10 +39,10 @@ function Wedding() {
           poster="/images/wedding_hero_poster.webp"
         />
       </div>
-      <DynamicGallery
+      {/* <DynamicGallery
         images={galleryPortfolio.map((person) => person.allImages[1])}
         title="WORLD CLASS WEDDINGS & EVENTS"
-      />
+      /> */}
       <Ourvission
         image="/images/vission_wedding.webp"
         caption="A full wedding planning service for creative, design-led couples"

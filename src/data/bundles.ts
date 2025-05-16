@@ -24,7 +24,7 @@ const Bundles = [
   },
   {
     title: "PARTNERSHIP",
-    image: "/images/contactusfall2.webp",
+    image: "/images/ev5.webp",
     subTitle: "Choose your monthly services",
     paragraphs: [
       "Graphic Design",

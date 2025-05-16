@@ -3,9 +3,9 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 const Caption = dynamic(() => import("@/components/ui/events/caption/Caption"));
-const DynamicGallery = dynamic(
-  () => import("@/components/ui/events/dynamicgallry/DynamicGallery")
-);
+// const DynamicGallery = dynamic(
+//   () => import("@/components/ui/events/dynamicgallry/DynamicGallery")
+// );
 const Ourvission = dynamic(
   () => import("@/components/ui/events/ourvission/Ourvission")
 );
@@ -21,7 +21,7 @@ const Tellusmore = dynamic(
 const VideoView = dynamic(
   () => import("@/components/ui/events/video_view/VideoView")
 );
-import eventsImages from "@/data/eventsgallery";
+// import eventsImages from "@/data/eventsgallery";
 import eventsPortfolio from "@/data/eventsportfolio";
 
 function page() {
@@ -45,10 +45,10 @@ function page() {
           poster="/images/poster_vid_ev.webp"
         />
       </div>
-      <DynamicGallery
+      {/* <DynamicGallery
         images={eventsImages}
         title="Exclusive brands exceptional execution"
-      />
+      /> */}
       <Ourvission
         image="/images/events_vission.webp"
         caption="ABOUT ARW AND ALICE WILKES"

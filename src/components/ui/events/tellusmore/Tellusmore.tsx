@@ -13,18 +13,18 @@ function Tellusmore() {
           />
         </div>
         <div className="flex flex-col justify-center items-center bg-[var(--gold-color)] lg:pt-0 pt-8">
-          <p className="text-xl sm:text-2xl text-white" data-aos="zoom-in-out">
+          <p className="text-xl sm:text-2xl" data-aos="zoom-in-out">
             Need something a little more unique?
           </p>
           <h1
-            className="text-6xl sm:text-7xl text-white font-medium"
+            className="text-6xl sm:text-7xl font-medium"
             data-aos="zoom-in-out"
           >
             Tell us more
           </h1>
           <Link
             href="/#contactus"
-            className="inline-block my-6  border-2 border-white text-white py-2 px-8 tracking-[3px]text-xs nunito_font hover:bg-black hover:border-black"
+            className="inline-block my-6  border-2 border-black  py-2 px-8 tracking-[3px]text-xs nunito_font hover:bg-black hover:text-white"
             data-aos="zoom-in-out"
           >
             CONTACT US

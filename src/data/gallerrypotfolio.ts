@@ -23,6 +23,27 @@ const galleryPortfolio = [
   },
   {
     id: 2,
+    image: "/images/ev_11.webp",
+    coverImage: "/images/key_cover.JPG",
+    allImages: [
+      "/images/key_1.JPG",
+      "/images/key_2.JPG",
+      "/images/key_3.JPG",
+      "/images/key_4.JPG",
+      "/images/key_5.JPG",
+      "/images/key_6.JPG",
+      "/images/key_7.JPG",
+      "/images/key_8.JPG",
+      "/images/key_9.JPG",
+      "/images/key_10.JPG",
+      "/images/key_11.JPG",
+      "/images/foot2.webp",
+      "/images/gallery6.webp",
+    ],
+    eventName: "KEYSTONE CORPORATE",
+  },
+  {
+    id: 3,
     image: "/images/galleryport10.webp",
     coverImage: "/images/4_3.webp",
     allImages: [
@@ -38,7 +59,29 @@ const galleryPortfolio = [
     femaleName: "YELE",
   },
   {
-    id: 3,
+    id: 4,
+    image: "/images/portfolio3.JPEG",
+    coverImage: "/images/pedro_cover.JPG",
+    allImages: [
+      "/images/pedro_1.JPG",
+      "/images/pedro_2.JPEG",
+      "/images/pedro_3.JPEG",
+      "/images/pedro_4.JPEG",
+      "/images/ev1.webp",
+      "/images/pedro_5.JPEG",
+      "/images//portfolio3.JPEG",
+      "/images/pedro_6.JPEG",
+      "/images/pedro_7.JPEG",
+      "/images/pedro_8.JPEG",
+      "/images/pedro_9.JPEG",
+      "/images/pedro_10.JPEG",
+      "/images/pedro_11.JPEG",
+    ],
+    eventName: "PEDRO 40th BIRTHDAY",
+  },
+
+  {
+    id: 5,
     image: "/images/featured1.webp",
     coverImage: "/images/2_4.webp",
     allImages: [
@@ -53,7 +96,7 @@ const galleryPortfolio = [
     femaleName: "HANAN",
   },
   {
-    id: 4,
+    id: 6,
     image: "/images/galleryport2.webp",
     maleName: "CHIDERA",
     femaleName: "YINKA",
@@ -66,7 +109,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     image: "/images/galleryport3.webp",
     maleName: "DEVAK",
     femaleName: "VALDEHI",
@@ -84,7 +127,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     image: "/images/galleryport4.webp",
     positionY: "0%",
     maleName: "LORIADE",
@@ -101,7 +144,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     positionY: "30%",
     image: "/images/galleryport5.webp",
     maleName: "IBRAHIM",
@@ -116,7 +159,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     positionY: "10%",
     image: "/images/galleryport6.webp",
     maleName: "RASHEED",
@@ -135,7 +178,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 9,
+    id: 11,
     positionY: "0%",
     image: "/images/galleryport7.webp",
     maleName: "DAVIDO",
@@ -152,7 +195,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 10,
+    id: 12,
     image: "/images/galleryport8.webp",
     maleName: "MOYIN",
     femaleName: "GOZIEM",
@@ -165,7 +208,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 11,
+    id: 13,
     image: "/images/galleryport9.webp",
     maleName: "TENI",
     femaleName: "TEMITOPE",

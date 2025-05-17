@@ -11,7 +11,7 @@ function History() {
           <div className="flex flex-col gap-y-8 items-center lg:-mt-20">
             <div className="w-[90%] lg:w-full h-[288px] md:h-[388px] relative">
               <Image
-                src="/images/his1.webp"
+                src="/images/schweppes_event.webp"
                 alt="history Image 1"
                 fill
                 className="object-cover"

@@ -39,14 +39,15 @@ export default function CouplePage({ params }: CouplePageProps) {
     return <div className="p-6 text-center">Couple not found</div>;
   }
 
-  const { femaleName, maleName, allImages, coverImage } = choosedCouple;
+  const { femaleName, maleName, allImages, coverImage, eventName } =
+    choosedCouple;
 
   return (
     <div>
       <ImageView
         imageSrc={`${coverImage}`}
         height="70dvh"
-        title={`${maleName} & ${femaleName}`}
+        title={eventName ? `${eventName}` : `${maleName} & ${femaleName}`}
         positionY={`${
           choosedCouple.positionY ? choosedCouple.positionY : "20%"
         }`}

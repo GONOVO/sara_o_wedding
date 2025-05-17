@@ -1,23 +1,78 @@
 "use client";
 import couples from "@/data/couples";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 function Couple() {
   const [couple, setCouple] = useState(0);
-  const handleChangeCouple = () => {
-    if (couple === couples.length - 1) {
-      setCouple(0);
-    } else {
-      setCouple((prev) => prev + 1);
-    }
+  const [translateX, setTranslateX] = useState(0);
+  const ulRef = useRef<HTMLUListElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const prevIndexRef = useRef(0);
+
+  // Approximate width of each button including padding/margin (adjust as needed)
+  const buttonWidth = 262; // min-w-[250px] + padding
+
+  const maxTranslateX = () => {
+    if (!ulRef.current || !containerRef.current) return 0;
+    const ulWidth = ulRef.current.scrollWidth;
+    const containerWidth = containerRef.current.offsetWidth;
+    // max translate allowed so that we don't scroll too far
+    return Math.max(0, ulWidth - containerWidth);
   };
+
+  const handleChangeCouple = () => {
+    const isLast = couple === couples.length - 1;
+    const nextIndex = isLast ? 0 : couple + 1;
+
+    // Calculate how much to translate
+    if (isLast) {
+      setTranslateX(0);
+    } else {
+      // Determine direction (next > prev => left translate, else right translate)
+      const direction = nextIndex > prevIndexRef.current ? -1 : 1;
+      let nextTranslate = translateX + direction * buttonWidth;
+
+      // Clamp translation so it never goes beyond limits
+      const maxTranslate = maxTranslateX();
+      if (Math.abs(nextTranslate) > maxTranslate) {
+        nextTranslate = -maxTranslate;
+      }
+      if (nextTranslate > 0) {
+        nextTranslate = 0;
+      }
+
+      setTranslateX(nextTranslate);
+    }
+
+    setCouple(nextIndex);
+    prevIndexRef.current = nextIndex;
+  };
+
+  const handleSetCouple = (index: number) => {
+    // Calculate difference and new translateX accordingly
+    const diff = index - prevIndexRef.current;
+    let nextTranslate = translateX - diff * buttonWidth;
+
+    const maxTranslate = maxTranslateX();
+    if (Math.abs(nextTranslate) > maxTranslate) {
+      nextTranslate = -maxTranslate;
+    }
+    if (nextTranslate > 0) {
+      nextTranslate = 0;
+    }
+
+    setTranslateX(nextTranslate);
+    setCouple(index);
+    prevIndexRef.current = index;
+  };
+
   return (
     <section className="pt-28 pb-12">
       <div className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div className="max-w-[450px] w-full lg:ml-auto mx-auto">
           <div
-            className="relative w-full h-[60vh] lg:h-full -mt-40 "
+            className="relative w-full h-[60vh] lg:h-full -mt-40"
             data-aos="fade-up"
           >
             <Image
@@ -48,7 +103,9 @@ function Couple() {
             className="text-[36px] sm:text-[54px] sm:leading-26 leading-10 sm:mt-0 my-8"
             data-aos="fade-up"
           >
-            {couples[couple].maleName} & {couples[couple].femaleName}
+            {couples[couple].eventName
+              ? couples[couple].eventName
+              : `${couples[couple].maleName} & ${couples[couple].femaleName}`}
           </h1>
           <h2
             className="text-[22px] mt-4 mb-10"
@@ -73,19 +130,26 @@ function Couple() {
         </div>
       </div>
       <div
-        className="lg:block w-fit hidden mx-auto my-28 border-b-2"
+        className="lg:block hidden mx-auto my-28 border-b-2 max-w-[1080px] overflow-hidden"
         data-aos="fade-up"
+        ref={containerRef}
       >
-        <ul className="flex">
+        <ul
+          ref={ulRef}
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(${translateX}px)` }}
+        >
           {couples.map((coupleItem, index) => (
             <button
               key={index}
-              onClick={() => setCouple(index)}
-              className={`text-lg py-2 px-6 cursor-pointer ${
-                couple === index && "border-1"
+              onClick={() => handleSetCouple(index)}
+              className={`min-w-[250px] text-lg py-2 px-6 cursor-pointer whitespace-nowrap ${
+                couple === index ? "border-b-2 border-black" : ""
               }`}
             >
-              {coupleItem.maleName} & {coupleItem.femaleName}
+              {coupleItem.eventName
+                ? coupleItem.eventName
+                : `${coupleItem.maleName} & ${coupleItem.femaleName}`}
             </button>
           ))}
         </ul>

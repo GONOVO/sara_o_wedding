@@ -1,7 +1,8 @@
 export interface IPortfolioitem {
   image: string;
-  maleName: string;
-  femaleName: string;
+  maleName?: string;
+  femaleName?: string;
+  eventName?: string;
 }
 
 export interface IPackage {

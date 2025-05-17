@@ -14,7 +14,7 @@ function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
 
   return (
     <article
-      className="h-[600px] w-full sm:w-[330px] p-4 ps-8 bg-[var(--gold-color)] flex flex-col  transition-all duration-300 transform hover:-translate-y-3 hover:shadow-xl"
+      className="h-[600px] w-full sm:w-[330px] p-4 ps-8 bg-[var(--gold-color)] flex flex-col  transition-all duration-300 transform hover:-translate-y-3 hover:shadow-xl hover:bg-gray-200"
       style={{
         marginTop: isLargeScreen ? `${index * 56}px` : "24px",
       }}

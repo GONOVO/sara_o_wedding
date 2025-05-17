@@ -18,7 +18,8 @@
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.16.0",
     "react-phone-input-2": "^2.15.1",
-    "saraowedding": "file:"
+    "saraowedding": "file:",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

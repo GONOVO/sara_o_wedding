@@ -8,7 +8,7 @@ const packages = [
     // btnText: "$1320",
   },
   {
-    coverImg: "/images/package2.webp",
+    coverImg: "/images/ev1.webp",
     title: "Bespoke Packages",
     list: [
       "Whether it’s an intimate gathering or a grand celebration, our services are fully customized to meet your expectations.",

@@ -55,7 +55,7 @@ function Persons({ data, rev }: { data: IPerson; rev?: boolean }) {
               } mb-8 lg:block hidden`}
             >
               <h2
-                className={`text-xl sm:text-4xl italic  text-[#c1ada3]  text-center ${
+                className={`text-xl sm:text-4xl italic  text-[#c3a79a]  text-center ${
                   rev ? "lg:text-end " : "lg:text-start"
                 }`}
                 style={{ wordSpacing: "0.6rem" }}

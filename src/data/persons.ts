@@ -1,6 +1,6 @@
 const persons = [
   {
-    image: "/images/about1.webp",
+    image: "/images/reallife1.webp",
     name: "SARA O EVENTS",
     desc: [
       "Where dreams and details dance together to create magical celebrations.",
@@ -12,7 +12,7 @@ const persons = [
     caption: "KRISTEEN, SARA O EVENTS BRIDE",
   },
   {
-    image: "/images/about2.webp",
+    image: "/images/reallife3.webp",
     name: "YEWANDE RWANG",
     desc: [
       "A neutral loving minimalist with an obsession for organization.",

@@ -5,7 +5,7 @@ import React from "react";
 
 function Ourvission({ image, caption, paragraph }: IVission) {
   return (
-    <section className="overflow-x-hidden">
+    <section className="overflow-x-hidden mt-24">
       <div className="mt-0 sm:mt-48 lg:mt-44 bg-[var(--gold-color)]">
         <div className="max-w-[1280px] mt-24 sm:mt-12 pb-12 md:pt-0 md:pb-0 md:px-4 grid grid-cols-1 md:grid-cols-2 mx-auto top-0 md:-top-20 relative">
           <div className="w-full h-[620px] sm:h-[820px] md:h-[620px]  lg:h-[820px] relative -mt-8">

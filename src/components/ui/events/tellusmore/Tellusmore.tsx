@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import LazyAutoPlayVideo from "../../videoplayer/VideoPlayer";
 import Link from "next/link";
 
@@ -9,13 +10,36 @@ function Tellusmore({
   video: string;
   posterVideo: string;
 }) {
+  const [isInView, setIsInView] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            setIsInView(true);
+          }, 2500);
+        }
+      },
+      { threshold: 0.1 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, []);
   return (
     <>
       <section className="grid lg:grid-cols-2 grid-cols-1  lg:mt-0 mt-6">
         <div>
           <LazyAutoPlayVideo videoPath={video} placeholderImage={posterVideo} />
         </div>
-        <div className="flex flex-col justify-center items-center bg-[var(--gold-color)] lg:pt-0 pt-8">
+        <div
+          className={`flex flex-col justify-center items-center bg-[var(--gold-color)] lg:pt-0 pt-8 ${
+            isInView && "bg-gray-200"
+          }`}
+          ref={sectionRef}
+        >
           <p className="text-xl sm:text-2xl" data-aos="zoom-in-out">
             Need something a little more unique?
           </p>
@@ -34,7 +58,11 @@ function Tellusmore({
           </Link>
         </div>
       </section>
-      <div className="py-8 text-center flex sm:flex-row flex-col justify-center items-center gap-2 bg-[var(--gold-color)]">
+      <div
+        className={`py-8 text-center flex sm:flex-row flex-col justify-center items-center gap-2 bg-[var(--gold-color)] ${
+          isInView && "bg-gray-200"
+        }`}
+      >
         <h1 className="text-4xl font-extralight">ready to grow?</h1>
         <Link href="/#contactus" className="hover:opacity-40">
           LET&apos;S CONNECT!

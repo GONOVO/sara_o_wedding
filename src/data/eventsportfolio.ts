@@ -1,89 +1,63 @@
 const eventsPortfolio = [
   {
-    title: "BRANDING",
+    title: "Crafting Moments into Masterpieces",
     subTitle:
-      "Defining your brand is the first step to your business success & it all starts with you! We offer a suite of branding services to build your identity, logo & assets. Empowering you with a clear direction & deeper connection to your business.",
-    paragraphs: [
-      "Brand discovery & Identity",
-      "Brand Assets",
-      "Brand Renovations",
+      "The Sara O Events team prides itself on creating bespoke events that are overwhelmingly creative and unique to each couple they work with. Yewande's ability to immerse herself in a vision that suits her client's personal tastes and focus in on what design direction to take them is what she is truly known for.​",
+     paragraphs: [
     ],
     img: "/images/ev5.webp",
   },
   {
-    title: "PRODUCT DESIGN",
+    title: "THE ARTISTRY OF CELEBRATION",
     subTitle:
-      "Product & service based businesses require unique product lines that can stand out in an overcrowded market & truly speak to your dream clients. We help you with your product design, specialising in fashion, beauty & service product designs",
-    paragraphs: ["Apparel Design", "Jewellery  Design", "Product Design"],
+      "Sara O Events approaches all of their events with an incredibly artistic eye. Yewande offers an unparalleled level of logistical thinking entwined with out of the box ideas to ensure no two events are alike, all while making it appear effortless.​",
+    paragraphs: [],
     vid: "/videos/events.mp4",
   },
   {
-    title: "WEBSITE DESIGN",
+    title: "YOUR JOURNEY TO EXTRAORDINARY",
     subTitle:
-      "Your single greatest asset for selling in your business is your website. Social media is the window to your brand but the website is your front door! We design beautiful & engaging websites that enhance your client experience and brand credibility.",
+      "From the moment you connect with the Sara O Events team to the moment the last guest leaves your event, you will feel supported, prioritized and empowered. Yewande values her relationships with her clients and recognizes the trust placed in her is a privilege not to be taken lightly. Celebrations are once in a lifetime experiences and the Sara O Events team treats the entire planning process as such.",
     paragraphs: [
-      "Portfolio Websites",
-      "E-Commerce Websites",
-      "Single Launch Pages",
-      "Wedding Websites",
-      "Website renovations & Weekly updates",
     ],
     vid: "/videos/ev_vid2.mp4",
   },
   {
-    title: "CONTENT CREATION",
+    title: "INSPIRED DESIGN, EXCEPTIONAL EXPERIENCES",
     subTitle:
-      "Having beautiful, professional & creative content is what makes you DIFFERENT. Decide wether they connect with your brand within seconds and that has everything to do with the visual stimulus you create. We work with a team of creatives across two countries to provide you incredibly photography & videography services that will completely transform your buisness.",
+      "Infusing inspired ideas into their client's events and customizing the overall guest experience is their specialty. Sara O Events' in-depth design consultations and customized conceptual style boards are second to none - pulling inspiration from so many facets of every day life, travels, textiles, emotions, nuances and colors - all while creating completely unique design concepts for all of their clients.​",
     paragraphs: [
-      "Product Photography",
-      "Catalogue & Campaign Shoots",
-      "Video Campaigns",
     ],
     img: "/images/ev_11.webp",
   },
   {
-    title: "SOCIAL MEDIA & MARKETING",
+    title: "EFFICIENCY MEETS EXCELLENCE",
     subTitle:
-      "We all know it, social media is officially a full time job (or two) especially when you're working across multiple platforms & keeping your social presence up to date with original content. We help our clients map our their monthly posts, create engaging captions & develop social content such as imagery & reels to make your life posting easy!​",
+      "Yewande knows that when planning an event, timeliness matters. Operating on a twenty-four hour email response time is standard for the Sara O Events team. Clients receive access to their own client portal with streamlined planning tools, allowing them to rest easy knowing everything is covered behind the scenes. Sara O Events is known industry-wide for their detailed, organized timelines that ensure each celebration runs seamlessly.​",
     paragraphs: [
-      "Instagram Content Design with captions",
-      "Instagram Reels Creation",
-      "Instagram Posts Design with Graphics",
-      "Social Media Marketing",
-      "Social Media Management",
     ],
     img: "/images/portfolio4.webp",
   },
   {
-    title: "PACKAGING ",
+    title: "MAGICAL MOMENTS, MEANINGFUL CONNECTIONS",
     subTitle:
-      "All your print & graphics needs. We help you keep consistent with your branding touchpoint through graphic design services such as print deign, website banner design, edm design, & more​",
-    paragraphs: ["Packaging Design", "Packaging Design"],
+      "Seeing clients' visions come to life is always Yewande's favorite moment of an event day. Her clients mean the world to her and working with each and every family reminds her why she loves what she does. As a client of Sara O Events, you will always feel just as you should - prioritized and important.​",
+    paragraphs: [],
     img: "/images/ev_12.webp",
   },
   {
-    title: "VENUE & REALESTATE RENDERING",
+    title: "WORLDWIDE MAGIC",
     subTitle:
-      "Presenting prospect customer with photographic quality renderings will immediately help you close pre-sales & Venue bookings while you're under construction.​",
+      "Sara O Events brings your events to life in beautiful places around the world. Yewande creates perfect moments that honor local cultures while delivering your unique vision. From beaches to castles, we handle every detail so you can simply enjoy your special occasion wherever you choose to celebrate.​",
     paragraphs: [
-      "Property Renderings",
-      "Venue Renderings",
-      "Product Renderings",
     ],
     img: "/images/his3.webp",
   },
   {
-    title: "GRAPHIC DESIGN",
+    title: "LUXURY IN EVERY DETAIL",
     subTitle:
-      "All your print & graphics needs. We help you keep consistent with your branding touchpoint through graphic design services such as print deign, website banner design, edm design, and more",
+      "Beyond planning and design, Sara O Events offers a complete transformation experience. Yewande's keen eye for luxurious touches elevates every gathering from ordinary to extraordinary. Each element, from custom stationery to signature scents, is thoughtfully curated to surprise and delight. This attention to refined details creates immersive environments where guests don't just attend your event—they experience it with all their senses. When you choose Sara O Events, you choose distinction that speaks volumes without saying a word.​",
     paragraphs: [
-      "Print Design ",
-      "Email Marketing Design",
-      "Website Banners",
-      "Social Media templates",
-      "Logo & Icon Design",
-      "Artwork & Illustrations",
-      "Bespoke Designs",
     ],
     vid: "/videos/eventshero.mp4",
   },

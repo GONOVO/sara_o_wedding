@@ -1,20 +1,20 @@
 const weddingsPortfolio = [
   {
-    title: "DESIGN TO DELIVERY",
+    title: "Dream Design to Dazzling Reality",
     // subTitle:
     //   "With Alice Wilkes Design’s wealth of experience in planning and designing weddings, we’ll translate your aesthetic into a unique celebration. Throughout the design and planning process we’ll collaborate with you on every element to ensure we deliver a wedding that’s a complete feast for the senses. There’s no detail that’s too big or small to be considered, resulting in a day full of wow-factor elements alongside heart-stoppingly perfect details.",
     paragraphs: [
-      "With Alice Wilkes Design’s wealth of experience in planning and designing weddings, we’ll translate your aesthetic into a unique celebration. Throughout the design and planning process we’ll collaborate with you on every element to ensure we deliver a wedding that’s a complete feast for the senses. There’s no detail that’s too big or small to be considered, resulting in a day full of wow-factor elements alongside heart-stoppingly perfect details.",
+      "With Sara O Events, your wedding vision becomes pure magic. Yewande weaves your unique love story into every exquisite detail - from breathtaking floral installations to the perfect playlist that makes your guests catch their breath. She'll be your creative partner, carefully translating your dreams into reality while surprising you with those extraordinary 'how did she even think of that?' moments. Together, we'll craft not just a wedding, but a wonder-filled experience where every touchpoint - from your ceremony's first glance to the final dance - feels like it was plucked straight from your most beautiful daydreams.",
     ],
     img: "/images/design_wedding.webp",
   },
   {
-    title: "PERFECTION FOR WHEN IT MATTERS",
+    title: "Where Dreams Take Shape",
     // subTitle:
     //   "We gather your inspiration and turn this into a flawless wedding, meticulously planning, designing, producing and implementing every step of your celebration. Each detail is considered, each element is controlled, so you know the reality truly will exceed your vision.",
     paragraphs: [
-      "We gather your inspiration and turn this into a flawless wedding, meticulously planning, designing, producing and implementing every step of your celebration. Each detail is considered, each element is controlled, so you know the reality truly will exceed your vision.",
-      "A wedding planner and designer’s role is to ensure your vision for your wedding day is brought to glorious life, allowing you to simply soak up the atmosphere and celebrate with family and friends. Alice Wilkes Design offers a range of wedding services, from full design, production and management to creative design and styling.",
+      "We breathe life into your inspiration, crafting celebrations where every detail feels touched by magic. With meticulous care, we weave together design, planning and flawless execution, transforming your vision into something even more beautiful than you imagined.",
+      "This is why we exist: to handle the extraordinary while you savor the ordinary moments. To turn 'what if' into 'I never dreamed it could be this perfect.' Whether you need a guiding hand or full creation, we're here to make your love story visible in every exquisite detail.",
     ],
     vid: "/videos/wedd_vid_1.mp4",
   },

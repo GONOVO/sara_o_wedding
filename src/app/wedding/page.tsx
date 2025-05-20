@@ -47,12 +47,12 @@ function Wedding() {
       /> */}
       <Ourvission
         image="/images/vission_wedding.webp"
-        caption="A full wedding planning service for creative, design-led couples"
-        paragraph="Alice Wilkes Design offers full-service luxury wedding planning and design, working with couples who want to push the boundaries of what’s possible with weddings. Based in London, we plan, design and manage exclusive celebrations in the UK, Europe and across the world. Alice Wilkes Design’s signature style is a wedding that fuses exceptional design with impeccable detail."
+        caption="CREATING YOUR DREAM WEDDING, ANYWHERE IN THE WORLD"
+        paragraph="Sara O Events offers full-service luxury wedding planning and design, working with couples who want to create unforgettable celebrations. Led by Yewande Rwang-Dung, we plan, design and manage exclusive destination weddings across the world - from romantic beach ceremonies to elegant castle receptions. Sara O Events' signature style brings exceptional design and impeccable detail to every wedding, creating magical moments that transform your special day into extraordinary memories."
       />
       <Caption
         text="It felt like an absolute fairytale from start to finish."
-        brand="P&O"
+        brand="CHIDERA & YINKA"
       />
       <VideoView
         videoPath="/videos/wedding_vid.mp4"

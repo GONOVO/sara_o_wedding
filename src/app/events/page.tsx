@@ -52,22 +52,18 @@ function page() {
       /> */}
       <Ourvission
         image="/images/events_vission.webp"
-        caption="ABOUT ARW AND ALICE WILKES"
-        paragraph=" Founded by designer Alice Wilkes, ARW is a London-based    event design and production studio. We create events that combine
-              exquisite visual details with flawless planning and execution,
-              beautifully capturing the essence of your brand."
+        caption="ABOUT SARA O EVENTS AND YEWANDE RWANG-DUNG"
+        paragraph=" Founded by visionary designer and co-founder Yewande Rwang-Dung, Sara O Events is a premier full-service event planning and design studio specializing in modern, personalized celebrations for private clients worldwide. With a sharp eye for luxury details and a passion for transforming spaces, Yewande crafts immersive experiences that reflect each client’s unique vision. Every event is meticulously executed through her proven system of seamless planning, an extensive network of trusted vendors, and an unwavering commitment to excellence in every detail."
       />
       <Caption
-        text="We have worked with Alice for both events and creative mailers and
-        have been really impressed by all of her work and would highly
-        recommend."
-        brand="L'Oreal"
+        text="We have worked with Yewande for both events and creative projects, and we’ve been consistently impressed by her exceptional work. Her attention to detail, creativity, and professionalism make her an absolute pleasure to collaborate with. We couldn’t recommend her more highly."
+        brand="KEYSTONE CORPORATE"
       />
       <VideoView
         videoPath="/videos/events.mp4"
         videoPoster="/images/events_poster.webp"
       />
-      <EventsPortfolio portfolioData={eventsPortfolio} />
+      < EventsPortfolio portfolioData={eventsPortfolio} />
       <Bundlers bundles={bundlesEvents} />
       <Tellusmore
         video="/videos/ev_vid2.mp4"

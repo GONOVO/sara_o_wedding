@@ -12,19 +12,17 @@ function Bundlers({ bundles }: { bundles: IBundle[] }) {
           data-aos="fade-up"
         >
           <span className="not-italic me-2 font-medium text-[45px]">most</span>
-          Popular <span className="bg-white my-2 px-8">bundles</span>
+          Popular <span className="bg-white my-2 px-8">services</span>
         </h1>
         <p
           className="text-xl max-w-[820px] text-center mx-auto px-2 my-10"
           data-aos="fade-up"
           data-aos-delay={200}
         >
-          Interested in an assortment of services to get you going & a
-          <span className="ms-2 font-medium text-3xl">Special Offer?</span>
+          Dreaming of an extraordinary event? & a
+          <span className="ms-2 font-medium text-3xl">Special Event?</span>
           <br />
-          We have bundled up some of our most popular services into little
-          suites of success. Each bundle is entitled to an exclusive bundle
-          discount because we appreciate you!
+          Explore our collection of bespoke services, meticulously designed to bring your vision to life with effortless sophistication. From intimate gatherings to grand celebrations, every detail is crafted with intention, because your event should be as unique as you are!
         </p>
       </div>
       <div className="lg:w-5xl xl:w-[1080px] mx-auto grid grid-cols-1 lg:grid-cols-3 justify-items-center ">

@@ -38,7 +38,8 @@ function LifeTimeEvents() {
               data-aos="fade-left"
             >
               <Image
-                src="/images/reallife1.webp"
+                // src="/images/reallife1.webp"
+                src="/images/reallife3.webp"
                 alt="reallife"
                 fill
                 className="object-cover"
@@ -53,7 +54,8 @@ function LifeTimeEvents() {
           data-aos="fade-left"
         >
           <Image
-            src="/images/reallife3.webp"
+            // src="/images/reallife3.webp"
+            src="/images/bu1.jpg"
             alt="real life"
             fill
             className="object-cover"

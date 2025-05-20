@@ -11,7 +11,7 @@ function Norules() {
           data-aos="fade-right"
         >
           <Image
-            src="/images/norules.webp"
+            src="/images/hp2.jpg"
             alt="no rules"
             fill
             className="object-cover"

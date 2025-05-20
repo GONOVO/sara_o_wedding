@@ -18,7 +18,7 @@ function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
         if (entry.isIntersecting) {
           setTimeout(() => {
             setIsInView(true);
-          }, index * 1000);
+          }, index * 1300);
         }
       },
       { threshold: 0.3 }
@@ -34,11 +34,7 @@ function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
       // className="h-[600px] w-full sm:w-[330px] p-4 ps-8 bg-[var(--gold-color)] flex flex-col  transition-all duration-300 transform hover:-translate-y-3 hover:shadow-xl hover:bg-gray-200"
       className={`h-[600px] w-full sm:w-[330px] p-4 ps-8 bg-[var(--gold-color)] flex flex-col 
         transition-all duration-500 transform
-        ${
-          isInView
-            ? "opacity-100 -translate-y-3 bg-gray-200 shadow-xl"
-            : "translate-y-0"
-        }`}
+        ${isInView ? "bundlers" : "translate-y-0"}`}
       style={{
         marginTop: isLargeScreen ? `${index * 56}px` : "24px",
       }}
@@ -46,7 +42,7 @@ function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
       // data-aos-delay={index * 150}
     >
       <div className="flex items-center gap-4 my-4">
-        <span className="text-sm">The</span>
+        {/* <span className="text-sm">The</span> */}
         <h1 className="text-3xl">{bundle.title}</h1>
       </div>
       <div className="w-[280px] h-[280px] rounded-full overflow-hidden relative mx-auto sm:mr-auto">
@@ -58,11 +54,9 @@ function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
         />
       </div>
       <div className="mt-4">
-        <h2 className="text-xl pb-1 border-b mb-3">{bundle.subTitle}</h2>
+        <h2 className="text-2xl pb-1 border-b mb-3">{bundle.subTitle}</h2>
         {bundle.paragraphs.map((para, index) => (
-          <p key={index} className="text-sm">
-            {para}
-          </p>
+          <p key={index}>{para}</p>
         ))}
       </div>
     </article>

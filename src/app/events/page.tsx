@@ -24,12 +24,13 @@ const VideoView = dynamic(
 // import eventsImages from "@/data/eventsgallery";
 import eventsPortfolio from "@/data/eventsportfolio";
 import bundlesEvents from "@/data/eventBundles";
+import ImageView from "@/components/imageview/HeroSection";
 
 function page() {
   return (
     <>
       <div className="relative">
-        <h1
+        {/* <h1
           className="text-3xl sm:text-5xl text-white absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[450px] text-center sm:leading-[60px]"
           data-aos="zoom-in-out"
         >
@@ -44,6 +45,13 @@ function page() {
           muted
           playsInline
           poster="/images/poster_vid_ev.webp"
+        /> */}
+        <ImageView
+          // imageSrc="/images/design_wedding.webp"
+          imageSrc="/images/f_ev4.webp"
+          height="90vh"
+          mb="0px"
+          positionY="20%"
         />
       </div>
       {/* <DynamicGallery
@@ -63,7 +71,7 @@ function page() {
         videoPath="/videos/events.mp4"
         videoPoster="/images/events_poster.webp"
       />
-      < EventsPortfolio portfolioData={eventsPortfolio} />
+      <EventsPortfolio portfolioData={eventsPortfolio} />
       <Bundlers bundles={bundlesEvents} />
       <Tellusmore
         video="/videos/ev_vid2.mp4"

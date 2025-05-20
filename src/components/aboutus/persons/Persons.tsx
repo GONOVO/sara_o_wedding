@@ -7,7 +7,9 @@ function Persons({ data, rev }: { data: IPerson; rev?: boolean }) {
     <section className="overflow-x-hidden">
       <div className="max-w-7xl mx-auto relative">
         <div
-          className={`grid lg:grid-cols-2 grid-cols-1 ${rev && "lg:mt-0 mt-10"}`}
+          className={`grid lg:grid-cols-2 grid-cols-1 ${
+            rev && "lg:mt-0 mt-10"
+          }`}
         >
           <div
             className={`relative w-full lg:h-auto h-[60vh] ${
@@ -81,3 +83,4 @@ function Persons({ data, rev }: { data: IPerson; rev?: boolean }) {
 }
 
 export default Persons;
+// to push in gonovo repo

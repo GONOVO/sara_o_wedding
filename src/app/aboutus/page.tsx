@@ -22,7 +22,8 @@ function Aboutus() {
   return (
     <div>
       <ImageView
-        imageSrc="/images/galleryport6.webp"
+        imageSrc="/images/design_wedding.webp"
+        // imageSrc="/images/galleryport6.webp"
         height="90vh"
         mb="0px"
         positionY="20%"

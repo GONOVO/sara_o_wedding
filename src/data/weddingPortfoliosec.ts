@@ -6,7 +6,8 @@ const weddingsPortfolio = [
     paragraphs: [
       "With Alice Wilkes Design’s wealth of experience in planning and designing weddings, we’ll translate your aesthetic into a unique celebration. Throughout the design and planning process we’ll collaborate with you on every element to ensure we deliver a wedding that’s a complete feast for the senses. There’s no detail that’s too big or small to be considered, resulting in a day full of wow-factor elements alongside heart-stoppingly perfect details.",
     ],
-    img: "/images/design_wedding.webp",
+    // img: "/images/design_wedding.webp",
+    img: "/images/pgk_3.webp",
   },
   {
     title: "PERFECTION FOR WHEN IT MATTERS",
@@ -16,7 +17,8 @@ const weddingsPortfolio = [
       "We gather your inspiration and turn this into a flawless wedding, meticulously planning, designing, producing and implementing every step of your celebration. Each detail is considered, each element is controlled, so you know the reality truly will exceed your vision.",
       "A wedding planner and designer’s role is to ensure your vision for your wedding day is brought to glorious life, allowing you to simply soak up the atmosphere and celebrate with family and friends. Alice Wilkes Design offers a range of wedding services, from full design, production and management to creative design and styling.",
     ],
-    vid: "/videos/wedd_vid_1.mp4",
+    // vid: "/videos/wedd_vid_1.mp4",
+    img: "/images/about2.webp",
   },
   //   {
   //     title: "WEBSITE DESIGN",

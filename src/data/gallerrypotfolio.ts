@@ -180,7 +180,6 @@ const galleryPortfolio = [
     ],
     eventName: "FUTURE FACE 2024",
   },
-
   {
     id: 11,
     image: "/images/galleryport4.webp",

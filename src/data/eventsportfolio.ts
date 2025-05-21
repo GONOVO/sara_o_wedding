@@ -11,7 +11,7 @@ const eventsPortfolio = [
     subTitle:
       "Sara O Events approaches all of their events with an incredibly artistic eye. Yewande offers an unparalleled level of logistical thinking entwined with out of the box ideas to ensure no two events are alike, all while making it appear effortless.​",
     paragraphs: [],
-    vid: "/videos/events.mp4",
+    vid: "/videos/ev_1.mp4",
   },
   {
     title: "INSPIRED DESIGN, EXCEPTIONAL EXPERIENCES",

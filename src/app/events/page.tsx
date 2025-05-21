@@ -35,23 +35,16 @@ function page() {
           data-aos="zoom-in-out"
         >
           exclusive events with elevated design
-        </h1>
+        </h1>*/}
         <video
           aria-hidden="true"
           className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
-          src="/videos/eventshero.mp4"
+          src="/videos/events.mp4"
           autoPlay
           loop
           muted
           playsInline
           poster="/images/poster_vid_ev.webp"
-        /> */}
-        <ImageView
-          // imageSrc="/images/design_wedding.webp"
-          imageSrc="/images/f_ev4.webp"
-          height="90vh"
-          mb="0px"
-          positionY="20%"
         />
       </div>
       {/* <DynamicGallery
@@ -67,10 +60,17 @@ function page() {
         text="We have worked with Yewande for both events and creative projects, and we’ve been consistently impressed by her exceptional work. Her attention to detail, creativity, and professionalism make her an absolute pleasure to collaborate with. We couldn’t recommend her more highly."
         brand="KEYSTONE CORPORATE"
       />
-      <VideoView
+      <ImageView
+        // imageSrc="/images/design_wedding.webp"
+        imageSrc="/images/f_ev4.webp"
+        height="90vh"
+        mb="0px"
+        positionY="20%"
+      />
+      {/* <VideoView
         videoPath="/videos/events.mp4"
         videoPoster="/images/events_poster.webp"
-      />
+      /> */}
       <EventsPortfolio portfolioData={eventsPortfolio} />
       <Bundlers bundles={bundlesEvents} />
       <Tellusmore

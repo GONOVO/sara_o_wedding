@@ -37,7 +37,7 @@ function LifeTimeEvents() {
               className={`w-full h-[45vh] relative ${styles.smImage}`}
               data-aos="fade-left"
             >
-              <Image
+              {/* <Image
                 // src="/images/reallife1.webp"
                 src="/images/reallife3.webp"
                 alt="reallife"
@@ -45,6 +45,16 @@ function LifeTimeEvents() {
                 className="object-cover"
                 style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
                 loading="lazy"
+              /> */}
+              <video
+                aria-hidden="true"
+                className="w-full object-cover absolute h-full transition-opacity duration-500 "
+                src="/videos/homeP_1.mp4"
+                autoPlay={true}
+                loop
+                muted
+                playsInline
+                poster="/images/events_poster.webp"
               />
             </div>
           </div>

@@ -18,9 +18,9 @@ const EventsPortfolio = dynamic(
 const Tellusmore = dynamic(
   () => import("@/components/ui/events/tellusmore/Tellusmore")
 );
-const VideoView = dynamic(
-  () => import("@/components/ui/events/video_view/VideoView")
-);
+// const VideoView = dynamic(
+//   () => import("@/components/ui/events/video_view/VideoView")
+// );
 // import eventsImages from "@/data/eventsgallery";
 import eventsPortfolio from "@/data/eventsportfolio";
 import bundlesEvents from "@/data/eventBundles";

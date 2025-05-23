@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./hero.module.css";
 function Hero() {
-  const [isMobile, setIsMobile] = useState(window?.innerWidth <= 1024);
+  const [isMobile, setIsMobile] = useState(false);
   const [detectvideo, setDetectVideo] = useState(1);
   const videoRefEvents = useRef<HTMLVideoElement>(null);
   const videoRefWedding = useRef<HTMLVideoElement>(null);
@@ -82,7 +82,7 @@ function Hero() {
               loop
               muted
               playsInline
-              poster="/images/events_poster.webp"
+              poster="/images/event_vid_1.webp"
               onMouseEnter={() =>
                 handleMouseEnter(videoRefEvents, videoRefWedding)
               }
@@ -116,7 +116,7 @@ function Hero() {
               loop
               muted
               playsInline
-              poster="/images/hero_poster.webp"
+              poster="/images/wed_m_poster.webp"
               onMouseEnter={() =>
                 handleMouseEnter(videoRefWedding, videoRefEvents)
               }

@@ -6,8 +6,8 @@ const weddingsPortfolio = [
     paragraphs: [
       "With Sara O Events, your wedding vision becomes pure magic. Yewande weaves your unique love story into every exquisite detail - from breathtaking floral installations to the perfect playlist that makes your guests catch their breath. She'll be your creative partner, carefully translating your dreams into reality while surprising you with those extraordinary 'how did she even think of that?' moments. Together, we'll craft not just a wedding, but a wonder-filled experience where every touchpoint - from your ceremony's first glance to the final dance - feels like it was plucked straight from your most beautiful daydreams.",
     ],
-    // img: "/images/design_wedding.webp",
-    vid: "/videos/vid_blc.mp4",
+    img: "/images/gg.webp",
+    // vid: "/videos/vid_blc.mp4",
   },
   {
     title: "Where Dreams Take Shape",

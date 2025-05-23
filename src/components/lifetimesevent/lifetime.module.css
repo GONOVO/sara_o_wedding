@@ -11,15 +11,15 @@
     height: 100vh;
     order: 0;
   }
-  .smImage {
+  /* .smImage {
     display: none;
-  }
+  } */
 }
 @media (max-width: 540px) {
   .lgImage {
     height: 60vh;
   }
   .main_Title {
-    max-width: 300px;
+    max-width: 430;
   }
 }

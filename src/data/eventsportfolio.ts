@@ -4,7 +4,7 @@ const eventsPortfolio = [
     subTitle:
       "The Sara O Events team prides itself on creating bespoke events that are overwhelmingly creative and unique to each couple they work with. Yewande's ability to immerse herself in a vision that suits her client's personal tastes and focus in on what design direction to take them is what she is truly known for.​",
     paragraphs: [],
-    img: "/images/ev5.webp",
+    img: "/images/ev7.jpg",
   },
   {
     title: "THE ARTISTRY OF CELEBRATION",

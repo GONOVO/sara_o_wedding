@@ -12,7 +12,14 @@ function LifeTimeEvents() {
             className={`lg:text-[86px]  text-[42px] leading-[42px] text-[#222222] font-normal lg:text-end  lg:leading-[100px] mb-8 ${styles.main_Title}`}
             data-aos="fade-right"
           >
-            Once in a lifetime events
+            <span className="sm:hidden">
+              <span className="ms-[5%] text-[10.2vw]">Once</span>
+              <br />
+              <span className="text-[10vw] mt-4 block">
+                in a lifetime events
+              </span>
+            </span>
+            <span className="sm:block hidden">Once in a lifetime events</span>
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:max-w-full max-w-[430px]">
             <div>
@@ -34,7 +41,7 @@ function LifeTimeEvents() {
               </Link>
             </div>
             <div
-              className={`w-full h-[45vh] relative ${styles.smImage}`}
+              className={`w-full h-[45vh] relative ${styles.smImage} lg:block hidden`}
               data-aos="fade-left"
             >
               {/* <Image
@@ -60,7 +67,7 @@ function LifeTimeEvents() {
           </div>
         </div>
         <div
-          className={`xl:w-full w-[92%] mx-auto lg:mx-0 lg:w-[97%] lg:mr-auto h-[100vh] relative ${styles.lgImage}`}
+          className={`xl:w-full w-[86%] mx-auto lg:mx-0 lg:w-[97%] lg:mr-auto h-[100vh] relative ${styles.lgImage}`}
           data-aos="fade-left"
         >
           <Image
@@ -72,6 +79,18 @@ function LifeTimeEvents() {
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
             loading="lazy"
           />
+          <div className="bg-white p-2 absolute h-[210px] -right-[5%] transition-opacity duration-500 sm:hidden block -bottom-[50px] w-[70%]">
+            <video
+              aria-hidden="true"
+              className="object-cover w-full h-full"
+              src="/videos/homeP_1.mp4"
+              autoPlay={true}
+              loop
+              muted
+              playsInline
+              poster="/images/events_poster.webp"
+            />
+          </div>
           {/* <LazyAutoPlayVideo /> */}
         </div>
       </div>

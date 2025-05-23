@@ -72,7 +72,7 @@ function Couple() {
       <div className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div className="max-w-[450px] w-full lg:ml-auto mx-auto">
           <div
-            className="relative w-full h-[60vh] lg:h-full -mt-40"
+            className="relative w-full h-[60vh] lg:h-[550px] -mt-40"
             data-aos="fade-up"
           >
             <Image

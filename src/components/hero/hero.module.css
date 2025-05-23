@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+  .hiddensecond {
+    animation-name: hiddenatfersec;
+    animation-duration: 2s;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes hiddenatfersec {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

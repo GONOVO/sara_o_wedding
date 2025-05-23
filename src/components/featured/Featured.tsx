@@ -11,10 +11,10 @@ function Featured() {
       <div className={`grid grid-cols-2 mt-[4rem] ${styles.res_grid}`}>
         <div className="grid lg:grid-cols-1 grid-cols-2 items-end">
           <div
-            className="relative w-full h-[200px] sm:h-[250px] md:h-[390px]"
+            className="relative w-full h-[200px] sm:h-[250px] md:h-[390px] lg:z-1 z-4 lg:ms-0 ms-4"
             data-aos="fade-right"
           >
-            <div className="absolute z-2 rotate-45  md:-right-[100px] -right-[40px] lg:bottom-0 sm:-bottom-10 -bottom-5"></div>
+            <div className="absolutez-4 lg:z-2 rotate-45  md:-right-[100px] -right-[40px] lg:bottom-0 sm:-bottom-10 -bottom-5"></div>
             <Image
               src="/images/featured2.webp"
               alt="featured image 2"
@@ -24,8 +24,8 @@ function Featured() {
           </div>
 
           <div
-            className={`bg-white p-[20px] relative  -left-[50%] w-[150%]  md:-top-[13%] -top-[17%] z-3 lg:hidden `}
-            style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
+            className={`bg-white p-[10px]  relative -left-[50%] w-[150%]  md:-top-[13%] -top-[17%] z-3 lg:hidden`}
+            style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" }}
             data-aos="zoom-in-out"
           >
             <Image

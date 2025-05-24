@@ -75,10 +75,12 @@ function EventsPortfolio({ portfolioData }: { portfolioData: IPortfolio[] }) {
                 <div className={styles.step_content}>
                   <h1 data-aos="fade-left">{item.title}</h1>
                   <div className={styles.mobile_Title}>
-                    <h2 data-aos="fade-left">{item.subTitle}</h2>
+                    <h2 data-aos="fade-left" className="text-justify">
+                      {item.subTitle}
+                    </h2>
                   </div>
                   {item.paragraphs?.map((paragraph, i) => (
-                    <p data-aos="fade-left" key={i}>
+                    <p data-aos="fade-left" key={i} className="text-justify">
                       {paragraph}
                     </p>
                   ))}
@@ -95,10 +97,12 @@ function EventsPortfolio({ portfolioData }: { portfolioData: IPortfolio[] }) {
                 <div className={styles.step_content}>
                   <h1 data-aos="fade-right">{item.title}</h1>
                   <div className={styles.mobile_Title}>
-                    <h2 data-aos="fade-right">{item.subTitle}</h2>
+                    <h2 data-aos="fade-right" className="text-justify">
+                      {item.subTitle}
+                    </h2>
                   </div>
                   {item.paragraphs?.map((paragraph, i) => (
-                    <p data-aos="fade-right" key={i}>
+                    <p data-aos="fade-right" key={i} className="text-justify">
                       {paragraph}
                     </p>
                   ))}

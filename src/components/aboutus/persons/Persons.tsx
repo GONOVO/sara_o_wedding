@@ -68,7 +68,7 @@ function Persons({ data, rev }: { data: IPerson; rev?: boolean }) {
               </h2>
               <p
                 className={`mt-4 tracking-[5px] text-sm ${
-                  rev && "text-end me-[21%]"
+                  rev && "text-end me-[0%]"
                 }`}
                 data-aos="fade-left"
               >

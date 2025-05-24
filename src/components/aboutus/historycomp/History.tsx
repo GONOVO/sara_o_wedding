@@ -57,7 +57,7 @@ function History() {
           <h1 className="text-2xl" data-aos="fade-up">
             SARA O EVENTS WAS FOUNDED IN EARLY 2010 BY YEWANDE RWANG-DUNG.
           </h1>
-          <p className="leading-[30px]" data-aos="fade-up">
+          <p className="leading-[30px] text-justify" data-aos="fade-up">
             Starting first as a passionate vision for creating extraordinary
             celebrations, Yewande worked tirelessly to establish a name for
             herself in the wedding industry. Her ability to quickly create
@@ -65,7 +65,7 @@ function History() {
             clients catapulted her into quickly becoming a thought leader and
             trendsetter in the industry in just a few short years.
           </p>
-          <p className="leading-[30px]" data-aos="fade-up">
+          <p className="leading-[30px] text-justify" data-aos="fade-up">
             Yewande has grown Sara O Events into a premier luxury wedding
             planning company and now proudly oversees the design and planning
             for every celebration, offering clients the highest level of

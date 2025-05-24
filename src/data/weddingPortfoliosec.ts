@@ -14,8 +14,7 @@ const weddingsPortfolio = [
     // subTitle:
     //   "We gather your inspiration and turn this into a flawless wedding, meticulously planning, designing, producing and implementing every step of your celebration. Each detail is considered, each element is controlled, so you know the reality truly will exceed your vision.",
     paragraphs: [
-      "We breathe life into your inspiration, crafting celebrations where every detail feels touched by magic. With meticulous care, we weave together design, planning and flawless execution, transforming your vision into something even more beautiful than you imagined.",
-      "This is why we exist: to handle the extraordinary while you savor the ordinary moments. To turn 'what if' into 'I never dreamed it could be this perfect.' Whether you need a guiding hand or full creation, we're here to make your love story visible in every exquisite detail.",
+      "We breathe life into your inspiration, crafting celebrations where every detail feels touched by magic. With meticulous care, we weave together design, planning and flawless execution, transforming your vision into something even more beautiful than you imagined. This is why we exist: to handle the extraordinary while you savor the ordinary moments. To turn 'what if' into 'I never dreamed it could be this perfect.' Whether you need a guiding hand or full creation, we're here to make your love story visible in every exquisite detail.",
     ],
     img: "/images/about2.webp",
   },

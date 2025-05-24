@@ -22,10 +22,13 @@ function Bundlers({ bundles }: { bundles: IBundle[] }) {
           Dreaming of an extraordinary event? & a
           <span className="ms-2 font-medium text-3xl">Special Event?</span>
           <br />
-          Explore our collection of bespoke services, meticulously designed to bring your vision to life with effortless sophistication. From intimate gatherings to grand celebrations, every detail is crafted with intention, because your event should be as unique as you are!
+          Explore our collection of bespoke services, meticulously designed to
+          bring your vision to life with effortless sophistication. From
+          intimate gatherings to grand celebrations, every detail is crafted
+          with intention, because your event should be as unique as you are!
         </p>
       </div>
-      <div className="lg:w-5xl xl:w-[1080px] mx-auto grid grid-cols-1 lg:grid-cols-3 justify-items-center ">
+      <div className="lg:w-5xl xl:w-[1080px] mx-auto grid grid-cols-1 lg:grid-cols-3 justify-items-center sm:mt-12">
         {bundles.map((bundle, index) => (
           <BundlerCard bundle={bundle} key={index} index={index} />
         ))}

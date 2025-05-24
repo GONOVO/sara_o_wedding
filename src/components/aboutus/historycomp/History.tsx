@@ -4,7 +4,7 @@ import React from "react";
 
 function History() {
   return (
-    <section className="py-28 sm:py-36 px-2 bg-[rgba(244,240,235,1)] relative -mt-8 lg:-mt-26 -z-20">
+    <section className="pb-28 pt-4 sm:py-36 px-2 bg-[rgba(244,240,235,1)] relative -mt-8 lg:-mt-26 -z-20">
       <HugeTitle text="HISTORY" />
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-16 xl:gap-36">
         <div className="grid grid-cols-2 lg:gap-0 gap-2 ">

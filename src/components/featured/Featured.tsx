@@ -83,7 +83,7 @@ function Featured() {
         </h2>
         <p
           className="nunito_font"
-          style={{ wordSpacing: "6px", lineHeight: "28px" }}
+          style={{ lineHeight: "28px", textAlign: "justify" }}
           data-aos="fade-right"
         >
           Your wedding day will be one of the most important days of your life,

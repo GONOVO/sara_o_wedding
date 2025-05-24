@@ -6,7 +6,7 @@ import styles from "./lifetime.module.css";
 function LifeTimeEvents() {
   return (
     <section className="overflow-x-hidden">
-      <div className="max-w-[1280px] mx-auto mt-24 mb-12 grid lg:grid-cols-[1.1fr_0.9fr] grid-cols-1 gap-1">
+      <div className="max-w-[1280px] mx-auto mt-24 sm:mb-12 grid lg:grid-cols-[1.1fr_0.9fr] grid-cols-1 gap-1">
         <div className="xl:ps-2 ps-4 px-4 order-1 lg:order-0">
           <h1
             className={`lg:text-[86px]  text-[42px] leading-[42px] text-[#222222] font-normal lg:text-end  lg:leading-[100px] mb-8 ${styles.main_Title}`}
@@ -23,7 +23,10 @@ function LifeTimeEvents() {
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:max-w-full max-w-[430px]">
             <div>
-              <p className="text-sm leading-6" data-aos="fade-right">
+              <p
+                className="leading-6 text-justify sm:text-start"
+                data-aos="fade-right"
+              >
                 SARA O Events sets the platinum standard for weddings and events
                 across the globe. Renowned for our visionary approach and
                 impeccable execution, we curate extraordinary celebrations by
@@ -44,15 +47,6 @@ function LifeTimeEvents() {
               className={`w-full h-[45vh] relative ${styles.smImage} lg:block hidden`}
               data-aos="fade-left"
             >
-              {/* <Image
-                // src="/images/reallife1.webp"
-                src="/images/reallife3.webp"
-                alt="reallife"
-                fill
-                className="object-cover"
-                style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
-                loading="lazy"
-              /> */}
               <video
                 aria-hidden="true"
                 className="w-full object-cover absolute h-full transition-opacity duration-500 "
@@ -71,7 +65,6 @@ function LifeTimeEvents() {
           data-aos="fade-left"
         >
           <Image
-            // src="/images/reallife3.webp"
             src="/images/bu1.jpg"
             alt="real life"
             fill
@@ -79,7 +72,7 @@ function LifeTimeEvents() {
             style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" }}
             loading="lazy"
           />
-          <div className="bg-white p-2 absolute h-[210px] -right-[5%] transition-opacity duration-500 sm:hidden block -bottom-[50px] w-[70%]">
+          <div className="bg-white p-2 absolute h-[210px] -right-[5%] transition-opacity duration-500 sm:hidden block -bottom-[50px] w-[70%] shadow-md">
             <video
               aria-hidden="true"
               className="object-cover w-full h-full"

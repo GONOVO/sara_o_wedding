@@ -4,7 +4,7 @@ import React from "react";
 
 function Norules() {
   return (
-    <section className="py-38 overflow-x-hidden">
+    <section className="pt-36 pb-20 sm:py-38 overflow-x-hidden">
       <div className="max-w-7xl grid lg:grid-cols-2 grid-cols-1 gap-10 lg:mx-auto mx-4 lg:px-4  relative">
         <div
           className="relative w-full lg:h-auto h-[65vh]"
@@ -52,7 +52,7 @@ function Norules() {
           </p>
           <Link
             href="/#contactus"
-            className="mt-16 text-sm inline-block py-1 px-4 border-b-1 tracking-[4px] lg:mx-0 lg:my-16 text-center"
+            className="mt-6 sm:mt-16 text-sm inline-block py-1 px-4 border-b-1 tracking-[4px] lg:mx-0 lg:my-16 text-center"
             style={{ wordSpacing: "4px" }}
             data-aos="fade-left"
           >

@@ -94,7 +94,7 @@
 }
 @media (max-width: 440px) {
   .main_Steps {
-    margin: 0;
+    margin: 16px 0 0 0;
   }
   .steps_grid {
     margin-top: 1rem !important;

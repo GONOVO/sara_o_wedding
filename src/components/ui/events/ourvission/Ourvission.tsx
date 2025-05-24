@@ -38,20 +38,20 @@ function Ourvission({ image, caption, paragraph }: IVission) {
             </h1>
             <div className="lg:ms-16 md:ms-8 mt-8 lg:mt-[45px] flex flex-col gap-6 lg:gap-12 ">
               <h3
-                className="nunito_font tracking-[4px] text-xs lg:text-lg font-thin text-white"
+                className="nunito_font tracking-[4px] text-base lg:text-lg font-thin text-white"
                 data-aos="fade-left"
               >
                 {caption}
               </h3>
               <p
-                className="text-sm lg:text-base text-white"
+                className="text-base text-justify lg:text-base text-white"
                 data-aos="fade-left"
               >
                 {paragraph}
               </p>
               <Link
                 href="/#contactus"
-                className="mt-16 text-sm inline-block w-fit py-1 px-4 border-b-1 tracking-[4px] lg:mx-0 lg:my-16 text-center text-white border-white"
+                className="mt-6 sm:mt-16 text-sm inline-block w-fit py-1 px-4 border-b-1 tracking-[4px] lg:mx-0 lg:my-16 text-center text-white border-white"
                 style={{ wordSpacing: "4px" }}
                 data-aos="fade-left"
               >

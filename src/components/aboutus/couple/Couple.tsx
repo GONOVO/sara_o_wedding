@@ -69,10 +69,10 @@ function Couple() {
 
   return (
     <section className="pt-28 pb-12">
-      <div className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-20">
+      <div className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-20">
         <div className="max-w-[450px] w-full lg:ml-auto mx-auto">
           <div
-            className="relative w-full h-[60vh] lg:h-[550px] -mt-40"
+            className="relative w-[90%] h-[60vh] lg:h-[550px] -mt-40"
             data-aos="fade-up"
           >
             <Image
@@ -93,10 +93,7 @@ function Couple() {
           </button>
         </div>
         <div>
-          <p
-            className="tracking-[6px] lg:font-light font-extrabold"
-            data-aos="fade-up"
-          >
+          <p className="tracking-[6px] lg:font-light " data-aos="fade-up">
             WARMEST WORDS FROM
           </p>
           <h1

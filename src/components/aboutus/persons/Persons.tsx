@@ -41,7 +41,7 @@ function Persons({ data, rev }: { data: IPerson; rev?: boolean }) {
               {data.desc.map((paragraph, index) => (
                 <p
                   className={`text-2xl text-extralight px-1 pb-4 ${
-                    rev && "text-end lg:pe-4"
+                    rev && "text-star sm:text-end lg:pe-4"
                   }`}
                   key={index}
                   data-aos="fade-left"

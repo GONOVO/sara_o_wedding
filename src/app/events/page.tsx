@@ -18,10 +18,7 @@ const EventsPortfolio = dynamic(
 const Tellusmore = dynamic(
   () => import("@/components/ui/events/tellusmore/Tellusmore")
 );
-// const VideoView = dynamic(
-//   () => import("@/components/ui/events/video_view/VideoView")
-// );
-// import eventsImages from "@/data/eventsgallery";
+
 import eventsPortfolio from "@/data/eventsportfolio";
 import bundlesEvents from "@/data/eventBundles";
 import ImageView from "@/components/imageview/HeroSection";
@@ -30,12 +27,6 @@ function page() {
   return (
     <>
       <div className="relative">
-        {/* <h1
-          className="text-3xl sm:text-5xl text-white absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[450px] text-center sm:leading-[60px]"
-          data-aos="zoom-in-out"
-        >
-          exclusive events with elevated design
-        </h1>*/}
         <video
           aria-hidden="true"
           className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
@@ -47,10 +38,7 @@ function page() {
           poster="/images/poster_vid_ev.webp"
         />
       </div>
-      {/* <DynamicGallery
-        images={eventsImages}
-        title="Exclusive brands exceptional execution"
-      /> */}
+
       <Ourvission
         image="/images/events_vission.webp"
         caption="ABOUT SARA O EVENTS AND YEWANDE RWANG-DUNG"

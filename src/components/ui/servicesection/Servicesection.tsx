@@ -14,7 +14,7 @@ function Servicesection() {
         >
           <div
             className={`relative w-full h-[60dvh] sm:h-[100dvh] mx-auto  ${
-              index % 2 === 0 ? "order-1" : "order-2"
+              index % 2 === 0 ? "order-1" : "sm:order-2"
             }`}
             data-aos="zoom-in-out"
           >

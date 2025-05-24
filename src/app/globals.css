@@ -50,6 +50,13 @@ body {
     transform: translateX(0);
   }
 }
+@media (max-width: 540px) {
+  .bundlers {
+    animation-name: bundlersCardsAnimationRes;
+    animation-duration: 4000ms;
+    animation-iteration-count: 10;
+  }
+}
 /* @keyframes bundlersCardsAnimation {
   0% {
     background: var(--gold-color);
@@ -90,5 +97,25 @@ body {
   100% {
     background: var(--gold-color);
     transform: translateY(0);
+  }
+}
+@keyframes bundlersCardsAnimationRes {
+  0% {
+    background: var(--gold-color);
+  }
+  25% {
+    background: #e5e7eb;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  50% {
+    background: #e5e7eb;
+  }
+  75% {
+    background: var(--gold-color);
+  }
+  100% {
+    background: var(--gold-color);
   }
 }

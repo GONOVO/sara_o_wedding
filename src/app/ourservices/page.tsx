@@ -13,7 +13,7 @@ function page() {
       />
       <div>
         <h2
-          className="text-center -mt-8 mb-16 flex gap-4 justify-center font-medium text-lg px-4 flex-wrap"
+          className="text-center -mt-8 mb-16 flex gap-4 justify-center font-medium text-xs sm:text-lg px-4 flex-wrap"
           data-aos="fade-up"
         >
           <span>Weddings</span>|<span>Corporate & Non-Profit</span>|

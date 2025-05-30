@@ -77,7 +77,7 @@ function Hero() {
             <video
               aria-hidden="true"
               className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
-              src="/videos/ev_33.mp4"
+              src="/videos/ev_44.mp4"
               ref={videoRefEvents}
               loop
               muted

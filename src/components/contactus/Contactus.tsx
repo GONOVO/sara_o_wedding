@@ -16,7 +16,7 @@ const EVENT_TYPES = [
   "Destination",
   "Entertainment",
   "Party",
-  "Other"
+  "Other",
 ] as const;
 
 function Contactus() {
@@ -38,11 +38,13 @@ function Contactus() {
   const getTomorrowDate = () => {
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() + 1);
-    return tomorrow.toISOString().split('T')[0];
+    return tomorrow.toISOString().split("T")[0];
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const target = e.target;
     setForm({ ...form, [target.name]: target.value });
@@ -83,15 +85,25 @@ function Contactus() {
   };
 
   return (
-    <section className={`${styles.main_grid_contactus} nunito_font`} id="contactus">
+    <section
+      className={`${styles.main_grid_contactus} nunito_font`}
+      id="contactus"
+    >
       <div data-aos="fade-right">
         <h3>CONTACT US</h3>
         <h1>We&apos;d love to hear from you</h1>
         <p>Our friendly team would love to hear from you.</p>
-        <form ref={formDataRef} onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <form
+          ref={formDataRef}
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-4"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="client_name" className="block mb-2 text-sm font-medium text-gray-900">
+              <label
+                htmlFor="client_name"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
                 Client Name
               </label>
               <input
@@ -107,7 +119,10 @@ function Contactus() {
             </div>
 
             <div>
-              <label htmlFor="event_type" className="block mb-2 text-sm font-medium text-gray-900">
+              <label
+                htmlFor="event_type"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
                 Type of Event
               </label>
               <div className="relative">
@@ -126,8 +141,18 @@ function Contactus() {
                   ))}
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                  <svg className="h-4 w-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  <svg
+                    className="h-4 w-4 text-gray-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </div>
               </div>
@@ -137,7 +162,10 @@ function Contactus() {
           {form.event_type === "Other" && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="other_event_type" className="block mb-2 text-sm font-medium text-gray-900">
+                <label
+                  htmlFor="other_event_type"
+                  className="block mb-2 text-sm font-medium text-gray-900"
+                >
                   Please Specify Event Type
                 </label>
                 <input
@@ -155,7 +183,10 @@ function Contactus() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="event_date" className="block mb-2 text-sm font-medium text-gray-900">
+              <label
+                htmlFor="event_date"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
                 Target Event Date
               </label>
               <input
@@ -171,7 +202,10 @@ function Contactus() {
             </div>
 
             <div>
-              <label htmlFor="guest_size" className="block mb-2 text-sm font-medium text-gray-900">
+              <label
+                htmlFor="guest_size"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
                 Target Guest Size
               </label>
               <input
@@ -189,7 +223,10 @@ function Contactus() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="event_venue" className="block mb-2 text-sm font-medium text-gray-900">
+              <label
+                htmlFor="event_venue"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
                 Event Venue
               </label>
               <input
@@ -205,7 +242,10 @@ function Contactus() {
             </div>
 
             <div>
-              <label htmlFor="inspiration_link" className="block mb-2 text-sm font-medium text-gray-900">
+              <label
+                htmlFor="inspiration_link"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
                 Event Design Inspiration Link
               </label>
               <input
@@ -222,7 +262,10 @@ function Contactus() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900">
+              <label
+                htmlFor="phone"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
                 Phone Number
               </label>
               <PhoneInput
@@ -238,7 +281,10 @@ function Contactus() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
+              <label
+                htmlFor="email"
+                className="block mb-2 text-sm font-medium text-gray-900"
+              >
                 Email Address
               </label>
               <input
@@ -255,7 +301,10 @@ function Contactus() {
           </div>
 
           <div className="w-full">
-            <label htmlFor="additional_info" className="block mb-2 text-sm font-medium text-gray-900">
+            <label
+              htmlFor="additional_info"
+              className="block mb-2 text-sm font-medium text-gray-900"
+            >
               Additional Information
             </label>
             <textarea

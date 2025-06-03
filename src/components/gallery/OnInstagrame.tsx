@@ -20,10 +20,11 @@ function Gallery() {
             data-aos="fade-right"
           >
             <LazyAutoPlayVideo
-              videoPath="/videos/gallery_vid_1.mp4"
+              // videoPath="/videos/gallery_vid_1.mp4"
+              videoPath="/videos/ev_44.mp4"
               placeholderImage="/images/cover_g_v_1.webp"
             />
-            {/* <p>{weLoveText}</p> */}
+            <p className="text-white">Corporate</p>
           </div>
           <div className={styles.col_1_1}>
             <div
@@ -32,13 +33,13 @@ function Gallery() {
               // style={{ backgroundImage: "url(/images/gallery2.webp)" }}
             >
               <Image
-                src="/images/gallery1.webp"
+                src="/images/couple4.webp"
                 alt="gallery image"
                 fill
                 loading="lazy"
                 className="object-cover"
               />
-              {/* <p>{asWeWalk}</p> */}
+              <p>Weddings</p>
             </div>
             <div
               className={styles.gallery_item}
@@ -51,7 +52,7 @@ function Gallery() {
                 loading="lazy"
                 className="object-cover"
               />
-              {/* <p>{asWeWalk}</p> */}
+              <p>Destinations</p>
             </div>
           </div>
         </div>
@@ -68,7 +69,7 @@ function Gallery() {
               loading="lazy"
               className="object-cover"
             />
-            {/* <p>{weLoveText}</p> */}
+            <p style={{ alignItems: "end" }}>Fashion</p>
           </div>
           <div
             data-aos="zoom-out"
@@ -99,7 +100,6 @@ function Gallery() {
                 loading="lazy"
                 className="object-cover"
               />
-              {/* <p>{asWeWalk}</p> */}
             </div>
             <div
               data-aos="fade-left"
@@ -113,7 +113,7 @@ function Gallery() {
                 loading="lazy"
                 className="object-cover"
               />
-              {/* <p>{weLoveText}</p> */}
+              <p>Corporate</p>
             </div>
           </div>
           <div data-aos="fade-left" className={styles.gallery_item}>
@@ -121,6 +121,7 @@ function Gallery() {
               videoPath="/videos/gallery_vid_2.mp4"
               placeholderImage="/images/cover_g_v_2.webp"
             />
+            <p>Weddings</p>
           </div>
         </div>
       </div>

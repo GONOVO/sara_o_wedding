@@ -13,7 +13,7 @@ const bundlesEvents = [
   },
   {
     title: "ENTERTAINMENT",
-    image: "/images/portfolio3.webp",
+    image: "/images/ev5.webp",
     subTitle: "Included",
     paragraphs: [
       "Movies",
@@ -23,7 +23,7 @@ const bundlesEvents = [
   },
   {
     title: "HOSPITALITY",
-    image: "/images/ev5.webp",
+    image: "/images/Dv_6.webp",
     subTitle: "Included",
     paragraphs: [
       "Resorts",

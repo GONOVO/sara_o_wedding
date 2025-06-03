@@ -16,7 +16,7 @@ function Textwithborder() {
               whiteSpace: "nowrap",
             }}
           >
-            YOUR WEDDING PLANNING DREAM TEAM
+            Our Dream Team Event Producers
           </p>
         </div>
 
@@ -25,14 +25,15 @@ function Textwithborder() {
             className="text-xl sm:text-4xl italic leading-relaxed text-[#c1ada3] lg:text-start text-center"
             data-aos="fade-left"
           >
-            Sara O Events offers modern and personalized full-service event
-            planning and design for private clients around the world. As the
-            founder and CEO, Yewande Rwang-Dung manages every step of the
-            planning process, supported by a proven system of organized
-            planning, a network of trusted relationships, and unwavering
-            advocacy for her clients at every turn. It&apos;s the preferences,
-            priorities, and unique style of her clients and families that
-            inspire just about every aspect of the celebrations she architects.
+            Sara O Events offers luxurious, elegant and modern personalized
+            full-service event designs for clients around the world. As event
+            producers, we help client manage every step of the
+            conceptualization, design to the execution process, supported by a
+            distinguished team of professional planners, technicians, artisans,
+            vendors and suppliers in our network of trusted partners, with
+            unwavering commitment to delivering our clients every vision.
+            It&apos;s the unique tastes, priorities, and styles of our clients
+            and families that inspire us to
           </p>
         </div>
       </div>

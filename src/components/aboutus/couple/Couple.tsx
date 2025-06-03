@@ -94,15 +94,16 @@ function Couple() {
         </div>
         <div>
           <p className="tracking-[6px] lg:font-light " data-aos="fade-up">
-            WARMEST WORDS FROM
+            WARMEST CLIENT TESTIMONIALS FORM
           </p>
           <h1
             className="text-[36px] sm:text-[54px] sm:leading-26 leading-10 sm:mt-0 my-8"
             data-aos="fade-up"
           >
-            {couples[couple].eventName
-              ? couples[couple].eventName
-              : `${couples[couple].maleName} & ${couples[couple].femaleName}`}
+            {
+              couples[couple].eventName ? couples[couple].eventName : ""
+              //  `${couples[couple].maleName} & ${couples[couple].femaleName}`
+            }
           </h1>
           <h2
             className="text-[22px] mt-4 mb-10"
@@ -144,9 +145,10 @@ function Couple() {
                 couple === index ? "border-b-2 border-black" : ""
               }`}
             >
-              {coupleItem.eventName
-                ? coupleItem.eventName
-                : `${coupleItem.maleName} & ${coupleItem.femaleName}`}
+              {
+                coupleItem.eventName ? coupleItem.eventName : ""
+                //  `${coupleItem.maleName} & ${coupleItem.femaleName}`
+              }
             </button>
           ))}
         </ul>

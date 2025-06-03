@@ -1,7 +1,6 @@
 import dynamic from "next/dynamic";
 import Hero from "../components/hero/Hero";
 import LazyAutoPlayVideo from "@/components/ui/videoplayer/VideoPlayer";
-
 const Productowner = dynamic(
   () => import("../components/productowner/Productowner")
 );
@@ -16,7 +15,7 @@ function page() {
   return (
     <>
       <Hero />
-      {/* <Planners /> */}
+     
       <LifeTimeEvents />
       <Featured />
       <Productowner />

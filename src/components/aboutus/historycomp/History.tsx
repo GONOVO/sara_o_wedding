@@ -55,26 +55,30 @@ function History() {
         </div>
         <div className="flex flex-col gap-12 justify-end lg:max-w-[500px] px-3 sm:px-0">
           <h1 className="text-2xl" data-aos="fade-up">
-            SARA O EVENTS WAS FOUNDED IN EARLY 2010 BY YEWANDE RWANG-DUNG.
+            SARA O EVENTS WAS FOUNDED IN EARLY 2008 BUT FULLY ESTABLISHED IN
+            2010 BY YEWANDE RWANG- DUNG
           </h1>
           <p className="leading-[30px] text-justify" data-aos="fade-up">
             Starting first as a passionate vision for creating extraordinary
             celebrations, Yewande worked tirelessly to establish a name for
-            herself in the wedding industry. Her ability to quickly create
-            innovative systems that work exceptionally well for Sara O Events
-            clients catapulted her into quickly becoming a thought leader and
-            trendsetter in the industry in just a few short years.
+            herself in the event industry. The Nigerian Yoruba tribe which she
+            hails from, have a very rich cultural heritage for grand and
+            extravagant celebrations from weddings, milestone birthdays to even
+            for burials. Her ability to quickly identify this industry
+            opportunity by realizing the unique needs of very high value
+            clients, to create innovative designs with exquisite attention to
+            details. This worked exceptionally well for Sara O and catapulted us
+            into quickly becoming the trendsetter in the Nigerian and African
+            event industry, specializing on the designs and aesthetic guest
+            experiences which reflect our clients’ societal status, luxurious
+            tastes, successful profiles, distinguished styles and unique tastes.
           </p>
           <p className="leading-[30px] text-justify" data-aos="fade-up">
-            Yewande has grown Sara O Events into a premier luxury wedding
-            planning company and now proudly oversees the design and planning
-            for every celebration, offering clients the highest level of
-            attention and prioritization - and the promise that nothing will be
-            cookie-cutter. Architecting spaces from square one, she seamlessly
-            blends time-tested processes with boundary-pushing design flair to
-            create multi-day luxury event experiences. Beyond being a visionary
-            entrepreneur, she is also a devoted wife, mother, and friend, living
-            a journey where family and work intertwine harmoniously.
+            Sara O Events has grown to be the No. 1 premier luxury event design
+            producers across Africa, now offering clients the highest level of
+            decor sophistication and transformation of event spaces from private
+            homes to very large event venues. We seamlessly blend time- tested
+            processes with boundary-pushing design flair to
           </p>
         </div>
       </div>

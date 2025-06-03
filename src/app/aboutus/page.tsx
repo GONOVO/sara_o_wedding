@@ -34,7 +34,7 @@ function Aboutus() {
       <Accolades />
       <Norules />
       <ImageView
-        imageSrc="/images/aboutview.webp"
+        imageSrc="/images/f_ev4.webp"
         height="100vh"
         mb="0px"
         title="YOUR GUESTS SHOULD FEEL SPECIAL AND COMFORTABLE ENOUGH TO DANCE ON THE FURNITURE"

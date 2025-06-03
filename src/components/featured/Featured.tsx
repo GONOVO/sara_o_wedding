@@ -57,7 +57,7 @@ function Featured() {
               className="text-2xl font-medium italic -mt-6 mb-6"
               data-aos="fade-left"
             >
-              The essential guide to high-end wedding planning for a luxurious
+              The essential guide to high-end event production for a luxurious
               experience
             </h2>
             <p
@@ -65,10 +65,12 @@ function Featured() {
               style={{ wordSpacing: "6px", lineHeight: "28px" }}
               data-aos="fade-left"
             >
-              Your wedding day will be one of the most important days of your
-              life, together as a couple. Whether you are planning an intimate
-              affair or a large-scale celebration fit for the pages of Vogue,
-              the same considerations apply when planning a wedding.
+              The art of gatherings, are a very essential part of our social
+              existence. Therefore when you are think of inviting your dearest
+              people for an intimate affair or a large-scale celebration fit for
+              the pages of Vogue, we at Sara O help you manifest lasting
+              experiences when we produce your events for either private or
+              corporate settings.
             </p>
           </div>
         </div>

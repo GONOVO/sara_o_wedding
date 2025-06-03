@@ -1,7 +1,7 @@
 const persons = [
   {
-    image: "/images/ab1.jpg",
-    name: "SARA O EVENTS",
+    image: "/images/Tt_3.webp",
+    name: "SARA O Limited",
     desc: [
       "Where dreams and details dance together to create magical celebrations.",
       "With a passion for transforming visions into breathtaking reality.",
@@ -12,8 +12,8 @@ const persons = [
     caption: "KRISTEEN, SARA O EVENTS BRIDE",
   },
   {
-    image: "/images/couple3.webp",
-    name: "YEWANDE RWANG",
+    image: "/images/2_1.webp",
+    name: "EVENT PRODUCERS",
     desc: [
       "A neutral loving minimalist with an obsession for organization.",
       "Brings levity to any situation.",

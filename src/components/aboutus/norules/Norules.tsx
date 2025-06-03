@@ -30,7 +30,7 @@ function Norules() {
               data-aos="fade-left"
               data-aos-delay={200}
             >
-              THERE ARE NO RULES
+              ALWAYS DELIGHT OUR CLIENTS NO MATTER IMPACT
             </h1>
           </div>
           <p
@@ -38,17 +38,19 @@ function Norules() {
             data-aos="fade-left"
             data-aos-delay={350}
           >
-            Of course, there are proper etiquette formalities to follow and we
-            are well versed in those. However, Sara O Events operates under one
-            principle rule: for weddings, there are no rules. Yewande firmly
-            believes that nothing in a wedding must happen because a couple
-            feels as though others expect it to happen. Gone are the days of
-            bouquet tosses, receiving lines, and serving cake when you prefer
-            pie. As with everything in life, if it feels right, that&apos;s how
-            you know it&apos;s right. To put it simply, once in a lifetime
-            experiences aren&apos;t created following age old methods. This
-            mindset and fresh outlook on planning allows Sara O Events to guide
-            their clients towards wedding celebrations unlike any other.
+            Of course, there are proper formalities followed and which we are
+            well established in following. However, Sara O operates under one
+            principle rule: for any event big or small, our clients special and
+            most memorable moments/dates can never be relived, therefore
+            ultimately delighting our clients by exceeding their décor
+            expectations is our highest priority.
+            <br />
+            The Sara O team firmly believes, to put it simply, once in a
+            lifetime experiences aren&apos;t created following static style methods.
+            Our mindset and fresh outlook on evolving event producing allows
+            Sara O to distinguish themselves from the competition as our clients
+            testify to always trust us to give them much more value for their
+            celebrations unlike
           </p>
           <Link
             href="/#contactus"

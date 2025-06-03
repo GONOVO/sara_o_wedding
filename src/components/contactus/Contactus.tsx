@@ -91,7 +91,7 @@ function Contactus() {
     >
       <div data-aos="fade-right">
         <h3>CONTACT US</h3>
-        <h1>We&apos;d love to hear from you</h1>
+        <h1>Reserve Your Event with Us Here</h1>
         <p>Our friendly team would love to hear from you.</p>
         <form
           ref={formDataRef}
@@ -269,7 +269,7 @@ function Contactus() {
                 Phone Number
               </label>
               <PhoneInput
-                country={"us"}
+                country={"ng"}
                 inputClass={styles.custom_phone_input}
                 value={form.phone}
                 onChange={(value: string) => {
@@ -331,7 +331,7 @@ function Contactus() {
         <div className={styles.mobiles_container} data-aos="fade-left">
           <div className={styles.first_mob}>
             <MobileFrame
-              video="/videos/contactusmob1.mp4"
+              video="/videos/ev_33.mp4"
               fallback="/images/contactusfall1.webp"
             />
           </div>

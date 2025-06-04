@@ -56,7 +56,7 @@ function History() {
         <div className="flex flex-col gap-12 justify-end lg:max-w-[500px] px-3 sm:px-0">
           <h1 className="text-2xl" data-aos="fade-up">
             SARA O EVENTS WAS FOUNDED IN EARLY 2008 BUT FULLY ESTABLISHED IN
-            2010 BY YEWANDE RWANG- DUNG
+            2010 BY YEWANDE RWANG-DUNG.
           </h1>
           <p className="leading-[30px] text-justify" data-aos="fade-up">
             Starting first as a passionate vision for creating extraordinary
@@ -70,15 +70,16 @@ function History() {
             details. This worked exceptionally well for Sara O and catapulted us
             into quickly becoming the trendsetter in the Nigerian and African
             event industry, specializing on the designs and aesthetic guest
-            experiences which reflect our clients’ societal status, luxurious
+            experiences which reflect our client’s societal status, luxurious
             tastes, successful profiles, distinguished styles and unique tastes.
           </p>
           <p className="leading-[30px] text-justify" data-aos="fade-up">
             Sara O Events has grown to be the No. 1 premier luxury event design
             producers across Africa, now offering clients the highest level of
             decor sophistication and transformation of event spaces from private
-            homes to very large event venues. We seamlessly blend time- tested
-            processes with boundary-pushing design flair to
+            homes to very large event venues. We seamlessly blend time-tested
+            processes with boundary-pushing design flair to create
+            multi-dimensional luxury event experiences.
           </p>
         </div>
       </div>

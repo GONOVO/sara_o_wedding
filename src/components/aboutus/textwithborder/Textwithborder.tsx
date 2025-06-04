@@ -33,7 +33,8 @@ function Textwithborder() {
             vendors and suppliers in our network of trusted partners, with
             unwavering commitment to delivering our clients every vision.
             It&apos;s the unique tastes, priorities, and styles of our clients
-            and families that inspire us to
+            and families that inspire us to exceed just about every aspect of
+            their celebrations as their event producers.
           </p>
         </div>
       </div>

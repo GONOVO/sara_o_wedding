@@ -66,7 +66,8 @@ function Productowner() {
               and delight both clients and aspiring event producers. Beyond
               being a visionary entrepreneur, she is a devoted wife, mother, and
               friend, living life to its fullest balance where family and work
-              intertwine harmoniously with her passio
+              intertwine harmoniously with her passion and purpose to delight
+              others.
             </p>
             <div>
               <h2 className="text-xl font-medium" data-aos="fade-left">

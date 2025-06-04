@@ -46,11 +46,11 @@ function Norules() {
             expectations is our highest priority.
             <br />
             The Sara O team firmly believes, to put it simply, once in a
-            lifetime experiences aren&apos;t created following static style methods.
-            Our mindset and fresh outlook on evolving event producing allows
-            Sara O to distinguish themselves from the competition as our clients
-            testify to always trust us to give them much more value for their
-            celebrations unlike
+            lifetime experiences aren&apos;t created following static style
+            methods. Our mindset and fresh outlook on evolving event producing
+            allows Sara O to distinguish themselves from the competition as our
+            clients testify to always trust us to give them much more value for
+            their celebrations unlike any other.
           </p>
           <Link
             href="/#contactus"

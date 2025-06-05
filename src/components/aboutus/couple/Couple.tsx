@@ -69,7 +69,7 @@ function Couple() {
 
   return (
     <section className="pt-28 pb-12">
-      <div className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-20">
+      <div className="max-w-7xl mx-auto px-4 xl:px-0 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-20 lg:h-[530px] h-auto ">
         <div className="max-w-[450px] w-full lg:ml-auto mx-auto">
           <div
             className="relative w-[90%] h-[60vh] lg:h-[550px] -mt-40"
@@ -97,7 +97,7 @@ function Couple() {
             WARMEST CLIENT TESTIMONIALS FORM
           </p>
           <h1
-            className="text-[36px] sm:text-[54px] sm:leading-26 leading-10 sm:mt-0 my-8"
+            className="text-[36px] sm:text-[54px]  sm:leading-14 leading-10 sm:mt-0 my-8"
             data-aos="fade-up"
           >
             {

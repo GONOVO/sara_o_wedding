@@ -5,10 +5,6 @@ import LazyAutoPlayVideo from "../ui/videoplayer/VideoPlayer";
 import Image from "next/image";
 
 function Gallery() {
-  // const weLoveText =
-  //   "We love a girl who knows what she wants, and for #MariahCarey it’s an emerald-cut engagement ring. 👏 Find out what she did with each sparkler—including the 35-carat diamond worth $10 million from ex-fiancé James Packerv. 💍";
-  // const asWeWalk =
-  //   "As you walk down the aisle, elegance meets simplicity. Soft textured florals grow from moss puddles, and a wild lace floral pillar rises gracefully, echoing the iconic stone arach. Every detail, from tactile walls to blooms in the soft sunlight,creates an ethereal journey to the alter. Florals beautifully curated by our member @filmandfoliage";
   return (
     <section className="lg:mt-4 mt-8">
       <HugeTitle text="GALLERY" />
@@ -33,13 +29,13 @@ function Gallery() {
               // style={{ backgroundImage: "url(/images/gallery2.webp)" }}
             >
               <Image
-                src="/images/couple4.webp"
+                src="/images/h_ev1.webp"
                 alt="gallery image"
                 fill
                 loading="lazy"
                 className="object-cover"
               />
-              <p>Weddings</p>
+              <p> Birthday</p>
             </div>
             <div
               className={styles.gallery_item}
@@ -83,7 +79,7 @@ function Gallery() {
               loading="lazy"
               className="object-cover"
             />
-            {/* <p>{asWeWalk}</p> */}
+            <p>Decoration</p>
           </div>
         </div>
         <div className={styles.row_2_1}>
@@ -100,6 +96,7 @@ function Gallery() {
                 loading="lazy"
                 className="object-cover"
               />
+              <p style={{ alignItems: "end" }}>Decoration</p>
             </div>
             <div
               data-aos="fade-left"
@@ -113,7 +110,7 @@ function Gallery() {
                 loading="lazy"
                 className="object-cover"
               />
-              <p>Corporate</p>
+              <p style={{ alignItems: "end" }}>Private Events</p>
             </div>
           </div>
           <div data-aos="fade-left" className={styles.gallery_item}>

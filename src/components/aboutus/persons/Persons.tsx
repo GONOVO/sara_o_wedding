@@ -30,7 +30,7 @@ function Persons({ data, rev }: { data: IPerson; rev?: boolean }) {
             }`}
           >
             <h1
-              className={`lg:mt-24 lg:text-9xl text-5xl lg:max-w-[570px] xl:max-w-[660px] max-w-[300px] lg:leading-[150px] font-extralight lg:-ms-[40px] lg:relative absolute -top-2 ${
+              className={`lg:mt-24 lg:text-[111px] text-5xl lg:max-w-[570px] xl:max-w-[675px] max-w-[300px] lg:leading-[150px] font-extralight lg:-ms-[40px] lg:relative absolute -top-2 ${
                 rev && "lg:text-end lg:-me-10 -mt-10 lg:mt-0"
               }`}
               data-aos="fade-left"

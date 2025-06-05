@@ -96,7 +96,9 @@ function Gallery() {
                 loading="lazy"
                 className="object-cover"
               />
-              <p style={{ alignItems: "end" }}>Decoration</p>
+              <p style={{ alignItems: "end" }}>
+                luxury table setting
+              </p>
             </div>
             <div
               data-aos="fade-left"

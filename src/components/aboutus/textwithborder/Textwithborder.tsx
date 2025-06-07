@@ -2,7 +2,7 @@ import React from "react";
 
 function Textwithborder() {
   return (
-    <section className="max-w-7xl mx-auto px-4">
+    <section className="max-w-7xl mx-auto px-4 overflow-x-hidden">
       <div className="flex justify-center items-center ">
         <div
           className="w-fit  justify-center items-center border-r-2  relative lg:flex hidden z-2"
@@ -20,10 +20,14 @@ function Textwithborder() {
           </p>
         </div>
 
-        <div className="w-full sm:w-[90%] lg:ps-6 py-4 sm:py-16 overflow-x-hidden">
+        <div className="w-full sm:w-[90%] lg:ps-6 py-4 sm:py-16">
           <p
             className="text-xl sm:text-4xl italic leading-relaxed text-[#c1ada3] lg:text-start text-center"
             data-aos="fade-left"
+            style={{
+              textAlign: "justify",
+              wordSpacing: "6px",
+            }}
           >
             Sara O Events offers luxurious, elegant and modern personalized
             full-service event designs for clients around the world. As event

@@ -62,7 +62,11 @@ function Featured() {
             </h2>
             <p
               className="nunito_font"
-              style={{ wordSpacing: "6px", lineHeight: "28px" }}
+              style={{
+                wordSpacing: "6px",
+                lineHeight: "28px",
+                textAlign: "justify",
+              }}
               data-aos="fade-left"
             >
               The art of gatherings, are a very essential part of our social

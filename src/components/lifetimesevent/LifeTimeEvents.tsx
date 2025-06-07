@@ -24,8 +24,13 @@ function LifeTimeEvents() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:max-w-full max-w-[430px]">
             <div>
               <p
-                className="leading-6 text-justify sm:text-start"
+                className="leading-6 sm:text-start"
                 data-aos="fade-right"
+                style={{
+                  textAlign: "justify",
+                  wordSpacing: "6px",
+                  lineHeight: "28px",
+                }}
               >
                 SARA O Events sets the platinum standard for weddings and events
                 across the globe. Renowned for our visionary approach and

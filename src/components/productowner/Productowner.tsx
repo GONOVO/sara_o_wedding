@@ -39,8 +39,13 @@ function Productowner() {
               EVENTS
             </h3>
             <p
-              className="text-[15px] text-justify sm:text-start sm:text-base"
+              className="text-[15px] sm:text-start sm:text-base"
               data-aos="fade-left"
+              style={{
+                textAlign: "justify",
+                wordSpacing: "6px",
+                lineHeight: "28px",
+              }}
             >
               Yewande Rwang-Dung is an award winning celebrated event designer
               and producer with over 15 years of leadership in the African event
@@ -55,8 +60,13 @@ function Productowner() {
               projects.
             </p>
             <p
-              className="text-[15px] text-justify sm:text-start sm:text-base"
+              className="text-[15px] sm:text-start sm:text-base"
               data-aos="fade-left"
+              style={{
+                textAlign: "justify",
+                wordSpacing: "6px",
+                lineHeight: "28px",
+              }}
             >
               Beyond her event expertise, Yewande is a dedicated advocate for
               professional growth in the African event landscape, through

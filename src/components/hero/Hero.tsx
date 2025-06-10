@@ -65,14 +65,14 @@ function Hero() {
         <Link href="/events">
           <div className="relative group">
             <h1
-              className="lg:text-[68px] text-[44px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 "
+              className="lg:text-[98px] text-[56px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 "
               style={{
                 writingMode: "vertical-rl",
                 transform: "rotate(180deg)",
                 whiteSpace: "nowrap",
               }}
             >
-              CORPORATE EVENTS
+              ALL EVENTS
             </h1>
             <video
               aria-hidden="true"
@@ -99,14 +99,14 @@ function Hero() {
         <Link href="/wedding">
           <div className="relative group">
             <h1
-              className="lg:text-[68px] text-[44px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 right-0 bottom-0"
+              className="lg:text-[98px] text-[56px] leading-16 tracking-[4px] uppercase  py-2 px-2 absolute z-10 text-white md:leading-28 right-0 bottom-0"
               style={{
                 writingMode: "vertical-rl",
                 transform: "rotate(180deg)",
                 whiteSpace: "nowrap",
               }}
             >
-              PRIVATE EVENTS
+              DESTINATIONS
             </h1>
             <video
               aria-hidden="true"
@@ -138,7 +138,9 @@ function Hero() {
       >
         <div className="lg:border-1 border-[var(--mutedBlack-color)] w-full h-full py-12 px-6 lg:p-10 flex flex-col justify-center items-center  gap-3 lg:gap-2 text-[var(--mutedBlack-color)]">
           <h2 className="text-[7vw] lg:text-2xl font-medium text-center text-uppercase">
-            EVENT PRODUCERS WHO NOT ONLY CONCEPTUALIZE VISIONS, BUT ALSO DELIVER EXCEPTIONAL EXPERIENCES TO CREATE EVERLASTING MEMORIES THROUGH UNIQUE DESIGNS & HOLISTIC EVENT MANAGEMENT
+            EVENT PRODUCERS WHO NOT ONLY CONCEPTUALIZE VISIONS, BUT ALSO DELIVER
+            EXCEPTIONAL EXPERIENCES TO CREATE EVERLASTING MEMORIES THROUGH
+            UNIQUE DESIGNS & HOLISTIC EVENT MANAGEMENT
           </h2>
         </div>
       </div>

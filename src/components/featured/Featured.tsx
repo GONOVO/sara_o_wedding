@@ -72,7 +72,7 @@ function Featured() {
               The art of gatherings, are a very essential part of our social
               existence. Therefore when you are think of inviting your dearest
               people for an intimate affair or a large-scale celebration fit for
-              the pages of Vogue, we at Sara O help you manifest lasting
+              the pages of Vogue, we at Sara O Events help you manifest lasting
               experiences when we produce your events for either private or
               corporate settings.
             </p>

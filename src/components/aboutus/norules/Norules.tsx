@@ -39,16 +39,16 @@ function Norules() {
             data-aos-delay={350}
           >
             Of course, there are proper formalities followed and which we are
-            well established in following. However, Sara O operates under one
+            well established in following. However, Sara O Events operates under one
             principle rule: for any event big or small, our clients special and
             most memorable moments/dates can never be relived, therefore
             ultimately delighting our clients by exceeding their décor
             expectations is our highest priority.
             <br />
-            The Sara O team firmly believes, to put it simply, once in a
+            The Sara O Events team firmly believes, to put it simply, once in a
             lifetime experiences aren&apos;t created following static style
             methods. Our mindset and fresh outlook on evolving event producing
-            allows Sara O to distinguish themselves from the competition as our
+            allows Sara O Events to distinguish themselves from the competition as our
             clients testify to always trust us to give them much more value for
             their celebrations unlike any other.
           </p>

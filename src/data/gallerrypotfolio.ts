@@ -350,14 +350,14 @@ const galleryPortfolio = [
   },
   {
     id: 21,
-    image: "/images/vowrenewals/vo_1.jpg",
+    image: "/images/vowRenewals/vo_1.jpg",
     eventName: "VOW RENEWAL",
-    coverImage: "/images/vowrenewals/vo_2.jpg",
+    coverImage: "/images/vowRenewals/vo_2.jpg",
     allImages: [
-      "/images/vowrenewals/vo_1.jpg",
-      "/images/vowrenewals/vo_2.jpg",
-      "/images/vowrenewals/vo_3.jpg",
-      "/images/vowrenewals/vo_4.webp",
+      "/images/vowRenewals/vo_1.jpg",
+      "/images/vowRenewals/vo_2.jpg",
+      "/images/vowRenewals/vo_3.jpg",
+      "/images/vowRenewals/vo_4.webp",
     ],
   },
   {

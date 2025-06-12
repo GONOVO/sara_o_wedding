@@ -6,7 +6,7 @@ import DetailVideoPlayer from "@/components/ui/gallerycard/DetailVideoPlayer";
 import Image from "next/image";
 
 const Modalandslider = dynamic(
-  () => import("@/components/ui/gallerycard/Modalandslider"),
+  () => import("@/components/aboutus/modal_slider/Modalandslider"),
   { ssr: false }
 );
 const ImageView = dynamic(() => import("@/components/imageview/HeroSection"));

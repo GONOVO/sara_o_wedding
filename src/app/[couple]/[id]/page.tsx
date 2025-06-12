@@ -58,7 +58,7 @@ export default function CouplePage({ params }: CouplePageProps) {
       <div className="w-full h-[70vh] relative">
         {video ? (
           <DetailVideoPlayer
-            src={video}
+            videoPath={video}
             className="w-full h-full object-cover"
           />
         ) : (
@@ -80,7 +80,7 @@ export default function CouplePage({ params }: CouplePageProps) {
             <div key={index} className="relative aspect-square">
               {media.type === "video" ? (
                 <DetailVideoPlayer
-                  src={media.url}
+                  videoPath={media.url}
                   className="w-full h-full object-cover"
                 />
               ) : (

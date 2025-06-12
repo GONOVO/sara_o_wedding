@@ -3,6 +3,13 @@ export interface IPortfolioitem {
   maleName?: string;
   femaleName?: string;
   eventName?: string;
+  video?: string;
+  coverVideo?: string;
+  allImages?: string[];
+  allVideos?: string[];
+  coverImage?: string;
+  positionY?: string;
+  id?: number;
 }
 
 export interface IPackage {

@@ -2,6 +2,7 @@
 import dynamic from "next/dynamic";
 import { useState, useCallback } from "react";
 import { use } from "react"; // Import the 'use' hook
+import DetailVideoPlayer from "@/components/ui/gallerycard/DetailVideoPlayer";
 
 const Modalandslider = dynamic(
   () => import("@/components/aboutus/modal_slider/Modalandslider")
@@ -13,6 +14,11 @@ import couples from "@/data/gallerrypotfolio";
 interface CouplePageProps {
   params: Promise<{ id: string }>; // params is a Promise now
 }
+
+// Helper function to determine if a file is a video
+const isVideo = (url: string) => {
+  return url.includes(".mp4") || url.includes(".webm") || url.includes(".mov");
+};
 
 export default function CouplePage({ params }: CouplePageProps) {
   // Unwrap the params using React.use() to get the actual value
@@ -39,13 +45,29 @@ export default function CouplePage({ params }: CouplePageProps) {
     return <div className="p-6 text-center">Couple not found</div>;
   }
 
-  const { femaleName, maleName, allImages, coverImage, eventName } =
-    choosedCouple;
+  const {
+    femaleName,
+    maleName,
+    allImages,
+    allVideos,
+    coverImage,
+    coverVideo,
+    eventName,
+  } = choosedCouple;
+
+  // Combine images and videos into a single media array for display
+  const allMedia = [
+    ...(allImages || []).map((url) => ({ url, type: "image" })),
+    ...(allVideos || []).map((url) => ({ url, type: "video" })),
+  ];
+
+  // For the cover, prefer video if available, otherwise use image
+  const coverMedia = coverVideo || coverImage;
 
   return (
     <div>
       <ImageView
-        imageSrc={`${coverImage}`}
+        imageSrc={`${coverMedia}`}
         height="70dvh"
         title={eventName ? `${eventName}` : `${maleName} & ${femaleName}`}
         positionY={`${
@@ -54,28 +76,35 @@ export default function CouplePage({ params }: CouplePageProps) {
       />
 
       <div className="columns-1 sm:columns-2  lg:columns-3 gap-3 space-y-4 max-w-7xl mx-auto p-4">
-        {allImages.map((img, index) => (
+        {allMedia.map((media, index) => (
           <div
-            key={`${img}-${index}`}
-            className="w-full overflow-hidden relative mb-3 break-inside-avoid cursor-zoom-in"
-            onClick={() => handleImageClick(index)}
+            key={`${media.url}-${index}`}
+            className="w-full overflow-hidden relative mb-3 break-inside-avoid"
             data-aos="zoom-in-out"
           >
-            <img
-              src={img}
-              alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
-              // width={600}
-              // height={800}
-              className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300"
-              loading="lazy"
-            />
+            {media.type === "video" ? (
+              <DetailVideoPlayer
+                videoPath={media.url}
+                className="transition-transform hover:scale-105 duration-300"
+              />
+            ) : (
+              <img
+                src={media.url}
+                alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
+                className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300 cursor-zoom-in"
+                loading="lazy"
+                onClick={() => handleImageClick(index)}
+              />
+            )}
           </div>
         ))}
       </div>
 
       {isModalOpen && (
         <Modalandslider
-          images={allImages}
+          images={allMedia
+            .filter((media) => media.type === "image")
+            .map((media) => media.url)} // Only pass images to modal
           indexImage={indexImage}
           onClose={toggleModal}
         />

@@ -15,6 +15,14 @@
   cursor: pointer;
   z-index: 2;
 }
+
+/* Ensure video controls are always accessible */
+.card_container video,
+.card_container .video-controls {
+  z-index: 3;
+  position: relative;
+}
+
 @media (max-width: 400px) {
   .card_container {
     max-width: 340px;

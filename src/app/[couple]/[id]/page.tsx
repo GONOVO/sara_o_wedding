@@ -15,11 +15,6 @@ interface CouplePageProps {
   params: Promise<{ id: string }>; // params is a Promise now
 }
 
-// Helper function to determine if a file is a video
-const isVideo = (url: string) => {
-  return url.includes(".mp4") || url.includes(".webm") || url.includes(".mov");
-};
-
 export default function CouplePage({ params }: CouplePageProps) {
   // Unwrap the params using React.use() to get the actual value
   const unwrappedParams = use(params);

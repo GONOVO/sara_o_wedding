@@ -9,9 +9,8 @@ const Modalandslider = dynamic(
   () => import("@/components/aboutus/modal_slider/Modalandslider"),
   { ssr: false }
 );
-const ImageView = dynamic(() => import("@/components/imageview/HeroSection"));
+
 import couples from "@/data/gallerrypotfolio";
-//  import Image from "next/image";
 
 interface CouplePageProps {
   params: Promise<{ id: string }>; // params is a Promise now
@@ -42,15 +41,8 @@ export default function CouplePage({ params }: CouplePageProps) {
     return <div className="p-6 text-center">Couple not found</div>;
   }
 
-  const {
-    femaleName,
-    maleName,
-    allImages,
-    allVideos,
-    coverImage,
-    video,
-    eventName,
-  } = choosedCouple;
+  const { femaleName, maleName, allImages, allVideos, coverImage, video } =
+    choosedCouple;
 
   // Combine images and videos into a single media array for display
   const allMedia = [

@@ -3,9 +3,11 @@ import dynamic from "next/dynamic";
 import { useState, useCallback } from "react";
 import { use } from "react"; // Import the 'use' hook
 import DetailVideoPlayer from "@/components/ui/gallerycard/DetailVideoPlayer";
+import Image from "next/image";
 
 const Modalandslider = dynamic(
-  () => import("@/components/aboutus/modal_slider/Modalandslider")
+  () => import("@/components/ui/gallerycard/Modalandslider"),
+  { ssr: false }
 );
 const ImageView = dynamic(() => import("@/components/imageview/HeroSection"));
 import couples from "@/data/gallerrypotfolio";
@@ -46,7 +48,7 @@ export default function CouplePage({ params }: CouplePageProps) {
     allImages,
     allVideos,
     coverImage,
-    coverVideo,
+    video,
     eventName,
   } = choosedCouple;
 
@@ -57,42 +59,51 @@ export default function CouplePage({ params }: CouplePageProps) {
   ];
 
   // For the cover, prefer video if available, otherwise use image
-  const coverMedia = coverVideo || coverImage;
+  const coverMedia = video || coverImage;
 
   return (
-    <div>
-      <ImageView
-        imageSrc={`${coverMedia}`}
-        height="70dvh"
-        title={eventName ? `${eventName}` : `${maleName} & ${femaleName}`}
-        positionY={`${
-          choosedCouple.positionY ? choosedCouple.positionY : "20%"
-        }`}
-      />
-
-      <div className="columns-1 sm:columns-2  lg:columns-3 gap-3 space-y-4 max-w-7xl mx-auto p-4">
-        {allMedia.map((media, index) => (
-          <div
-            key={`${media.url}-${index}`}
-            className="w-full overflow-hidden relative mb-3 break-inside-avoid"
-            data-aos="zoom-in-out"
-          >
-            {media.type === "video" ? (
-              <DetailVideoPlayer
-                videoPath={media.url}
-                className="transition-transform hover:scale-105 duration-300"
-              />
-            ) : (
-              <img
-                src={media.url}
-                alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
-                className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300 cursor-zoom-in"
-                loading="lazy"
-                onClick={() => handleImageClick(index)}
-              />
-            )}
-          </div>
-        ))}
+    <div className="min-h-screen bg-white">
+      <div className="w-full h-[70vh] relative">
+        {video ? (
+          <DetailVideoPlayer
+            src={video}
+            className="w-full h-full object-cover"
+          />
+        ) : (
+          <Image
+            src={coverMedia}
+            alt={`${maleName} and ${femaleName}`}
+            fill
+            className="object-cover"
+            priority
+          />
+        )}
+      </div>
+      <div className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold text-center mb-8">
+          {maleName} & {femaleName}
+        </h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {allMedia.map((media, index) => (
+            <div key={index} className="relative aspect-square">
+              {media.type === "video" ? (
+                <DetailVideoPlayer
+                  src={media.url}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <Image
+                  src={media.url}
+                  alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
+                  fill
+                  className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300 cursor-zoom-in"
+                  priority
+                  onClick={() => handleImageClick(index)}
+                />
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
       {isModalOpen && (

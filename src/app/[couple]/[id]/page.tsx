@@ -1,20 +1,64 @@
 "use client";
 import dynamic from "next/dynamic";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import { use } from "react"; // Import the 'use' hook
-import DetailVideoPlayer from "@/components/ui/gallerycard/DetailVideoPlayer";
-import Image from "next/image";
 
 const Modalandslider = dynamic(
-  () => import("@/components/aboutus/modal_slider/Modalandslider"),
-  { ssr: false }
+  () => import("@/components/aboutus/modal_slider/Modalandslider")
 );
-
+const ImageView = dynamic(() => import("@/components/imageview/HeroSection"));
 import couples from "@/data/gallerrypotfolio";
+//  import Image from "next/image";
 
 interface CouplePageProps {
   params: Promise<{ id: string }>; // params is a Promise now
 }
+
+const VideoCard = ({ videoUrl }: { videoUrl: string }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handleClick = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  return (
+    <div
+      className="w-full overflow-hidden relative mb-3 break-inside-avoid cursor-pointer aspect-video"
+      onClick={handleClick}
+      data-aos="zoom-in-out"
+    >
+      <video
+        ref={videoRef}
+        src={videoUrl}
+        className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+        preload="metadata"
+        loop
+        playsInline
+      />
+      {!isPlaying && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+          <div className="w-16 h-16 bg-black bg-opacity-50 rounded-full flex items-center justify-center">
+            <svg
+              className="w-8 h-8 text-white"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default function CouplePage({ params }: CouplePageProps) {
   // Unwrap the params using React.use() to get the actual value
@@ -41,68 +85,45 @@ export default function CouplePage({ params }: CouplePageProps) {
     return <div className="p-6 text-center">Couple not found</div>;
   }
 
-  const { femaleName, maleName, allImages, allVideos, coverImage, video } =
+  const { femaleName, maleName, allImages, allVideos, coverImage, eventName } =
     choosedCouple;
 
-  // Combine images and videos into a single media array for display
-  const allMedia = [
-    ...(allImages || []).map((url) => ({ url, type: "image" })),
-    ...(allVideos || []).map((url) => ({ url, type: "video" })),
-  ];
-
-  // For the cover, prefer video if available, otherwise use image
-  const coverMedia = video || coverImage;
-
   return (
-    <div className="min-h-screen bg-white">
-      <div className="w-full h-[70vh] relative">
-        {video ? (
-          <DetailVideoPlayer
-            videoPath={video}
-            className="w-full h-full object-cover"
-          />
-        ) : (
-          <Image
-            src={coverMedia}
-            alt={`${maleName} and ${femaleName}`}
-            fill
-            className="object-cover"
-            priority
-          />
-        )}
-      </div>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          {maleName} & {femaleName}
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {allMedia.map((media, index) => (
-            <div key={index} className="relative aspect-square">
-              {media.type === "video" ? (
-                <DetailVideoPlayer
-                  videoPath={media.url}
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <Image
-                  src={media.url}
-                  alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
-                  fill
-                  className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300 cursor-zoom-in"
-                  priority
-                  onClick={() => handleImageClick(index)}
-                />
-              )}
-            </div>
+    <div>
+      <ImageView
+        imageSrc={`${coverImage}`}
+        height="70dvh"
+        title={eventName ? `${eventName}` : `${maleName} & ${femaleName}`}
+        positionY={`${
+          choosedCouple.positionY ? choosedCouple.positionY : "20%"
+        }`}
+      />
+
+      <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 space-y-4 max-w-7xl mx-auto p-4">
+        {allImages.map((img, index) => (
+          <div
+            key={`${img}-${index}`}
+            className="w-full overflow-hidden relative mb-3 break-inside-avoid cursor-zoom-in"
+            onClick={() => handleImageClick(index)}
+            data-aos="zoom-in-out"
+          >
+            <img
+              src={img}
+              alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
+              className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300"
+              loading="lazy"
+            />
+          </div>
+        ))}
+        {allVideos &&
+          allVideos.map((video, index) => (
+            <VideoCard key={`video-${index}`} videoUrl={video} />
           ))}
-        </div>
       </div>
 
       {isModalOpen && (
         <Modalandslider
-          images={allMedia
-            .filter((media) => media.type === "image")
-            .map((media) => media.url)} // Only pass images to modal
+          images={allImages}
           indexImage={indexImage}
           onClose={toggleModal}
         />

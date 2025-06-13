@@ -1,7 +1,12 @@
 const persons = [
   {
+<<<<<<< HEAD
     image: "/images/Tt_3.webp",
     name: "SARA O Limited",
+=======
+    image: "/images/reallife1.webp",
+    name: "SARA O EVENTS",
+>>>>>>> e01d9d9a3eb19192a50b71a55ff292945e6dafd1
     desc: [
       "Where dreams and details dance together to create magical celebrations.",
       "With a passion for transforming visions into breathtaking reality.",
@@ -12,8 +17,13 @@ const persons = [
     caption: "KRISTEEN, SARA O EVENTS BRIDE",
   },
   {
+<<<<<<< HEAD
     image: "/images/2_1.webp",
     name: "EVENT PRODUCERS",
+=======
+    image: "/images/reallife3.webp",
+    name: "YEWANDE RWANG",
+>>>>>>> e01d9d9a3eb19192a50b71a55ff292945e6dafd1
     desc: [
       "A neutral loving minimalist with an obsession for organization.",
       "Brings levity to any situation.",

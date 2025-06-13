@@ -23,6 +23,10 @@ function Aboutus() {
     <div>
       <ImageView
         imageSrc="/images/design_wedding.webp"
+<<<<<<< HEAD
+=======
+        // imageSrc="/images/galleryport6.webp"
+>>>>>>> e01d9d9a3eb19192a50b71a55ff292945e6dafd1
         height="90vh"
         mb="0px"
         positionY="20%"

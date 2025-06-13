@@ -1,9 +1,5 @@
 "use client";
-<<<<<<< HEAD
-import React from "react";
-=======
 import React, { useEffect, useRef, useState } from "react";
->>>>>>> e01d9d9a3eb19192a50b71a55ff292945e6dafd1
 import LazyAutoPlayVideo from "../../videoplayer/VideoPlayer";
 import Link from "next/link";
 
@@ -38,16 +34,7 @@ function Tellusmore({
         <div>
           <LazyAutoPlayVideo videoPath={video} placeholderImage={posterVideo} />
         </div>
-<<<<<<< HEAD
         <div className="flex flex-col justify-center items-center bg-[var(--gold-color)] lg:pt-0 pt-8 ">
-=======
-        <div
-          className={`flex flex-col justify-center items-center bg-[var(--gold-color)] lg:pt-0 pt-8 ${
-            isInView && "bg-gray-200"
-          }`}
-          ref={sectionRef}
-        >
->>>>>>> e01d9d9a3eb19192a50b71a55ff292945e6dafd1
           <p className="text-xl sm:text-2xl" data-aos="zoom-in-out">
             Need something a little more unique?
           </p>

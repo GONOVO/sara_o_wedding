@@ -18,11 +18,7 @@ function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
         if (entry.isIntersecting) {
           setTimeout(() => {
             setIsInView(true);
-<<<<<<< HEAD
           }, index * 1300);
-=======
-          }, index * 1000);
->>>>>>> e01d9d9a3eb19192a50b71a55ff292945e6dafd1
         }
       },
       { threshold: 0.3 }
@@ -38,15 +34,7 @@ function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
       // className="h-[600px] w-full sm:w-[330px] p-4 ps-8 bg-[var(--gold-color)] flex flex-col  transition-all duration-300 transform hover:-translate-y-3 hover:shadow-xl hover:bg-gray-200"
       className={`h-[600px] w-full sm:w-[330px] p-4 ps-8 bg-[var(--gold-color)] flex flex-col 
         transition-all duration-500 transform
-<<<<<<< HEAD
         ${isInView ? "bundlers" : "translate-y-0"}`}
-=======
-        ${
-          isInView
-            ? "opacity-100 -translate-y-3 bg-gray-200 shadow-xl"
-            : "translate-y-0"
-        }`}
->>>>>>> e01d9d9a3eb19192a50b71a55ff292945e6dafd1
       style={{
         marginTop: isLargeScreen ? `${index * 56}px` : "24px",
       }}

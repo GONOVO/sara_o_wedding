@@ -25,36 +25,12 @@ function Wedding() {
   return (
     <>
       <div className="relative">
-<<<<<<< HEAD
         <ImageView
-=======
-        {/* <h1
-          className="text-3xl sm:text-7xl text-white absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[1024px] w-full text-center sm:leading-[80px]"
-          data-aos="zoom-in-out"
-        >
-          marrying breathtaking design with unparalleled planning
-        </h1> */}
-        <ImageView
-          // imageSrc="/images/design_wedding.webp"
->>>>>>> e01d9d9a3eb19192a50b71a55ff292945e6dafd1
           imageSrc="/images/galleryport6.webp"
           height="90vh"
           mb="0px"
           positionY="20%"
         />
-<<<<<<< HEAD
-=======
-        {/* <video
-          aria-hidden="true"
-          className="w-full object-cover h-[494px] lg:h-[805px] transition-opacity duration-500"
-          src="/videos/wedding_hero_vid.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          poster="/images/wedding_hero_poster.webp"
-        /> */}
->>>>>>> e01d9d9a3eb19192a50b71a55ff292945e6dafd1
       </div>
 
       <Ourvission

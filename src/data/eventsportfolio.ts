@@ -39,7 +39,7 @@ const eventsPortfolio = [
     subTitle:
       "Seeing clients' visions come to life is always Yewande's favorite moment of an event day. Her clients mean the world to her and working with each and every family reminds her why she loves what she does. As a client of Sara O Events, you will always feel just as you should - prioritized and important.​",
     paragraphs: [],
-    img: "/images/ev_12.webp",
+    vid: "/videos/vid_666.mp4",
   },
   {
     title: "LUXURY IN EVERY DETAIL",

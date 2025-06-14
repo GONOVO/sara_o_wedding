@@ -16,7 +16,8 @@ const weddingsPortfolio = [
     paragraphs: [
       "We breathe life into your inspiration, crafting celebrations where every detail feels touched by magic. With meticulous care, we weave together design, planning and flawless execution, transforming your vision into something even more beautiful than you imagined. This is why we exist: to handle the extraordinary while you savor the ordinary moments. To turn 'what if' into 'I never dreamed it could be this perfect.' Whether you need a guiding hand or full creation, we're here to make your love story visible in every exquisite detail.",
     ],
-    img: "/images/about2.webp",
+    img: "/images/featured2.webp",
+    // img: "/images/about2.webp",
   },
   //   {
   //     title: "WEBSITE DESIGN",

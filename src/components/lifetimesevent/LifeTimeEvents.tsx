@@ -55,7 +55,7 @@ function LifeTimeEvents() {
               <video
                 aria-hidden="true"
                 className="w-full object-cover absolute h-full transition-opacity duration-500 "
-                src="/videos/homeP_1.mp4"
+                src="/videos/last_vid.mp4"
                 autoPlay={true}
                 loop
                 muted
@@ -70,7 +70,7 @@ function LifeTimeEvents() {
           data-aos="fade-left"
         >
           <Image
-            src="/images/bu1.jpg"
+            src="/images/galleryport7.webp"
             alt="real life"
             fill
             className="object-cover"
@@ -81,7 +81,7 @@ function LifeTimeEvents() {
             <video
               aria-hidden="true"
               className="object-cover w-full h-full"
-              src="/videos/homeP_1.mp4"
+              src="/videos/last_vid.mp4"
               autoPlay={true}
               loop
               muted

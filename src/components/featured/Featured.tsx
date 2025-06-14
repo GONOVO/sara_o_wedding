@@ -16,10 +16,11 @@ function Featured() {
           >
             <div className="absolutez-4 lg:z-2 rotate-45  md:-right-[100px] -right-[40px] lg:bottom-0 sm:-bottom-10 -bottom-5"></div>
             <Image
-              src="/images/featured2.webp"
+              // src="/images/featured2.webp"
+              src="/images/Dv_7.webp"
               alt="featured image 2"
               fill
-              className="object-bottom"
+              className="object-bottom object-cover"
             />
           </div>
 
@@ -29,7 +30,8 @@ function Featured() {
             data-aos="zoom-in-out"
           >
             <Image
-              src="/images/featured1.webp"
+              // src="/images/featured1.webp"
+              src="/images/Dv_4.webp"
               alt="featured image 1"
               width={400}
               height={490}
@@ -45,7 +47,7 @@ function Featured() {
               data-aos="zoom-in-out"
             >
               <Image
-                src="/images/featured1.webp"
+                src="/images/Dv_4.webp"
                 alt="featured image 1"
                 width={327}
                 height={490}

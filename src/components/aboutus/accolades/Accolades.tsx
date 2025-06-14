@@ -4,8 +4,8 @@ function Accolades() {
     <section className="w-full md:h-[90vh] h-[50vh] relative">
       <div className="absolute inset-0">
         <LazyAutoPlayVideo
-          videoPath="/videos/wedding_hero_vid.mp4"
-          placeholderImage="/images/aboutvideo.webp"
+          videoPath="/videos/m333.mp4"
+          // placeholderImage="/images/aboutvideo.webp"
           objectPosition="top"
         />
         <div className="w-full h-full bg-black opacity-25 absolute top-0"></div>
@@ -22,7 +22,8 @@ function Accolades() {
           data-aos="zoom-in-out"
         >
           Sara O Events is humbled and honored to be named named Africa’s top
-          event design producers by The Event Xperience Africa (TEXA) & (APPOEMN)
+          event design producers by The Event Xperience Africa (TEXA) &
+          (APPOEMN)
         </p>
         <h2
           className="text-[9vw] md:text-6xl font-medium text-white"

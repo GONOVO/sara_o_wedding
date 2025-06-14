@@ -17,7 +17,7 @@ function Gallery() {
           >
             <LazyAutoPlayVideo
               // videoPath="/videos/gallery_vid_1.mp4"
-              videoPath="/videos/ev_44.mp4"
+              videoPath="/videos/m666.mp4"
               placeholderImage="/images/cover_g_v_1.webp"
             />
             <p className="text-white">Corporate</p>
@@ -35,7 +35,7 @@ function Gallery() {
                 loading="lazy"
                 className="object-cover"
               />
-              <p> Birthday</p>
+              <p>Birthday</p>
             </div>
             <div
               className={styles.gallery_item}
@@ -89,16 +89,19 @@ function Gallery() {
               className={styles.gallery_item}
               // style={{ backgroundImage: "url(/images/gallery6.webp)" }}
             >
-              <Image
+              {/* <Image
                 src="/images/gallery5.webp"
                 alt="gallery image"
                 fill
                 loading="lazy"
                 className="object-cover"
+              /> */}
+              <LazyAutoPlayVideo
+                // videoPath="/videos/gallery_vid_1.mp4"
+                videoPath="/videos/m222.mp4"
+                placeholderImage="/images/cover_g_v_1.webp"
               />
-              <p style={{ alignItems: "end" }}>
-                luxury table setting
-              </p>
+              <p style={{ alignItems: "end" }}>Corporate</p>
             </div>
             <div
               data-aos="fade-left"
@@ -117,7 +120,7 @@ function Gallery() {
           </div>
           <div data-aos="fade-left" className={styles.gallery_item}>
             <LazyAutoPlayVideo
-              videoPath="/videos/gallery_vid_2.mp4"
+              videoPath="/videos/homeP_1.mp4"
               placeholderImage="/images/cover_g_v_2.webp"
             />
             <p>Weddings</p>

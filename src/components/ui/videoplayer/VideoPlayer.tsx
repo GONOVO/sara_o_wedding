@@ -8,7 +8,7 @@ export default function LazyAutoPlayVideo({
   objectPosition,
 }: {
   videoPath: string;
-  placeholderImage: string;
+  placeholderImage?: string;
   objectPosition?: string;
 }) {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -52,7 +52,7 @@ export default function LazyAutoPlayVideo({
     <div ref={containerRef} className="w-full h-full overflow-hidden relative">
       {!isLoaded && (
         <Image
-          src={placeholderImage}
+          src={placeholderImage ? placeholderImage : ""}
           alt="Video placeholder"
           fill
           className="object-cover"

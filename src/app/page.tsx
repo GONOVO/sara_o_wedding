@@ -15,7 +15,6 @@ function page() {
   return (
     <>
       <Hero />
-     
       <LifeTimeEvents />
       <Featured />
       <Productowner />

@@ -249,6 +249,11 @@ const galleryPortfolio = [
       "/images/1_3.webp",
       "/images/1_1.webp",
       "/images/1_8.webp",
+      "/images/paristhemedwedding/ps_1.JPG",
+      "/images/paristhemedwedding/ps_2.JPG",
+      "/images/paristhemedwedding/ps_3.JPG",
+      "/images/paristhemedwedding/ps_4.JPG",
+      "/images/paristhemedwedding/ps_5.JPG",
     ],
   },
   {

@@ -482,21 +482,21 @@ const galleryPortfolio = [
       // "/images/farida_robo/fr_6.JPG",
     ],
   },
+  // {
+  //   id: 30,
+  //   image: "/images/paristhemedwedding/ps_1.JPG",
+  //   eventName: "PARIS THEMED WEDDING",
+  //   coverImage: "/images/paristhemedwedding/ps_2.JPG",
+  //   allImages: [
+  //     "/images/paristhemedwedding/ps_1.JPG",
+  //     "/images/paristhemedwedding/ps_2.JPG",
+  //     "/images/paristhemedwedding/ps_3.JPG",
+  //     "/images/paristhemedwedding/ps_4.JPG",
+  //     "/images/paristhemedwedding/ps_5.JPG",
+  //   ],
+  // },
   {
     id: 30,
-    image: "/images/paristhemedwedding/ps_1.JPG",
-    eventName: "PARIS THEMED WEDDING",
-    coverImage: "/images/paristhemedwedding/ps_2.JPG",
-    allImages: [
-      "/images/paristhemedwedding/ps_1.JPG",
-      "/images/paristhemedwedding/ps_2.JPG",
-      "/images/paristhemedwedding/ps_3.JPG",
-      "/images/paristhemedwedding/ps_4.JPG",
-      "/images/paristhemedwedding/ps_5.JPG",
-    ],
-  },
-  {
-    id: 31,
     image: "/images/tt/tt_1.JPG",
     eventName: "ALAKIJA WEDDING",
     coverImage: "/images/tt/tt_2.JPG",
@@ -509,7 +509,7 @@ const galleryPortfolio = [
     allVideos: ["/videos/gallery_vid_2.mp4"],
   },
   {
-    id: 32,
+    id: 31,
     image: "/images/gardenthemedwedding/gr_1.jpg",
     eventName: "GARDEN THEMED WEDDING",
     coverImage: "/images/gardenthemedwedding/gr_2.jpg",
@@ -523,7 +523,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 33,
+    id: 32,
     image: "/images/redwedding/r_1.JPG",
     eventName: "RED WEDDING",
     coverImage: "/images/redwedding/r_2.JPG",

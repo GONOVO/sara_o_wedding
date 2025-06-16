@@ -21,7 +21,7 @@ function page() {
       <section className="w-full md:h-[90vh] h-[50vh] relative">
         <LazyAutoPlayVideo
           videoPath="/videos/ev_h_44.mp4"
-          placeholderImage="/images/Key_4.jpg"
+          placeholderImage="/images/vid_h_place1.png"
         />
       </section>
       <Gallery />

@@ -41,7 +41,7 @@ const galleryPortfolio = [
       "/images/foot2.webp",
       "/images/gallery6.webp",
     ],
-    allVideos: ["/videos/ev_44.mp4"],
+
     eventName: "KEYSTONE CORPORATE",
   },
   {
@@ -80,6 +80,7 @@ const galleryPortfolio = [
       "/images/pedro_11.JPEG",
     ],
     eventName: "PEDRO 40th BIRTHDAY",
+    allVideos: ["/videos/gallery_vid_1.mp4"],
   },
   {
     id: 5,
@@ -124,7 +125,7 @@ const galleryPortfolio = [
       "/images/h_ev13.webp",
       "/images/h_ev15.webp",
     ],
-    allVideos: ["/videos/gallery_vid_2.mp4"],
+    allVideos: ["/videos/havana.mp4"],
     eventName: "HAVANA NIGHTS BIRTHDAY",
   },
 
@@ -179,6 +180,7 @@ const galleryPortfolio = [
       "/images/f_ev4.webp",
     ],
     eventName: "FUTURE FACE 2024",
+    allVideos: ["/videos/events.mp4"],
   },
   {
     id: 10,
@@ -257,7 +259,6 @@ const galleryPortfolio = [
     femaleName: "CHIOMA",
     coverImage: "/images/DC_1.webp",
     allImages: [
-      "/images/DC_1.webp",
       "/images/galleryport7.webp",
       "/images/package111.webp",
       "/images/DC_2.webp",
@@ -309,10 +310,11 @@ const galleryPortfolio = [
       "/images/spacebirthday/bi_1.JPG",
       "/images/spacebirthday/bi_2.JPG",
       "/images/spacebirthday/bi_3.JPG",
-      "/images/spacebirthday/bi_4.JPG",
+      "/images/spacebirthday/bi_4.jpg",
       "/images/spacebirthday/bi_5.JPG",
       "/images/spacebirthday/bi_6.JPG",
     ],
+    allVideos: ["/videos/ev_44.mp4"],
   },
   {
     id: 18,
@@ -423,7 +425,7 @@ const galleryPortfolio = [
     id: 26,
     image: "/images/headiesevent/he_1.jpeg",
     eventName: "HEADIES EVENT",
-    coverImage: "/images/headiesevent/he_2.jpeg",
+    coverImage: "/images/headiesevent/he_4.jpg",
     allImages: [
       "/images/headiesevent/he_1.jpeg",
       "/images/headiesevent/he_2.jpeg",
@@ -472,7 +474,7 @@ const galleryPortfolio = [
       "/images/farida_robo/fr_3.jpg",
       "/images/farida_robo/fr_4.jpg",
       "/images/farida_robo/fr_5.JPG",
-      "/images/farida_robo/fr_6.JPG",
+      // "/images/farida_robo/fr_6.JPG",
     ],
   },
   {
@@ -499,6 +501,7 @@ const galleryPortfolio = [
       "/images/tt/tt_3.JPG",
       "/images/tt/tt_4.JPG",
     ],
+    allVideos: ["/videos/gallery_vid_2.mp4"],
   },
   {
     id: 32,

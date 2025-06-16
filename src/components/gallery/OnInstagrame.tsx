@@ -17,7 +17,8 @@ function Gallery() {
           >
             <LazyAutoPlayVideo
               // videoPath="/videos/gallery_vid_1.mp4"
-              videoPath="/videos/m666.mp4"
+              // videoPath="/videos/m666.mp4"
+              videoPath="/videos/vvvv.mp4"
               placeholderImage="/images/cover_g_v_1.webp"
             />
             <p className="text-white">Corporate</p>
@@ -101,7 +102,7 @@ function Gallery() {
                 videoPath="/videos/m222.mp4"
                 placeholderImage="/images/cover_g_v_1.webp"
               />
-              <p style={{ alignItems: "end" }}>Corporate</p>
+              <p style={{ alignItems: "end" }}>Private Events</p>
             </div>
             <div
               data-aos="fade-left"
@@ -115,7 +116,7 @@ function Gallery() {
                 loading="lazy"
                 className="object-cover"
               />
-              <p style={{ alignItems: "end" }}>Private Events</p>
+              <p style={{ alignItems: "end" }}>Corporate</p>
             </div>
           </div>
           <div data-aos="fade-left" className={styles.gallery_item}>

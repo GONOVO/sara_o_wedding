@@ -100,6 +100,10 @@ export default function CouplePage({ params }: CouplePageProps) {
       />
 
       <div className="columns-1 sm:columns-2 lg:columns-3 gap-3 space-y-4 max-w-7xl mx-auto p-4">
+        {allVideos &&
+          allVideos.map((video, index) => (
+            <VideoCard key={`video-${index}`} videoUrl={video} />
+          ))}
         {allImages.map((img, index) => (
           <div
             key={`${img}-${index}`}
@@ -115,10 +119,6 @@ export default function CouplePage({ params }: CouplePageProps) {
             />
           </div>
         ))}
-        {allVideos &&
-          allVideos.map((video, index) => (
-            <VideoCard key={`video-${index}`} videoUrl={video} />
-          ))}
       </div>
 
       {isModalOpen && (

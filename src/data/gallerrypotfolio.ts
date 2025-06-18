@@ -3,7 +3,7 @@ const galleryPortfolio = [
     id: 1,
     image: "/images/e_kaa_bosi/e_kaa_bosi_1.webp",
     coverImage: "/images/e_kaa_bosi/e_kaa_bosi_2.webp",
-    eventName: "E-KAA BOSI",
+    eventName: "Bosola & Temi",
     allImages: [
       "/images/e_kaa_bosi/e_kaa_bosi_3.webp",
       "/images/e_kaa_bosi/e_kaa_bosi_4.webp",

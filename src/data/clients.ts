@@ -1,0 +1,26 @@
+export const clients = [
+  "/images/clients/cl_1.png",
+  "/images/clients/cl_2.png",
+  "/images/clients/cl_4.png",
+  "/images/clients/cl_5.jpeg",
+  "/images/clients/cl_6.png",
+  "/images/clients/cl_7.jpeg",
+
+  "/images/clients/cl_10.png",
+  "/images/clients/cl_11.jpeg",
+  "/images/clients/cl_12.jpeg",
+  "/images/clients/cl_13.svg",
+  "/images/clients/cl_14.png",
+  "/images/clients/cl_15.jpeg",
+  "/images/clients/cl_16.png",
+  "/images/clients/cl_17.png",
+  "/images/clients/cl_18.png",
+
+  "/images/clients/cl_21.png",
+  "/images/clients/cl_22.jpeg",
+  "/images/clients/cl_23.png",
+  "/images/clients/cl_25.jpg",
+  "/images/clients/cl_26.png",
+  "/images/clients/cl_27.svg",
+  "/images/clients/cl_28.png",
+];

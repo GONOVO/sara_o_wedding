@@ -59,7 +59,7 @@ function Hero() {
   }, [isMobile, detectvideo]);
 
   return (
-    <section className="relative lg:mb-56">
+    <section className="relative">
       <div className="w-full  grid grid-cols-1 lg:grid-cols-2">
         {/* Video 1 */}
         <Link href="/events">
@@ -132,7 +132,7 @@ function Hero() {
         </Link>
       </div>
       <div
-        className="bg-white w-full lg:w-[650px] lg:h-[240px] lg:p-2 lg:absolute lg:-bottom-[170px] lg:left-1/2 lg:translate-x-[-50%]"
+        className="bg-white w-full lg:w-[650px] lg:h-[240px] lg:p-2 lg:absolute lg:-bottom-[170px] lg:left-1/2 lg:translate-x-[-50%] z-50"
         style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" }}
         data-aos="zoom-in-out"
       >

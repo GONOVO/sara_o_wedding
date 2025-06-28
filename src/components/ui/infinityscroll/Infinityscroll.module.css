@@ -12,21 +12,21 @@
 
 .scroll-track-left {
   display: flex;
-  animation: scroll-infinite-left 30s linear infinite;
+  animation: scroll-infinite-left 15s linear infinite;
   animation-direction: alternate-reverse;
   padding: 10px 0;
 }
 .scroll-track-right {
   display: flex;
-  animation: scroll-infinite-right 30s linear infinite;
+  animation: scroll-infinite-right 15s linear infinite;
   animation-direction: alternate-reverse;
   padding: 10px 0;
 }
 .scroll-item {
   position: relative;
   flex-shrink: 0;
-  width: 200px;
-  height: 120px;
+  width: 160px;
+  height: 100px;
   margin-right: 14px;
   border-radius: 10px;
   overflow: hidden;
@@ -55,14 +55,14 @@
   }
   100% {
     transform: translate(
-      calc(100% - (10 * 200px + 9 * 14px))
+      calc(100% - (10 * 160px + 9 * 14px))
     ); /* Move left by one full track width */
   }
 }
 @keyframes scroll-infinite-right {
   0% {
     transform: translate(
-      calc(100% - (10 * 200px + 9 * 14px))
+      calc(100% - (10 * 160px + 9 * 14px))
     ); /* Move left by one full track width */
   }
   100% {

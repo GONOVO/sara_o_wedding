@@ -55,22 +55,23 @@ function Header() {
             </li>
           ))}
         </ul>
-
-        <div className="lg:mx-[5%] xl:mx-[10%] flex items-center flex-col gap-2 text-[var(--semiGray-color)] w-fit">
-          <div className="flex items-end">
-            <p className="h-fit text-xs">EST.D</p>
-            <div className="relative w-14 h-14 mx-2">
-              <Image src="/svgs/s_logo.svg" alt="S logo" fill />
+        <Link href="/" className="lg:mx-[5%] xl:mx-[10%]">
+          <div className="lg:mx-[5%] xl:mx-[10%] flex items-center flex-col gap-2 text-[var(--semiGray-color)] w-fit">
+            <div className="flex items-end">
+              <p className="h-fit text-xs">EST.D</p>
+              <div className="relative w-14 h-14 mx-2">
+                <Image src="/svgs/s_logo.svg" alt="S logo" fill />
+              </div>
+              <p className="h-fit text-xs">2010</p>
             </div>
-            <p className="h-fit text-xs">2010</p>
-          </div>
-          <div>
-            <div className="relative w-40 h-20 m-auto">
-              <Image src="/svgs/sara_o.svg" alt="sara_o" fill />
+            <div>
+              <div className="relative w-40 h-20 m-auto">
+                <Image src="/svgs/sara_o.svg" alt="sara_o" fill />
+              </div>
+              <Borderbottom />
             </div>
-            <Borderbottom />
           </div>
-        </div>
+        </Link>
         <ul className="hidden lg:flex gap-6 nunito_font w-max text-[var(--semiGray-color)]">
           {links.slice(3, 6).map((link, index) => (
             <li key={index}>

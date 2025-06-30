@@ -17,18 +17,6 @@ function page() {
   return (
     <>
       <Hero />
-      <div className="lg:pt-56 pb-16 bg-gray-100">
-        <h2 className="text-center md:text-6xl text-4xl font-semibold text-uppercase my-2">
-          OUR CLIENTS
-        </h2>
-        <InfinityScroll
-          elements={clients.slice(0, 11).map((image) => ({ image }))}
-        />
-        <InfinityScroll
-          elements={clients.slice(11, 22).map((image) => ({ image }))}
-          reverse={true}
-        />
-      </div>
       <LifeTimeEvents />
       <Featured />
       <Productowner />
@@ -39,6 +27,18 @@ function page() {
         />
       </section>
       <Gallery />
+      <div className="pt-16 pb-16 bg-gray-100 mb-16">
+        <h2 className="text-center md:text-5xl text-4xl  text-uppercase mb-6">
+          JOIN OUR CLIENTS
+        </h2>
+        <InfinityScroll
+          elements={clients.slice(0, 14).map((image) => ({ image }))}
+        />
+        <InfinityScroll
+          elements={clients.slice(14, 29).map((image) => ({ image }))}
+          reverse={true}
+        />
+      </div>
       <Contactus />
     </>
   );

@@ -1,7 +1,9 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 
 function Productowner() {
+  const [readMore, setReadMore] = useState(false);
   return (
     <section className="mt-8 sm:mt-48 lg:mt-44 bg-[rgba(244,240,235,1)] overflow-x-hidden">
       <div className="max-w-[1280px] mt-32 sm:mt-48 pb-12 md:pt-0 md:pb-0 md:px-4 grid grid-cols-1 md:grid-cols-2 mx-auto top-0 md:-top-20 relative">
@@ -59,26 +61,38 @@ function Productowner() {
               high-profile corporate events, and bespoke event production
               projects.
             </p>
-            <p
-              className="text-[15px] sm:text-start sm:text-base"
-              data-aos="fade-left"
-              style={{
-                textAlign: "justify",
-                wordSpacing: "6px",
-                lineHeight: "28px",
-              }}
-            >
-              Beyond her event expertise, Yewande is a dedicated advocate for
-              professional growth in the African event landscape, through
-              empowering emerging talents with the skills and knowledge needed
-              to excel in luxury event producing. Her passion for innovation and
-              commitment to excellence continue to inspire the next generations
-              and delight both clients and aspiring event producers. Beyond
-              being a visionary entrepreneur, she is a devoted wife, mother, and
-              friend, living life to its fullest balance where family and work
-              intertwine harmoniously with her passion and purpose to delight
-              others.
-            </p>
+            {!readMore && (
+              <button
+                onClick={() => setReadMore(!readMore)}
+                className={`text-black px-4 py-[2px] border-b-1 border-black  text-start w-fit cursor-pointer transition-all duration-300 ${
+                  readMore ? "opacity-0 " : "opacity-100"
+                }`}
+              >
+                {readMore ? "Read Less" : "Read More About Yewande"}
+              </button>
+            )}
+            {readMore && (
+              <p
+                className="text-[15px] sm:text-start sm:text-base"
+                data-aos="fade-left"
+                style={{
+                  textAlign: "justify",
+                  wordSpacing: "6px",
+                  lineHeight: "28px",
+                }}
+              >
+                Beyond her event expertise, Yewande is a dedicated advocate for
+                professional growth in the African event landscape, through
+                empowering emerging talents with the skills and knowledge needed
+                to excel in luxury event producing. Her passion for innovation
+                and commitment to excellence continue to inspire the next
+                generations and delight both clients and aspiring event
+                producers. Beyond being a visionary entrepreneur, she is a
+                devoted wife, mother, and friend, living life to its fullest
+                balance where family and work intertwine harmoniously with her
+                passion and purpose to delight others.
+              </p>
+            )}
             <div>
               <h2 className="text-xl font-medium" data-aos="fade-left">
                 Yewande Rwang-Dung

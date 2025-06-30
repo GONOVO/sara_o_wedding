@@ -22,11 +22,25 @@
   animation-direction: alternate-reverse;
   padding: 10px 0;
 }
+
+.scroll-track-left-services {
+  display: flex;
+  animation: scroll-infinite-left-services 15s linear infinite;
+  animation-direction: alternate-reverse;
+  padding: 10px 0;
+}
+.scroll-track-right-services {
+  display: flex;
+  animation: scroll-infinite-right-services 15s linear infinite;
+  animation-direction: alternate-reverse;
+  padding: 10px 0;
+}
+
 .scroll-item {
   position: relative;
   flex-shrink: 0;
-  width: 160px;
-  height: 100px;
+  width: 125px;
+  height: 70px;
   margin-right: 14px;
   border-radius: 10px;
   overflow: hidden;
@@ -34,10 +48,30 @@
   box-shadow: 2px 4px 6px 2px #10182808;
   padding: 4px;
 }
+
+.scroll-item-services {
+  position: relative;
+  flex-shrink: 0;
+  width: 170px;
+  height: 90px;
+  margin-right: 14px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 2px 4px 6px 2px #10182808;
+  padding: 4px;
+}
+
 .scroll-track-left:hover {
   animation-play-state: paused;
 }
 .scroll-track-right:hover {
+  animation-play-state: paused;
+}
+.scroll-track-left-services:hover {
+  animation-play-state: paused;
+}
+.scroll-track-right-services:hover {
   animation-play-state: paused;
 }
 @media (max-width: 520px) {
@@ -47,6 +81,12 @@
   .scroll-track-left {
     animation: scroll-infinite-left 60s linear infinite;
   }
+  .scroll-track-right-services {
+    animation: scroll-infinite-right-services 60s linear infinite;
+  }
+  .scroll-track-left-services {
+    animation: scroll-infinite-left-services 60s linear infinite;
+  }
 }
 /* Keyframes for continuous horizontal scrolling */
 @keyframes scroll-infinite-left {
@@ -55,15 +95,37 @@
   }
   100% {
     transform: translate(
-      calc(100% - (10 * 160px + 9 * 14px))
+      calc(100% - (14 * 125px + 13 * 14px))
     ); /* Move left by one full track width */
   }
 }
 @keyframes scroll-infinite-right {
   0% {
     transform: translate(
-      calc(100% - (10 * 160px + 9 * 14px))
+      calc(100% - (14 * 125px + 13 * 14px))
     ); /* Move left by one full track width */
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* Keyframes for services variant with 170px cards */
+@keyframes scroll-infinite-left-services {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(
+      calc(100% - (14 * 170px + 13 * 14px))
+    ); /* Move left by one full track width for services */
+  }
+}
+@keyframes scroll-infinite-right-services {
+  0% {
+    transform: translate(
+      calc(100% - (14 * 170px + 13 * 14px))
+    ); /* Move left by one full track width for services */
   }
   100% {
     transform: translate(0);

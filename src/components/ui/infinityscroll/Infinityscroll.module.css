@@ -95,14 +95,14 @@
   }
   100% {
     transform: translate(
-      calc(100% - (14 * 125px + 13 * 14px))
+      calc(100% - (15 * 125px + 14 * 14px))
     ); /* Move left by one full track width */
   }
 }
 @keyframes scroll-infinite-right {
   0% {
     transform: translate(
-      calc(100% - (14 * 125px + 13 * 14px))
+      calc(100% - (15 * 125px + 14 * 14px))
     ); /* Move left by one full track width */
   }
   100% {

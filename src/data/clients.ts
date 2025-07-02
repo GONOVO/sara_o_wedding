@@ -1,5 +1,7 @@
 export const clients = [
+  "/images/clients/cl_29.png",
   "/images/clients/cl_1.png",
+  "/images/clients/cl_16.png",
   "/images/clients/cl_2.png",
   "/images/clients/cl_4.png",
   "/images/clients/cl_5.jpeg",
@@ -11,7 +13,6 @@ export const clients = [
   "/images/clients/cl_13.svg",
   "/images/clients/cl_14.png",
   "/images/clients/cl_15.jpeg",
-  "/images/clients/cl_16.png",
   "/images/clients/cl_17.png",
   "/images/clients/cl_1.png",
   "/images/clients/cl_2.png",
@@ -27,5 +28,5 @@ export const clients = [
   "/images/clients/cl_15.jpeg",
   "/images/clients/cl_16.png",
   "/images/clients/cl_17.png",
-  "/images/clients/cl_16.png",
+  "/images/clients/cl_29.png"
 ];

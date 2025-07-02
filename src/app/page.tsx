@@ -29,13 +29,13 @@ function page() {
       <Gallery />
       <div className="pt-16 pb-16 bg-gray-100 mb-16">
         <h2 className="text-center md:text-5xl text-4xl  text-uppercase mb-6">
-          JOIN OUR CLIENTS
+         JOIN OUR CORPORATE CLIENTS
         </h2>
         <InfinityScroll
-          elements={clients.slice(0, 14).map((image) => ({ image }))}
+          elements={clients.slice(0, 15).map((image) => ({ image }))}
         />
         <InfinityScroll
-          elements={clients.slice(14, 29).map((image) => ({ image }))}
+          elements={clients.slice(15, 30).map((image) => ({ image }))}
           reverse={true}
         />
       </div>

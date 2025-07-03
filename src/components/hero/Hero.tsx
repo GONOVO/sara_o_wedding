@@ -59,7 +59,7 @@ function Hero() {
   }, [isMobile, detectvideo]);
 
   return (
-    <section className="relative mb-56">
+    <section className="relative lg:mb-56 mb-0">
       <div className="w-full  grid grid-cols-1 lg:grid-cols-2">
         {/* Video 1 */}
         <Link href="/events">

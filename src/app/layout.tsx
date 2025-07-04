@@ -25,9 +25,46 @@ const kristi = Kristi({
   variable: "--font-kristy",
 });
 export const metadata: Metadata = {
-  title: "Sara.O.Events",
+  title: "Sara O Events",
   description: "Premuim Event Producers",
+  keywords: ["wedding planning", "event planning", "corporate events", "wedding coordinator", "event management", "celebration planning", "destination weddings"],
+  authors: [{ name: "Sara O Events" }],
+  creator: "Sara O Events",
+  publisher: "Sara O Events",
   icons: ["/svgs/s_logo.svg"],
+  metadataBase: new URL("https://www.saraoevent.com/"), // Replace with your actual domain
+  openGraph: {
+    title: "Sara O Events - Premuim Event Producers",
+    description: "Premuim Event Producers",
+    url: "https://www.saraoevent.com/", // Replace with your actual domain
+    siteName: "Sara O Events",
+    images: [
+      {
+        url: "/svgs/s_logo.svg",
+        alt: "Sara O Events - Premuim Event Producers",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sara O Events - Premuim Event Producers",
+    description: "Premuim Event Producers",
+    images: ["/svgs/s_logo.svg"],
+    creator: "@SARAOevents", 
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({

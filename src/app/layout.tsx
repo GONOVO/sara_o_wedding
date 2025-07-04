@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Sara O Events",
     images: [
       {
-        url: "/images/sara_o.webp",
+        url: "/svgs/s_logo.svg",
         width: 1200,
         height: 630,
         alt: "Sara O Events - Premium Event Planning Services",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Sara O Events - Premium Event Planning & Wedding Services",
     description: "Creating unforgettable moments with expert planning, elegant design, and flawless execution for weddings, corporate events, and special celebrations.",
-    images: ["/images/sara_o.webp"],
+    images: ["/svgs/s_logo.svg"],
     creator: "@SARAOevents", 
   },
   robots: {

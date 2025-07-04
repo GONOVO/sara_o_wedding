@@ -26,7 +26,7 @@ function Hero() {
     const handleResize = () => {
       const isMobile = window.innerWidth <= 1024;
       setIsMobile(isMobile);
-      console.log("Inner width:", window.innerWidth, "Is mobile:", isMobile);
+      // console.log("Inner width:", window.innerWidth, "Is mobile:", isMobile);
     };
 
     const handleHeight = () => {
@@ -37,7 +37,7 @@ function Hero() {
           ? 1
           : 0;
       setDetectVideo(videoNum);
-      console.log(detectvideo, window.pageYOffset);
+      // console.log(detectvideo, window.pageYOffset);
     };
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleHeight);

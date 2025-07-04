@@ -7,8 +7,6 @@ import styles from "./contactus.module.css";
 
 const MobileFrame = React.lazy(() => import("../ui/mobileframe/Mobile"));
 
-import emailjs from "@emailjs/browser";
-
 const EVENT_TYPES = [
   "Wedding",
   "Corporate",
@@ -50,38 +48,61 @@ function Contactus() {
     setForm({ ...form, [target.name]: target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(form);
-    emailjs
-      .send(
-        "service_5tz6yw8---",
-        "template_4m22yrb",
-        { ...form },
-        {
-          publicKey: "N9qLzL2P3X7Rut2Mp---",
-        }
-      )
-      .then(
-        (result) => {
-          console.log("Email sent successfully:", result.text);
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        (error) => {
-          console.error("Failed to send email:", error.text);
-        }
-      );
-    setForm({
-      client_name: "",
-      event_type: "Wedding",
-      other_event_type: "",
-      event_date: "",
-      event_venue: "",
-      guest_size: "",
-      inspiration_link: "",
-      phone: "",
-      email: "",
-      additional_info: "",
-    });
+        body: JSON.stringify(form),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message:
+            "Thank you! Your message has been sent successfully. We'll get back to you soon!",
+        });
+
+        // Reset form
+        setForm({
+          client_name: "",
+          event_type: "Wedding",
+          other_event_type: "",
+          event_date: "",
+          event_venue: "",
+          guest_size: "",
+          inspiration_link: "",
+          phone: "",
+          email: "",
+          additional_info: "",
+        });
+      } else {
+        throw new Error(data.error || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error sending form:", error);
+      setSubmitStatus({
+        type: "error",
+        message:
+          "Sorry, there was an error sending your message. Please try again or contact us directly.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -318,11 +339,28 @@ function Contactus() {
             ></textarea>
           </div>
 
+          {submitStatus.type && (
+            <div
+              className={`p-4 rounded-lg ${
+                submitStatus.type === "success"
+                  ? "bg-green-100 text-green-700 border border-green-200"
+                  : "bg-red-100 text-red-700 border border-red-200"
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
+
           <button
             type="submit"
-            className="text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base w-full sm:w-auto px-5 py-2.5 text-center bg-black"
+            disabled={isSubmitting}
+            className={`text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-base w-full sm:w-auto px-5 py-2.5 text-center ${
+              isSubmitting
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-black hover:bg-gray-800"
+            }`}
           >
-            Send Your Message
+            {isSubmitting ? "Sending..." : "Send Your Message"}
           </button>
         </form>
       </div>

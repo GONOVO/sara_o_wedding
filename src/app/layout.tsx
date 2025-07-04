@@ -31,14 +31,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sara O Events",
     description: "Premium Event Producers",
-    images: ["/images/sara_o.webp"],
+    images: ["/svgs/s_logo.svg"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Sara O Events",
     description: "Premium Event Producers",
-    images: ["/images/sara_o.webp"],
+    images: ["/svgs/s_logo.svg"],
   },
 };
 

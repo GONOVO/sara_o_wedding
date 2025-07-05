@@ -5,7 +5,7 @@ function Accolades() {
       <div className="absolute inset-0">
         <LazyAutoPlayVideo
           videoPath="/videos/m333.mp4"
-          // placeholderImage="/images/aboutvideo.webp"
+          placeholderImage="/images/vf_8.webp"
           objectPosition="top"
         />
         <div className="w-full h-full bg-black opacity-25 absolute top-0"></div>

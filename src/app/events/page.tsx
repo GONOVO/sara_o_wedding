@@ -35,7 +35,7 @@ function page() {
           loop
           muted
           playsInline
-          poster="/images/poster_vid_ev.webp"
+          poster="/images/events_poster.webp"
         />
       </div>
 
@@ -61,10 +61,7 @@ function page() {
       /> */}
       <EventsPortfolio portfolioData={eventsPortfolio} />
       <Bundlers bundles={bundlesEvents} />
-      <Tellusmore
-        video="/videos/ev_vid2.mp4"
-        posterVideo="/images/events_poster.webp"
-      />
+      <Tellusmore video="/videos/ev_vid2.mp4" posterVideo="/images/vf_7.webp" />
     </>
   );
 }

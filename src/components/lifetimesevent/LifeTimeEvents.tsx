@@ -60,7 +60,7 @@ function LifeTimeEvents() {
                 loop
                 muted
                 playsInline
-                poster="/images/events_poster.webp"
+                poster="/images/vf_3.webp"
               />
             </div>
           </div>
@@ -86,7 +86,7 @@ function LifeTimeEvents() {
               loop
               muted
               playsInline
-              poster="/images/events_poster.webp"
+              poster="/images/vf_3.webp"
             />
           </div>
           {/* <LazyAutoPlayVideo /> */}

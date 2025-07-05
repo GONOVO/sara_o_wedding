@@ -82,7 +82,7 @@ function Hero() {
               loop
               muted
               playsInline
-              poster="/images/event_vid_1.webp"
+              poster="/images/vf_1.webp"
               onMouseEnter={() =>
                 handleMouseEnter(videoRefEvents, videoRefWedding)
               }
@@ -117,7 +117,7 @@ function Hero() {
               loop
               muted
               playsInline
-              poster="/images/wed_m_poster.webp"
+              poster="/images/vf_2.webp"
               onMouseEnter={() =>
                 handleMouseEnter(videoRefWedding, videoRefEvents)
               }

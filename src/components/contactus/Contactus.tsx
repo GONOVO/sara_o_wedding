@@ -76,7 +76,8 @@ function Contactus() {
           message:
             "Thank you! Your message has been sent successfully. We'll get back to you soon!",
         });
-
+        // Hide message after 4 seconds
+        setTimeout(() => setSubmitStatus({ type: null, message: "" }), 4000);
         // Reset form
         setForm({
           client_name: "",
@@ -100,6 +101,8 @@ function Contactus() {
         message:
           "Sorry, there was an error sending your message. Please try again or contact us directly.",
       });
+      // Hide error after 4 seconds
+      setTimeout(() => setSubmitStatus({ type: null, message: "" }), 4000);
     } finally {
       setIsSubmitting(false);
     }
@@ -370,7 +373,7 @@ function Contactus() {
           <div className={styles.first_mob}>
             <MobileFrame
               video="/videos/ev_33.mp4"
-              fallback="/images/contactusfall1.webp"
+              fallback="/images/event_vid_1.webp"
             />
           </div>
           <MobileFrame

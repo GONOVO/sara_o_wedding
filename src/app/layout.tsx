@@ -27,18 +27,18 @@ const kristi = Kristi({
 export const metadata: Metadata = {
   title: "Sara O Events",
   description: "Premium Event Producers",
-  icons: ["/svgs/s_logo.svg"],
+  icons: "/svgs/s_logo.svg",
   openGraph: {
     title: "Sara O Events",
     description: "Premium Event Producers",
-    images: ["/svgs/s_logo.svg"],
+    images: "/svgs/s_logo.svg",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Sara O Events",
     description: "Premium Event Producers",
-    images: ["/svgs/s_logo.svg"],
+    images: "/svgs/s_logo.svg",
   },
 };
 /****sgfksdj *****/

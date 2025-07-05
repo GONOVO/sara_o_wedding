@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     images: ["/svgs/s_logo.svg"],
   },
 };
-
+/****sgfksdj */
 export default function RootLayout({
   children,
 }: Readonly<{

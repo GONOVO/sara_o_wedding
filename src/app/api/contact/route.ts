@@ -31,7 +31,8 @@ export async function POST(request: NextRequest) {
     // Email content
     const mailOptions = {
       from: process.env.ZOHO_EMAIL,
-      to: process.env.RECIPIENT_EMAIL || process.env.ZOHO_EMAIL, // Where you want to receive the emails
+      to: process.env.ZOHO_EMAIL,
+      replyTo: email,
       subject: `New Event Inquiry from ${client_name}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

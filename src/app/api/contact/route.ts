@@ -1,3 +1,4 @@
+
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -17,74 +18,73 @@ export async function POST(request: NextRequest) {
       additional_info,
     } = body;
 
-    // Create transporter using Zoho SMTP
     const transporter = nodemailer.createTransport({
       host: "smtp.zoho.com",
       port: 587,
-      secure: false, // true for 465, false for other ports
+      secure: false,
       auth: {
-        user: process.env.ZOHO_EMAIL, // Your Zoho email
-        pass: process.env.ZOHO_APP_PASSWORD, // Your Zoho app password
+        user: process.env.ZOHO_EMAIL,
+        pass: process.env.ZOHO_APP_PASSWORD,
       },
     });
 
-    // Email content
-    const mailOptions = {
-      from: process.env.ZOHO_EMAIL,
-      to: process.env.ZOHO_EMAIL,
-      replyTo: email,
-      subject: `New Event Inquiry from ${client_name}`,
-      html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #333;">New Event Inquiry</h2>
-          
-          <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3 style="color: #555; margin-top: 0;">Client Information</h3>
-            <p><strong>Name:</strong> ${client_name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Phone:</strong> ${phone}</p>
-          </div>
-
-          <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3 style="color: #555; margin-top: 0;">Event Details</h3>
-            <p><strong>Event Type:</strong> ${event_type}${
-        other_event_type ? ` - ${other_event_type}` : ""
-      }</p>
-            <p><strong>Event Date:</strong> ${event_date}</p>
-            <p><strong>Event Venue:</strong> ${event_venue}</p>
-            <p><strong>Guest Size:</strong> ${guest_size}</p>
-            ${
-              inspiration_link
-                ? `<p><strong>Inspiration Link:</strong> <a href="${inspiration_link}" target="_blank">${inspiration_link}</a></p>`
-                : ""
-            }
-          </div>
-
+    const htmlContent = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #333;">New Event Inquiry</h2>
+        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h3>Client Information</h3>
+          <p><strong>Name:</strong> ${client_name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Phone:</strong> ${phone}</p>
+        </div>
+        <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h3>Event Details</h3>
+          <p><strong>Type:</strong> ${event_type}${
+      other_event_type ? ` - ${other_event_type}` : ""
+    }</p>
+          <p><strong>Date:</strong> ${event_date}</p>
+          <p><strong>Venue:</strong> ${event_venue}</p>
+          <p><strong>Guest Size:</strong> ${guest_size}</p>
           ${
-            additional_info
-              ? `
-          <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
-            <h3 style="color: #555; margin-top: 0;">Additional Information</h3>
-            <p style="white-space: pre-wrap;">${additional_info}</p>
-          </div>
-          `
+            inspiration_link
+              ? `<p><strong>Inspiration Link:</strong> <a href="${inspiration_link}" target="_blank">${inspiration_link}</a></p>`
               : ""
           }
-
-          <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
-            <p style="color: #666; font-size: 14px;">
-              This inquiry was submitted from your website contact form.
-            </p>
-          </div>
         </div>
-      `,
-    };
+        ${
+          additional_info
+            ? `<div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px;">
+            <h3>Additional Info</h3><p>${additional_info}</p>
+          </div>`
+            : ""
+        }
+        <p style="margin-top: 30px; color: #999;">Submitted via website contact form.</p>
+      </div>
+    `;
 
-    // Send email
-    await transporter.sendMail(mailOptions);
+    // 1. Send to your internal team
+    await transporter.sendMail({
+      from: process.env.ZOHO_EMAIL,
+      to: process.env.RECIPIENT_EMAIL || process.env.ZOHO_EMAIL,
+      replyTo: email,
+      subject: `New Event Inquiry from ${client_name}`,
+      html: htmlContent,
+    });
+
+    // 2. Auto-reply to client
+    await transporter.sendMail({
+      from: process.env.ZOHO_EMAIL,
+      to: email,
+      subject: "Thanks for contacting Sara O Events",
+      html: `
+        <p>Hi ${client_name},</p>
+        <p>Thank you for reaching out to Sara O Events. We've received your inquiry and will get back to you shortly.</p>
+        <p>Best regards,<br/>The Sara O Team</p>
+      `,
+    });
 
     return NextResponse.json(
-      { message: "Email sent successfully" },
+      { message: "Emails sent successfully" },
       { status: 200 }
     );
   } catch (error) {

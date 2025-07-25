@@ -3,9 +3,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 const Caption = dynamic(() => import("@/components/ui/events/caption/Caption"));
-// const DynamicGallery = dynamic(
-//   () => import("@/components/ui/events/dynamicgallry/DynamicGallery")
-// );
+
 const Ourvission = dynamic(
   () => import("@/components/ui/events/ourvission/Ourvission")
 );
@@ -49,16 +47,12 @@ function page() {
         brand="KEYSTONE CORPORATE"
       />
       <ImageView
-        // imageSrc="/images/design_wedding.webp"
         imageSrc="/images/f_ev4.webp"
         height="90vh"
         mb="0px"
         positionY="20%"
       />
-      {/* <VideoView
-        videoPath="/videos/events.mp4"
-        videoPoster="/images/events_poster.webp"
-      /> */}
+
       <EventsPortfolio portfolioData={eventsPortfolio} />
       <Bundlers bundles={bundlesEvents} />
       <Tellusmore video="/videos/ev_vid2.mp4" posterVideo="/images/vf_7.webp" />

@@ -1,6 +1,35 @@
 const galleryPortfolio = [
   {
     id: 1,
+    image: "/images/oo/oo_1.webp",
+    coverImage: "/images/oo/oo_2.webp",
+    allImages: [
+      "/images/oo/oo_3.webp",
+      "/images/oo/oo_1.webp",
+      "/images/oo/oo_2.webp",
+      "/images/oo/oo_4.webp",
+      "/images/oo/oo_5.webp",
+      "/images/oo/oo_6.webp",
+      "/images/oo/oo_7.webp",
+      "/images/oo/oo_8.webp",
+      "/images/oo/oo_9.webp",
+      "/images/oo/oo_10.webp",
+      "/images/oo/oo_11.webp",
+      "/images/oo/oo_12.webp",
+      "/images/oo/oo_13.webp",
+      "/images/oo/oo_14.webp",
+      "/images/oo/oo_15.webp",
+      "/images/oo/oo_16.webp",
+      "/images/oo/oo_17.webp",
+      "/images/oo/oo_18.webp",
+      "/images/oo/oo_19.webp",
+      "/images/oo/oo_20.webp",
+    ],
+    allVideos: ["/videos/oo_vid.mp4"],
+    eventName: "CLUB DAMZ",
+  },
+  {
+    id: 2,
     image: "/images/e_kaa_bosi/e_kaa_bosi_1.webp",
     coverImage: "/images/e_kaa_bosi/e_kaa_bosi_2.webp",
     eventName: "Bosola & Temi",
@@ -36,7 +65,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     image: "/images/galleryport1.webp",
     coverImage: "/images/cover1.webp",
     allImages: [
@@ -58,7 +87,7 @@ const galleryPortfolio = [
     femaleName: "GBOLABO",
   },
   {
-    id: 3,
+    id: 4,
     image: "/images/ev_11.webp",
     video: "/videos/ev_44.mp4",
     coverImage: "/images/key_cover.JPG",
@@ -81,14 +110,13 @@ const galleryPortfolio = [
     eventName: "KEYSTONE END OF YEAR (EoYP) Award Dinner",
   },
   {
-    id: 4,
+    id: 5,
     image: "/images/4_1.webp",
     coverImage: "/images/4_3.webp",
     allImages: [
       "/images/couple4.webp",
       "/images/4_4.webp",
-      // "/images/4_5.webp",
-      // "/images/4_2.webp",
+
       "/images/4_3.webp",
       "/images/galleryport10.webp",
       "/images/4_1.webp",
@@ -97,7 +125,7 @@ const galleryPortfolio = [
     femaleName: "YELE",
   },
   {
-    id: 5,
+    id: 6,
     image: "/images/portfolio3.JPEG",
     coverImage: "/images/pedro_cover.JPG",
     allImages: [
@@ -119,7 +147,7 @@ const galleryPortfolio = [
     allVideos: ["/videos/gallery_vid_1.mp4"],
   },
   {
-    id: 6,
+    id: 7,
     image: "/images/2_1.webp",
     coverImage: "/images/2_4.webp",
     allImages: [
@@ -141,7 +169,7 @@ const galleryPortfolio = [
     femaleName: "HANAN",
   },
   {
-    id: 7,
+    id: 8,
     image: "/images/h_ev1.webp",
     // video: "/videos/gallery_vid_2.mp4",
     coverImage: "/images/h_ev2.webp",
@@ -166,7 +194,7 @@ const galleryPortfolio = [
   },
 
   {
-    id: 8,
+    id: 9,
     image: "/images/ev44.webp",
     coverImage: "/images/o_ev1.webp",
     allImages: [
@@ -185,7 +213,7 @@ const galleryPortfolio = [
     eventName: "STERLING OIL",
   },
   {
-    id: 9,
+    id: 10,
     image: "/images/Dv_7.webp",
     maleName: "DEVAK",
     femaleName: "VALDEHI",
@@ -203,7 +231,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     image: "/images/f_ev1.webp",
     coverImage: "/images/f_ev2.webp",
     allImages: [
@@ -219,7 +247,7 @@ const galleryPortfolio = [
     allVideos: ["/videos/events.mp4"],
   },
   {
-    id: 11,
+    id: 12,
     image: "/images/La_1.webp",
     positionY: "0%",
     maleName: "LORIADE",
@@ -236,7 +264,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     image: "/images/ev5.webp",
     coverImage: "/images/ev7.jpg",
     allImages: [
@@ -249,7 +277,7 @@ const galleryPortfolio = [
     eventName: "LA THE TRAD",
   },
   {
-    id: 13,
+    id: 14,
     positionY: "30%",
     image: "/images/galleryport5.webp",
     maleName: "IBRAHIM",
@@ -269,7 +297,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     positionY: "10%",
     image: "/images/galleryport6.webp",
     maleName: "RASHEED",
@@ -293,7 +321,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 15,
+    id: 16,
     positionY: "0%",
     image: "/images/galleryport7.webp",
     maleName: "DAVIDO",
@@ -310,7 +338,7 @@ const galleryPortfolio = [
     allVideos: ["/videos/chambido.mp4"],
   },
   {
-    id: 16,
+    id: 17,
     image: "/images/galleryport8.webp",
     maleName: "MOYIN",
     femaleName: "GOZIEM",
@@ -323,7 +351,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 17,
+    id: 18,
     image: "/images/galleryport9.webp",
     maleName: "TENI",
     femaleName: "TEMITOPE",
@@ -343,7 +371,7 @@ const galleryPortfolio = [
     allVideos: ["/videos/ttt.mp4"],
   },
   {
-    id: 18,
+    id: 19,
     image: "/images/spacebirthday/bi_1.JPG",
     eventName: "SPACE BIRTHDAY",
     coverImage: "/images/spacebirthday/bi_2.JPG",
@@ -358,7 +386,7 @@ const galleryPortfolio = [
     allVideos: ["/videos/ev_44.mp4"],
   },
   {
-    id: 19,
+    id: 20,
     image: "/images/Nduka/nd_3.jpg",
     eventName: "NDUKA OBAIGBENA 60th BIRTHDAY FORREST GARDEN",
     coverImage: "/images/Nduka/nd_2.jpg",
@@ -370,7 +398,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 20,
+    id: 21,
     image: "/images/BirthdayParty/bii_1.jpg",
     eventName: "BIRTHDAY PARTY",
     coverImage: "/images/BirthdayParty/bii_2.jpg",
@@ -381,7 +409,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 21,
+    id: 22,
     image: "/images/tolaramconclave/to_1.JPG",
     eventName: "TOLARAM CONCLAVE",
     coverImage: "/images/tolaramconclave/to_2.JPG",
@@ -397,7 +425,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 22,
+    id: 23,
     image: "/images/vowRenewals/vo_1.jpg",
     eventName: "VOW RENEWAL",
     coverImage: "/images/vowRenewals/vo_2.jpg",
@@ -409,7 +437,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 23,
+    id: 24,
     image: "/images/sarakiwedding/wed_1.jpg",
     eventName: "Saraki Wedding",
     coverImage: "/images/sarakiwedding/wed_2.jpg",
@@ -422,7 +450,7 @@ const galleryPortfolio = [
     allVideos: ["/videos/saraki.mp4"],
   },
   {
-    id: 24,
+    id: 25,
     image: "/images/traditionalwedding/trad_3.jpg",
     eventName: "TRADITIONAL WEDDING",
     coverImage: "/images/traditionalwedding/trad_2.jpg",
@@ -435,7 +463,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 25,
+    id: 26,
     image: "/images/trad_2/tradd_5.jpg",
     eventName: "TRADITIONAL WEDDING",
     coverImage: "/images/trad_2/tradd_1.jpg",
@@ -450,7 +478,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 26,
+    id: 27,
     image: "/images/dami_lekan/dl_3.jpg",
     femaleName: "DAMI",
     maleName: "LEKAN",
@@ -463,7 +491,7 @@ const galleryPortfolio = [
     allVideos: ["/videos/lk_vid.mp4"],
   },
   {
-    id: 27,
+    id: 28,
     image: "/images/headiesevent/he_1.jpeg",
     eventName: "HEADIES EVENT",
     coverImage: "/images/headiesevent/he_4.jpg",
@@ -477,7 +505,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 28,
+    id: 29,
     image: "/images/abikd40/ab_4.jpg",
     eventName: "ABIKD 40th BIRTHDAY",
     coverImage: "/images/abikd40/ab_2.jpg",
@@ -493,7 +521,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 29,
+    id: 30,
     image: "/images/destinationev/ds_3.webp",
     eventName: "Destination event",
     coverImage: "/images/destinationev/ds_2.webp",
@@ -504,7 +532,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 30,
+    id: 31,
     image: "/images/farida_robo/fr_1.JPG",
     femaleName: "FARIDAH",
     maleName: "ROBO",
@@ -518,21 +546,9 @@ const galleryPortfolio = [
       // "/images/farida_robo/fr_6.JPG",
     ],
   },
-  // {
-  //   id: 30,
-  //   image: "/images/paristhemedwedding/ps_1.JPG",
-  //   eventName: "PARIS THEMED WEDDING",
-  //   coverImage: "/images/paristhemedwedding/ps_2.JPG",
-  //   allImages: [
-  //     "/images/paristhemedwedding/ps_1.JPG",
-  //     "/images/paristhemedwedding/ps_2.JPG",
-  //     "/images/paristhemedwedding/ps_3.JPG",
-  //     "/images/paristhemedwedding/ps_4.JPG",
-  //     "/images/paristhemedwedding/ps_5.JPG",
-  //   ],
-  // },
+
   {
-    id: 31,
+    id: 32,
     image: "/images/tt/tt_1.JPG",
     eventName: "ALAKIJA WEDDING",
     coverImage: "/images/tt/tt_2.JPG",
@@ -545,7 +561,7 @@ const galleryPortfolio = [
     allVideos: ["/videos/gallery_vid_2.mp4"],
   },
   {
-    id: 32,
+    id: 33,
     image: "/images/gardenthemedwedding/gr_1.jpg",
     eventName: "GARDEN THEMED WEDDING",
     coverImage: "/images/gardenthemedwedding/gr_2.jpg",
@@ -559,7 +575,7 @@ const galleryPortfolio = [
     ],
   },
   {
-    id: 33,
+    id: 34,
     image: "/images/redwedding/r_1.JPG",
     eventName: "RED WEDDING",
     coverImage: "/images/redwedding/r_2.JPG",

@@ -2,7 +2,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import HugeTitle from "../../hugetitle/HugeTitle";
 import styles from "./portfolio.module.css";
-// import eventsPortfolio from "@/data/eventsportfolio";
 import LazyAutoPlayVideo from "../../videoplayer/VideoPlayer";
 import { IPortfolio } from "@/utils/interfaces";
 function EventsPortfolio({ portfolioData }: { portfolioData: IPortfolio[] }) {
@@ -28,15 +27,12 @@ function EventsPortfolio({ portfolioData }: { portfolioData: IPortfolio[] }) {
       }
     );
 
-    // Create a copy of stepRefs.current to use inside the effect
     const refsCopy = stepRefs.current;
 
-    // Observe the elements
     refsCopy.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
 
-    // Cleanup function: unobserve the elements
     return () => {
       refsCopy.forEach((ref) => {
         if (ref) observer.unobserve(ref);
@@ -60,7 +56,7 @@ function EventsPortfolio({ portfolioData }: { portfolioData: IPortfolio[] }) {
                 {item.vid ? (
                   <LazyAutoPlayVideo
                     videoPath={item.vid}
-                    placeholderImage="/images/events_poster.webp"
+                    // placeholderImage="/images/events_poster.webp"
                   />
                 ) : (
                   <div

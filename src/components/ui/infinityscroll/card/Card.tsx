@@ -16,7 +16,7 @@ export const Card = ({
 
   return (
     <article className={cardClass}>
-      <Image src={image} alt="card" fill />
+      <Image src={image} alt="card" fill loading="lazy" />
     </article>
   );
 };

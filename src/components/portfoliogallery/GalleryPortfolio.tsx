@@ -2,7 +2,7 @@ import React from "react";
 import GalleryCard from "../ui/gallerycard/GalleryCard";
 import galleryPortfolio from "@/data/gallerrypotfolio";
 import Link from "next/link";
-// import couples from "@/data/couples";
+
 
 function GalleryPortfolio() {
   return (

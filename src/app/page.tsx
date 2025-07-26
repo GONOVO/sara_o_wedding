@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import Hero from "../components/hero/Hero";
 import LazyAutoPlayVideo from "@/components/ui/videoplayer/VideoPlayer";
-import InfinityScroll from "@/components/ui/infinityscroll/InfinityScroll";
+const InfinityScroll=dynamic(()=>import("@/components/ui/infinityscroll/InfinityScroll"));
 import { clients } from "@/data/clients";
 const Productowner = dynamic(
   () => import("../components/productowner/Productowner")

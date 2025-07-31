@@ -1,5 +1,6 @@
 import styles from "./destination.module.css";
 import Image from "next/image";
+import HugeTitle from "@/components/ui/hugetitle/HugeTitle";
 
 const destinations = {
   row1: [
@@ -37,12 +38,14 @@ const destinations = {
 function DestinationWeddingsPage() {
   return (
     <main>
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        {/* Header Section */}
-        <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif mb-4">
-            Destination Wedding Venues
-          </h2>
+      {/* Header Section - Full Width */}
+      <div
+        className="text-center py-16 bg-[var(--gold-color)] w-full"
+        data-aos="fade-up"
+      >
+        <div className="max-w-7xl mx-auto px-4">
+          <HugeTitle text="Destinations" fontPercentage={0.9} color="#fff" />
+
           <p className="text-lg md:text-xl text-gray-600 mb-4">
             DISCOVER YOUR UNIQUE PLACE TO SAY I DO
           </p>
@@ -52,9 +55,11 @@ function DestinationWeddingsPage() {
             retreats, glamorous beach fronts and desert wonders. Get ready to
             hop on a plane and say your vows!
           </p>
-          <div className="w-1 h-16 bg-black mx-auto"></div>
+          {/* <div className="w-1 h-16 bg-black mx-auto"></div> */}
         </div>
+      </div>
 
+      <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Destination Grid */}
         <div className={styles.destinationGrid}>
           {/* Row 1: Caribbean Islands */}

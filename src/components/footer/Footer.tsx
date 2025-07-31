@@ -3,6 +3,7 @@ import styles from "./footer.module.css";
 import Image from "next/image";
 import links from "@/data/links";
 import socialMedia from "@/data/socilamedia";
+import { INavItem } from "@/utils/interfaces";
 
 function Footer() {
   const images = [
@@ -10,6 +11,20 @@ function Footer() {
     "/images/foot1.webp",
     "/images/foot3.webp",
   ];
+
+  // Create footer links including dropdown items
+  const footerLinks: INavItem[] = [];
+
+  links.forEach((link: INavItem) => {
+    if (link.dropdown && link.items) {
+      // Add dropdown items to footer
+      footerLinks.push(...link.items);
+    } else if (!link.dropdown) {
+      // Add regular links to footer
+      footerLinks.push(link);
+    }
+  });
+
   return (
     <footer className={styles.footer}>
       <div className={styles.main_grid_footer}>
@@ -114,9 +129,9 @@ function Footer() {
             <h1 data-aos="fade-up">Menu</h1>
           </div>
           <ul data-aos="fade-up">
-            {links.map((link, index) => (
+            {footerLinks.map((link, index) => (
               <li key={index}>
-                <Link href={link.path}>{link.name}</Link>
+                <Link href={link.path ?? "/"}>{link.name}</Link>
               </li>
             ))}
           </ul>

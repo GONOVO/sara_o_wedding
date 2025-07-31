@@ -8,16 +8,34 @@ const links = [
     path: "/aboutus",
   },
   {
+    name: "PACKAGES",
+    path: "/packages",
+  },
+  {
     name: "OUR SERVICES",
     path: "/ourservices",
   },
   {
-    name: "PORTFOLIO",
-    path: "/portfolio",
+    name: "DESTINATION",
+    dropdown: true,
+    items: [
+      {
+        name: "DESTINATION WEDDINGS",
+        path: "/destination-weddings",
+      },
+      {
+        name: "DESTINATIONS",
+        path: "/wedding",
+      },
+    ],
   },
   {
-    name: "PACKAGES",
-    path: "/packages",
+    name: "ALL EVENTS",
+    path: "/allevents",
+  },
+  {
+    name: "PORTFOLIO",
+    path: "/portfolio",
   },
   {
     name: "CONTACT US",

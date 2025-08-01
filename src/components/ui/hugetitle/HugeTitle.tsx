@@ -6,6 +6,8 @@ type HugeTitleProps = {
   textShadow?: string;
   fontPercentage?: number;
   mt?: string;
+  mtSm?: string;
+  mtLg?: string;
 };
 
 const HugeTitle = ({
@@ -14,18 +16,21 @@ const HugeTitle = ({
   textShadow,
   fontPercentage = 1,
   mt,
+  mtSm,
+  mtLg,
 }: HugeTitleProps) => {
   const fontSize = `${218 * fontPercentage}px`;
 
   return (
     <h1
-      className={`text-center z-4 relative  mt-[2rem] ${styles.main_Title} lg:leading-[180px]`}
+      className={`text-center z-4 relative ${styles.main_Title} lg:leading-[180px]`}
       style={{
         color,
         textShadow,
         fontSize,
-        marginTop: mt,
+        marginTop: mtSm || mt, // Default to mtSm if provided, otherwise use mt
         ["--font-size-multiplier" as string]: fontPercentage,
+        ["--mt-lg" as string]: mtLg, // CSS custom property for large screens
       }}
       data-aos="zoom-in-out"
     >

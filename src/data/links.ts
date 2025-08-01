@@ -16,6 +16,10 @@ const links = [
     path: "/ourservices",
   },
   {
+    name: "ALL EVENTS",
+    path: "/events",
+  },
+  {
     name: "DESTINATION",
     dropdown: true,
     items: [
@@ -29,10 +33,7 @@ const links = [
       },
     ],
   },
-  {
-    name: "ALL EVENTS",
-    path: "/events",
-  },
+
   {
     name: "PORTFOLIO",
     path: "/portfolio",

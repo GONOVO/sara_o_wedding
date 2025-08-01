@@ -100,7 +100,7 @@ function DestinationWeddingsPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-[1380px] w-[96%] mx-auto px-4 py-16">
         {/* Mobile Destination Grid - Visual Cards */}
         <div className="lg:hidden">
           {/* First 4 destinations - Full width */}

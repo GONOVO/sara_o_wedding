@@ -31,7 +31,7 @@ const links = [
   },
   {
     name: "ALL EVENTS",
-    path: "/allevents",
+    path: "/events",
   },
   {
     name: "PORTFOLIO",

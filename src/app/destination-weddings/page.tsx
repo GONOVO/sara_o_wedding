@@ -187,7 +187,6 @@ function DestinationWeddingsPage() {
                   />
                   <div className={styles.cardOverlay}>
                     <h3 className={styles.cardTitle}>{destination.name}</h3>
-                    <p className={styles.cardSubtitle}>WEDDING VENUES</p>
                   </div>
                 </div>
               </div>

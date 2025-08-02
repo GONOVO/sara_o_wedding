@@ -6,28 +6,28 @@ import HugeTitle from "@/components/ui/hugetitle/HugeTitle";
 const destinations = {
   row1: [
     { name: "Bahamas", image: "/images/destinations/bahams.jpg" },
-    { name: "Barbados", image: "/images/destinations/barbados.avif" },
-    { name: "St. Lucia", image: "/images/destinations/st.lucia.jpeg" },
+    { name: "Barbados", image: "/images/destinations/barbados.jpg" },
+    { name: "St. Lucia", image: "/images/destinations/st.lucia.jpg" },
     {
       name: "Trinidad & Tobago",
       image: "/images/destinations/trinidad-tobago.jpg",
     },
-    { name: "Grenada", image: "/images/destinations/grenada.avif" },
+    { name: "Grenada", image: "/images/destinations/grenada.jpg" },
   ],
   row2: [
     { name: "Indonesia (Bali)", image: "/images/destinations/bali.jpg" },
     { name: "Singapore", image: "/images/destinations/singapore.jpg" },
-    { name: "Malaysia", image: "/images/destinations/malaysia.webp" },
+    { name: "Malaysia", image: "/images/destinations/malaysia.jpg" },
     { name: "Bangkok", image: "/images/destinations/bangkok.jpg" },
   ],
   row3: [
-    { name: "U.K", image: "/images/destinations/u-k.png" },
+    { name: "U.K", image: "/images/destinations/u-k.jpg" },
     { name: "France", image: "/images/destinations/france.jpg" },
     { name: "Italy", image: "/images/destinations/italy.jpg" },
-    { name: "Denmark", image: "/images/destinations/denmark.webp" },
+    { name: "Denmark", image: "/images/destinations/denmark.jpg" },
   ],
   row4: [
-    { name: "Morocco", image: "/images/destinations/morocco.webp" },
+    { name: "Morocco", image: "/images/destinations/morocco.jpg" },
     { name: "Egypt", image: "/images/destinations/egypt.jpg" },
     { name: "Ghana", image: "/images/destinations/ghana.jpg" },
     { name: "Kenya", image: "/images/destinations/kenya.webp" },
@@ -45,26 +45,26 @@ const mobileDestinations = [
   { name: "Egypt", image: "/images/destinations/egypt.jpg" },
 
   // Row 1: Caribbean Islands (remaining)
-  { name: "Barbados", image: "/images/destinations/barbados.avif" },
-  { name: "St. Lucia", image: "/images/destinations/st.lucia.jpeg" },
+  { name: "Barbados", image: "/images/destinations/barbados.jpg" },
+  { name: "St. Lucia", image: "/images/destinations/st.lucia.jpg" },
   {
     name: "Trinidad & Tobago",
     image: "/images/destinations/trinidad-tobago.jpg",
   },
-  { name: "Grenada", image: "/images/destinations/grenada.avif" },
+  { name: "Grenada", image: "/images/destinations/grenada.jpg" },
 
   // Row 2: Asia (remaining)
   { name: "Singapore", image: "/images/destinations/singapore.jpg" },
-  { name: "Malaysia", image: "/images/destinations/malaysia.webp" },
+  { name: "Malaysia", image: "/images/destinations/malaysia.jpg" },
   { name: "Bangkok", image: "/images/destinations/bangkok.jpg" },
 
   // Row 3: Europe (remaining)
-  { name: "U.K", image: "/images/destinations/u-k.png" },
+  { name: "U.K", image: "/images/destinations/u-k.jpg" },
   { name: "Italy", image: "/images/destinations/italy.jpg" },
-  { name: "Denmark", image: "/images/destinations/denmark.webp" },
+  { name: "Denmark", image: "/images/destinations/denmark.jpg" },
 
   // Row 4: Africa (remaining)
-  { name: "Morocco", image: "/images/destinations/morocco.webp" },
+  { name: "Morocco", image: "/images/destinations/morocco.jpg" },
   { name: "Ghana", image: "/images/destinations/ghana.jpg" },
   { name: "Kenya", image: "/images/destinations/kenya.webp" },
   { name: "South Africa", image: "/images/destinations/south-africa.jpg" },
@@ -76,21 +76,16 @@ function DestinationWeddingsPage() {
     <main>
       {/* Header Section - Full Width */}
       <div
-        className="text-center mt-16  pb-16 bg-[rgba(244,240,235,1)] w-full relative flex"
+        className="text-center pt-16  pb-16  w-full relative flex border-t-2 border-[var(--gold-color)]"
         data-aos="fade-up"
       >
         <div className="max-w-7xl mx-auto px-4">
-          <HugeTitle
-            text="Destinations"
-            fontPercentage={0.9}
-            mtSm="-50px"
-            mtLg="-100px"
-          />
+          <HugeTitle text="Destinations" fontPercentage={0.9} />
 
-          <p className="text-lg md:text-xl text-gray-600 mb-4 mt-12">
+          <p className="text-lg md:text-xl  mb-4 mt-12">
             DISCOVER YOUR UNIQUE PLACE TO SAY I DO
           </p>
-          <p className="text-base md:text-lg text-gray-700 max-w-4xl mx-auto mb-8 leading-relaxed">
+          <p className="text-base md:text-lg max-w-4xl mx-auto mb-8 leading-relaxed">
             Incredible destination Wedding and Events venues located in highly
             sought after destinations from tropical paradise&apos;s to private
             rural retreats, glamorous beach fronts and desert wonders. Get ready
@@ -125,9 +120,6 @@ function DestinationWeddingsPage() {
                   <h3 className="text-white font-semibold text-lg">
                     {destination.name}
                   </h3>
-                  <p className="text-white text-sm opacity-90">
-                    WEDDING VENUES
-                  </p>
                 </div>
               </div>
             ))}
@@ -152,12 +144,9 @@ function DestinationWeddingsPage() {
                   quality={85}
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-4">
-                  <h3 className="text-white font-semibold text-lg">
+                  <h3 className="text-white font-semibold text-xl">
                     {destination.name}
                   </h3>
-                  <p className="text-white text-sm opacity-90">
-                    WEDDING VENUES
-                  </p>
                 </div>
               </div>
             ))}
@@ -175,20 +164,20 @@ function DestinationWeddingsPage() {
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
-                <div className={styles.cardImage}>
-                  <Image
-                    src={destination.image}
-                    alt={`${destination.name} wedding venue`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 20vw"
-                    className={styles.cardBackgroundImage}
-                    loading="lazy"
-                    quality={85}
-                  />
-                  <div className={styles.cardOverlay}>
-                    <h3 className={styles.cardTitle}>{destination.name}</h3>
-                  </div>
+                {/* <div className={styles.cardImage}> */}
+                <Image
+                  src={destination.image}
+                  alt={`${destination.name} wedding venue`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 20vw"
+                  className="object-cover"
+                  loading="lazy"
+                  quality={100}
+                />
+                <div className={styles.cardOverlay}>
+                  <h3 className={styles.cardTitle}>{destination.name}</h3>
                 </div>
+                {/* </div> */}
               </div>
             ))}
           </div>
@@ -214,7 +203,6 @@ function DestinationWeddingsPage() {
                   />
                   <div className={styles.cardOverlay}>
                     <h3 className={styles.cardTitle}>{destination.name}</h3>
-                    <p className={styles.cardSubtitle}>WEDDING VENUES</p>
                   </div>
                 </div>
               </div>
@@ -241,7 +229,6 @@ function DestinationWeddingsPage() {
                   />
                   <div className={styles.cardOverlay}>
                     <h3 className={styles.cardTitle}>{destination.name}</h3>
-                    <p className={styles.cardSubtitle}>WEDDING VENUES</p>
                   </div>
                 </div>
               </div>
@@ -268,7 +255,6 @@ function DestinationWeddingsPage() {
                   />
                   <div className={styles.cardOverlay}>
                     <h3 className={styles.cardTitle}>{destination.name}</h3>
-                    <p className={styles.cardSubtitle}>WEDDING VENUES</p>
                   </div>
                 </div>
               </div>

@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import "aos/dist/aos.css";
 import "./globals.css";
 import Header from "../components/ui/header/Header";
-import { Nunito, Fraunces, Kristi } from "next/font/google";
+import { Nunito, Fraunces, Kristi, Antic_Didone } from "next/font/google";
 const Footer = dynamic(() => import("../components/footer/Footer"));
 import WithAOS from "@/components/ui/Withaos";
 import Arrowtoup from "@/components/ui/arrowsrollup/Arrowtoup";
@@ -24,6 +24,13 @@ const kristi = Kristi({
   weight: ["400"],
   variable: "--font-kristy",
 });
+
+const anticDidone = Antic_Didone({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-antic-didone",
+});
+
 export const metadata: Metadata = {
   title: "Sara O Events",
   description: "Premium Event Producers",
@@ -50,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${nunito.variable} ${fraunces.variable} ${kristi.variable}`}
+      className={`${nunito.variable} ${fraunces.variable} ${kristi.variable} ${anticDidone.variable}`}
       style={{ overflowX: "hidden" }}
     >
 

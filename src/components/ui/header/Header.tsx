@@ -114,8 +114,26 @@ function Header() {
               loading="eager"
             />
           </span>
-          Servicing social magic across the world | Destination Weddings
-          Available
+          <span className="flex gap-2 items-center">
+            <Link
+              href="https://www.google.com/maps/place/103+Ibadan+St,+Ebute+Metta,+Lagos+101245,+Lagos,+Nigeria/@6.4880883,3.3855408,865m/data=!3m2!1e3!4b1!4m6!3m5!1s0x103b8c84bef8b8d7:0x78e7c137fc1a2d9a!8m2!3d6.4880883!4d3.3881157!16s%2Fg%2F11ggw1tcg6?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity underline"
+            >
+              Lagos
+            </Link>
+            <span>|</span>
+            <Link
+              href="https://www.google.com/maps/place/13+The+Crossways,+Wembley+HA9+9NG,+UK/@51.5675553,-0.2837141,1083m/data=!3m1!1e3!4m6!3m5!1s0x4876116333cfb7c3:0x685030d6a0359a57!8m2!3d51.5675553!4d-0.2789505!16s%2Fg%2F11bw3hblwc?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity underline"
+            >
+              London
+            </Link>
+            <span>| Destination Weddings Available</span>
+          </span>
         </p>
         <div className="relative w-14 h-7 -top-2 ml-auto block lg:hidden">
           <Image

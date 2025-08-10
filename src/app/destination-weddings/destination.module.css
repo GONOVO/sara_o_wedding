@@ -79,6 +79,7 @@
   font-size: 1.6rem;
   margin-bottom: 0.25rem;
   font-weight: 500;
+  font-family: var(--font-antic-didone);
 }
 
 .cardSubtitle {
@@ -113,10 +114,6 @@
 
   .cardImage {
     height: 100%;
-  }
-
-  .cardTitle {
-    font-size: 1.25rem;
   }
 
   .cardSubtitle {

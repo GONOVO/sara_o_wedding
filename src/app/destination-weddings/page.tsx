@@ -36,40 +36,60 @@ const destinations = {
   ],
 };
 
-// Mobile-specific destinations (all destinations)
-const mobileDestinations = [
-  // First 4 as requested
-  { name: "Bahamas", image: "/images/destinations/bahams.jpg" },
-  { name: "Indonesia (Bali)", image: "/images/destinations/bali.jpg" },
-  { name: "France", image: "/images/destinations/france.jpg" },
-  { name: "Egypt", image: "/images/destinations/egypt.jpg" },
+// Mobile destinations grouped by regions
+const mobileDestinationsByRegion = {
+  caribbean: [
+    { name: "Bahamas", image: "/images/destinations/bahams.jpg" },
+    { name: "Barbados", image: "/images/destinations/barbados.jpg" },
+    { name: "St. Lucia", image: "/images/destinations/st.lucia.jpg" },
+    {
+      name: "Trinidad & Tobago",
+      image: "/images/destinations/trinidad-tobago.jpg",
+    },
+    { name: "Grenada", image: "/images/destinations/grenada.jpg" },
+  ],
+  asia: [
+    { name: "Indonesia (Bali)", image: "/images/destinations/bali.jpg" },
+    { name: "Singapore", image: "/images/destinations/singapore.jpg" },
+    { name: "Malaysia", image: "/images/destinations/malaysia.jpg" },
+    { name: "Bangkok", image: "/images/destinations/bangkok.jpg" },
+  ],
+  europe: [
+    { name: "U.K", image: "/images/destinations/u-k.jpg" },
+    { name: "France", image: "/images/destinations/france.jpg" },
+    { name: "Italy", image: "/images/destinations/italy.jpg" },
+    { name: "Denmark", image: "/images/destinations/denmark.jpg" },
+  ],
+  africa: [
+    { name: "Morocco", image: "/images/destinations/morocco.jpg" },
+    { name: "Egypt", image: "/images/destinations/egypt.jpg" },
+    { name: "Ghana", image: "/images/destinations/ghana.jpg" },
+    { name: "Kenya", image: "/images/destinations/kenya.webp" },
+    { name: "South Africa", image: "/images/destinations/south-africa.jpg" },
+    { name: "Uganda", image: "/images/destinations/uganda.jpg" },
+  ],
+};
 
-  // Row 1: Caribbean Islands (remaining)
-  { name: "Barbados", image: "/images/destinations/barbados.jpg" },
-  { name: "St. Lucia", image: "/images/destinations/st.lucia.jpg" },
-  {
-    name: "Trinidad & Tobago",
-    image: "/images/destinations/trinidad-tobago.jpg",
-  },
-  { name: "Grenada", image: "/images/destinations/grenada.jpg" },
-
-  // Row 2: Asia (remaining)
-  { name: "Singapore", image: "/images/destinations/singapore.jpg" },
-  { name: "Malaysia", image: "/images/destinations/malaysia.jpg" },
-  { name: "Bangkok", image: "/images/destinations/bangkok.jpg" },
-
-  // Row 3: Europe (remaining)
-  { name: "U.K", image: "/images/destinations/u-k.jpg" },
-  { name: "Italy", image: "/images/destinations/italy.jpg" },
-  { name: "Denmark", image: "/images/destinations/denmark.jpg" },
-
-  // Row 4: Africa (remaining)
-  { name: "Morocco", image: "/images/destinations/morocco.jpg" },
-  { name: "Ghana", image: "/images/destinations/ghana.jpg" },
-  { name: "Kenya", image: "/images/destinations/kenya.webp" },
-  { name: "South Africa", image: "/images/destinations/south-africa.jpg" },
-  { name: "Uganda", image: "/images/destinations/uganda.jpg" },
-];
+// Separator component
+const DestinationSeparator = ({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) => (
+  <div
+    className="text-center py-8 md:py-12 border-b border-gray-200 mb-2 md:mb-0"
+    data-aos="fade-up"
+  >
+    <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4 text-gray-800">
+      {title}
+    </h2>
+    <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+      {description}
+    </p>
+  </div>
+);
 
 function DestinationWeddingsPage() {
   return (
@@ -80,7 +100,7 @@ function DestinationWeddingsPage() {
         data-aos="fade-up"
       >
         <div className="max-w-7xl mx-auto px-4">
-          <HugeTitle text="Destinations" fontPercentage={0.9} />
+          <HugeTitle text="Destinations" fontPercentage={0.87} />
 
           <p className="text-lg md:text-xl  mb-4 mt-12">
             DISCOVER YOUR UNIQUE PLACE TO SAY I DO
@@ -98,9 +118,13 @@ function DestinationWeddingsPage() {
       <div className="max-w-[1380px] w-[96%] mx-auto px-4 py-16">
         {/* Mobile Destination Grid - Visual Cards */}
         <div className="lg:hidden">
-          {/* First 4 destinations - Full width */}
-          <div className="space-y-4 mb-4">
-            {mobileDestinations.slice(0, 4).map((destination, index) => (
+          {/* Caribbean Islands */}
+          <DestinationSeparator
+            title="Caribbean Islands"
+            description="Experience the perfect blend of tropical paradise and luxury. From pristine beaches to crystal-clear waters, these islands offer the ultimate romantic backdrop for your dream destination wedding."
+          />
+          <div className="space-y-4 mb-8">
+            {mobileDestinationsByRegion.caribbean.map((destination, index) => (
               <div
                 key={index}
                 className="relative h-48 rounded-lg overflow-hidden bg-gray-200 w-full"
@@ -117,7 +141,12 @@ function DestinationWeddingsPage() {
                   quality={85}
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-4">
-                  <h3 className="text-white font-semibold text-lg">
+                  <h3
+                    style={{
+                      fontFamily: "var(--font-antic-didone)",
+                    }}
+                    className="text-white font-semibold text-xl"
+                  >
                     {destination.name}
                   </h3>
                 </div>
@@ -125,26 +154,107 @@ function DestinationWeddingsPage() {
             ))}
           </div>
 
-          {/* Remaining destinations - 2 column grid */}
-          <div className="grid grid-cols-2 gap-4">
-            {mobileDestinations.slice(4).map((destination, index) => (
+          {/* Asia */}
+          <DestinationSeparator
+            title="Asia"
+            description="Discover the perfect harmony of ancient traditions and modern luxury. From the spiritual temples of Bali to the vibrant cityscapes of Singapore, Asia offers diverse and enchanting wedding destinations."
+          />
+          <div className="space-y-4 mb-8">
+            {mobileDestinationsByRegion.asia.map((destination, index) => (
               <div
-                key={index + 4}
-                className="relative h-48 rounded-lg overflow-hidden bg-gray-200"
+                key={index}
+                className="relative h-48 rounded-lg overflow-hidden bg-gray-200 w-full"
                 data-aos="fade-up"
-                data-aos-delay={(index + 4) * 100}
+                data-aos-delay={index * 100}
               >
                 <Image
                   src={destination.image}
                   alt={`${destination.name} wedding venue`}
                   fill
-                  sizes="(max-width: 768px) 50vw, 25vw"
+                  sizes="(max-width: 768px) 100vw, 100vw"
                   className="w-full h-full object-cover"
                   loading="lazy"
                   quality={85}
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-4">
-                  <h3 className="text-white font-semibold text-xl">
+                  <h3
+                    style={{
+                      fontFamily: "var(--font-antic-didone)",
+                    }}
+                    className="text-white font-semibold text-xl"
+                  >
+                    {destination.name}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Europe */}
+          <DestinationSeparator
+            title="Europe"
+            description="Immerse yourself in timeless elegance and rich cultural heritage. From the romantic streets of Paris to the historic charm of Italy, Europe offers sophisticated and romantic wedding venues."
+          />
+          <div className="space-y-4 mb-8">
+            {mobileDestinationsByRegion.europe.map((destination, index) => (
+              <div
+                key={index}
+                className="relative h-48 rounded-lg overflow-hidden bg-gray-200 w-full"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <Image
+                  src={destination.image}
+                  alt={`${destination.name} wedding venue`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 100vw"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  quality={85}
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-4">
+                  <h3
+                    style={{
+                      fontFamily: "var(--font-antic-didone)",
+                    }}
+                    className="text-white font-semibold text-xl"
+                  >
+                    {destination.name}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Africa */}
+          <DestinationSeparator
+            title="Africa"
+            description="Experience the raw beauty and diverse landscapes of Africa. From the majestic deserts of Morocco to the vibrant cultures of South Africa, Africa offers unique and unforgettable wedding experiences."
+          />
+          <div className="space-y-4 mb-8">
+            {mobileDestinationsByRegion.africa.map((destination, index) => (
+              <div
+                key={index}
+                className="relative h-48 rounded-lg overflow-hidden bg-gray-200 w-full"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <Image
+                  src={destination.image}
+                  alt={`${destination.name} wedding venue`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 100vw"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  quality={85}
+                />
+                <div className="absolute inset-0 flex flex-col justify-end p-4">
+                  <h3
+                    style={{
+                      fontFamily: "var(--font-antic-didone)",
+                    }}
+                    className="text-white font-semibold text-xl"
+                  >
                     {destination.name}
                   </h3>
                 </div>
@@ -156,6 +266,10 @@ function DestinationWeddingsPage() {
         {/* Desktop Destination Grid - Full Grid */}
         <div className={styles.destinationGrid}>
           {/* Row 1: Caribbean Islands */}
+          <DestinationSeparator
+            title="Caribbean Islands"
+            description="Experience the perfect blend of tropical paradise and luxury. From pristine beaches to crystal-clear waters, these islands offer the ultimate romantic backdrop for your dream destination wedding."
+          />
           <div className={`${styles.destinationRow} ${styles.row1}`}>
             {destinations.row1.map((destination, index) => (
               <div
@@ -183,6 +297,10 @@ function DestinationWeddingsPage() {
           </div>
 
           {/* Row 2: Asia */}
+          <DestinationSeparator
+            title="Asia"
+            description="Discover the perfect harmony of ancient traditions and modern luxury. From the spiritual temples of Bali to the vibrant cityscapes of Singapore, Asia offers diverse and enchanting wedding destinations."
+          />
           <div className={`${styles.destinationRow} ${styles.row2}`}>
             {destinations.row2.map((destination, index) => (
               <div
@@ -208,33 +326,12 @@ function DestinationWeddingsPage() {
               </div>
             ))}
           </div>
-          {/* Row 4: Africa */}
-          <div className={`${styles.destinationRow} ${styles.row4}`}>
-            {destinations.row4.map((destination, index) => (
-              <div
-                key={index}
-                className={styles.destinationCard}
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <div className={styles.cardImage}>
-                  <Image
-                    src={destination.image}
-                    alt={`${destination.name} wedding venue`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 16.67vw"
-                    className={styles.cardBackgroundImage}
-                    loading="lazy"
-                    quality={85}
-                  />
-                  <div className={styles.cardOverlay}>
-                    <h3 className={styles.cardTitle}>{destination.name}</h3>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+
           {/* Row 3: Europe */}
+          <DestinationSeparator
+            title="Europe"
+            description="Immerse yourself in timeless elegance and rich cultural heritage. From the romantic streets of Paris to the historic charm of Italy, Europe offers sophisticated and romantic wedding venues."
+          />
           <div className={`${styles.destinationRow} ${styles.row3}`}>
             {destinations.row3.map((destination, index) => (
               <div
@@ -249,6 +346,37 @@ function DestinationWeddingsPage() {
                     alt={`${destination.name} wedding venue`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className={styles.cardBackgroundImage}
+                    loading="lazy"
+                    quality={85}
+                  />
+                  <div className={styles.cardOverlay}>
+                    <h3 className={styles.cardTitle}>{destination.name}</h3>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Row 4: Africa */}
+          <DestinationSeparator
+            title="Africa"
+            description="Experience the raw beauty and diverse landscapes of Africa. From the majestic deserts of Morocco to the vibrant cultures of South Africa, Africa offers unique and unforgettable wedding experiences."
+          />
+          <div className={`${styles.destinationRow} ${styles.row4}`}>
+            {destinations.row4.map((destination, index) => (
+              <div
+                key={index}
+                className={styles.destinationCard}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+              >
+                <div className={styles.cardImage}>
+                  <Image
+                    src={destination.image}
+                    alt={`${destination.name} wedding venue`}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 16.67vw"
                     className={styles.cardBackgroundImage}
                     loading="lazy"
                     quality={85}

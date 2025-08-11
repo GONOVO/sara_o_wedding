@@ -121,7 +121,7 @@ function DestinationWeddingsPage() {
           {/* Caribbean Islands */}
           <DestinationSeparator
             title="Caribbean Islands"
-            description="Experience the perfect blend of tropical paradise and luxury. From pristine beaches to crystal-clear waters, these islands offer the ultimate romantic backdrop for your dream destination wedding."
+            description="Experience the perfect blend of tropical paradise and luxury. From pristine beaches to crystal-clear waters, these islands offer the ultimate romantic backdrop for your dream destination events and unforgettable celebrations."
           />
           <div className="space-y-4 mb-8">
             {mobileDestinationsByRegion.caribbean.map((destination, index) => (
@@ -157,7 +157,7 @@ function DestinationWeddingsPage() {
           {/* Asia */}
           <DestinationSeparator
             title="Asia"
-            description="Discover the perfect harmony of ancient traditions and modern luxury. From the spiritual temples of Bali to the vibrant cityscapes of Singapore, Asia offers diverse and enchanting wedding destinations."
+            description="Discover the perfect harmony of ancient traditions and modern luxury. From the spiritual temples of Bali to the vibrant cityscapes of Singapore, Asia offers diverse and enchanting backdrops for premium destination events and sophisticated celebrations."
           />
           <div className="space-y-4 mb-8">
             {mobileDestinationsByRegion.asia.map((destination, index) => (
@@ -193,7 +193,7 @@ function DestinationWeddingsPage() {
           {/* Europe */}
           <DestinationSeparator
             title="Europe"
-            description="Immerse yourself in timeless elegance and rich cultural heritage. From the romantic streets of Paris to the historic charm of Italy, Europe offers sophisticated and romantic wedding venues."
+            description="Immerse yourself in timeless elegance and rich cultural heritage. From the romantic streets of Paris to the historic charm of Italy, Europe provides sophisticated and romantic backdrops for any distinguished event or special celebration."
           />
           <div className="space-y-4 mb-8">
             {mobileDestinationsByRegion.europe.map((destination, index) => (
@@ -229,7 +229,7 @@ function DestinationWeddingsPage() {
           {/* Africa */}
           <DestinationSeparator
             title="Africa"
-            description="Experience the raw beauty and diverse landscapes of Africa. From the majestic deserts of Morocco to the vibrant cultures of South Africa, Africa offers unique and unforgettable wedding experiences."
+            description="Experience the raw beauty and diverse landscapes of Africa. From the majestic deserts of Morocco to the vibrant cultures of South Africa, Africa provides unique venues for destination weddings, safari events, and cultural celebrations."
           />
           <div className="space-y-4 mb-8">
             {mobileDestinationsByRegion.africa.map((destination, index) => (
@@ -268,7 +268,7 @@ function DestinationWeddingsPage() {
           {/* Row 1: Caribbean Islands */}
           <DestinationSeparator
             title="Caribbean Islands"
-            description="Experience the perfect blend of tropical paradise and luxury. From pristine beaches to crystal-clear waters, these islands offer the ultimate romantic backdrop for your dream destination wedding."
+            description="Experience the perfect blend of tropical paradise and luxury. From pristine beaches to crystal-clear waters, these islands offer the ultimate romantic backdrop for your dream destination events and unforgettable celebrations."
           />
           <div className={`${styles.destinationRow} ${styles.row1}`}>
             {destinations.row1.map((destination, index) => (
@@ -299,7 +299,7 @@ function DestinationWeddingsPage() {
           {/* Row 2: Asia */}
           <DestinationSeparator
             title="Asia"
-            description="Discover the perfect harmony of ancient traditions and modern luxury. From the spiritual temples of Bali to the vibrant cityscapes of Singapore, Asia offers diverse and enchanting wedding destinations."
+            description="Discover the perfect harmony of ancient traditions and modern luxury. From the spiritual temples of Bali to the vibrant cityscapes of Singapore, Asia offers diverse and enchanting backdrops for premium destination events and sophisticated celebrations."
           />
           <div className={`${styles.destinationRow} ${styles.row2}`}>
             {destinations.row2.map((destination, index) => (
@@ -330,7 +330,7 @@ function DestinationWeddingsPage() {
           {/* Row 3: Europe */}
           <DestinationSeparator
             title="Europe"
-            description="Immerse yourself in timeless elegance and rich cultural heritage. From the romantic streets of Paris to the historic charm of Italy, Europe offers sophisticated and romantic wedding venues."
+            description="Immerse yourself in timeless elegance and rich cultural heritage. From the romantic streets of Paris to the historic charm of Italy, Europe provides sophisticated and romantic backdrops for any distinguished event or special celebration."
           />
           <div className={`${styles.destinationRow} ${styles.row3}`}>
             {destinations.row3.map((destination, index) => (
@@ -361,7 +361,7 @@ function DestinationWeddingsPage() {
           {/* Row 4: Africa */}
           <DestinationSeparator
             title="Africa"
-            description="Experience the raw beauty and diverse landscapes of Africa. From the majestic deserts of Morocco to the vibrant cultures of South Africa, Africa offers unique and unforgettable wedding experiences."
+            description="Experience the raw beauty and diverse landscapes of Africa. From the majestic deserts of Morocco to the vibrant cultures of South Africa, Africa provides unique venues for destination weddings, safari events, and cultural celebrations."
           />
           <div className={`${styles.destinationRow} ${styles.row4}`}>
             {destinations.row4.map((destination, index) => (

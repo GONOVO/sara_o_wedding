@@ -34,7 +34,6 @@ function Wedding() {
       </div>
 
       <Ourvission
-        // image="/images/vission_wedding.webp"
         image="/images/galleryport1.webp"
         caption="CREATING YOUR DREAM WEDDING, ANYWHERE IN THE WORLD"
         paragraph="Sara O Events offers full-service luxury wedding planning and design, working with couples who want to create unforgettable celebrations. Led by Yewande Rwang-Dung, we plan, design and manage exclusive destination weddings across the world - from romantic beach ceremonies to elegant castle receptions. Sara O Events' signature style brings exceptional design and impeccable detail to every wedding, creating magical moments that transform your special day into extraordinary memories."
@@ -50,7 +49,8 @@ function Wedding() {
       <EventsPortfolio portfolioData={weddingsPortfolio} />
       <Bundlers bundles={weddingBundles} />
       <Tellusmore
-        video="/videos/wedding_tell_video.mp4"
+        // video="/videos/wedding_tell_video.mp4"
+        video="/videos/wedd_vid_1.mp4"
         posterVideo="/images/wedding_tell_poster.webp"
       />
     </>

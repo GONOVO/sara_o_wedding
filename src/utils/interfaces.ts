@@ -60,3 +60,10 @@ export interface IPortfolio {
   img?: string;
   vid?: string;
 }
+
+export interface INavItem {
+  name: string;
+  path?: string;
+  dropdown?: boolean;
+  items?: INavItem[];
+}

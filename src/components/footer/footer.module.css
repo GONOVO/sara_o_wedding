@@ -1,6 +1,7 @@
 .footer {
   padding: 1.5rem 2.5rem 3rem 2.5rem;
   border-top: 8px solid;
+  overflow: hidden;
 }
 .main_grid_footer {
   display: grid;

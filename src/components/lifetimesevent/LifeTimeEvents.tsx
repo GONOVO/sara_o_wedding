@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import styles from "./lifetime.module.css";
- import LazyAutoPlayVideo from "../ui/videoplayer/VideoPlayer";
+import LazyAutoPlayVideo from "../ui/videoplayer/VideoPlayer";
 function LifeTimeEvents() {
   return (
     <section className="overflow-x-hidden">
@@ -52,12 +52,12 @@ function LifeTimeEvents() {
               className={`w-full h-[45vh] relative ${styles.smImage} lg:block hidden`}
               data-aos="fade-left"
             >
-              <div>
-                
-              <LazyAutoPlayVideo videoPath={"/videos/last_vid.mp4"}
-  placeholderImage={"/images/vf_3.webp"}
-  />
-  </div>
+              <div className="w-full h-full mt-3">
+                <LazyAutoPlayVideo
+                  videoPath={"/videos/last_vid.mp4"}
+                  placeholderImage={"/images/vf_3.webp"}
+                />
+              </div>
               {/* <video
                 aria-hidden="true"
                 className="w-full object-cover absolute h-full transition-opacity duration-500 "
@@ -84,9 +84,10 @@ function LifeTimeEvents() {
             loading="lazy"
           />
           <div className="bg-white p-2 absolute h-[210px] -right-[5%] transition-opacity duration-500 sm:hidden block -bottom-[50px] w-[70%] shadow-md">
-          <LazyAutoPlayVideo videoPath={"/videos/last_vid.mp4"}
-  placeholderImage={"/images/vf_3.webp"}
-  />
+            <LazyAutoPlayVideo
+              videoPath={"/videos/last_vid.mp4"}
+              placeholderImage={"/images/vf_3.webp"}
+            />
             {/* <video
               aria-hidden="true"
               className="object-cover w-full h-full"
@@ -98,7 +99,6 @@ function LifeTimeEvents() {
               poster="/images/vf_3.webp"
             /> */}
           </div>
-         
         </div>
       </div>
     </section>

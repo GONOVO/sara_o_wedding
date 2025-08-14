@@ -1,7 +1,7 @@
 "use client";
 import styles from "./destination.module.css";
 import Image from "next/image";
-import HugeTitle from "@/components/ui/hugetitle/HugeTitle";
+import ImageView from "@/components/imageview/HeroSection";
 
 const destinations = {
   row1: [
@@ -82,10 +82,10 @@ const DestinationSeparator = ({
     className="text-center py-8 md:py-12 border-b border-gray-200 mb-2 md:mb-0"
     data-aos="fade-up"
   >
-    <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4 text-gray-800">
+    <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">
       {title}
     </h2>
-    <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+    <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed px-4">
       {description}
     </p>
   </div>
@@ -95,7 +95,7 @@ function DestinationWeddingsPage() {
   return (
     <main>
       {/* Header Section - Full Width */}
-      <div
+      {/* <div
         className="text-center pt-16  pb-16  w-full relative flex border-t-2 border-[var(--gold-color)]"
         data-aos="fade-up"
       >
@@ -111,11 +111,22 @@ function DestinationWeddingsPage() {
             rural retreats, glamorous beach fronts and desert wonders. Get ready
             to hop on a plane and say wow!
           </p>
-          {/* <div className="w-1 h-16 bg-black mx-auto"></div> */}
+          <div className="w-1 h-16 bg-black mx-auto"></div>
         </div>
-      </div>
+      </div> */}
+      <ImageView imageSrc="/images/Dv_6.webp" title="DESTINATIONS" />
+      <p className="text-lg md:text-4xl  mb-4 mt-12 text-center font-bold">
+        DISCOVER YOUR UNIQUE PLACE TO SAY I DO
+      </p>
+      <p className="text-base md:text-lg max-w-4xl mx-auto mb-8 leading-relaxed text-center">
+        Incredible destination Wedding and Events venues located in highly
+        sought after destinations from tropical paradise&apos;s to private rural
+        retreats, glamorous beach fronts and desert wonders. Get ready to hop on
+        a plane and say wow!
+      </p>
+      <div className="w-1 h-16 bg-black mx-auto"></div>
 
-      <div className="max-w-[1380px] w-[96%] mx-auto px-4 py-16">
+      <div className="max-w-[1380px] w-[96%] mx-auto px-4 pb-8">
         {/* Mobile Destination Grid - Visual Cards */}
         <div className="lg:hidden">
           {/* Caribbean Islands */}

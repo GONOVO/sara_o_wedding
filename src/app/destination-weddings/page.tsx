@@ -115,10 +115,10 @@ function DestinationWeddingsPage() {
         </div>
       </div> */}
       <ImageView imageSrc="/images/Dv_6.webp" title="DESTINATIONS" />
-      <p className="text-lg md:text-4xl  mb-4 mt-12 text-center font-bold">
+      <p className="text-lg md:text-4xl  mb-4 mt-12 text-center font-bold px-4">
         DISCOVER YOUR UNIQUE PLACE TO SAY I DO
       </p>
-      <p className="text-base md:text-lg max-w-4xl mx-auto mb-8 leading-relaxed text-center">
+      <p className="text-base md:text-lg max-w-4xl mx-auto mb-8 leading-relaxed text-center px-4">
         Incredible destination Wedding and Events venues located in highly
         sought after destinations from tropical paradise&apos;s to private rural
         retreats, glamorous beach fronts and desert wonders. Get ready to hop on

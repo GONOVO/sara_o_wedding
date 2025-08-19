@@ -79,7 +79,7 @@ const DestinationSeparator = ({
   description: string;
 }) => (
   <div
-    className="text-center py-8 md:py-12 border-b border-gray-200 mb-2 md:mb-0"
+    className="text-center py-8 md:py-12 md:border-b border-gray-200 mb-2 md:mb-0 "
     data-aos="fade-up"
   >
     <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 md:mb-4">
@@ -134,11 +134,11 @@ function DestinationWeddingsPage() {
             title="Caribbean Islands"
             description="Experience the perfect blend of tropical paradise and luxury. From pristine beaches to crystal-clear waters, these islands offer the ultimate romantic backdrop for your dream destination events and unforgettable celebrations."
           />
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"> 
             {mobileDestinationsByRegion.caribbean.map((destination, index) => (
               <div
                 key={index}
-                className="relative h-48 rounded-lg overflow-hidden bg-gray-200 w-full"
+                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
@@ -170,11 +170,11 @@ function DestinationWeddingsPage() {
             title="Asia"
             description="Discover the perfect harmony of ancient traditions and modern luxury. From the spiritual temples of Bali to the vibrant cityscapes of Singapore, Asia offers diverse and enchanting backdrops for premium destination events and sophisticated celebrations."
           />
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {mobileDestinationsByRegion.asia.map((destination, index) => (
               <div
                 key={index}
-                className="relative h-48 rounded-lg overflow-hidden bg-gray-200 w-full"
+                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
@@ -206,11 +206,11 @@ function DestinationWeddingsPage() {
             title="Europe"
             description="Immerse yourself in timeless elegance and rich cultural heritage. From the romantic streets of Paris to the historic charm of Italy, Europe provides sophisticated and romantic backdrops for any distinguished event or special celebration."
           />
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {mobileDestinationsByRegion.europe.map((destination, index) => (
               <div
                 key={index}
-                className="relative h-48 rounded-lg overflow-hidden bg-gray-200 w-full"
+                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
@@ -242,11 +242,11 @@ function DestinationWeddingsPage() {
             title="Africa"
             description="Experience the raw beauty and diverse landscapes of Africa. From the majestic deserts of Morocco to the vibrant cultures of South Africa, Africa provides unique venues for destination weddings, safari events, and cultural celebrations."
           />
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {mobileDestinationsByRegion.africa.map((destination, index) => (
               <div
                 key={index}
-                className="relative h-48 rounded-lg overflow-hidden bg-gray-200 w-full"
+                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >

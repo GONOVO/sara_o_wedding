@@ -111,8 +111,8 @@ function DestinationWeddingsPage() {
             rural retreats, glamorous beach fronts and desert wonders. Get ready
             to hop on a plane and say wow!
           </p>
-          <div className="w-1 h-16 bg-black mx-auto"></div>
-        </div>
+          {/* <div className="w-1 h-16 bg-black mx-auto"></div> */}
+       {/* </div>
       </div> */}
       <ImageView imageSrc="/images/Dv_6.webp" title="DESTINATIONS" />
       <p className="text-lg md:text-4xl  mb-4 mt-12 text-center font-bold px-4">

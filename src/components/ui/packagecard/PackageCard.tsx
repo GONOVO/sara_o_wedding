@@ -7,20 +7,19 @@ import { IPackage } from "@/utils/interfaces";
 import Image from "next/image";
 
 function PackageCard({ img, list, title }: IPackage) {
-  const [screenWidth, setScreenWidth] = useState(0);
+  const [screenWidth, setScreenWidth] = useState<number | null>(null);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      // Set initial width
-      setScreenWidth(window.innerWidth);
+    setIsClient(true);
+    setScreenWidth(window.innerWidth);
 
-      // Add event listener to update on resize
-      const handleResize = () => setScreenWidth(window.innerWidth);
-      window.addEventListener("resize", handleResize);
+    // Add event listener to update on resize
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
 
-      // Cleanup
-      return () => window.removeEventListener("resize", handleResize);
-    }
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -30,7 +29,13 @@ function PackageCard({ img, list, title }: IPackage) {
           <Image src={img} alt={title} fill />
         </div>
 
-        <h2 data-aos={screenWidth <= 440 ? "fade-down" : ""}>{title}</h2>
+        <h2
+          data-aos={
+            isClient && screenWidth && screenWidth <= 440 ? "fade-down" : ""
+          }
+        >
+          {title}
+        </h2>
 
         <ul>
           {list.map((item, index) => (

@@ -26,7 +26,7 @@ function page() {
       <Servicesection />
       <div className="pt-16 pb-16 bg-gray-100 my-32">
         <h2 className="text-center md:text-6xl text-4xl  text-uppercase mb-8 font-medium">
-         OUR CORPORATE CLIENTS 
+          OUR CORPORATE CLIENTS
         </h2>
         <InfinityScroll
           elements={clients.slice(0, 14).map((image) => ({ image }))}

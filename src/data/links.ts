@@ -8,15 +8,25 @@ const links = [
     path: "/aboutus",
   },
   {
-    name: "PACKAGES",
-    path: "/packages",
+    name: "PORTFOLIO",
+    dropdown: true,
+    items: [
+      {
+        name: "REGIONAL EVENTS",
+        path: "/portfolio",
+      },
+      {
+        name: "INTERNATIONAL EVENTS",
+        path: "/portfolio",
+      },
+    ],
   },
   {
     name: "OUR SERVICES",
     path: "/ourservices",
   },
   {
-    name: "ALL EVENTS",
+    name: "EVENT TYPES",
     path: "/events",
   },
   {
@@ -34,10 +44,6 @@ const links = [
     ],
   },
 
-  {
-    name: "PORTFOLIO",
-    path: "/portfolio",
-  },
   {
     name: "CONTACT US",
     path: "/#contactus",

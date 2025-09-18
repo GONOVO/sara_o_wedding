@@ -4,13 +4,14 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState<boolean | null>(null);
   const [isInView, setIsInView] = useState(false);
+  const [isClient, setIsClient] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsLargeScreen(window.innerWidth >= 1024);
-    }
+    setIsClient(true);
+    setIsLargeScreen(window.innerWidth >= 1024);
   }, []);
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,7 +37,7 @@ function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
         transition-all duration-500 transform
         ${isInView ? "bundlers" : "translate-y-0"}`}
       style={{
-        marginTop: isLargeScreen ? `${index * 56}px` : "24px",
+        marginTop: isClient && isLargeScreen ? `${index * 56}px` : "24px",
       }}
       // data-aos="zoom-in-out"
       // data-aos-delay={index * 150}

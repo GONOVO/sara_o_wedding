@@ -27,14 +27,18 @@ function SharedForm({
   title = "Reserve Your Event with Us Here",
   subtitle = "Our friendly team would love to hear from you.",
   eventTypeDisabled = false,
-  defaultEventType = "Wedding",
+  defaultEventType = "",
   destinationName = "",
   className = "",
 }: SharedFormProps) {
+  // Set default event type based on whether it's a destination booking
+  const eventType = destinationName
+    ? "Destination"
+    : defaultEventType || "Wedding";
   const formDataRef = useRef<HTMLFormElement | null>(null);
   const [form, setForm] = useState({
     client_name: "",
-    event_type: defaultEventType,
+    event_type: eventType,
     other_event_type: "",
     event_date: "",
     event_venue: "",
@@ -99,7 +103,7 @@ function SharedForm({
         // Reset form
         setForm({
           client_name: "",
-          event_type: defaultEventType,
+          event_type: eventType,
           other_event_type: "",
           event_date: "",
           event_venue: "",

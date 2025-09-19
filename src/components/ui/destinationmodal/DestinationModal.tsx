@@ -31,8 +31,7 @@ function DestinationModal({
         <SharedForm
           title=""
           subtitle=""
-          eventTypeDisabled={true}
-          defaultEventType="Destination"
+          eventTypeDisabled={false}
           destinationName={destinationName}
           className={styles.modalForm}
         />

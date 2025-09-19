@@ -15,6 +15,7 @@ export async function POST(request: NextRequest) {
       phone,
       email,
       additional_info,
+      destination,
     } = body;
 
     const transporter = nodemailer.createTransport({
@@ -41,6 +42,11 @@ export async function POST(request: NextRequest) {
           <p><strong>Type:</strong> ${event_type}${
       other_event_type ? ` - ${other_event_type}` : ""
     }</p>
+          ${
+            destination
+              ? `<p><strong>Destination:</strong> ${destination}</p>`
+              : ""
+          }
           <p><strong>Date:</strong> ${event_date}</p>
           <p><strong>Venue:</strong> ${event_venue}</p>
           <p><strong>Guest Size:</strong> ${guest_size}</p>
@@ -66,7 +72,9 @@ export async function POST(request: NextRequest) {
       from: process.env.ZOHO_EMAIL,
       to: process.env.RECIPIENT_EMAIL || process.env.ZOHO_EMAIL,
       replyTo: email,
-      subject: `New Event Inquiry from ${client_name}`,
+      subject: `New Event Inquiry from ${client_name}${
+        destination ? ` - ${destination}` : ""
+      }`,
       html: htmlContent,
     });
 

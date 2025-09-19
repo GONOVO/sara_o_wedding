@@ -30,18 +30,8 @@ const links = [
     path: "/events",
   },
   {
-    name: "DESTINATION",
-    dropdown: true,
-    items: [
-      {
-        name: "DESTINATION WEDDINGS",
-        path: "/destination-weddings",
-      },
-      {
-        name: "DESTINATIONS",
-        path: "/wedding",
-      },
-    ],
+    name: "DESTINATIONS",
+    path: "/destination-weddings",
   },
 
   {

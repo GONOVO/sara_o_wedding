@@ -19,6 +19,10 @@
   margin: 1.5rem 0;
   color: var(--color-main-paragraphs);
 }
+
+.contactForm {
+  margin-top: 1rem;
+}
 .main_grid_contactus form {
   display: flex;
   flex-direction: column;

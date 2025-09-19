@@ -2,6 +2,8 @@
 import styles from "./destination.module.css";
 import Image from "next/image";
 import ImageView from "@/components/imageview/HeroSection";
+import DestinationModal from "@/components/ui/destinationmodal/DestinationModal";
+import { useState } from "react";
 
 const destinations = {
   row1: [
@@ -92,6 +94,19 @@ const DestinationSeparator = ({
 );
 
 function DestinationWeddingsPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedDestination, setSelectedDestination] = useState("");
+
+  const handleDestinationClick = (destinationName: string) => {
+    setSelectedDestination(destinationName);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedDestination("");
+  };
+
   return (
     <main>
       {/* Header Section - Full Width */}
@@ -112,7 +127,7 @@ function DestinationWeddingsPage() {
             to hop on a plane and say wow!
           </p>
           {/* <div className="w-1 h-16 bg-black mx-auto"></div> */}
-       {/* </div>
+      {/* </div>
       </div> */}
       <ImageView imageSrc="/images/Dv_6.webp" title="DESTINATIONS" />
       <p className="text-lg md:text-4xl  mb-4 mt-12 text-center font-bold px-4">
@@ -134,13 +149,14 @@ function DestinationWeddingsPage() {
             title="Caribbean Islands"
             description="Experience the perfect blend of tropical paradise and luxury. From pristine beaches to crystal-clear waters, these islands offer the ultimate romantic backdrop for your dream destination events and unforgettable celebrations."
           />
-          <div className="space-y-4 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"> 
+          <div className="space-y-4 mb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {mobileDestinationsByRegion.caribbean.map((destination, index) => (
               <div
                 key={index}
-                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full"
+                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full cursor-pointer hover:opacity-90 transition-opacity"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
+                onClick={() => handleDestinationClick(destination.name)}
               >
                 <Image
                   src={destination.image}
@@ -174,9 +190,10 @@ function DestinationWeddingsPage() {
             {mobileDestinationsByRegion.asia.map((destination, index) => (
               <div
                 key={index}
-                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full"
+                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full cursor-pointer hover:opacity-90 transition-opacity"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
+                onClick={() => handleDestinationClick(destination.name)}
               >
                 <Image
                   src={destination.image}
@@ -210,9 +227,10 @@ function DestinationWeddingsPage() {
             {mobileDestinationsByRegion.europe.map((destination, index) => (
               <div
                 key={index}
-                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full"
+                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full cursor-pointer hover:opacity-90 transition-opacity"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
+                onClick={() => handleDestinationClick(destination.name)}
               >
                 <Image
                   src={destination.image}
@@ -246,9 +264,10 @@ function DestinationWeddingsPage() {
             {mobileDestinationsByRegion.africa.map((destination, index) => (
               <div
                 key={index}
-                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full"
+                className="relative h-88 rounded-lg overflow-hidden bg-gray-200 w-full cursor-pointer hover:opacity-90 transition-opacity"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
+                onClick={() => handleDestinationClick(destination.name)}
               >
                 <Image
                   src={destination.image}
@@ -285,9 +304,10 @@ function DestinationWeddingsPage() {
             {destinations.row1.map((destination, index) => (
               <div
                 key={index}
-                className={styles.destinationCard}
+                className={`${styles.destinationCard} cursor-pointer hover:opacity-90 transition-opacity`}
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
+                onClick={() => handleDestinationClick(destination.name)}
               >
                 {/* <div className={styles.cardImage}> */}
                 <Image
@@ -316,9 +336,10 @@ function DestinationWeddingsPage() {
             {destinations.row2.map((destination, index) => (
               <div
                 key={index}
-                className={styles.destinationCard}
+                className={`${styles.destinationCard} cursor-pointer hover:opacity-90 transition-opacity`}
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
+                onClick={() => handleDestinationClick(destination.name)}
               >
                 <div className={styles.cardImage}>
                   <Image
@@ -347,9 +368,10 @@ function DestinationWeddingsPage() {
             {destinations.row3.map((destination, index) => (
               <div
                 key={index}
-                className={styles.destinationCard}
+                className={`${styles.destinationCard} cursor-pointer hover:opacity-90 transition-opacity`}
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
+                onClick={() => handleDestinationClick(destination.name)}
               >
                 <div className={styles.cardImage}>
                   <Image
@@ -378,9 +400,10 @@ function DestinationWeddingsPage() {
             {destinations.row4.map((destination, index) => (
               <div
                 key={index}
-                className={styles.destinationCard}
+                className={`${styles.destinationCard} cursor-pointer hover:opacity-90 transition-opacity`}
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
+                onClick={() => handleDestinationClick(destination.name)}
               >
                 <div className={styles.cardImage}>
                   <Image
@@ -401,6 +424,12 @@ function DestinationWeddingsPage() {
           </div>
         </div>
       </div>
+
+      <DestinationModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        destinationName={selectedDestination}
+      />
     </main>
   );
 }

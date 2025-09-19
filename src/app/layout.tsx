@@ -64,7 +64,6 @@ export const metadata: Metadata = {
     images: ["/svgs/s_logo.svg", "/s_logo.png"],
   },
 };
-/****sgfksdj */
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -83,7 +82,6 @@ export default function RootLayout({
           <Arrowtoup />
           <Footer />
         </WithAOS>
-
         <NeexaChat />
       </body>
     </html>

@@ -117,6 +117,7 @@ export default function CouplePage({ params }: CouplePageProps) {
               alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
               className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300"
               loading="lazy"
+              
             />
           </div>
         ))}

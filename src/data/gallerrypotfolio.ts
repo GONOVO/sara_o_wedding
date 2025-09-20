@@ -599,6 +599,7 @@ const galleryPortfolio = [
       // "/images/zenithBank/zb_3.png",
       // "/images/zenithBank/zb_4.png",
     ],
+    allVideos: ["/videos/zb_vid.mp4"],
   },
 ];
 

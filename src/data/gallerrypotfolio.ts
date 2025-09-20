@@ -590,10 +590,11 @@ const galleryPortfolio = [
   },
   {
     id: 35,
-    image: "/images/zenithBank/zb_1.png",
+    image: "/images/zenithBank/zb_2.png",
     eventName: "ZENITH BANK",
-    coverImage: "/images/zenithBank/zb_1.png",
+    coverImage: "/images/zenithBank/zb_2.png",
     allImages: [
+      "/images/zenithBank/zb_2.png",
       "/images/zenithBank/zb_1.png",
       // "/images/zenithBank/zb_2.png",
       // "/images/zenithBank/zb_3.png",

@@ -13,7 +13,7 @@ function Footer() {
     "/images/foot1.webp",
     "/images/foot3.webp",
   ];
-
+  // Clientexperience@saraoevent.com
   // Create footer links including dropdown items
   const footerLinks: INavItem[] = [];
 

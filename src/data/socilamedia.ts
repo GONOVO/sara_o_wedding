@@ -36,7 +36,7 @@ const socialMedia = [
   },
   {
     svg: "/svgs/email.svg",
-    link: "mailto:client.saraoevent@gmail.com",
+    link: "mailto:Clientexperience@saraoevent.com",
   },
 ];
 export default socialMedia;

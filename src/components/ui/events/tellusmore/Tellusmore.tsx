@@ -23,9 +23,12 @@ function Tellusmore({
       },
       { threshold: 0.1 }
     );
-    if (sectionRef.current) observer.observe(sectionRef.current);
+
+    const currentSectionRef = sectionRef.current;
+    if (currentSectionRef) observer.observe(currentSectionRef);
+
     return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
+      if (currentSectionRef) observer.unobserve(currentSectionRef);
     };
   }, []);
   return (

@@ -21,6 +21,7 @@ interface SharedFormProps {
   defaultEventType?: string;
   destinationName?: string;
   className?: string;
+  onFormStateChange?: (isSubmitting: boolean) => void;
 }
 
 function SharedForm({
@@ -30,12 +31,14 @@ function SharedForm({
   defaultEventType = "",
   destinationName = "",
   className = "",
+  onFormStateChange,
 }: SharedFormProps) {
   // Set default event type based on whether it's a destination booking
   const eventType = destinationName
     ? "Destination"
     : defaultEventType || "Wedding";
   const formDataRef = useRef<HTMLFormElement | null>(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [form, setForm] = useState({
     client_name: "",
     event_type: eventType,
@@ -48,6 +51,7 @@ function SharedForm({
     email: "",
     additional_info: "",
     destination: destinationName,
+    attachment: null as File | null,
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -55,6 +59,31 @@ function SharedForm({
     type: "success" | "error" | null;
     message: string;
   }>({ type: null, message: "" });
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadProgress, setUploadProgress] = useState(0);
+  const [fileError, setFileError] = useState("");
+
+  // Notify parent component about form submission state only
+  React.useEffect(() => {
+    if (onFormStateChange) {
+      onFormStateChange(isSubmitting);
+    }
+  }, [isSubmitting, onFormStateChange]);
+
+  // Prevent page navigation during form submission only
+  React.useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (isSubmitting) {
+        e.preventDefault();
+        e.returnValue =
+          "Your form is being submitted. Are you sure you want to leave?";
+        return "Your form is being submitted. Are you sure you want to leave?";
+      }
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, [isSubmitting]);
 
   // Get tomorrow's date for minimum date validation
   const getTomorrowDate = () => {
@@ -76,18 +105,78 @@ function SharedForm({
     setForm({ ...form, phone: value });
   };
 
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0] || null;
+    setFileError("");
+
+    if (file) {
+      // Validate file size (15MB = 15 * 1024 * 1024 bytes)
+      const maxSize = 15 * 1024 * 1024; // 15MB
+      if (file.size > maxSize) {
+        setFileError(
+          `File size must be less than 15MB. Your file is ${(
+            file.size /
+            (1024 * 1024)
+          ).toFixed(1)}MB`
+        );
+        e.target.value = ""; // Clear the input
+        return;
+      }
+
+      // Validate file type
+      const allowedTypes = [
+        "image/jpeg",
+        "image/jpg",
+        "image/png",
+        "image/gif",
+        "image/webp",
+        "application/pdf",
+      ];
+      if (!allowedTypes.includes(file.type)) {
+        setFileError(
+          "Only images (JPG, PNG, GIF, WebP) and PDF files are allowed"
+        );
+        e.target.value = ""; // Clear the input
+        return;
+      }
+
+      setIsUploading(true);
+      setUploadProgress(0);
+
+      // Simulate upload progress
+      for (let progress = 0; progress <= 100; progress += 10) {
+        await new Promise((resolve) => setTimeout(resolve, 100));
+        setUploadProgress(progress);
+      }
+
+      setForm({ ...form, attachment: file });
+      setIsUploading(false);
+    } else {
+      setForm({ ...form, attachment: null });
+      setUploadProgress(0);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
     try {
+      const formData = new FormData();
+
+      // Add all form fields to FormData
+      Object.entries(form).forEach(([key, value]) => {
+        if (key === "attachment" && value) {
+          formData.append("attachment", value);
+        } else if (key !== "attachment") {
+          formData.append(key, value as string);
+        }
+      });
+
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
+        body: formData,
       });
 
       const data = await response.json();
@@ -100,7 +189,12 @@ function SharedForm({
         });
         // Hide message after 4 seconds
         setTimeout(() => setSubmitStatus({ type: null, message: "" }), 4000);
-        // Reset form
+        // Reset form using native form reset
+        if (formDataRef.current) {
+          formDataRef.current.reset();
+        }
+
+        // Reset form state
         setForm({
           client_name: "",
           event_type: eventType,
@@ -113,7 +207,15 @@ function SharedForm({
           email: "",
           additional_info: "",
           destination: destinationName,
+          attachment: null,
         });
+        setFileError("");
+        setUploadProgress(0);
+
+        // Reset file input element
+        if (fileInputRef.current) {
+          fileInputRef.current.value = "";
+        }
       } else {
         throw new Error(data.error || "Failed to send message");
       }
@@ -302,6 +404,42 @@ function SharedForm({
         </div>
 
         <div className={styles.formGroup}>
+          <label htmlFor="attachment" className={styles.label}>
+            Attach Image or PDF (Max 15MB)
+          </label>
+          <input
+            ref={fileInputRef}
+            type="file"
+            id="attachment"
+            name="attachment"
+            onChange={handleFileChange}
+            accept="image/jpeg,image/jpg,image/png,image/gif,image/webp,application/pdf"
+            className={styles.fileInput}
+            disabled={isUploading || isSubmitting}
+          />
+          {fileError && <p className={styles.fileError}>{fileError}</p>}
+          {isUploading && (
+            <div className={styles.uploadProgressInline}>
+              <div className={styles.progressBar}>
+                <div
+                  className={styles.progressFill}
+                  style={{ width: `${uploadProgress}%` }}
+                ></div>
+              </div>
+              <p className={styles.progressText}>
+                Uploading... {uploadProgress}%
+              </p>
+            </div>
+          )}
+          {form.attachment && !isUploading && (
+            <p className={styles.fileInfo}>
+              Selected: {form.attachment.name} (
+              {(form.attachment.size / (1024 * 1024)).toFixed(1)}MB)
+            </p>
+          )}
+        </div>
+
+        <div className={styles.formGroup}>
           <label htmlFor="additional_info" className={styles.label}>
             Additional Information
           </label>
@@ -328,12 +466,19 @@ function SharedForm({
 
         <button
           type="submit"
-          disabled={isSubmitting}
+          disabled={isSubmitting || isUploading}
           className={`${styles.submitButton} ${
             isSubmitting ? styles.submitting : ""
           }`}
         >
-          {isSubmitting ? "Sending..." : "Send Inquiry"}
+          {isSubmitting ? (
+            <div className={styles.buttonLoading}>
+              <div className={styles.buttonSpinner}></div>
+              <span>Sending...</span>
+            </div>
+          ) : (
+            "Send Inquiry"
+          )}
         </button>
       </form>
     </div>

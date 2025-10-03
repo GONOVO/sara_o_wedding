@@ -20,6 +20,83 @@ body {
   overflow-x: hidden !important;
 }
 
+/* Modal form specific styling */
+.modal-form input,
+.modal-form textarea,
+.modal-form .input,
+.modal-form .textarea {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.modal-form select,
+.modal-form .select {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background-color: #1f2937 !important;
+  color: #ffffff !important;
+}
+
+.modal-form .label {
+  color: #ffffff !important;
+}
+
+.modal-form .select {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e") !important;
+}
+
+.modal-form .select option {
+  background-color: #1f2937 !important;
+  color: #ffffff !important;
+}
+
+.modal-form .phoneInput {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.modal-form .phoneButton {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.modal-form .textarea {
+  resize: none !important;
+  min-height: 100px !important;
+  max-height: 100px !important;
+}
+
+.modal-form .fileInput {
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+.modal-form .fileInfo {
+  color: #ffffff !important;
+}
+
+.modal-form .fileError {
+  color: #fca5a5 !important;
+  background-color: rgba(220, 38, 38, 0.1) !important;
+  border-color: rgba(220, 38, 38, 0.3) !important;
+}
+
+.modal-form .progressText {
+  color: #ffffff !important;
+}
+
+.modal-form .progressBar {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.modal-form .uploadProgressInline {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
 .normal_font {
   font-family: var(--font-fraunces), serif !important;
 }

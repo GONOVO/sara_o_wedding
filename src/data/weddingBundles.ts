@@ -1,7 +1,7 @@
 const weddingBundles = [
   {
     title: "EVENTS",
-    image: "/images/pgk_1.webp",
+    image: "/images/wedding_Page/pgk_1.webp",
     subTitle: "Included",
     paragraphs: [
       "Private",
@@ -13,23 +13,15 @@ const weddingBundles = [
   },
   {
     title: "Entertainment",
-    image: "/images/pgk_2.webp",
+    image: "/images/wedding_Page/pgk_2.webp",
     subTitle: "Included",
-    paragraphs: [
-      "Movies",
-      "Music",
-      "Arts",
-    ],
+    paragraphs: ["Movies", "Music", "Arts"],
   },
   {
     title: "Hospitality",
-    image: "/images/pgk_3.webp",
+    image: "/images/wedding_Page/pgk_3.webp",
     subTitle: "Included",
-    paragraphs: [
-      "Resorts",
-      "Restaurants",
-      "Retail",
-    ],
+    paragraphs: ["Resorts", "Restaurants", "Retail"],
   },
 ];
 

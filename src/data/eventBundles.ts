@@ -15,21 +15,13 @@ const bundlesEvents = [
     title: "ENTERTAINMENT",
     image: "/images/ev5.webp",
     subTitle: "Included",
-    paragraphs: [
-      "Movies",
-      "Music",
-      "Arts",
-    ],
+    paragraphs: ["Movies", "Music", "Arts"],
   },
   {
     title: "HOSPITALITY",
     image: "/images/Dv_6.webp",
     subTitle: "Included",
-    paragraphs: [
-      "Resorts",
-      "Restaurants",
-      "Retail",
-    ],
+    paragraphs: ["Resorts", "Restaurants", "Retail"],
   },
 ];
 

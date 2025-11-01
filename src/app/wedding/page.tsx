@@ -26,7 +26,7 @@ function Wedding() {
     <>
       <div className="relative">
         <ImageView
-          imageSrc="/images/galleryport6.webp"
+          imageSrc="/images/wedding_Page/wedding_hero.webp"
           height="90vh"
           mb="0px"
           positionY="20%"
@@ -34,7 +34,7 @@ function Wedding() {
       </div>
 
       <Ourvission
-        image="/images/galleryport1.webp"
+        image="/images/wedding_Page/sec1_image.webp"
         caption="CREATING YOUR DREAM WEDDING, ANYWHERE IN THE WORLD"
         paragraph="Sara O Events offers full-service luxury wedding planning and design, working with couples who want to create unforgettable celebrations. Led by Yewande Rwang-Dung, we plan, design and manage exclusive destination weddings across the world - from romantic beach ceremonies to elegant castle receptions. Sara O Events' signature style brings exceptional design and impeccable detail to every wedding, creating magical moments that transform your special day into extraordinary memories."
       />
@@ -44,7 +44,7 @@ function Wedding() {
       />
       <VideoView
         videoPath="/videos/wedding_hero_vid.mp4"
-        videoPoster="/images/wedding_hero_poster.webp"
+        videoPoster="/images/wedding_Page/wedding_hero_poster.webp"
       />
       <EventsPortfolio portfolioData={weddingsPortfolio} />
       <Bundlers bundles={weddingBundles} />

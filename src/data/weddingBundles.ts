@@ -13,7 +13,7 @@ const weddingBundles = [
   },
   {
     title: "Entertainment",
-    image: "/images/wedding_Page/pgk_2.webp",
+    image: "/images/galleryport3.webp",
     subTitle: "Included",
     paragraphs: ["Movies", "Music", "Arts"],
   },

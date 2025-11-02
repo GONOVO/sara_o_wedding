@@ -17,7 +17,7 @@ const links = [
       },
       {
         name: "INTERNATIONAL EVENTS",
-        path: "/portfolio",
+        path: "/national-portfolio",
       },
     ],
   },

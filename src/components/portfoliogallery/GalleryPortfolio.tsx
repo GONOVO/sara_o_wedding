@@ -1,17 +1,22 @@
 import React from "react";
 import GalleryCard from "../ui/gallerycard/GalleryCard";
-import galleryPortfolio from "@/data/gallerrypotfolio";
 import Link from "next/link";
+import { IPortfolioitem } from "@/utils/interfaces";
 
-
-function GalleryPortfolio() {
+function GalleryPortfolio({
+  galleryPortfolio,
+  baseRoute = "couple",
+}: {
+  galleryPortfolio: IPortfolioitem[];
+  baseRoute?: string;
+}) {
   return (
     <section id="gallery" className="max-w-7xl px-4 mx-auto py-16">
       <div className="flex gap-5 flex-wrap justify-center">
         {galleryPortfolio.map((item, index) => (
           <Link
             key={index}
-            href={`/couple/${item.id}`}
+            href={`/${baseRoute}/${item.id}`}
             data-aos="zoom-in-out"
             data-aos-offset="0"
           >

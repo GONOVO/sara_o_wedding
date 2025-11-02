@@ -106,7 +106,6 @@ const galleryPortfolio = [
       "/images/foot2.webp",
       "/images/gallery6.webp",
     ],
-
     eventName: "KEYSTONE END OF YEAR (EoYP) Award Dinner",
   },
   {
@@ -211,24 +210,6 @@ const galleryPortfolio = [
       "/images/o_ev11.webp",
     ],
     eventName: "STERLING OIL",
-  },
-  {
-    id: 10,
-    image: "/images/Dv_7.webp",
-    maleName: "DEVAK",
-    femaleName: "VALDEHI",
-    coverImage: "/images/Dv_1.webp",
-    positionY: "0%",
-    allImages: [
-      "/images/Dv_7.webp",
-      "/images/Dv_4.webp",
-      "/images/galleryport3.webp",
-      "/images/Dv_1.webp",
-      "/images/Dv_2.webp",
-      "/images/Dv_3.webp",
-      "/images/Dv_5.webp",
-      "/images/Dv_6.webp",
-    ],
   },
   {
     id: 11,

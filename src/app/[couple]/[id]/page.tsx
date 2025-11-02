@@ -8,10 +8,11 @@ const Modalandslider = dynamic(
 );
 const ImageView = dynamic(() => import("@/components/imageview/HeroSection"));
 import couples from "@/data/gallerrypotfolio";
+import galleryNationalPortfolio from "@/data/galleryNationalPortfolio";
 //  import Image from "next/image";
 
 interface CouplePageProps {
-  params: Promise<{ id: string }>; // params is a Promise now
+  params: Promise<{ couple: string; id: string }>; // params is a Promise now
 }
 
 const VideoCard = ({ videoUrl }: { videoUrl: string }) => {
@@ -64,8 +65,15 @@ const VideoCard = ({ videoUrl }: { videoUrl: string }) => {
 export default function CouplePage({ params }: CouplePageProps) {
   // Unwrap the params using React.use() to get the actual value
   const unwrappedParams = use(params);
+  const coupleType = unwrappedParams.couple; // "couple" or "national-couple"
   const coupleNum = parseInt(unwrappedParams.id, 10);
-  const choosedCouple = couples[coupleNum - 1];
+  
+  // Select the appropriate portfolio dataset based on route
+  const isNationalPortfolio = coupleType === "national-couple";
+  const portfolioData = isNationalPortfolio ? galleryNationalPortfolio : couples;
+  
+  // Find the couple by ID in the appropriate dataset
+  const choosedCouple = portfolioData.find((item) => item.id === coupleNum);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [indexImage, setIndexImage] = useState(0);
@@ -86,15 +94,24 @@ export default function CouplePage({ params }: CouplePageProps) {
     return <div className="p-6 text-center">Couple not found</div>;
   }
 
-  const { femaleName, maleName, allImages, allVideos, coverImage, eventName } =
-    choosedCouple;
+  const {
+    femaleName,
+    maleName,
+    allImages = [],
+    allVideos,
+    coverImage,
+    eventName,
+  } = choosedCouple;
 
   return (
     <div>
       <ImageView
-        imageSrc={`${coverImage}`}
+        imageSrc={coverImage || choosedCouple.image || ""}
         height="70dvh"
-        title={eventName ? `${eventName}` : `${maleName} & ${femaleName}`}
+        title={
+          eventName ||
+          (maleName && femaleName ? `${maleName} & ${femaleName}` : maleName || femaleName || "Event")
+        }
         positionY={`${
           choosedCouple.positionY ? choosedCouple.positionY : "20%"
         }`}

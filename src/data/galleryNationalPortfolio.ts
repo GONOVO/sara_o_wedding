@@ -45,6 +45,7 @@ const galleryNationalPortfolio = [
       "/images/nationalPortfolio/international_10.webp",
       "/images/nationalPortfolio/international_16.webp",
     ],
+    allVideos: ["/videos/wedding_hero_vid.mp4"],
   },
 ];
 

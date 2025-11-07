@@ -66,7 +66,8 @@ export default function Slider({ elements }: { elements: string[] }) {
                 src={item}
                 alt="portfolio image"
                 fill
-                unoptimized
+                sizes="(max-width: 640px) 100vw, (max-width: 1124px) 50vw, 33vw"
+                quality={85}
                 className="object-cover"
               />
             </div>

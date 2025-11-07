@@ -34,6 +34,7 @@ function page() {
           muted
           playsInline
           poster="/images/events_poster.webp"
+          preload="metadata"
         />
       </div>
 

@@ -74,8 +74,9 @@ function InfinityScroll({ elements }: { elements: string[] }) {
                   src={item}
                   alt="portfolio image"
                   fill
-                  loading="eager"
-                  unoptimized={true}
+                  loading="lazy"
+                  sizes="125px"
+                  quality={85}
                   className="object-cover"
                 />
               </div>

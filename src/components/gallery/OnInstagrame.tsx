@@ -27,6 +27,8 @@ function Gallery() {
                   src="/images/h_ev1.webp"
                   alt="gallery image"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
                   loading="lazy"
                   className="object-cover"
                 />
@@ -39,6 +41,8 @@ function Gallery() {
                   src="/images/gallery2.webp"
                   alt="gallery image"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
                   loading="lazy"
                   className="object-cover"
                 />
@@ -54,6 +58,8 @@ function Gallery() {
                 src="/images/gallery3.webp"
                 alt="gallery image"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={85}
                 loading="lazy"
                 className="object-cover"
               />
@@ -66,6 +72,8 @@ function Gallery() {
                 src="/images/gallery4.webp"
                 alt="gallery image"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={85}
                 loading="lazy"
                 className="object-cover"
               />
@@ -90,6 +98,8 @@ function Gallery() {
                   src="/images/gallery6.webp"
                   alt="gallery image"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
                   loading="lazy"
                   className="object-cover"
                 />

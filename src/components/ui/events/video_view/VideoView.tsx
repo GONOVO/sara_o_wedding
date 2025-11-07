@@ -14,7 +14,6 @@ function VideoView({
         <LazyAutoPlayVideo
           videoPath={videoPath}
           placeholderImage={videoPoster}
-          //   objectPosition="top"
         />
       </div>
     </section>

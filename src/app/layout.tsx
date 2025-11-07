@@ -26,25 +26,33 @@ import Arrowtoup from "@/components/ui/arrowsrollup/Arrowtoup";
 // import Head from "next/head";
 const nunito = Nunito({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "600", "700", "800", "900"],
+  weight: ["300", "400", "600", "700"], // Reduced weights for better performance
   variable: "--font-nunito",
+  display: "swap", // Optimize font loading
+  preload: true,
 });
 
 const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "600", "700", "800", "900"],
+  weight: ["300", "400", "600", "700"], // Reduced weights for better performance
   variable: "--font-fraunces",
+  display: "swap", // Optimize font loading
+  preload: true,
 });
 const kristi = Kristi({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-kristy",
+  display: "swap",
+  preload: true,
 });
 
 const anticDidone = Antic_Didone({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-antic-didone",
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -75,6 +83,14 @@ export default function RootLayout({
       className={`${nunito.variable} ${fraunces.variable} ${kristi.variable} ${anticDidone.variable}`}
       style={{ overflowX: "hidden" }}
     >
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body suppressHydrationWarning={true}>
         <WithAOS>
           <Header />

@@ -29,8 +29,8 @@
 } */
 .gallery_item {
   position: relative;
-
   object-fit: cover;
+  height: 100%;
 }
 .row_1_2 {
   display: grid;

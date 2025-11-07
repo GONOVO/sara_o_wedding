@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function DynamicGallery({
   images,
@@ -22,11 +23,15 @@ function DynamicGallery({
             className="w-full overflow-hidden relative mb-3 break-inside-avoid cursor-zoom-in"
             data-aos="zoom-in-out"
           >
-            <img
+            <Image
               src={img}
               alt={`event ${index + 1}`}
-              className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300"
+              width={400}
+              height={600}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              quality={85}
               loading="lazy"
+              className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300"
             />
           </div>
         ))}

@@ -20,6 +20,9 @@ function Featured() {
               src="/images/Dv_7.webp"
               alt="featured image 2"
               fill
+              sizes="(max-width: 768px) 50vw, 25vw"
+              quality={85}
+              priority
               className="object-bottom object-cover"
             />
           </div>
@@ -35,6 +38,9 @@ function Featured() {
               alt="featured image 1"
               width={400}
               height={490}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              quality={85}
+              priority
               className="w-full object-cover"
             />
           </div>
@@ -51,6 +57,9 @@ function Featured() {
                 alt="featured image 1"
                 width={327}
                 height={490}
+                sizes="327px"
+                quality={85}
+                priority
               />
             </div>
           </div>

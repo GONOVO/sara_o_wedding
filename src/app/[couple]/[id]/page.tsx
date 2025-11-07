@@ -1,6 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { use } from "react"; // Import the 'use' hook
 
 const Modalandslider = dynamic(
@@ -16,9 +16,99 @@ interface CouplePageProps {
   params: Promise<{ couple: string; id: string }>; // params is a Promise now
 }
 
+// Lazy loading component for portfolio images (keeping img tag)
+const LazyPortfolioImage = ({
+  src,
+  alt,
+  onClick,
+}: {
+  src: string;
+  alt: string;
+  onClick: () => void;
+}) => {
+  const [shouldLoad, setShouldLoad] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !shouldLoad) {
+          setShouldLoad(true);
+        }
+      },
+      { rootMargin: "50px" }
+    );
+
+    const currentRef = containerRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, [shouldLoad]);
+
+  return (
+    <div
+      ref={containerRef}
+      className="w-full overflow-hidden relative mb-3 break-inside-avoid cursor-zoom-in"
+      onClick={onClick}
+      data-aos="zoom-in-out"
+    >
+      {shouldLoad && (
+        <img
+          ref={imgRef}
+          src={src}
+          alt={alt}
+          className={`w-full h-auto object-cover transition-transform hover:scale-105 duration-300 transition-opacity duration-300 ${
+            isLoaded ? "opacity-100" : "opacity-0"
+          }`}
+          loading="lazy"
+          onLoad={() => setIsLoaded(true)}
+        />
+      )}
+      {!isLoaded && shouldLoad && (
+        <div className="w-full h-64 bg-gray-200 animate-pulse rounded-lg"></div>
+      )}
+    </div>
+  );
+};
+
 const VideoCard = ({ videoUrl }: { videoUrl: string }) => {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !shouldLoad) {
+          setShouldLoad(true);
+          if (videoRef.current) {
+            videoRef.current.load();
+          }
+        }
+      },
+      { rootMargin: "100px" }
+    );
+
+    const currentRef = containerRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, [shouldLoad]);
 
   const handleClick = () => {
     if (videoRef.current) {
@@ -33,19 +123,22 @@ const VideoCard = ({ videoUrl }: { videoUrl: string }) => {
 
   return (
     <div
+      ref={containerRef}
       className="w-full overflow-hidden relative mb-3 break-inside-avoid cursor-pointer aspect-video"
       onClick={handleClick}
       data-aos="zoom-in-out"
     >
-      <video
-        ref={videoRef}
-        src={videoUrl}
-        className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
-        preload="metadata"
-        loop
-        playsInline
-        // poster={poster}
-      />
+      {shouldLoad && (
+        <video
+          ref={videoRef}
+          src={videoUrl}
+          className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+          preload="none"
+          loop
+          playsInline
+          // poster={poster}
+        />
+      )}
       {!isPlaying && (
         <div className="absolute inset-0 flex items-center justify-center bg-transparent bg-opacity-30">
           <div className="w-16 h-16  rounded-full flex items-center justify-center border-2 border-white">
@@ -134,19 +227,12 @@ export default function CouplePage({ params }: CouplePageProps) {
             <VideoCard key={`video-${index}`} videoUrl={video} />
           ))}
         {allImages.map((img, index) => (
-          <div
+          <LazyPortfolioImage
             key={`${img}-${index}`}
-            className="w-full overflow-hidden relative mb-3 break-inside-avoid cursor-zoom-in"
+            src={img}
+            alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
             onClick={() => handleImageClick(index)}
-            data-aos="zoom-in-out"
-          >
-            <img
-              src={img}
-              alt={`${maleName} and ${femaleName} - Photo ${index + 1}`}
-              className="w-full h-auto object-cover transition-transform hover:scale-105 duration-300"
-              loading="lazy"
-            />
-          </div>
+          />
         ))}
       </div>
 

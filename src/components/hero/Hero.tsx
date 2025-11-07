@@ -26,7 +26,6 @@ function Hero() {
     const handleResize = () => {
       const isMobile = window.innerWidth <= 1024;
       setIsMobile(isMobile);
-      // console.log("Inner width:", window.innerWidth, "Is mobile:", isMobile);
     };
 
     const handleHeight = () => {
@@ -37,14 +36,11 @@ function Hero() {
           ? 1
           : 0;
       setDetectVideo(videoNum);
-      // console.log(detectvideo, window.pageYOffset);
     };
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleHeight);
-    // Set initial width
     handleResize();
     handleHeight();
-    // Cleanup
     if (detectvideo === 1 && isMobile) {
       handleMouseEnter(videoRefEvents, videoRefWedding);
     } else if (detectvideo === 2 && isMobile) {
@@ -83,6 +79,9 @@ function Hero() {
               muted
               playsInline
               poster="/images/vf_1.webp"
+              {...({
+                fetchPriority: "high",
+              } as React.VideoHTMLAttributes<HTMLVideoElement>)}
               onMouseEnter={() =>
                 handleMouseEnter(videoRefEvents, videoRefWedding)
               }
@@ -118,6 +117,9 @@ function Hero() {
               muted
               playsInline
               poster="/images/vf_2.webp"
+              {...({
+                fetchPriority: "high",
+              } as React.VideoHTMLAttributes<HTMLVideoElement>)}
               onMouseEnter={() =>
                 handleMouseEnter(videoRefWedding, videoRefEvents)
               }

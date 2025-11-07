@@ -18,8 +18,8 @@ function Productowner() {
             src="/images/Picture1.webp"
             alt="Yewande Rwang-Dung"
             fill
-            quality={100}
-            unoptimized={true}
+            quality={85}
+            sizes="(max-width: 768px) 80vw, 50vw"
             loading="lazy"
             data-aos="fade-right"
           />

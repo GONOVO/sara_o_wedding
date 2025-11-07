@@ -56,7 +56,7 @@ function EventsPortfolio({ portfolioData }: { portfolioData: IPortfolio[] }) {
                 {item.vid ? (
                   <LazyAutoPlayVideo
                     videoPath={item.vid}
-                    placeholderImage="/images/events_poster.webp"
+                    placeholderImage={item?.poster ?? ""}
                   />
                 ) : (
                   <div

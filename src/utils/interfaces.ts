@@ -59,6 +59,7 @@ export interface IPortfolio {
   paragraphs?: string[];
   img?: string;
   vid?: string;
+  poster?: string;
 }
 
 export interface INavItem {

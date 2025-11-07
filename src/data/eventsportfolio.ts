@@ -5,6 +5,7 @@ const eventsPortfolio = [
       "The Sara O Events team prides itself on creating bespoke events that are overwhelmingly creative and unique to each couple they work with. Yewande's ability to immerse herself in a vision that suits her client's personal tastes and focus in on what design direction to take them is what she is truly known for.​",
     paragraphs: [],
     vid: "/videos/ev_33.mp4",
+    poster: "/images/ev_33_poster.webp",
   },
   {
     title: "THE ARTISTRY OF CELEBRATION",
@@ -12,6 +13,7 @@ const eventsPortfolio = [
       "Sara O Events approaches all of their events with an incredibly artistic eye. Yewande offers an unparalleled level of logistical thinking entwined with out of the box ideas to ensure no two events are alike, all while making it appear effortless.​",
     paragraphs: [],
     vid: "/videos/ev_1.mp4",
+    poster: "/images/ev_1_poster.webp",
   },
   {
     title: "INSPIRED DESIGN, EXCEPTIONAL EXPERIENCES",
@@ -26,6 +28,7 @@ const eventsPortfolio = [
       "From the moment you connect with the Sara O Events team to the moment the last guest leaves your event, you will feel supported, prioritized and empowered. Yewande values her relationships with her clients and recognizes the trust placed in her is a privilege not to be taken lightly. Celebrations are once in a lifetime experiences and the Sara O Events team treats the entire planning process as such.",
     paragraphs: [],
     vid: "/videos/ev_vid2.mp4",
+    poster: "/images/ev_2_poster.webp",
   },
   {
     title: "EFFICIENCY MEETS EXCELLENCE",
@@ -40,6 +43,7 @@ const eventsPortfolio = [
       "Seeing clients' visions come to life is always Yewande's favorite moment of an event day. Her clients mean the world to her and working with each and every family reminds her why she loves what she does. As a client of Sara O Events, you will always feel just as you should - prioritized and important.​",
     paragraphs: [],
     vid: "/videos/vid_666.mp4",
+    poster: "/images/ev_6_poster.webp",
   },
   {
     title: "LUXURY IN EVERY DETAIL",
@@ -47,6 +51,7 @@ const eventsPortfolio = [
       "Beyond planning and design, Sara O Events offers a complete transformation experience. Yewande's keen eye for luxurious touches elevates every gathering from ordinary to extraordinary. Each element, from custom stationery to signature scents, is thoughtfully curated to surprise and delight. This attention to refined details creates immersive environments where guests don't just attend your event—they experience it with all their senses. When you choose Sara O Events, you choose distinction that speaks volumes without saying a word.​",
     paragraphs: [],
     vid: "/videos/eventshero.mp4",
+    poster: "/images/ev_7_poster.webp",
   },
   {
     title: "WORLDWIDE MAGIC",

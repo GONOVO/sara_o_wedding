@@ -15,10 +15,10 @@ const socialMedia = [
     svg: "/svgs/facebook.svg",
     link: "https://www.facebook.com/saraoevents",
   },
-  {
-    svg: "/svgs/linkedin.svg",
-    link: "https://www.linkedin.com/company/saraoevents/",
-  },
+  // {
+  //   svg: "/svgs/linkedin.svg",
+  //   link: "https://www.linkedin.com/company/saraoevents/",
+  // },
   {
     svg: "/svgs/youtube.svg",
     link: "https://www.youtube.com/@Sara.OEvents",

@@ -133,10 +133,8 @@ const VideoCard = ({ videoUrl }: { videoUrl: string }) => {
           ref={videoRef}
           src={videoUrl}
           className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
-          preload="none"
           loop
           playsInline
-          // poster={poster}
         />
       )}
       {!isPlaying && (

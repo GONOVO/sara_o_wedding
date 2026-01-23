@@ -1,0 +1,13 @@
+@media (max-width: 1180px) {
+  .res_grid {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+  .top_image {
+    top: -106px;
+  }
+}
+@media (max-width: 1024px) {
+  .res_grid {
+    grid-template-columns: 1fr;
+  }
+}

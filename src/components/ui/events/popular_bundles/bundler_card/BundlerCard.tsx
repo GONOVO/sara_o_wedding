@@ -1,0 +1,69 @@
+"use client";
+import { IBundle } from "@/utils/interfaces";
+import Image from "next/image";
+import React, { useEffect, useRef, useState } from "react";
+
+function BundlerCard({ bundle, index }: { bundle: IBundle; index: number }) {
+  const [isLargeScreen, setIsLargeScreen] = useState<boolean | null>(null);
+  const [isInView, setIsInView] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setIsClient(true);
+    setIsLargeScreen(window.innerWidth >= 1024);
+  }, []);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            setIsInView(true);
+          }, index * 1300);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    const currentCardRef = cardRef.current;
+    if (currentCardRef) observer.observe(currentCardRef);
+
+    return () => {
+      if (currentCardRef) observer.unobserve(currentCardRef);
+    };
+  }, [index]);
+  return (
+    <article
+      ref={cardRef}
+      className={`h-[600px] w-full sm:w-[330px] p-4 ps-8 bg-[var(--gold-color)] flex flex-col 
+        transition-all duration-500 transform
+        ${isInView ? "bundlers" : "translate-y-0"}`}
+      style={{
+        marginTop: isClient && isLargeScreen ? `${index * 56}px` : "24px",
+      }}
+    >
+      <div className="flex items-center gap-4 my-4">
+        <h1 className="text-3xl">{bundle.title}</h1>
+      </div>
+      <div className="w-[280px] h-[280px] rounded-full overflow-hidden relative mx-auto sm:mr-auto">
+        
+        {bundle.image && (
+          <Image
+            src={bundle.image}
+            alt="bundle image"
+            fill
+            className="object-cover"
+          />
+        )}
+      </div>
+      <div className="mt-4">
+        <h2 className="text-2xl pb-1 border-b mb-3">{bundle.subTitle}</h2>
+        {bundle.paragraphs.map((para, index) => (
+          <p key={index}>{para}</p>
+        ))}
+      </div>
+    </article>
+  );
+}
+
+export default BundlerCard;

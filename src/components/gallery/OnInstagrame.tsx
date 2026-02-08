@@ -17,7 +17,7 @@ function Gallery() {
                 videoPath="/videos/vvvv.mp4"
                 placeholderImage="https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/vf_4.webp"
               />
-              <p className="text-white">Corporate</p>
+              <p className="text-white">Conferences/Summits</p>
             </div>
           </Link>
           <div className={styles.col_1_1}>

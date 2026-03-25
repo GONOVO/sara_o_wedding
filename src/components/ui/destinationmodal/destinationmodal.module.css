@@ -37,7 +37,7 @@
   font-weight: 600;
   color: #111827;
   margin: 0;
-  font-family: var(--font-antic-didone);
+  font-family: var(--font-fraunces), serif;
 }
 
 .closeButton {

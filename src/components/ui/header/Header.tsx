@@ -146,7 +146,7 @@ function Header() {
         </div>
       </div>
       <div className="flex items-center max-w-[1280px] mx-auto lg:justify-center px-4 justify-center py-8">
-        <ul className="hidden lg:flex gap-6 nunito_font w-max text-[var(--semiGray-color)] ">
+        <ul className="hidden lg:flex gap-6 w-max text-[var(--semiGray-color)] ">
           {links.slice(0, 4).map((link, index) => renderLink(link, index))}
         </ul>
         <Link href="/" className="lg:mx-[2.5%] xl:mx-[2.5%]">
@@ -166,7 +166,7 @@ function Header() {
             </div>
           </div>
         </Link>
-        <ul className="hidden lg:flex gap-6 nunito_font w-max text-[var(--semiGray-color)] items-center">
+        <ul className="hidden lg:flex gap-6 w-max text-[var(--semiGray-color)] items-center">
           {links.slice(4, 8).map((link, index) => renderLink(link, index + 4))}
         </ul>
       </div>

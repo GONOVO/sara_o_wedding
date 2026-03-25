@@ -148,12 +148,7 @@ function DestinationWeddingsPage() {
                   quality={85}
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-4">
-                  <h3
-                    style={{
-                      fontFamily: "var(--font-antic-didone)",
-                    }}
-                    className="text-white font-semibold text-xl"
-                  >
+                  <h3 className="text-white font-semibold text-xl">
                     {destination.name}
                   </h3>
                 </div>
@@ -185,12 +180,7 @@ function DestinationWeddingsPage() {
                   quality={85}
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-4">
-                  <h3
-                    style={{
-                      fontFamily: "var(--font-antic-didone)",
-                    }}
-                    className="text-white font-semibold text-xl"
-                  >
+                  <h3 className="text-white font-semibold text-xl">
                     {destination.name}
                   </h3>
                 </div>
@@ -222,12 +212,7 @@ function DestinationWeddingsPage() {
                   quality={85}
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-4">
-                  <h3
-                    style={{
-                      fontFamily: "var(--font-antic-didone)",
-                    }}
-                    className="text-white font-semibold text-xl"
-                  >
+                  <h3 className="text-white font-semibold text-xl">
                     {destination.name}
                   </h3>
                 </div>
@@ -259,12 +244,7 @@ function DestinationWeddingsPage() {
                   quality={85}
                 />
                 <div className="absolute inset-0 flex flex-col justify-end p-4">
-                  <h3
-                    style={{
-                      fontFamily: "var(--font-antic-didone)",
-                    }}
-                    className="text-white font-semibold text-xl"
-                  >
+                  <h3 className="text-white font-semibold text-xl">
                     {destination.name}
                   </h3>
                 </div>

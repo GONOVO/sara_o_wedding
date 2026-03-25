@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import "aos/dist/aos.css";
 import "./globals.css";
 import Header from "../components/ui/header/Header";
-import { Nunito, Fraunces, Kristi, Antic_Didone } from "next/font/google";
+import { Fraunces } from "next/font/google";
 import NeexaChat from "../components/NeexaChat";
 
 // Declare global types for neexa
@@ -24,33 +24,10 @@ const Footer = dynamic(() => import("../components/footer/Footer"));
 import WithAOS from "@/components/ui/Withaos";
 import Arrowtoup from "@/components/ui/arrowsrollup/Arrowtoup";
 // import Head from "next/head";
-const nunito = Nunito({
-  subsets: ["latin"],
-  weight: ["300", "400", "600", "700"], // Reduced weights for better performance
-  variable: "--font-nunito",
-  display: "swap", // Optimize font loading
-  preload: true,
-});
-
 const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"], // Reduced weights for better performance
+  weight: ["300", "400", "600", "700"],
   variable: "--font-fraunces",
-  display: "swap", // Optimize font loading
-  preload: true,
-});
-const kristi = Kristi({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-kristy",
-  display: "swap",
-  preload: true,
-});
-
-const anticDidone = Antic_Didone({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-antic-didone",
   display: "swap",
   preload: true,
 });
@@ -80,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${nunito.variable} ${fraunces.variable} ${kristi.variable} ${anticDidone.variable}`}
+      className={fraunces.variable}
       style={{ overflowX: "hidden" }}
     >
       <head>

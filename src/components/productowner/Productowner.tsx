@@ -34,7 +34,7 @@ function Productowner() {
           </h1>
           <div className="lg:ms-16 md:ms-8 mt-8 lg:mt-[45px] flex flex-col gap-6 lg:gap-12 ">
             <h3
-              className="nunito_font tracking-[4px] text-xs lg:text-lg font- sm:font-normal font-bold"
+              className="tracking-[4px] text-xs lg:text-lg font- sm:font-normal font-bold"
               data-aos="fade-left"
             >
               PRODUCING EXCEPTIONAL AFRICAN INSPIRED AND GLOBAL DESTINATION
@@ -98,7 +98,7 @@ function Productowner() {
                 Yewande Rwang-Dung
               </h2>
               <p
-                className="kristy_font font-light text-3xl mt-5"
+                className="font-light italic text-3xl mt-5"
                 data-aos="fade-left"
               >
                 Founder & Ceo

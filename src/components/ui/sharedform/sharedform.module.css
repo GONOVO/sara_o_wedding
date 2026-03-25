@@ -6,10 +6,8 @@
 
 .title {
   font-size: 2.5rem;
-  font-weight: 600;
-  color: #111827;
+  font-weight: 300 !important;
   margin-bottom: 1rem;
-  font-family: var(--font-antic-didone);
 }
 
 .subtitle {
@@ -57,7 +55,9 @@
   border: 1px solid #d1d5db;
   border-radius: 0.5rem;
   font-size: 1rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
   background-color: white;
 }
 
@@ -141,7 +141,9 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.1s;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
   margin-top: 0.5rem;
 }
 
@@ -257,7 +259,9 @@
   border: 1px solid #d1d5db;
   border-radius: 0.5rem;
   font-size: 1rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
   background-color: white;
   color: #374151;
   cursor: pointer;

@@ -42,7 +42,7 @@
   margin-inline-start: 2.8rem;
   margin-inline-end: 1rem;
   line-height: 1.8;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--font-fraunces), serif;
   font-size: 14px;
 }
 .mainCard a {
@@ -61,7 +61,7 @@
 }
 .mainCard a span {
   text-decoration: underline;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: var(--font-fraunces), serif;
 }
 .mainCard a:hover {
   font-weight: 700;

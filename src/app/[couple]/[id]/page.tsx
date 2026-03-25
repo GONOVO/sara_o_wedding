@@ -4,7 +4,7 @@ import { useState, useCallback, useRef, useEffect } from "react";
 import { use } from "react"; // Import the 'use' hook
 
 const Modalandslider = dynamic(
-  () => import("@/components/aboutus/modal_slider/Modalandslider")
+  () => import("@/components/aboutus/modal_slider/Modalandslider"),
 );
 const ImageView = dynamic(() => import("@/components/imageview/HeroSection"));
 import couples from "@/data/gallerrypotfolio";
@@ -38,7 +38,7 @@ const LazyPortfolioImage = ({
           setShouldLoad(true);
         }
       },
-      { rootMargin: "50px" }
+      { rootMargin: "50px" },
     );
 
     const currentRef = containerRef.current;
@@ -95,7 +95,7 @@ const VideoCard = ({ videoUrl }: { videoUrl: string }) => {
           }
         }
       },
-      { rootMargin: "100px" }
+      { rootMargin: "100px" },
     );
 
     const currentRef = containerRef.current;
@@ -183,7 +183,7 @@ export default function CouplePage({ params }: CouplePageProps) {
       setIndexImage(index);
       toggleModal();
     },
-    [toggleModal]
+    [toggleModal],
   );
 
   if (!choosedCouple) {

@@ -8,14 +8,14 @@ const MobileFrame = React.lazy(() => import("../ui/mobileframe/Mobile"));
 function Contactus() {
   return (
     <section
-      className={`${styles.main_grid_contactus} nunito_font`}
+      className={styles.main_grid_contactus}
       id="contactus"
     >
       <div data-aos="fade-right">
-        <h3>CONTACT US</h3>
+        <h3 className="text-5xl font-bold">CONTACT US</h3>
         <SharedForm
-          title="Reserve Your Event with Us Here"
-          subtitle="Our friendly team would love to hear from you."
+          title="Our friendly team would love to hear from you."
+          subtitle=""
           className={styles.contactForm}
         />
       </div>

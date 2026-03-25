@@ -38,7 +38,7 @@ function Ourvission({ image, caption, paragraph }: IVission) {
             </h1>
             <div className="lg:ms-16 md:ms-8 mt-8 lg:mt-[45px] flex flex-col gap-6 lg:gap-12 ">
               <h3
-                className="nunito_font tracking-[4px] text-base lg:text-lg font-thin text-white"
+                className="tracking-[4px] text-base lg:text-lg font-thin text-white"
                 data-aos="fade-left"
               >
                 {caption}

@@ -1,9 +1,40 @@
 const galleryPortfolio = [
   {
+    id: 40,
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_2.webp",
+    eventName: "M050 Birthday Party",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_3.webp",
+    allImages: [
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_1.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_2.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_3.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_4.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_5.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_6.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_7.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_8.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_9.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_10.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_11.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_12.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_13.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_14.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_15.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_16.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_17.webp",
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/m050_party_18.webp",
+    ],
+    allVideos: ["/videos/m050_party_video.mp4"],
+  },
+  {
     id: 39,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/women-music-africa/get.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/women-music-africa/get.jpg",
     eventName: "Women Music Africa",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/women-music-africa/get1.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/women-music-africa/get1.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/women-music-africa/get.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/women-music-africa/get1.jpg",
@@ -24,39 +55,49 @@ const galleryPortfolio = [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/women-music-africa/get16.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/women-music-africa/get17.jpg",
     ],
-    allVideos: ["/images/women-music-africa/get.mp4"],
+    allVideos: [
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/women-music-africa/get.mp4",
+    ],
   },
   {
     id: 38,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/fcmb/fcmb-event.png",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/fcmb/fcmb-event.png",
     eventName: "FCMB",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/fcmb/fcmb-event.png",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/fcmb/fcmb-event.png",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/fcmb/fcmb-event.png",
     ],
   },
   {
     id: 37,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/pekun-fafa/pekun-fafa.png",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/pekun-fafa/pekun-fafa.png",
     eventName: "Pekun & Fafa",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/pekun-fafa/pekun-fafa.png",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/pekun-fafa/pekun-fafa.png",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/pekun-fafa/pekun-fafa.png",
     ],
   },
   {
     id: 36,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/aso-ebi/aso-ebi.png",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/aso-ebi/aso-ebi.png",
     eventName: "Aso Ebi",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/aso-ebi/aso-ebi.png",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/aso-ebi/aso-ebi.png",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/aso-ebi/aso-ebi.png",
     ],
   },
   {
     id: 1,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/oo/oo_1.webp",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/oo/oo_2.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/oo/oo_1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/oo/oo_2.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/oo/oo_3.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/oo/oo_1.webp",
@@ -84,8 +125,10 @@ const galleryPortfolio = [
   },
   {
     id: 2,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/e_kaa_bosi/e_kaa_bosi_1.webp",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/e_kaa_bosi/e_kaa_bosi_2.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/e_kaa_bosi/e_kaa_bosi_1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/e_kaa_bosi/e_kaa_bosi_2.webp",
     eventName: "Bosola & Temi",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/e_kaa_bosi/e_kaa_bosi_3.webp",
@@ -120,8 +163,10 @@ const galleryPortfolio = [
   },
   {
     id: 3,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport1.webp",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/cover1.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/cover1.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/cover1.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport1.webp",
@@ -142,9 +187,11 @@ const galleryPortfolio = [
   },
   {
     id: 4,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev_11.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev_11.webp",
     video: "/videos/ev_44.mp4",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/key_cover.JPG",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/key_cover.JPG",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/key_1.JPG",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/key_2.JPG",
@@ -164,8 +211,10 @@ const galleryPortfolio = [
   },
   {
     id: 5,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/4_1.webp",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/4_3.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/4_1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/4_3.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/couple4.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/4_4.webp",
@@ -179,8 +228,10 @@ const galleryPortfolio = [
   },
   {
     id: 6,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/portfolio3.JPEG",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/pedro_cover.JPG",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/portfolio3.JPEG",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/pedro_cover.JPG",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/pedro_1.JPG",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/pedro_2.JPEG",
@@ -201,8 +252,10 @@ const galleryPortfolio = [
   },
   {
     id: 7,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/2_1.webp",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/2_4.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/2_1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/2_4.webp",
     allImages: [
       // "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/featured1.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/reallife1.webp",
@@ -223,9 +276,11 @@ const galleryPortfolio = [
   },
   {
     id: 8,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/h_ev1.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/h_ev1.webp",
     // video: "/videos/gallery_vid_2.mp4",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/h_ev2.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/h_ev2.webp",
     // coverVideo: "/videos/gallery_vid_2.mp4",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/h_ev3.webp",
@@ -248,8 +303,10 @@ const galleryPortfolio = [
 
   {
     id: 9,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev44.webp",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/o_ev1.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev44.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/o_ev1.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/o_ev2.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/o_ev3.webp",
@@ -267,8 +324,10 @@ const galleryPortfolio = [
   },
   {
     id: 11,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/f_ev1.webp",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/f_ev2.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/f_ev1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/f_ev2.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/portfolio2.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/gallery3.webp",
@@ -283,11 +342,13 @@ const galleryPortfolio = [
   },
   {
     id: 12,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/La_1.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/La_1.webp",
     positionY: "0%",
     maleName: "LORIADE",
     femaleName: "ADEWUNMI",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/La_1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/La_1.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/package33.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/La_1.webp",
@@ -300,8 +361,10 @@ const galleryPortfolio = [
   },
   {
     id: 13,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev5.webp",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev7.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev5.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev7.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev6.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/ev77.jpg",
@@ -314,10 +377,12 @@ const galleryPortfolio = [
   {
     id: 14,
     positionY: "30%",
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport5.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport5.webp",
     maleName: "IBRAHIM",
     femaleName: "ZAINAB",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport5.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport5.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport5.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/IZ_1.webp",
@@ -334,10 +399,12 @@ const galleryPortfolio = [
   {
     id: 15,
     positionY: "10%",
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport6.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport6.webp",
     maleName: "RASHEED",
     femaleName: "KRISTEEN",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/1_7.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/1_7.webp",
     allImages: [
       // "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/package2.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/1_7.webp",
@@ -358,10 +425,12 @@ const galleryPortfolio = [
   {
     id: 16,
     positionY: "0%",
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport7.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport7.webp",
     maleName: "DAVIDO",
     femaleName: "CHIOMA",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/DC_1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/DC_1.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport7.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/package111.webp",
@@ -374,10 +443,12 @@ const galleryPortfolio = [
   },
   {
     id: 17,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport8.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport8.webp",
     maleName: "MOYIN",
     femaleName: "GOZIEM",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Mg_1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Mg_1.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport8.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Mg_3.webp",
@@ -387,10 +458,12 @@ const galleryPortfolio = [
   },
   {
     id: 18,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport9.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/galleryport9.webp",
     maleName: "TENI",
     femaleName: "TEMITOPE",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Tt.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Tt.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/his1.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Tt_4.webp",
@@ -407,9 +480,11 @@ const galleryPortfolio = [
   },
   {
     id: 19,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/spacebirthday/bi_1.JPG",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/spacebirthday/bi_1.JPG",
     eventName: "SPACE BIRTHDAY",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/spacebirthday/bi_2.JPG",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/spacebirthday/bi_2.JPG",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/spacebirthday/bi_1.JPG",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/spacebirthday/bi_2.JPG",
@@ -422,9 +497,11 @@ const galleryPortfolio = [
   },
   {
     id: 20,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Nduka/nd_3.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Nduka/nd_3.jpg",
     eventName: "NDUKA OBAIGBENA 60th BIRTHDAY FORREST GARDEN",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Nduka/nd_2.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Nduka/nd_2.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Nduka/nd_1.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/Nduka/nd_2.jpg",
@@ -434,9 +511,11 @@ const galleryPortfolio = [
   },
   {
     id: 21,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/BirthdayParty/bii_1.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/BirthdayParty/bii_1.jpg",
     eventName: "BIRTHDAY PARTY",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/BirthdayParty/bii_2.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/BirthdayParty/bii_2.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/BirthdayParty/bii_1.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/BirthdayParty/bii_2.jpg",
@@ -445,9 +524,11 @@ const galleryPortfolio = [
   },
   {
     id: 22,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tolaramconclave/to_1.JPG",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tolaramconclave/to_1.JPG",
     eventName: "TOLARAM CONCLAVE",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tolaramconclave/to_2.JPG",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tolaramconclave/to_2.JPG",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tolaramconclave/to_1.JPG",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tolaramconclave/to_2.JPG",
@@ -461,9 +542,11 @@ const galleryPortfolio = [
   },
   {
     id: 23,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/vowRenewals/vo_1.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/vowRenewals/vo_1.jpg",
     eventName: "VOW RENEWAL",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/vowRenewals/vo_2.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/vowRenewals/vo_2.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/vowRenewals/vo_1.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/vowRenewals/vo_2.jpg",
@@ -473,9 +556,11 @@ const galleryPortfolio = [
   },
   {
     id: 24,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/sarakiwedding/wed_1.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/sarakiwedding/wed_1.jpg",
     eventName: "Saraki Wedding",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/sarakiwedding/wed_2.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/sarakiwedding/wed_2.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/sarakiwedding/wed_1.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/sarakiwedding/wed_2.jpg",
@@ -486,9 +571,11 @@ const galleryPortfolio = [
   },
   {
     id: 25,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/traditionalwedding/trad_3.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/traditionalwedding/trad_3.jpg",
     eventName: "TRADITIONAL WEDDING",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/traditionalwedding/trad_2.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/traditionalwedding/trad_2.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/traditionalwedding/trad_1.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/traditionalwedding/trad_2.jpg",
@@ -499,9 +586,11 @@ const galleryPortfolio = [
   },
   {
     id: 26,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/trad_2/tradd_5.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/trad_2/tradd_5.jpg",
     eventName: "TRADITIONAL WEDDING",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/trad_2/tradd_1.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/trad_2/tradd_1.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/trad_2/tradd_1.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/trad_2/tradd_2.jpg",
@@ -514,10 +603,12 @@ const galleryPortfolio = [
   },
   {
     id: 27,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/dami_lekan/dl_3.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/dami_lekan/dl_3.jpg",
     femaleName: "DAMI",
     maleName: "LEKAN",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/dami_lekan/dl_1.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/dami_lekan/dl_1.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/dami_lekan/dl_1.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/dami_lekan/dl_2.webp",
@@ -527,9 +618,11 @@ const galleryPortfolio = [
   },
   {
     id: 28,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/headiesevent/he_1.jpeg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/headiesevent/he_1.jpeg",
     eventName: "HEADIES EVENT",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/headiesevent/he_4.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/headiesevent/he_4.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/headiesevent/he_1.jpeg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/headiesevent/he_2.jpeg",
@@ -541,9 +634,11 @@ const galleryPortfolio = [
   },
   {
     id: 29,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/abikd40/ab_4.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/abikd40/ab_4.jpg",
     eventName: "ABIKD 40th BIRTHDAY",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/abikd40/ab_2.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/abikd40/ab_2.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/abikd40/ab_1.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/abikd40/ab_2.jpg",
@@ -557,9 +652,11 @@ const galleryPortfolio = [
   },
   {
     id: 30,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/destinationev/ds_3.webp",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/destinationev/ds_3.webp",
     eventName: "Destination event",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/destinationev/ds_2.webp",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/destinationev/ds_2.webp",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/destinationev/ds_1.webp",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/destinationev/ds_2.webp",
@@ -568,10 +665,12 @@ const galleryPortfolio = [
   },
   {
     id: 31,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/farida_robo/fr_1.JPG",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/farida_robo/fr_1.JPG",
     femaleName: "FARIDAH",
     maleName: "ROBO",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/farida_robo/fr_2.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/farida_robo/fr_2.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/farida_robo/fr_1.JPG",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/farida_robo/fr_2.jpg",
@@ -583,9 +682,11 @@ const galleryPortfolio = [
 
   {
     id: 32,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tt/tt_1.JPG",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tt/tt_1.JPG",
     eventName: "ALAKIJA WEDDING",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tt/tt_2.JPG",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tt/tt_2.JPG",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tt/tt_1.JPG",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/tt/tt_2.JPG",
@@ -596,9 +697,11 @@ const galleryPortfolio = [
   },
   {
     id: 33,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/gardenthemedwedding/gr_1.jpg",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/gardenthemedwedding/gr_1.jpg",
     eventName: "GARDEN THEMED WEDDING",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/gardenthemedwedding/gr_2.jpg",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/gardenthemedwedding/gr_2.jpg",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/gardenthemedwedding/gr_1.jpg",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/gardenthemedwedding/gr_2.jpg",
@@ -610,9 +713,11 @@ const galleryPortfolio = [
   },
   {
     id: 34,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/redwedding/r_1.JPG",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/redwedding/r_1.JPG",
     eventName: "RED WEDDING",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/redwedding/r_2.JPG",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/redwedding/r_2.JPG",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/redwedding/r_1.JPG",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/redwedding/r_2.JPG",
@@ -624,9 +729,11 @@ const galleryPortfolio = [
   },
   {
     id: 35,
-    image: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/zenithBank/zb_2.png",
+    image:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/zenithBank/zb_2.png",
     eventName: "ZENITH BANK",
-    coverImage: "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/zenithBank/zb_2.png",
+    coverImage:
+      "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/zenithBank/zb_2.png",
     allImages: [
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/zenithBank/zb_2.png",
       "https://onnxbbbfkidlh7fg.public.blob.vercel-storage.com/sara-o-events/zenithBank/zb_1.png",

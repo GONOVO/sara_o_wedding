@@ -49,7 +49,7 @@ function Tellusmore({
           </h1>
           <Link
             href="/#contactus"
-            className="inline-block my-6  border-2 border-black  py-2 px-8 tracking-[3px]text-xs nunito_font hover:bg-black hover:text-white"
+            className="inline-block my-6  border-2 border-black  py-2 px-8 tracking-[3px]text-xs hover:bg-black hover:text-white"
             data-aos="zoom-in-out"
           >
             CONTACT US
